@@ -34,10 +34,7 @@ class InferenceTests(unittest.TestCase):
     def test_inline_comment_keeps_first_numeric_record(self):
         with tempfile.TemporaryDirectory() as tmp:
             source = Path(tmp) / "input.txt"
-            source.write_text("1150 1e-20 # first measured point, retained
-1151 2e-20
-1152 3e-20
-")
+            source.write_text("1150 1e-20 # first measured point, retained\n1151 2e-20\n1152 3e-20\n")
             x, y = read_spectrum(source)
             self.assertEqual(len(x), 3)
             self.assertEqual(x[0], 1150)
