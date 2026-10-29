@@ -1,6 +1,8 @@
-# ThermoIR-ET
+# thIRmo-ET
 
-**ThermoIR-ET predicts a molecular infrared absorption band at requested higher temperatures from one to three measured low-temperature spectra.** Its extremely randomized regression trees use spectral shape and temperature, without a molecule name or molecular structure as input. The supplied model was fitted on 31 molecular identities. An unknown molecule can therefore be submitted without retraining; accuracy on a new molecule remains conditional on the band shape, input quality, temperature, and reference-data coverage.
+Repository: https://github.com/aliabdelshafikhazraji-bit/thIRmo-ET
+
+**thIRmo-ET predicts a molecular infrared absorption band at requested higher temperatures from one to three measured low-temperature spectra.** Its extremely randomized regression trees use spectral shape and temperature, without a molecule name or molecular structure as input. The supplied model was fitted on 31 molecular identities. An unknown molecule can therefore be submitted without retraining; accuracy on a new molecule remains conditional on the band shape, input quality, temperature, and reference-data coverage.
 
 Training includes two- and three-input examples, and the reported held-out benchmark uses three low-temperature input spectra per molecule. Two-input operation is supported, but the reported errors do not independently validate unseen molecules supplied with only two measurements. **One room-temperature spectrum is supported as an experimental adapter, not as an equally validated replacement.** The model was not refitted on one-input examples. For one input, the observed shape occupies all three shape slots, the temperature slope is zero, and the input-count feature remains 1. The program never invents an additional measured temperature.
 
@@ -10,7 +12,7 @@ Use Python 3.10 or newer in this repository directory:
 
 ```sh
 python -m pip install -r requirements.txt
-python thermoir_et.py --help
+python thirmo_et.py --help
 ```
 
 NumPy and SciPy are sufficient for prediction. Optional plots require `python -m pip install matplotlib`. A scikit-learn installation is **not** required. Model weights are compressed numeric NumPy arrays loaded with `allow_pickle=False`; their SHA-256 checksum is checked against the accompanying model metadata.
@@ -39,19 +41,19 @@ The output CSV contains `wavenumber_cm-1`, `temperature_K`, and `cross_section_c
 Three input spectra, two output temperatures:
 
 ```sh
-python thermoir_et.py --spectrum cold.csv 278.15 --spectrum room.csv 298.15 --spectrum warm.csv 323.15 --units cross-section --window 1600 2050 --target-temperature 673.15 973.15 --output predictions/hot.csv
+python thirmo_et.py --spectrum cold.csv 278.15 --spectrum room.csv 298.15 --spectrum warm.csv 323.15 --units cross-section --window 1600 2050 --target-temperature 673.15 973.15 --output predictions/hot.csv
 ```
 
 One observed room-temperature spectrum (experimental one-input mode):
 
 ```sh
-python thermoir_et.py --spectrum room.csv 298.15 --units cross-section --window 1150 1350 --target-temperature 773.15 --output predictions/one_input.csv
+python thirmo_et.py --spectrum room.csv 298.15 --units cross-section --window 1150 1350 --target-temperature 773.15 --output predictions/one_input.csv
 ```
 
 Absorbance input and absorbance output, with explicitly supplied absorber columns:
 
 ```sh
-python thermoir_et.py --spectrum measured.csv 298.15 --units absorbance-decadic --input-column-density 2.0e17 --window 1150 1350 --target-temperature 773.15 --output-column-density 1.5e17 --output predictions/absorbance.csv --plot
+python thirmo_et.py --spectrum measured.csv 298.15 --units absorbance-decadic --input-column-density 2.0e17 --window 1150 1350 --target-temperature 773.15 --output-column-density 1.5e17 --output predictions/absorbance.csv --plot
 ```
 
 For several absorbance inputs, `--input-column-density` accepts one shared value or one value per input, in the same order as the `--spectrum` options. The supplied columns should reflect the measurement at each input temperature. To predict absorbance at fixed pressure and path length, calculate the desired hot-gas absorber column separately; its number density changes with temperature. The software does not silently assume constant pressure, path length or mole fraction.
@@ -59,7 +61,7 @@ For several absorbance inputs, `--input-column-density` accepts one shared value
 Python use:
 
 ```python
-from thermoir_et import read_spectrum, predict_spectra
+from thirmo_et import read_spectrum, predict_spectra
 
 x, cross_sections, provenance = predict_spectra(
     [read_spectrum("cold.csv"), read_spectrum("warm.csv")],
@@ -78,7 +80,7 @@ The training target is the difference between the high-temperature spectrum and 
 
 The released fit combines measured high-temperature references, HITEMP calculations and additional HITRAN calculations. The 0.5 multiplier for HITRAN training sources was chosen by cross-validation that held out training molecular identities; the held-out test identities were not used to choose that multiplier. The 20% PNNL–line-database mismatch rule used in dataset construction is a **source-admission filter**, not a prediction-accuracy guarantee. No such accuracy guarantee is applied to arbitrary uploaded spectra.
 
-The published evaluation must be interpreted at the molecular-identity level: multiple temperatures and spectral points from one molecule are not independent test molecules. There is no molecular-identity overlap between the fitted model and the designated test set. The manuscript and accompanying evaluation report give molecule-dependent errors against measured or simulated references; a simulation comparison does not establish agreement with an independent experiment. This package does not estimate calibrated prediction intervals.
+The published evaluation must be interpreted at the molecular-identity level: multiple temperatures and spectral points from one molecule are not independent test molecules. There is no molecular-identity overlap between the fitted model and the designated test set. All four ether molecules in the assembled collection were tested as an entire family absent from training. The manuscript and accompanying evaluation report give molecule-dependent errors against measured or simulated references; a simulation comparison does not establish agreement with an independent experiment. This package does not estimate calibrated prediction intervals.
 
 The retained evaluation comprises 70 reference spectra in 10 band windows from nine held-out molecular identities ([calculated benchmark summary](benchmark_summary.json)). This reporting subset was selected after inspection of the spectral comparisons from the original 80-record benchmark; it is not a predeclared blind choice of test bands. The fitted models and training-only cross-validation weights are unchanged, and the original numerical records are preserved in the supplementary provenance archive. For each reference spectrum, error is the sum of absolute prediction–reference differences divided by the sum of positive reference cross-sections on the measured, uniformly spaced grid. Errors are averaged across temperatures within each band, then across bands within each molecule, and finally equally across molecules. This avoids weighting a molecule more heavily merely because it has more temperatures or spectral points.
 
@@ -100,7 +102,7 @@ These calculated percentages are normalized spectral errors on the retained benc
 
 ## Reproducibility and provenance
 
-`models/thermoir_et_v1.json` records the training configuration, source-model checksum, and exported-weights checksum. `verification.json` records the numeric export checks performed against the original fitted scikit-learn model. The source dataset is not redistributed here. Obtain spectra under the terms of their original providers: [PNNL infrared spectral database](https://nwir.pnl.gov/), [HITRAN](https://hitran.org/) and [HITEMP](https://hitran.org/hitemp/), together with the measured references identified in the accompanying paper.
+`models/thirmo_et_v1.json` records the training configuration, source-model checksum, and exported-weights checksum. `verification.json` records the numeric export checks performed against the original fitted scikit-learn model. The source dataset is not redistributed here. Obtain spectra under the terms of their original providers: [PNNL infrared spectral database](https://nwir.pnl.gov/), [HITRAN](https://hitran.org/) and [HITEMP](https://hitran.org/hitemp/), together with the measured references identified in the accompanying paper.
 
 Run package checks with:
 
@@ -110,4 +112,4 @@ python -m unittest discover -s tests -v
 
 `tools/export_model.py` is an optional developer utility for exporting an already fitted **trusted** scikit-learn pickle. It must never be used with an untrusted file. This utility is not invoked during ordinary prediction, and scikit-learn is needed only to run the export utility. The released weights are unchanged from the selected fitted model; there is no automatic retraining or network download.
 
-When citing the software before a manuscript DOI is assigned, cite **ThermoIR-ET, version 1.0.0**, the repository URL and the release or commit identifier. The manuscript citation can be added when a permanent bibliographic record exists.
+When citing the software before a manuscript DOI is assigned, cite **thIRmo-ET, version 1.0.0**, the repository URL and the release or commit identifier. The manuscript citation can be added when a permanent bibliographic record exists.
