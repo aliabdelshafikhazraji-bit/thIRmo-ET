@@ -2,7 +2,7 @@ import unittest
 import tempfile
 from pathlib import Path
 import numpy as np
-from thermoir_et import N, PNNL_COLUMN, NumericForest, make_features, native_smooth, to_cross_section, predict_spectra, read_spectrum, main
+from thirmo_et import N, PNNL_COLUMN, NumericForest, make_features, native_smooth, to_cross_section, predict_spectra, read_spectrum, main
 
 
 class InferenceTests(unittest.TestCase):
