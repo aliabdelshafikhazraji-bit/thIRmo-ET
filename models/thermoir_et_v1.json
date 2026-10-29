@@ -1,0 +1,20 @@
+{
+  "name": "ThermoIR-ET",
+  "version": "1.0.0",
+  "algorithm": "Extremely randomized regression trees",
+  "n_estimators": 128,
+  "n_features": 42,
+  "max_depth": 16,
+  "min_samples_leaf": 16,
+  "max_features": 0.8,
+  "random_state": 20261029,
+  "training_identities": 31,
+  "hitran_source_weight": 0.5,
+  "weight_selection": "Training-identity cross-validation",
+  "source_model_sha256": "8c649c181f40a466b7c4b4115a7849ed1052022dc652e286a733db05d6372e24",
+  "weights_sha256": "17e5e458068c0d92e07b5385d30951321834ae40cce559322ee31d96d9937075",
+  "input_mode_fit": "Two or three low-temperature spectra",
+  "single_input_mode": "Experimental adapter; input_count=1; no retraining",
+  "output": "Residual of area-normalized spectrum from warmest input",
+  "normalization": "Multiply (warmest normalized input + residual) by warmest positive area / band width; clip negative output to zero"
+}
