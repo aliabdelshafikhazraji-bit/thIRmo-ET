@@ -316,7 +316,8 @@ def main(argv=None):
             fig, ax = plt.subplots(figsize=(8, 4.8))
             for T, y in zip(args.target_temperature, predictions):
                 ax.plot(x, y, label=f"{T:g} K")
-            ax.set(xlabel="Wavenumber (cm⁻¹)", ylabel="Absorption cross-section (cm²/molecule)")
+            ax.set(xlabel=r"Wavenumber (cm$^{-1}$)",
+                   ylabel=r"Absorption cross-section (cm$^{2}$/molecule)")
             ax.legend(title="Predicted temperature")
             fig.tight_layout()
             fig.savefig(out.with_suffix(".png"), dpi=200)
