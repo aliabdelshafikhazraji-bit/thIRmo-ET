@@ -26,7 +26,7 @@ def main():
                   value=np.concatenate([t.value[:, 0, 0] for t in trees]))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(args.output, **arrays)
-    metadata = dict(name="ThermoIR-ET", version="1.0.0", algorithm="Extremely randomized regression trees",
+    metadata = dict(name="thIRmo-ET", version="1.0.0", algorithm="Extremely randomized regression trees",
                     n_estimators=len(trees), n_features=42, max_depth=16, min_samples_leaf=16,
                     max_features=0.8, random_state=20261029, training_identities=31,
                     hitran_source_weight=0.5, weight_selection="Training-identity cross-validation",
