@@ -1,0 +1,15 @@
+{
+  "model_source_sha256": "8c649c181f40a466b7c4b4115a7849ed1052022dc652e286a733db05d6372e24",
+  "model_export_sha256": "17e5e458068c0d92e07b5385d30951321834ae40cce559322ee31d96d9937075",
+  "verification": "Numeric NumPy inference compared with original fitted sklearn forest; no model refit",
+  "retained_test_reference_records": 70,
+  "compared_spectral_points": 35840,
+  "NO_1600_2050_cm1_reference_records": 10,
+  "static_feature_max_absolute_difference": 0.0,
+  "residual_prediction_max_absolute_difference": 3.552713678800501e-15,
+  "residual_prediction_max_relative_difference": 7.850569824091486e-13,
+  "native_uniform_preprocessing_max_absolute_difference": 0.0,
+  "comparison_rtol": 1e-12,
+  "comparison_atol": 1e-13,
+  "data_note": "Private source spectra are not included in this repository; comparison reports export fidelity, not scientific accuracy."
+}
