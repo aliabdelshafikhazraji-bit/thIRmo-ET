@@ -1,20 +1,34 @@
 {
-  "provenance": "Present-study retained molecular-identity-held-out evaluation of the released fixed model",
-  "reporting_selection": "The 70-record, 10-window reporting subset was chosen after inspection of spectral comparisons from the original 80-record benchmark. It is not a predeclared blind selection of test bands. The fitted models and training-only cross-validation weights are unchanged; original numerical records are preserved in the supplementary provenance archive.",
-  "n_reference_spectra": 70,
-  "n_band_windows": 10,
-  "n_molecular_identities": 9,
-  "metric": "Sum of absolute cross-section differences divided by sum of positive reference cross-sections on covered uniform-grid points; average across temperatures within band, then bands within molecule, then molecules",
-  "three_inputs": {
-    "measured_references": 0.23714836723473973,
-    "HITEMP_references": 0.2901927408128886,
-    "all_molecules": 0.2489360058076617
+  "model": "thIRmo-ET 2.1.0",
+  "algorithm": "128 extremely randomized regression trees",
+  "training_identities": 43,
+  "withheld_benchmark_identities": 14,
+  "primary_band_temperature_records": 108,
+  "metric": "Integrated absolute prediction-reference difference divided by integrated positive reference cross section; record means within windows, windows within molecules, molecules within groups",
+  "groups": {
+    "PNNL experiments": {
+      "molecules": 9,
+      "records": 69,
+      "mean_error_percent": 20.67
+    },
+    "PNNL HITEMP": {
+      "molecules": 2,
+      "records": 30,
+      "mean_error_percent": 28.3
+    },
+    "Source near ambient experiments": {
+      "molecules": 3,
+      "records": 9,
+      "mean_error_percent": 23.71
+    },
+    "All experiments": {
+      "molecules": 12,
+      "records": 78,
+      "mean_error_percent": 21.43
+    }
   },
-  "one_input_experimental_adapter": {
-    "input_rule": "Available spectrum nearest 298.15 K; no model refit",
-    "measured_references": 0.3322291766975501,
-    "HITEMP_references": 0.4350559881928695,
-    "all_molecules": 0.3550795792520655
-  },
-  "limitation": "These finite-benchmark aggregate errors are not prediction intervals or accuracy guarantees for new molecules. Single-input conditions were absent from fitting."
+  "all_heldout_mean_error_percent": 22.41,
+  "earlier_model_same_holdout_mean_error_percent": 26.68,
+  "expanded_without_HITRAN_same_holdout_mean_error_percent": 24.51,
+  "model_weights_sha256": "79b5ec74781292b125aae5e45192da765a02d80a68a0a5ee1f8e14c4c53c1ef5"
 }

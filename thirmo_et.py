@@ -10,13 +10,13 @@ import sys
 import numpy as np
 from scipy.ndimage import gaussian_filter1d
 
-VERSION = "1.0.0"
+VERSION = "2.1.0"
 N = 512
 U = np.linspace(0, 1, N)
 FWHM = 2.0
 SIGMA_CM1 = FWHM / np.sqrt(8 * np.log(2))
 PNNL_COLUMN = 1e-6 * 101325 / (1.380649e-23 * 296) * 1e-6 * 100
-DEFAULT_MODEL = Path(__file__).resolve().parent / "models" / "thirmo_et_v1.npz"
+DEFAULT_MODEL = Path(__file__).resolve().parent / "models" / "thirmo_et_final.npz"
 
 
 def unique_sorted(x, y):
@@ -93,7 +93,7 @@ def to_cross_section(values, units, column_density=None):
 
 
 def make_features(p, ts, x):
-    """Identical 2/3-input features to training; explicit experimental 1-input adapter."""
+    """Identical 2/3-input features to training; an explicit one-input branch."""
     p, ts, x = np.asarray(p, float), np.asarray(ts, float), np.asarray(x, float)
     nobs = len(ts)
     if nobs not in (1, 2, 3) or p.shape != (nobs, N) or x.shape != (N,):
@@ -244,9 +244,9 @@ def predict_spectra(spectra, temperatures, targets, units="cross-section", input
     predictions = np.asarray([np.maximum((anchor + forest.predict(features_at(features, temperatures[-1], T))) * area / (high - low), 0) for T in targets])
     flags = []
     if len(temperatures) == 1:
-        flags.append("EXPERIMENTAL_SINGLE_INPUT: model fit used two or three inputs; one observed spectrum is repeated in the shape slots with zero slope and input_count=1.")
-    if temperatures.min() < 278.15 or temperatures.max() > 323.15:
-        flags.append("INPUT_TEMPERATURE_OUTSIDE_PNNL_RANGE: the principal low-temperature training inputs were near 278-323 K.")
+        flags.append("SINGLE_INPUT: one observed spectrum is repeated in the shape slots with zero thermal slope and input_count=1; the expanded model includes one-input training examples.")
+    if temperatures.min() < 275.0 or temperatures.max() > 350.0:
+        flags.append("INPUT_TEMPERATURE_OUTSIDE_TRAINING_RANGE: the retained source inputs were at or below 350 K; interpret this prediction cautiously.")
     if targets.max() > 1573.15:
         flags.append("TARGET_ABOVE_BENCHMARK_RANGE: no reported held-out evaluation above 1573.15 K.")
     if window is None:
