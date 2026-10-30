@@ -1,45 +1,31 @@
 {
-  "model": "thIRmo-ET 2.3.0",
+  "model": "thIRmo-ET 2.4.0",
   "algorithm": "128 extremely randomized regression trees",
   "target_pressure_range_atm": [
     0.6,
     2.0
   ],
-  "training_identities": 46,
-  "withheld_benchmark_identities": 8,
-  "withheld_experimental_family": [
-    "methyl acetate",
-    "ethyl acetate",
-    "n-propyl acetate",
-    "n-butyl acetate"
+  "training_identities": 48,
+  "withheld_benchmark_identities": 6,
+  "withheld_acyclic_ether_family": [
+    "1,2-dimethoxyethane",
+    "di-n-propyl ether",
+    "diisopropyl ether"
   ],
-  "primary_band_temperature_records": 86,
-  "metric": "Integrated absolute prediction-reference difference divided by integrated positive reference cross section; record means within windows, windows within molecules, molecules within groups",
-  "groups": {
-    "PNNL experiments": {
-      "molecules": 6,
-      "records": 56,
-      "mean_error_percent": 30.27
-    },
-    "PNNL HITEMP": {
-      "molecules": 2,
-      "records": 30,
-      "mean_error_percent": 28.8
-    }
+  "primary_band_temperature_records": 45,
+  "test_reference": "Published experimental measurements only; HITEMP and HITRAN are training sources",
+  "metric": "Integrated absolute prediction-reference difference divided by integrated positive reference cross section; record means within windows, windows within molecules, molecules weighted equally",
+  "all_heldout_mean_error_percent": 21.39,
+  "without_HITRAN_mean_error_percent": 20.87,
+  "unchanged_input_mean_error_percent": 45.3,
+  "per_molecule_error_percent": {
+    "1,2-dimethoxyethane": 24.32,
+    "acetone": 11.61,
+    "di-n-propyl ether": 31.95,
+    "diisopropyl ether": 24.96,
+    "n-propyl acetate": 21.87,
+    "toluene": 13.64
   },
-  "all_heldout_mean_error_percent": 29.9,
-  "without_HITRAN_mean_error_percent": 31.75,
-  "model_weights_sha256": "b5cd00b27cbfd7aa3f0cc2759a6be756df152df399584d9bb4fa038ee253e89f",
-  "matched_common_test": {
-    "identities": [
-      "CH4",
-      "NO",
-      "acetone",
-      "n-propyl acetate",
-      "toluene"
-    ],
-    "previous_model_mean_error_percent": 20.09,
-    "new_model_mean_error_percent": 25.55,
-    "scope": "Five identities absent from both models\u2019 training; newly withheld acetates are omitted from this comparison."
-  }
+  "model_weights_sha256": "bc4db2d564aedadd1375e7d83e3d62a5e54ecd50d27aaaa0985b7a0ab0c5f59f",
+  "scope": "All six test identities are absent from fitting at every target temperature and band window."
 }
