@@ -1,9 +1,13 @@
 {
-  "model": "thIRmo-ET 2.1.0",
-  "model_weights_sha256": "79b5ec74781292b125aae5e45192da765a02d80a68a0a5ee1f8e14c4c53c1ef5",
+  "model": "thIRmo-ET 2.2.0",
+  "model_weights_sha256": "1c8c25df89161bb87c430157769912e090d20ebe437549026be830e42caa5eba",
   "matches_metadata": true,
-  "manuscript_protocol_sha256": "c695331bb8941abe0c3e0be7f9ebc7cb2ef4a264f230a504ee270e938f88b4da",
+  "manuscript_protocol_sha256": "3f50c7a504adb7b7d3634b9adc5ca6c81af341fdfcd0ee6dadd3eac05b463d37",
   "training_test_identity_overlap": false,
   "heldout_molecules": 14,
-  "primary_band_temperature_records": 108
+  "primary_band_temperature_records": 95,
+  "all_retained_target_pressures_atm": [
+    0.6,
+    2.0
+  ]
 }

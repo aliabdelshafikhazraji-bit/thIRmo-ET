@@ -29,7 +29,7 @@ def main():
     metadata = dict(name="thIRmo-ET", version="1.0.0", algorithm="Extremely randomized regression trees",
                     n_estimators=len(trees), n_features=42, max_depth=16, min_samples_leaf=16,
                     max_features=0.8, random_state=20261029, training_identities=31,
-                    hitran_source_weight=0.5, weight_selection="Training-identity cross-validation",
+                    hitran_source_weight=0.5, weight_selection="Predefined lower HITRAN source weight",
                     source_model_sha256=hashlib.sha256(args.trusted_pickle.read_bytes()).hexdigest(),
                     weights_sha256=hashlib.sha256(args.output.read_bytes()).hexdigest(),
                     input_mode_fit="Two or three low-temperature spectra",

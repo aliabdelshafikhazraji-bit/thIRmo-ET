@@ -1,34 +1,37 @@
 {
-  "model": "thIRmo-ET 2.1.0",
+  "model": "thIRmo-ET 2.2.0",
   "algorithm": "128 extremely randomized regression trees",
-  "training_identities": 43,
+  "target_pressure_range_atm": [
+    0.6,
+    2.0
+  ],
+  "training_identities": 40,
   "withheld_benchmark_identities": 14,
-  "primary_band_temperature_records": 108,
+  "primary_band_temperature_records": 95,
   "metric": "Integrated absolute prediction-reference difference divided by integrated positive reference cross section; record means within windows, windows within molecules, molecules within groups",
   "groups": {
     "PNNL experiments": {
       "molecules": 9,
-      "records": 69,
-      "mean_error_percent": 20.67
+      "records": 56,
+      "mean_error_percent": 18.53
     },
     "PNNL HITEMP": {
       "molecules": 2,
       "records": 30,
-      "mean_error_percent": 28.3
+      "mean_error_percent": 28.39
     },
     "Source near ambient experiments": {
       "molecules": 3,
       "records": 9,
-      "mean_error_percent": 23.71
+      "mean_error_percent": 23.34
     },
     "All experiments": {
       "molecules": 12,
-      "records": 78,
-      "mean_error_percent": 21.43
+      "records": 65,
+      "mean_error_percent": 19.73
     }
   },
-  "all_heldout_mean_error_percent": 22.41,
-  "earlier_model_same_holdout_mean_error_percent": 26.68,
-  "expanded_without_HITRAN_same_holdout_mean_error_percent": 24.51,
-  "model_weights_sha256": "79b5ec74781292b125aae5e45192da765a02d80a68a0a5ee1f8e14c4c53c1ef5"
+  "all_heldout_mean_error_percent": 20.97,
+  "without_HITRAN_mean_error_percent": 22.9,
+  "model_weights_sha256": "1c8c25df89161bb87c430157769912e090d20ebe437549026be830e42caa5eba"
 }

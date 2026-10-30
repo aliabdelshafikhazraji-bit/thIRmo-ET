@@ -2,7 +2,7 @@
 
 **thIRmo-ET predicts a high-temperature infrared absorption band for a molecule absent from its training set.** The user supplies one to three measured near-ambient spectra, the temperature of each spectrum, a wavenumber interval, and a hotter target temperature. The program returns the predicted molecular absorption cross section at 512 wavenumbers. Molecular identity and structure are not model inputs.
 
-The default model, version 2.1.0, is an ensemble of 128 extremely randomized regression trees. It was fitted on 43 molecular identities using published experiments and qualified HITEMP and HITRAN calculations. The companion manuscript evaluates 14 withheld molecular identities, including an entire six-member ether/acetal family excluded from fitting. The mean normalized integrated absolute error across 108 primary band–temperature comparisons is 22.41%. [Benchmark details](benchmark_summary.json) report the experimental and HITEMP groups separately.
+The default model, version 2.2.0, is an ensemble of 128 extremely randomized regression trees. It was fitted on 40 molecular identities using spectra at 0.6–2.0 atm from published experiments and qualified HITEMP and HITRAN calculations. The companion manuscript evaluates 14 withheld molecular identities, including an entire six-member ether/acetal family excluded from fitting. The mean normalized integrated absolute error across 95 primary band–temperature comparisons is 20.97%. [Benchmark details](benchmark_summary.json) report the experimental and HITEMP groups separately.
 
 ## Install
 
@@ -74,7 +74,7 @@ The model provides an approximate band envelope. Predictions may be less accurat
 
 The final model partition, experimental sources, data processing, predictions, and per-record errors are documented in the companion manuscript and Supplementary Archive S1. The archive accompanies the manuscript; this repository distributes the inference code and trained weights. Published spectra remain with their original providers, including [PNNL](https://nwir.pnl.gov/), [HITRAN](https://hitran.org/), and [HITEMP](https://hitran.org/hitemp/).
 
-Until the manuscript has a DOI, cite **thIRmo-ET version 2.1.0** and this repository URL. The previous version 1 weights remain in `models/` for historical reproducibility. Run the local inference checks with:
+Until the manuscript has a DOI, cite **thIRmo-ET version 2.2.0** and this repository URL. Run the local inference checks with:
 
 ```sh
 python -m unittest discover -s tests -v
