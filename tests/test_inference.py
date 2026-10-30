@@ -57,7 +57,7 @@ class InferenceTests(unittest.TestCase):
         np.testing.assert_allclose(a[1], b[1], rtol=1e-12, atol=1e-32)
         self.assertEqual(a[1].shape, (1, N))
         self.assertTrue(np.all(np.isfinite(a[1])) and np.all(a[1] >= 0))
-        self.assertTrue(any("EXPERIMENTAL_SINGLE_INPUT" in s for s in a[2]["warnings"]))
+        self.assertTrue(any("SINGLE_INPUT" in s for s in a[2]["warnings"]))
 
     def test_input_order_does_not_change_prediction(self):
         a = predict_spectra([(self.x, self.y), (self.x, self.y * 0.95)], [298.15, 323.15], [773.15], forest=self.forest)
