@@ -2,7 +2,7 @@
 
 **thIRmo-ET predicts a high-temperature infrared absorption band for a molecule absent from its training set.** The user supplies one to three measured near-ambient spectra, the temperature of each spectrum, a wavenumber interval, and a hotter target temperature. The program returns the predicted molecular absorption cross section at 512 wavenumbers. Molecular identity and structure are not model inputs.
 
-The default model, version 2.4.0, is an ensemble of 128 extremely randomized regression trees. It was fitted on 48 molecular identities using spectra at 0.6–2.0 atm from published experiments and qualified HITEMP and HITRAN calculations. Six molecules were withheld for measurement-based testing: 1,2-dimethoxyethane, di-n-propyl ether, and diisopropyl ether as one acyclic-ether group, plus n-propyl acetate, toluene, and acetone. The equal-molecule mean normalized integrated absolute error is 21.39% across 45 measured band–temperature comparisons. [Benchmark details](benchmark_summary.json) report each molecule and the paired fit without added HITRAN training spectra.
+The default model, version 2.5.0, is an ensemble of 128 extremely randomized regression trees. It was fitted on 46 molecular identities using spectra at 0.6–2.0 atm from published experiments and qualified HITEMP and HITRAN calculations. Eight molecular identities were withheld: three acyclic ethers as a complete family, n-propyl acetate, toluene, acetone, NO, and CH₄. The six molecules with published hot measurements have a 21.61% equal-molecule mean normalized integrated absolute error across 45 band–temperature comparisons. NO and CH₄ have a 30.09% two-molecule mean against 30 HITEMP comparisons; an additional CH₄ window was checked against nine HITRAN spectra. Across the eight test molecules, the equal-molecule mean is 22.90%. [Benchmark details](benchmark_summary.json) report each molecule, source, and paired fit without added HITRAN training spectra.
 
 ## Install
 
@@ -68,13 +68,13 @@ x, cross_sections, metadata = predict_spectra(
 
 The program smooths each input with an additional 2 cm⁻¹ full-width-at-half-maximum Gaussian, samples the requested band at 512 points, and constructs local spectral-shape and temperature features. Each tree predicts a normalized change relative to the warmest supplied spectrum. Averaging the trees and restoring the input band's area produces a cross section in cm²/molecule. One measured input is repeated in the feature slots with zero measured temperature slope; two inputs are represented with their midpoint. The supplied model was fitted on one-, two-, and three-input examples.
 
-The model provides an approximate band envelope. For n-propyl acetate, the measured broad-band maximum moved 8.4 cm⁻¹ toward lower wavenumber between 671 and 862 K; the model predicted 3.9 cm⁻¹ of movement. This peak estimate provides a starting region for a sensor wavelength scan. Narrow rotational structure and bath-gas conditions also affect local comparisons. HITRAN and HITEMP remain valuable for explicit narrow-line calculations when their transition data cover the desired molecule and temperature. The 20% near-ambient PNNL/database agreement rule was used only to decide which line-list bands entered the research dataset; it is not an error threshold for user predictions.
+The model provides an approximate band envelope. For n-propyl acetate, the measured broad-band maximum moved 8.4 cm⁻¹ toward lower wavenumber between 671 and 862 K; the model predicted 3.6 cm⁻¹ of movement. This peak estimate provides a starting region for a sensor wavelength scan. Narrow rotational structure and bath-gas conditions also affect local comparisons. HITRAN and HITEMP remain valuable for explicit narrow-line calculations when their transition data cover the desired molecule and temperature. The 20% near-ambient PNNL/database agreement rule was used only to decide which line-list bands entered the research dataset; it is not an error threshold for user predictions.
 
 ## Provenance and citation
 
 The final model partition, experimental sources, data processing, predictions, and per-record errors are documented in the companion manuscript and Supplementary Archive S1. The archive accompanies the manuscript; this repository distributes the inference code and trained weights. Published spectra remain with their original providers, including [PNNL](https://nwir.pnl.gov/), [HITRAN](https://hitran.org/), and [HITEMP](https://hitran.org/hitemp/).
 
-Until the manuscript has a DOI, cite **thIRmo-ET version 2.4.0** and this repository URL. Run the local inference checks with:
+Until the manuscript has a DOI, cite **thIRmo-ET version 2.5.0** and this repository URL. Run the local inference checks with:
 
 ```sh
 python -m unittest discover -s tests -v

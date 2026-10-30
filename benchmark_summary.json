@@ -1,31 +1,39 @@
 {
-  "model": "thIRmo-ET 2.4.0",
+  "model": "thIRmo-ET 2.5.0",
   "algorithm": "128 extremely randomized regression trees",
   "target_pressure_range_atm": [
     0.6,
     2.0
   ],
-  "training_identities": 48,
-  "withheld_benchmark_identities": 6,
+  "training_identities": 46,
+  "withheld_benchmark_identities": 8,
   "withheld_acyclic_ether_family": [
     "1,2-dimethoxyethane",
     "di-n-propyl ether",
     "diisopropyl ether"
   ],
-  "primary_band_temperature_records": 45,
-  "test_reference": "Published experimental measurements only; HITEMP and HITRAN are training sources",
-  "metric": "Integrated absolute prediction-reference difference divided by integrated positive reference cross section; record means within windows, windows within molecules, molecules weighted equally",
-  "all_heldout_mean_error_percent": 21.39,
-  "without_HITRAN_mean_error_percent": 20.87,
-  "unchanged_input_mean_error_percent": 45.3,
-  "per_molecule_error_percent": {
-    "1,2-dimethoxyethane": 24.32,
-    "acetone": 11.61,
-    "di-n-propyl ether": 31.95,
-    "diisopropyl ether": 24.96,
-    "n-propyl acetate": 21.87,
-    "toluene": 13.64
+  "primary_band_temperature_records": 84,
+  "reference_record_counts": {
+    "experiment": 45,
+    "HITEMP": 30,
+    "HITRAN": 9
   },
-  "model_weights_sha256": "bc4db2d564aedadd1375e7d83e3d62a5e54ecd50d27aaaa0985b7a0ab0c5f59f",
-  "scope": "All six test identities are absent from fitting at every target temperature and band window."
+  "reference_note": "NO and CH4 are held out at every window and temperature. CH4 has two HITEMP windows and one additional HITRAN2024 window through 773.15 K.",
+  "metric": "Integrated absolute prediction-reference difference divided by integrated positive reference cross section; records averaged within windows, windows within molecules, molecules weighted equally",
+  "all_heldout_mean_error_percent": 22.9,
+  "without_HITRAN_mean_error_percent": 24.2,
+  "measurement_mean_error_percent": 21.61,
+  "HITEMP_mean_error_percent": 30.09,
+  "per_molecule_error_percent": {
+    "1,2-dimethoxyethane": 24.78,
+    "CH4": 30.1,
+    "NO": 23.44,
+    "acetone": 10.95,
+    "di-n-propyl ether": 31.99,
+    "diisopropyl ether": 25.05,
+    "n-propyl acetate": 23.13,
+    "toluene": 13.74
+  },
+  "model_weights_sha256": "a20b2a2322de0a3466293a364be6ed3d056781d0786b482e3735f94840f93a8e",
+  "scope": "All eight test identities are absent from fitting at every target temperature and band window."
 }
