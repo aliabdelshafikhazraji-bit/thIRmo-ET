@@ -1,37 +1,45 @@
 {
-  "model": "thIRmo-ET 2.2.0",
+  "model": "thIRmo-ET 2.3.0",
   "algorithm": "128 extremely randomized regression trees",
   "target_pressure_range_atm": [
     0.6,
     2.0
   ],
-  "training_identities": 40,
-  "withheld_benchmark_identities": 14,
-  "primary_band_temperature_records": 95,
+  "training_identities": 46,
+  "withheld_benchmark_identities": 8,
+  "withheld_experimental_family": [
+    "methyl acetate",
+    "ethyl acetate",
+    "n-propyl acetate",
+    "n-butyl acetate"
+  ],
+  "primary_band_temperature_records": 86,
   "metric": "Integrated absolute prediction-reference difference divided by integrated positive reference cross section; record means within windows, windows within molecules, molecules within groups",
   "groups": {
     "PNNL experiments": {
-      "molecules": 9,
+      "molecules": 6,
       "records": 56,
-      "mean_error_percent": 18.53
+      "mean_error_percent": 30.27
     },
     "PNNL HITEMP": {
       "molecules": 2,
       "records": 30,
-      "mean_error_percent": 28.39
-    },
-    "Source near ambient experiments": {
-      "molecules": 3,
-      "records": 9,
-      "mean_error_percent": 23.34
-    },
-    "All experiments": {
-      "molecules": 12,
-      "records": 65,
-      "mean_error_percent": 19.73
+      "mean_error_percent": 28.8
     }
   },
-  "all_heldout_mean_error_percent": 20.97,
-  "without_HITRAN_mean_error_percent": 22.9,
-  "model_weights_sha256": "1c8c25df89161bb87c430157769912e090d20ebe437549026be830e42caa5eba"
+  "all_heldout_mean_error_percent": 29.9,
+  "without_HITRAN_mean_error_percent": 31.75,
+  "model_weights_sha256": "b5cd00b27cbfd7aa3f0cc2759a6be756df152df399584d9bb4fa038ee253e89f",
+  "matched_common_test": {
+    "identities": [
+      "CH4",
+      "NO",
+      "acetone",
+      "n-propyl acetate",
+      "toluene"
+    ],
+    "previous_model_mean_error_percent": 20.09,
+    "new_model_mean_error_percent": 25.55,
+    "scope": "Five identities absent from both models\u2019 training; newly withheld acetates are omitted from this comparison."
+  }
 }
