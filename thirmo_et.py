@@ -10,7 +10,7 @@ import sys
 import numpy as np
 from scipy.ndimage import gaussian_filter1d
 
-VERSION = "2.5.0"
+VERSION = "2.5.1"
 N = 512
 U = np.linspace(0, 1, N)
 FWHM = 2.0

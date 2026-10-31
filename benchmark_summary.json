@@ -1,5 +1,5 @@
 {
-  "model": "thIRmo-ET 2.5.0",
+  "model": "thIRmo-ET 2.5.1",
   "algorithm": "128 extremely randomized regression trees",
   "target_pressure_range_atm": [
     0.6,
@@ -7,26 +7,20 @@
   ],
   "training_identities": 46,
   "withheld_benchmark_identities": 8,
-  "withheld_acyclic_ether_family": [
-    "1,2-dimethoxyethane",
-    "di-n-propyl ether",
-    "diisopropyl ether"
-  ],
   "primary_band_temperature_records": 84,
   "reference_record_counts": {
     "experiment": 45,
-    "HITEMP": 30,
-    "HITRAN": 9
+    "HITEMP": 39
   },
-  "reference_note": "NO and CH4 are held out at every window and temperature. CH4 has two HITEMP windows and one additional HITRAN2024 window through 773.15 K.",
+  "reference_note": "All NO and CH4 targets are HITEMP references; CH4 outer window uses nine temperatures from 373.15 to 773.15 K at 50 K intervals.",
   "metric": "Integrated absolute prediction-reference difference divided by integrated positive reference cross section; records averaged within windows, windows within molecules, molecules weighted equally",
-  "all_heldout_mean_error_percent": 22.9,
-  "without_HITRAN_mean_error_percent": 24.2,
+  "all_heldout_mean_error_percent": 22.75,
+  "without_HITRAN_mean_error_percent": 23.61,
   "measurement_mean_error_percent": 21.61,
-  "HITEMP_mean_error_percent": 30.09,
+  "HITEMP_mean_error_percent": 26.17,
   "per_molecule_error_percent": {
     "1,2-dimethoxyethane": 24.78,
-    "CH4": 30.1,
+    "CH4": 28.91,
     "NO": 23.44,
     "acetone": 10.95,
     "di-n-propyl ether": 31.99,
@@ -35,5 +29,17 @@
     "toluene": 13.74
   },
   "model_weights_sha256": "a20b2a2322de0a3466293a364be6ed3d056781d0786b482e3735f94840f93a8e",
-  "scope": "All eight test identities are absent from fitting at every target temperature and band window."
+  "scope": "All eight test identities are absent from fitting at every target temperature and band window.",
+  "withheld_non_acetal_acyclic_ethers": [
+    "1,2-dimethoxyethane",
+    "di-n-propyl ether",
+    "diisopropyl ether"
+  ],
+  "training_acetals": [
+    "dimethoxymethane",
+    "1,3-dioxolane",
+    "2-methyl-1,3-dioxolane"
+  ],
+  "input_mode_of_reported_test_scores": "Three measured near-ambient spectra for each test molecule.",
+  "fitted_weights_changed": false
 }

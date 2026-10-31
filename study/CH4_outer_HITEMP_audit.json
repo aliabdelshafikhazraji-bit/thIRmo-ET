@@ -1,0 +1,279 @@
+{
+  "source": "Official HITEMP2020 CH4 archive",
+  "window_cm1": [
+    4000.0,
+    4700.0
+  ],
+  "temperatures_K": [
+    373.15,
+    423.15,
+    473.15,
+    523.15,
+    573.15,
+    623.15,
+    673.15,
+    723.15,
+    773.15
+  ],
+  "pressure_Pa": 101325.0,
+  "broadener": "air",
+  "output_spacing_cm1": 0.25,
+  "extra_Gaussian_FWHM_cm1": 2.0,
+  "maximum_low_temperature_PNNL_mismatch": 0.03273685707908379,
+  "low_temperature_gate": [
+    {
+      "species": "CH4",
+      "database": "HITEMP2020",
+      "band_cm1": [
+        4000.0,
+        4700.0
+      ],
+      "temperature_K": 278.23999999999995,
+      "relative_integrated_absolute_error": 0.032188479179747924,
+      "pass": true
+    },
+    {
+      "species": "CH4",
+      "database": "HITEMP2020",
+      "band_cm1": [
+        4000.0,
+        4700.0
+      ],
+      "temperature_K": 298.15999999999997,
+      "relative_integrated_absolute_error": 0.02949818468054272,
+      "pass": true
+    },
+    {
+      "species": "CH4",
+      "database": "HITEMP2020",
+      "band_cm1": [
+        4000.0,
+        4700.0
+      ],
+      "temperature_K": 323.19,
+      "relative_integrated_absolute_error": 0.03273685707908379,
+      "pass": true
+    }
+  ],
+  "source_provenance": {
+    "source_files": [
+      {
+        "path": "outputs/expanded_transfer/data/heavy_hitemp/raw/06_HITEMP2020.par.bz2",
+        "bytes": 445562914,
+        "sha256": "d467147849b61fe07efb2d68f3f174406e7c7fd33e537932ed3d13cc1969eacf",
+        "retained_lines": 2054709
+      }
+    ],
+    "retained_line_count": 2054709,
+    "isotopologue_counts": {
+      "1": 2049779,
+      "3": 4140,
+      "2": 790
+    },
+    "sha256": "a3c9bc284970f14aa3b14a72117fdf3c3fa59a56883f82ca7e5209e4d1eb6d79",
+    "file": "work/data_expansion_20261030/ch4_hitemp_outer/CH4_HITEMP2020_selected_lines.par",
+    "bands_cm1": [
+      [
+        4000.0,
+        4700.0
+      ]
+    ]
+  },
+  "low_temperature_numerical_checks": [
+    {
+      "species": "CH4",
+      "database": "HITEMP2020",
+      "temperature_K": 323.19,
+      "band_cm1": [
+        4000.0,
+        4700.0
+      ],
+      "relative_max_error_direct": 0.00013760286518090328,
+      "relative_max_error_grid_and_width_halving": 0.00019957218768011282,
+      "tolerance": 0.002,
+      "pass": true
+    }
+  ],
+  "hot_numerical_checks": [
+    {
+      "species": "CH4",
+      "database": "HITEMP2020",
+      "temperature_K": 773.15,
+      "band_cm1": [
+        4000.0,
+        4700.0
+      ],
+      "relative_max_error_direct": 0.00010480887193951212,
+      "relative_max_error_grid_and_width_halving": 0.00015759267406729562,
+      "tolerance": 0.002,
+      "pass": true
+    }
+  ],
+  "PNNL_records": [
+    {
+      "file": "CH4_5T.TXT",
+      "nominal_temperature_C": 5.0,
+      "nominal_temperature_K": 278.15,
+      "bytes": 2562204,
+      "readable": true,
+      "points": 97902,
+      "range_cm1": [
+        599.996418,
+        6499.981305
+      ],
+      "median_spacing_cm1": 0.06026500000007218,
+      "all_finite": true,
+      "ordinate_min": -1.035018e-07,
+      "ordinate_max": 0.002050133,
+      "sha256": "6f7835372764e3a6f7cd685e227a0eafd29b21b8ab93b6b73b09d45b6685176e",
+      "metadata_file": "CH4_5T_Metadata.pdf",
+      "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/CH4_CH4_5T.txt",
+      "metadata_lines_selected": [
+        "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+        "• Supplier and stated purity: Matheson, 99%",
+        "• Temperature of sample: 5.09 ± 0.02 C",
+        "• Diluent: Sample back filled with ultra high purity nitrogen to 760±5 Torr",
+        "• Spectral range: 6,500 to 600 cm-1 (1.534 to 16.667 microns)",
+        "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+        "• Calculated and estimated errors: Type A = 0.89%, Type B ≤ 3%",
+        "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+        "• Trace carbon dioxide features removed via spectral subtraction. Some residual still observed",
+        "• Baseline correction via 7th order polynomial subtraction"
+      ],
+      "metadata_temperature_C": 5.09,
+      "metadata_temperature_uncertainty_C": 0.02,
+      "used_native_spacing_cm1": 0.06026500000007218,
+      "convolution_before_resampling": true
+    },
+    {
+      "file": "CH4_25T.TXT",
+      "nominal_temperature_C": 25.0,
+      "nominal_temperature_K": 298.15,
+      "bytes": 2561440,
+      "readable": true,
+      "points": 97902,
+      "range_cm1": [
+        599.996418,
+        6499.981305
+      ],
+      "median_spacing_cm1": 0.06026500000007218,
+      "all_finite": true,
+      "ordinate_min": -6.384549e-08,
+      "ordinate_max": 0.001995679,
+      "sha256": "ad3e68182af7ec71edb24310a98ab1ff492795c524fac3d98150b8a22a39f927",
+      "metadata_file": "CH4_25T_Metadata.pdf",
+      "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/CH4_CH4_25T.txt",
+      "metadata_lines_selected": [
+        "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+        "• Supplier and stated purity: Matheson, 99%",
+        "• Temperature of sample: 25.01 ± 0.02 C",
+        "• Diluent: Sample back filled with ultra high purity nitrogen to 760±5 Torr",
+        "• Spectral range: 6,500 to 600 cm-1 (1.534 to 16.667 microns)",
+        "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+        "• Calculated and estimated errors: Type A = 0.95%, Type B ≤ 3%",
+        "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+        "• Trace carbon dioxide features removed via spectral subtraction",
+        "• Baseline correction via 7th order polynomial subtraction"
+      ],
+      "metadata_temperature_C": 25.01,
+      "metadata_temperature_uncertainty_C": 0.02,
+      "used_native_spacing_cm1": 0.06026500000007218,
+      "convolution_before_resampling": true
+    },
+    {
+      "file": "CH4_50T.TXT",
+      "nominal_temperature_C": 50.0,
+      "nominal_temperature_K": 323.15,
+      "bytes": 2561518,
+      "readable": true,
+      "points": 97902,
+      "range_cm1": [
+        599.996418,
+        6499.981305
+      ],
+      "median_spacing_cm1": 0.06026500000007218,
+      "all_finite": true,
+      "ordinate_min": -7.981034e-08,
+      "ordinate_max": 0.001927801,
+      "sha256": "ac55840a45128f7eb41c60de38d02ae57aed45fdbcbb887756d35480dd649d3d",
+      "metadata_file": "CH4_50T_Metadata.pdf",
+      "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/CH4_CH4_50T.txt",
+      "metadata_lines_selected": [
+        "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+        "• Supplier and stated purity: Matheson, 99%",
+        "• Temperature of sample: 50.04 ± 0.02 C",
+        "• Diluent: Sample back filled with ultra high purity nitrogen to 760±5 Torr",
+        "• Spectral range: 6,500 to 600 cm-1 (1.534 to 16.667 microns)",
+        "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+        "• Calculated and estimated errors: Type A = 0.91%, Type B ≤ 3%",
+        "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+        "• Trace carbon dioxide features removed via spectral subtraction",
+        "• Baseline correction via 7th order polynomial subtraction"
+      ],
+      "metadata_temperature_C": 50.04,
+      "metadata_temperature_uncertainty_C": 0.02,
+      "used_native_spacing_cm1": 0.06026500000007218,
+      "convolution_before_resampling": true
+    }
+  ],
+  "line_processing": {
+    "parse_audit": {
+      "path": "work/data_expansion_20261030/ch4_hitemp_outer/CH4_HITEMP2020_selected_lines.par",
+      "sha256": "a3c9bc284970f14aa3b14a72117fdf3c3fa59a56883f82ca7e5209e4d1eb6d79",
+      "bytes": 330808149,
+      "total_records_validated": 2054709,
+      "retained_records_within_wing_range": 2054709,
+      "line_center_range_cm1": [
+        3970.00068,
+        4729.99986
+      ],
+      "isotopologue_record_counts": {
+        "1": 2049779,
+        "2": 790,
+        "3": 4140
+      },
+      "isotopologue_line_ranges_cm1": {
+        "1": [
+          3970.00068,
+          4729.99986
+        ],
+        "2": [
+          4135.775595,
+          4642.059933
+        ],
+        "3": [
+          3971.04878,
+          4554.171023
+        ]
+      },
+      "input_parameter_flags_all_records": {
+        "zero_n_air": 2,
+        "zero_delta_air": 3
+      },
+      "out_of_order_transitions": 0,
+      "negative_unused_metadata_wavenumber_ranges_cm1": {},
+      "negative_unused_metadata_examples_first_24": [],
+      "unused_metadata_qualification": "A, gp and gpp are parsed and audited but not used in the line-strength-based calculation. Negative finite values are retained as supplied and flagged, not treated as usable physical coefficients or statistical weights.",
+      "adjacent_duplicate_records_whole_file": 1,
+      "adjacent_duplicate_records_retained": 1,
+      "adjacent_nonzero_duplicate_records_retained": 1,
+      "duplicate_record_policy": "retain",
+      "adjacent_duplicate_examples_first_16": [
+        {
+          "second_record_number": 71985,
+          "nu_cm1": 4005.04767,
+          "isotope": 1,
+          "retained": true,
+          "reference_strength_cm_per_molecule": 5.444e-35
+        }
+      ],
+      "duplicate_audit": "Counts are excess records equal to the immediately preceding complete record. All source records are retained unchanged. Default error applies only to nonzero-strength duplicates in the selected isotopes and wing interval; outside-interval duplicates cannot affect this calculation. Explicit 'retain' sums every retained source record without deciding whether its duplication is erroneous. Nonadjacent duplicates are not exhaustively searched.",
+      "declared_download_range_cm1": null,
+      "declared_download_all_available": true,
+      "query_coverage_status": "Provenance declaration: all available transitions were requested from the database, including outside the output interval. This is a query-selection statement, not a certification of complete molecular/band absorption."
+    },
+    "explicit_parameter_changes": {},
+    "duplicate_record_policy": "Retain the official source records as received; adjacent exact duplicate counts are reported by the parser."
+  },
+  "ignored_nonblank_line_mixing_flags": 1
+}

@@ -1,6 +1,6 @@
 {
   "weights_sha256": "a20b2a2322de0a3466293a364be6ed3d056781d0786b482e3735f94840f93a8e",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "parameters": {
     "n_estimators": 128,
     "max_depth": 16,
@@ -72,5 +72,6 @@
   "name": "thIRmo-ET",
   "algorithm": "Extremely randomized regression trees",
   "input_mode": "One, two, or three measured spectra at temperatures up to 350 K",
-  "output": "Predicted cross section in cm2/molecule at 512 wavenumbers"
+  "output": "Predicted cross section in cm2/molecule at 512 wavenumbers",
+  "evaluation_protocol_sha256": "fa814604e151b2c1e08a0e859818e3dd5e7a012de7941035f40fa414f20e16f6"
 }

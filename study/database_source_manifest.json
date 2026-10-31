@@ -1,0 +1,776 @@
+[
+  {
+    "species": "CO2",
+    "database": "HITEMP2010",
+    "pnnl_records": [
+      {
+        "file": "CO2_5T.TXT",
+        "nominal_temperature_C": 5.0,
+        "nominal_temperature_K": 278.15,
+        "bytes": 2600420,
+        "readable": true,
+        "points": 98732,
+        "range_cm1": [
+          549.974724,
+          6499.953174
+        ],
+        "median_spacing_cm1": 0.06026499999961743,
+        "all_finite": true,
+        "ordinate_min": -8.338097e-07,
+        "ordinate_max": 0.01576156,
+        "sha256": "299eedf22b42d03d3dad614e0a6b809a3c40db804841e67cda25cdb3c1bea38e",
+        "metadata_file": "CO2_5T_Metadata.pdf",
+        "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/CO2_CO2_5T.txt",
+        "metadata_lines_selected": [
+          "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+          "• Supplier and stated purity: Aldrich, 98%",
+          "• Temperature of sample: 5.06 ± 0.02 C",
+          "• Diluent: Sample back filled with ultra high purity nitrogen to 760±5 Torr",
+          "• Spectral range: 6,500 to 550 cm-1 (1.534 to 18.1818 microns)",
+          "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+          "• Calculated and estimated errors: Type A = 0.52%, Type B ≤ 3%",
+          "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+          "• Baseline correction via 9th order polynomial subtraction"
+        ],
+        "metadata_temperature_C": 5.06,
+        "metadata_temperature_uncertainty_C": 0.02,
+        "used_native_spacing_cm1": 0.06026499999961743,
+        "convolution_before_resampling": true
+      },
+      {
+        "file": "CO2_25T.TXT",
+        "nominal_temperature_C": 25.0,
+        "nominal_temperature_K": 298.15,
+        "bytes": 2598893,
+        "readable": true,
+        "points": 98732,
+        "range_cm1": [
+          549.974724,
+          6499.953174
+        ],
+        "median_spacing_cm1": 0.06026499999961743,
+        "all_finite": true,
+        "ordinate_min": -3.476189e-07,
+        "ordinate_max": 0.01578266,
+        "sha256": "c41d455c0ad1650d24344818cd4aa8932196316f7d6f96bb55986320421b7d2b",
+        "metadata_file": "CO2_25T_Metadata.pdf",
+        "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/CO2_CO2_25T.txt",
+        "metadata_lines_selected": [
+          "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+          "• Supplier and stated purity: Aldrich, 98%",
+          "• Temperature of sample: 25.03 ± 0.02 C",
+          "• Diluent: Sample back filled with ultra high purity nitrogen to 760±5 Torr",
+          "• Spectral range: 6,500 to 550 cm-1 (1.534 to 18.1818 microns)",
+          "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+          "• Calculated and estimated errors: Type A = 0.54%, Type B ≤ 3%",
+          "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+          "• Trace water vapor features removed via spectral subtraction",
+          "• Baseline correction via 9th order polynomial subtraction"
+        ],
+        "metadata_temperature_C": 25.03,
+        "metadata_temperature_uncertainty_C": 0.02,
+        "used_native_spacing_cm1": 0.06026499999961743,
+        "convolution_before_resampling": true
+      },
+      {
+        "file": "CO2_50T.TXT",
+        "nominal_temperature_C": 50.0,
+        "nominal_temperature_K": 323.15,
+        "bytes": 2597144,
+        "readable": true,
+        "points": 98732,
+        "range_cm1": [
+          549.974724,
+          6499.953174
+        ],
+        "median_spacing_cm1": 0.06026499999961743,
+        "all_finite": true,
+        "ordinate_min": -3.509139e-07,
+        "ordinate_max": 0.01557902,
+        "sha256": "7ea80b9dc0b2bf40c6b8ede83260b99e8f79faf44646d3e8b3f60538e5c4674c",
+        "metadata_file": "CO2_50T_Metadata.pdf",
+        "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/CO2_CO2_50T.txt",
+        "metadata_lines_selected": [
+          "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+          "• Supplier and stated purity: Aldrich, 98%",
+          "• Temperature of sample: 49.97 ± 0.02 C",
+          "• Diluent: Sample back filled with ultra high purity nitrogen to 760±5 Torr",
+          "• Spectral range: 6,500 to 550 cm-1 (1.534 to 18.1818 microns)",
+          "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+          "• Calculated and estimated errors: Type A = 0.59%, Type B ≤ 3%",
+          "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+          "• Baseline correction via 9th order polynomial subtraction"
+        ],
+        "metadata_temperature_C": 49.97,
+        "metadata_temperature_uncertainty_C": 0.02,
+        "used_native_spacing_cm1": 0.06026499999961743,
+        "convolution_before_resampling": true
+      }
+    ]
+  },
+  {
+    "species": "CH4",
+    "database": "HITEMP2020",
+    "pnnl_records": [
+      {
+        "file": "CH4_5T.TXT",
+        "nominal_temperature_C": 5.0,
+        "nominal_temperature_K": 278.15,
+        "bytes": 2562204,
+        "readable": true,
+        "points": 97902,
+        "range_cm1": [
+          599.996418,
+          6499.981305
+        ],
+        "median_spacing_cm1": 0.06026500000007218,
+        "all_finite": true,
+        "ordinate_min": -1.035018e-07,
+        "ordinate_max": 0.002050133,
+        "sha256": "6f7835372764e3a6f7cd685e227a0eafd29b21b8ab93b6b73b09d45b6685176e",
+        "metadata_file": "CH4_5T_Metadata.pdf",
+        "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/CH4_CH4_5T.txt",
+        "metadata_lines_selected": [
+          "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+          "• Supplier and stated purity: Matheson, 99%",
+          "• Temperature of sample: 5.09 ± 0.02 C",
+          "• Diluent: Sample back filled with ultra high purity nitrogen to 760±5 Torr",
+          "• Spectral range: 6,500 to 600 cm-1 (1.534 to 16.667 microns)",
+          "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+          "• Calculated and estimated errors: Type A = 0.89%, Type B ≤ 3%",
+          "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+          "• Trace carbon dioxide features removed via spectral subtraction. Some residual still observed",
+          "• Baseline correction via 7th order polynomial subtraction"
+        ],
+        "metadata_temperature_C": 5.09,
+        "metadata_temperature_uncertainty_C": 0.02,
+        "used_native_spacing_cm1": 0.06026500000007218,
+        "convolution_before_resampling": true
+      },
+      {
+        "file": "CH4_25T.TXT",
+        "nominal_temperature_C": 25.0,
+        "nominal_temperature_K": 298.15,
+        "bytes": 2561440,
+        "readable": true,
+        "points": 97902,
+        "range_cm1": [
+          599.996418,
+          6499.981305
+        ],
+        "median_spacing_cm1": 0.06026500000007218,
+        "all_finite": true,
+        "ordinate_min": -6.384549e-08,
+        "ordinate_max": 0.001995679,
+        "sha256": "ad3e68182af7ec71edb24310a98ab1ff492795c524fac3d98150b8a22a39f927",
+        "metadata_file": "CH4_25T_Metadata.pdf",
+        "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/CH4_CH4_25T.txt",
+        "metadata_lines_selected": [
+          "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+          "• Supplier and stated purity: Matheson, 99%",
+          "• Temperature of sample: 25.01 ± 0.02 C",
+          "• Diluent: Sample back filled with ultra high purity nitrogen to 760±5 Torr",
+          "• Spectral range: 6,500 to 600 cm-1 (1.534 to 16.667 microns)",
+          "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+          "• Calculated and estimated errors: Type A = 0.95%, Type B ≤ 3%",
+          "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+          "• Trace carbon dioxide features removed via spectral subtraction",
+          "• Baseline correction via 7th order polynomial subtraction"
+        ],
+        "metadata_temperature_C": 25.01,
+        "metadata_temperature_uncertainty_C": 0.02,
+        "used_native_spacing_cm1": 0.06026500000007218,
+        "convolution_before_resampling": true
+      },
+      {
+        "file": "CH4_50T.TXT",
+        "nominal_temperature_C": 50.0,
+        "nominal_temperature_K": 323.15,
+        "bytes": 2561518,
+        "readable": true,
+        "points": 97902,
+        "range_cm1": [
+          599.996418,
+          6499.981305
+        ],
+        "median_spacing_cm1": 0.06026500000007218,
+        "all_finite": true,
+        "ordinate_min": -7.981034e-08,
+        "ordinate_max": 0.001927801,
+        "sha256": "ac55840a45128f7eb41c60de38d02ae57aed45fdbcbb887756d35480dd649d3d",
+        "metadata_file": "CH4_50T_Metadata.pdf",
+        "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/CH4_CH4_50T.txt",
+        "metadata_lines_selected": [
+          "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+          "• Supplier and stated purity: Matheson, 99%",
+          "• Temperature of sample: 50.04 ± 0.02 C",
+          "• Diluent: Sample back filled with ultra high purity nitrogen to 760±5 Torr",
+          "• Spectral range: 6,500 to 600 cm-1 (1.534 to 16.667 microns)",
+          "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+          "• Calculated and estimated errors: Type A = 0.91%, Type B ≤ 3%",
+          "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+          "• Trace carbon dioxide features removed via spectral subtraction",
+          "• Baseline correction via 7th order polynomial subtraction"
+        ],
+        "metadata_temperature_C": 50.04,
+        "metadata_temperature_uncertainty_C": 0.02,
+        "used_native_spacing_cm1": 0.06026500000007218,
+        "convolution_before_resampling": true
+      }
+    ]
+  },
+  {
+    "species": "H2O",
+    "database": "HITEMP2010",
+    "pnnl_records": [
+      {
+        "file": "H2O_25T.TXT",
+        "nominal_temperature_C": 25.0,
+        "nominal_temperature_K": 298.15,
+        "bytes": 3020782,
+        "readable": true,
+        "points": 115326,
+        "range_cm1": [
+          549.976759,
+          7500.015297
+        ],
+        "median_spacing_cm1": 0.06026500000007218,
+        "all_finite": true,
+        "ordinate_min": -6.648378e-07,
+        "ordinate_max": 0.0009918696,
+        "sha256": "751d8add6fae7a310daa7ff41be9a28034d999afa3b8ec269e46d7bc32b1e336",
+        "metadata_file": "H2O_25T_Metadata.pdf",
+        "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/H2O_H2O_25T.txt",
+        "metadata_lines_selected": [
+          "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+          "• Supplier and stated purity: Aldrich, 99+%",
+          "• Temperature of White cell (792.0 cm optical path length) 25 ± 2 C",
+          "• Diluent (high purity nitrogen) flowed at 24.90 liter/min (296 K), ambient atmospheric pressure",
+          "• Spectral range: 7,500 to 550 cm-1 (1.333 to 18.182 microns)",
+          "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+          "• Calculated and estimated errors: Type A = 0.64%, Type B ≤ 7%",
+          "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+          "• Baseline correction via 7th order polynomial subtraction"
+        ],
+        "metadata_temperature_C": 25.0,
+        "metadata_temperature_uncertainty_C": 2.0,
+        "used_native_spacing_cm1": 0.06026500000007218,
+        "convolution_before_resampling": true
+      },
+      {
+        "file": "H2O_50T.TXT",
+        "nominal_temperature_C": 50.0,
+        "nominal_temperature_K": 323.15,
+        "bytes": 3021348,
+        "readable": true,
+        "points": 115326,
+        "range_cm1": [
+          549.976759,
+          7500.015297
+        ],
+        "median_spacing_cm1": 0.06026500000007218,
+        "all_finite": true,
+        "ordinate_min": -1.147475e-06,
+        "ordinate_max": 0.001038379,
+        "sha256": "be2fdc6c802c7df0cb7d8a4c47fec71a86e1730306da4e40a1628f747abf6207",
+        "metadata_file": "H2O_50T_Metadata.pdf",
+        "metadata_text_file": "outputs/temperature_transfer/audit/metadata_text/H2O_H2O_50T.txt",
+        "metadata_lines_selected": [
+          "Effective burden of composite spectrum: 1 part-per-million-meter (ppm-meter) at 296 K",
+          "• Supplier and stated purity: Aldrich, 99+%",
+          "• Temperature of White cell (792.0 cm optical path length) 50 ± 2 C",
+          "• Diluent (high purity nitrogen) flowed at 24.90 liter/min (296 K), ambient atmospheric pressure",
+          "• Spectral range: 7,500 to 550 cm-1 (1.333 to 18.182 microns)",
+          "• Instrumental resolution based on maximum interferometer displacement is 0.112 cm-1",
+          "• Calculated and estimated errors: Type A = 0.74%, Type B ≤ 7%",
+          "• Axis units: X=wavenumbers (cm-1), Y=Absorbance (base-10)",
+          "• Baseline correction via 7th order polynomial subtraction"
+        ],
+        "metadata_temperature_C": 50.0,
+        "metadata_temperature_uncertainty_C": 2.0,
+        "used_native_spacing_cm1": 0.06026500000007218,
+        "convolution_before_resampling": true
+      }
+    ]
+  },
+  {
+    "species": "CO",
+    "database": "HITEMP2019",
+    "source": {
+      "database": "HITEMP2019",
+      "line_file": "CO_HITEMP2019_160.par",
+      "line_file_sha256": "d5b4f8e6170e560d78fa7171d5dfc63e9dbe7a7a4a84a314641716c204c91d56",
+      "manifest": {
+        "retrieved_UTC": "2026-10-18T11:25:03.674964+00:00",
+        "species": "CO",
+        "edition": "HITEMP2019",
+        "source_page": "https://hitran.org/hitemp/",
+        "source_url": "https://hitran.org/files/HITEMP/bzip2format/05_HITEMP2019.par.bz2",
+        "download_file": "05_HITEMP2019.par.bz2",
+        "download_bytes": 14834352,
+        "download_sha256": "cfddffca6b4ca07a6defecf07c027c28cdce96340b2a41aa9429c5528a5c7f83",
+        "download_timing_note": "Browser-managed download; obtain actual elapsed download time from browser/root log, not inferred from extraction time.",
+        "extracted_file": "CO_HITEMP2019_160.par",
+        "extracted_bytes": 121982112,
+        "extracted_sha256": "d5b4f8e6170e560d78fa7171d5dfc63e9dbe7a7a4a84a314641716c204c91d56",
+        "extraction_s": 2.375,
+        "record_count": 752976,
+        "isotope_token_counts": {
+          "5": 125496,
+          "6": 125496,
+          "3": 125496,
+          "2": 125496,
+          "4": 125496,
+          "1": 125496
+        },
+        "actual_range_cm1": [
+          2.248764,
+          22148.273542
+        ],
+        "record_integrity": "Original decompressed record bytes and newline sequences preserved; each record has exactly160 data characters; no sorting/filtering/normalization."
+      },
+      "parse_audit": {
+        "path": "CO_HITEMP2019_160.par",
+        "sha256": "d5b4f8e6170e560d78fa7171d5dfc63e9dbe7a7a4a84a314641716c204c91d56",
+        "bytes": 121982112,
+        "total_records_validated": 752976,
+        "retained_records_within_wing_range": 135281,
+        "line_center_range_cm1": [
+          2.248764,
+          22148.273542
+        ],
+        "isotopologue_record_counts": {
+          "1": 125496,
+          "2": 125496,
+          "3": 125496,
+          "4": 125496,
+          "5": 125496,
+          "6": 125496
+        },
+        "isotopologue_line_ranges_cm1": {
+          "1": [
+            2.405642,
+            22148.273542
+          ],
+          "2": [
+            2.331616,
+            21692.037002
+          ],
+          "3": [
+            2.325385,
+            21653.840629
+          ],
+          "4": [
+            2.363413,
+            21887.719595
+          ],
+          "5": [
+            2.248764,
+            21184.128677
+          ],
+          "6": [
+            2.288013,
+            21424.465157
+          ]
+        },
+        "input_parameter_flags_all_records": {},
+        "out_of_order_transitions": 0,
+        "negative_unused_metadata_wavenumber_ranges_cm1": {},
+        "negative_unused_metadata_examples_first_24": [],
+        "unused_metadata_qualification": "A, gp and gpp are parsed and audited but not used in the line-strength-based calculation. Negative finite values are retained as supplied and flagged, not treated as usable physical coefficients or statistical weights.",
+        "adjacent_duplicate_records_whole_file": 0,
+        "adjacent_duplicate_records_retained": 0,
+        "adjacent_nonzero_duplicate_records_retained": 0,
+        "duplicate_record_policy": "error",
+        "adjacent_duplicate_examples_first_16": [],
+        "duplicate_audit": "Counts are excess records equal to the immediately preceding complete record. All source records are retained unchanged. Default error applies only to nonzero-strength duplicates in the selected isotopes and wing interval; outside-interval duplicates cannot affect this calculation. Explicit 'retain' sums every retained source record without deciding whether its duplication is erroneous. Nonadjacent duplicates are not exhaustively searched.",
+        "declared_download_range_cm1": null,
+        "declared_download_all_available": true,
+        "query_coverage_status": "Provenance declaration: all available transitions were requested from the database, including outside the output interval. This is a query-selection statement, not a certification of complete molecular/band absorption."
+      },
+      "explicit_parameter_changes": {}
+    },
+    "pnnl_records": [
+      {
+        "temperature_K": 278.19,
+        "temperature_basis": "PNNL metadata",
+        "file": "CO_5T.TXT",
+        "file_sha256": "eef4817e3187d31e93332f6b3730e620f1d6350c532482460b5e451e6cdd77db",
+        "metadata": "CO_5T_Metadata.pdf",
+        "metadata_sha256": "c00da43dfd72affc6a86c2f58485f5d7866cca8535e73543148ff7565374f967",
+        "native_grid_extent_cm1": [
+          600.003775,
+          6500.010274
+        ]
+      },
+      {
+        "temperature_K": 298.15,
+        "temperature_basis": "PNNL metadata",
+        "file": "CO_25T.TXT",
+        "file_sha256": "77d5438991fca1642be28e3ee55bacf3db15949c37e47ced5b2be16b06adff4c",
+        "metadata": "CO_25T_Metadata.pdf",
+        "metadata_sha256": "ef58def2e063fb116f43e7ae8ac5413742bbad4bef4b5f697084d8a6ef2d2d15",
+        "native_grid_extent_cm1": [
+          600.003775,
+          6500.010274
+        ]
+      },
+      {
+        "temperature_K": 323.17999999999995,
+        "temperature_basis": "PNNL metadata",
+        "file": "CO_50T.TXT",
+        "file_sha256": "c55da1fdef77dbbd2c560525fe20ae91c147b197fcc1093175e1f093942c86d6",
+        "metadata": "CO_50T_Metadata.pdf",
+        "metadata_sha256": "4949f76da077e70020dbd56979c76f95443734515456d14500589138e9b4a2c1",
+        "native_grid_extent_cm1": [
+          600.003775,
+          6500.010274
+        ]
+      }
+    ]
+  },
+  {
+    "species": "NO",
+    "database": "HITEMP2019",
+    "source": {
+      "database": "HITEMP2019",
+      "line_file": "NO_HITEMP2019_160.par",
+      "line_file_sha256": "d994cc59653fd0ae9ce8b66a5a158cd4341a17402083f0e05904a2cd1250065e",
+      "manifest": {
+        "retrieved_UTC": "2026-10-18T11:26:24.488950+00:00",
+        "species": "NO",
+        "edition": "HITEMP2019",
+        "source_page": "https://hitran.org/hitemp/",
+        "source_url": "https://hitran.org/files/HITEMP/bzip2format/08_HITEMP2019.par.bz2",
+        "download_file": "08_HITEMP2019.par.bz2",
+        "download_bytes": 21633221,
+        "download_sha256": "66ca9ebfbc7674b23167b619d0df3a5665b19b6f6dca9413255456856bcc23fd",
+        "download_timing_note": "Browser-managed download; obtain actual elapsed download time from browser/root log, not inferred from extraction time.",
+        "extracted_file": "NO_HITEMP2019_160.par",
+        "extracted_bytes": 184225104,
+        "extracted_sha256": "d994cc59653fd0ae9ce8b66a5a158cd4341a17402083f0e05904a2cd1250065e",
+        "extraction_s": 3.5780000000086147,
+        "record_count": 1137192,
+        "isotope_token_counts": {
+          "1": 901528,
+          "3": 118178,
+          "2": 117486
+        },
+        "actual_range_cm1": [
+          1e-06,
+          26776.934621
+        ],
+        "record_integrity": "Original decompressed record bytes and newline sequences preserved; each record has exactly160 data characters; no sorting/filtering/normalization."
+      },
+      "parse_audit": {
+        "path": "NO_HITEMP2019_160.par",
+        "sha256": "d994cc59653fd0ae9ce8b66a5a158cd4341a17402083f0e05904a2cd1250065e",
+        "bytes": 184225104,
+        "total_records_validated": 1137192,
+        "retained_records_within_wing_range": 209920,
+        "line_center_range_cm1": [
+          1e-06,
+          26776.934621
+        ],
+        "isotopologue_record_counts": {
+          "1": 901528,
+          "2": 117486,
+          "3": 118178
+        },
+        "isotopologue_line_ranges_cm1": {
+          "1": [
+            1e-06,
+            26776.934621
+          ],
+          "2": [
+            2.6018e-05,
+            15754.357915
+          ],
+          "3": [
+            1.6455e-05,
+            15630.142079
+          ]
+        },
+        "input_parameter_flags_all_records": {
+          "zero_delta_air": 68368
+        },
+        "out_of_order_transitions": 0,
+        "negative_unused_metadata_wavenumber_ranges_cm1": {},
+        "negative_unused_metadata_examples_first_24": [],
+        "unused_metadata_qualification": "A, gp and gpp are parsed and audited but not used in the line-strength-based calculation. Negative finite values are retained as supplied and flagged, not treated as usable physical coefficients or statistical weights.",
+        "adjacent_duplicate_records_whole_file": 0,
+        "adjacent_duplicate_records_retained": 0,
+        "adjacent_nonzero_duplicate_records_retained": 0,
+        "duplicate_record_policy": "error",
+        "adjacent_duplicate_examples_first_16": [],
+        "duplicate_audit": "Counts are excess records equal to the immediately preceding complete record. All source records are retained unchanged. Default error applies only to nonzero-strength duplicates in the selected isotopes and wing interval; outside-interval duplicates cannot affect this calculation. Explicit 'retain' sums every retained source record without deciding whether its duplication is erroneous. Nonadjacent duplicates are not exhaustively searched.",
+        "declared_download_range_cm1": null,
+        "declared_download_all_available": true,
+        "query_coverage_status": "Provenance declaration: all available transitions were requested from the database, including outside the output interval. This is a query-selection statement, not a certification of complete molecular/band absorption."
+      },
+      "explicit_parameter_changes": {}
+    },
+    "pnnl_records": [
+      {
+        "temperature_K": 278.13,
+        "temperature_basis": "PNNL metadata",
+        "file": "NO_5T.TXT",
+        "file_sha256": "b37de867c503476513adae7fcc2376763ffc380c80aba2e3ab2654fd5684f9b0",
+        "metadata": "NO_5T_Metadata.pdf",
+        "metadata_sha256": "6f9e063704d3b15f8bdd009a524052ea844a7673143c07bef9dd12395f39fee5",
+        "native_grid_extent_cm1": [
+          599.994538,
+          6500.012516
+        ]
+      },
+      {
+        "temperature_K": 298.15,
+        "temperature_basis": "PNNL metadata",
+        "file": "NO_25T.TXT",
+        "file_sha256": "c2b089d29cf572fabb57eb69b266f1171133b3d77c544d3044f3f5625b85aa01",
+        "metadata": "NO_25T_Metadata.pdf",
+        "metadata_sha256": "ec1d919c8c4fb9bed0124b794afcdd2115ff3abc818b833db58ef4d45a24f406",
+        "native_grid_extent_cm1": [
+          599.994538,
+          6500.012516
+        ]
+      },
+      {
+        "temperature_K": 323.13,
+        "temperature_basis": "PNNL metadata",
+        "file": "NO_50T.TXT",
+        "file_sha256": "e30663d739f4f21bca652f29b45542a7711b1bd025a8884310ec8447830265b1",
+        "metadata": "NO_50T_Metadata.pdf",
+        "metadata_sha256": "79aa4d34a15cd54c330bdb50e0fd9dee48a5792232dc9585ffe8aa4a8a6a2126",
+        "native_grid_extent_cm1": [
+          599.994538,
+          6500.012516
+        ]
+      }
+    ]
+  },
+  {
+    "species": "NO2",
+    "database": "HITEMP2019",
+    "source": {
+      "database": "HITEMP2019",
+      "line_file": "NO2_HITEMP2019_160.par",
+      "line_file_sha256": "54e861381defb2698191d3fa29f7e95014c2efb32de592c694e036216b2ebb6d",
+      "manifest": {
+        "retrieved_UTC": "2026-10-18T11:22:12.510104+00:00",
+        "species": "NO2",
+        "edition": "HITEMP2019",
+        "source_page": "https://hitran.org/hitemp/",
+        "source_url": "https://hitran.org/files/HITEMP/bzip2format/10_HITEMP2019.par.bz2",
+        "download_file": "10_HITEMP2019.par.bz2",
+        "download_bytes": 21964418,
+        "download_sha256": "0cf3ba930773a0a924ae666a1c280c777811ed93c7df11e44305b050f52949db",
+        "download_timing_note": "Browser-managed download; obtain actual elapsed download time from browser/root log, not inferred from extraction time.",
+        "extracted_file": "NO2_HITEMP2019_160.par",
+        "extracted_bytes": 178502149,
+        "extracted_sha256": "54e861381defb2698191d3fa29f7e95014c2efb32de592c694e036216b2ebb6d",
+        "extraction_s": 3.6089999999967404,
+        "record_count": 1108709,
+        "isotope_token_counts": {
+          "1": 1108709
+        },
+        "actual_range_cm1": [
+          0.497999,
+          4775.3201
+        ],
+        "record_integrity": "Original decompressed record bytes and newline sequences preserved; each record has exactly160 data characters; no sorting/filtering/normalization."
+      },
+      "parse_audit": {
+        "path": "NO2_HITEMP2019_160.par",
+        "sha256": "54e861381defb2698191d3fa29f7e95014c2efb32de592c694e036216b2ebb6d",
+        "bytes": 178502149,
+        "total_records_validated": 1108709,
+        "retained_records_within_wing_range": 718590,
+        "line_center_range_cm1": [
+          0.497999,
+          4775.3201
+        ],
+        "isotopologue_record_counts": {
+          "1": 1108709
+        },
+        "isotopologue_line_ranges_cm1": {
+          "1": [
+            0.497999,
+            4775.3201
+          ]
+        },
+        "input_parameter_flags_all_records": {
+          "zero_delta_air": 32224
+        },
+        "out_of_order_transitions": 0,
+        "negative_unused_metadata_wavenumber_ranges_cm1": {},
+        "negative_unused_metadata_examples_first_24": [],
+        "unused_metadata_qualification": "A, gp and gpp are parsed and audited but not used in the line-strength-based calculation. Negative finite values are retained as supplied and flagged, not treated as usable physical coefficients or statistical weights.",
+        "adjacent_duplicate_records_whole_file": 42,
+        "adjacent_duplicate_records_retained": 3,
+        "adjacent_nonzero_duplicate_records_retained": 3,
+        "duplicate_record_policy": "retain",
+        "adjacent_duplicate_examples_first_16": [
+          {
+            "second_record_number": 134352,
+            "nu_cm1": 699.8553,
+            "isotope": 1,
+            "retained": true,
+            "reference_strength_cm_per_molecule": 1.874e-32
+          },
+          {
+            "second_record_number": 157337,
+            "nu_cm1": 729.7837,
+            "isotope": 1,
+            "retained": true,
+            "reference_strength_cm_per_molecule": 3.147e-31
+          },
+          {
+            "second_record_number": 167299,
+            "nu_cm1": 750.011,
+            "isotope": 1,
+            "retained": true,
+            "reference_strength_cm_per_molecule": 1.466e-31
+          },
+          {
+            "second_record_number": 1078802,
+            "nu_cm1": 4103.6275,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 3.658e-25
+          },
+          {
+            "second_record_number": 1078804,
+            "nu_cm1": 4103.6301,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 3.567e-25
+          },
+          {
+            "second_record_number": 1079063,
+            "nu_cm1": 4105.1647,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 4.127e-25
+          },
+          {
+            "second_record_number": 1079390,
+            "nu_cm1": 4107.9143,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 4.679e-25
+          },
+          {
+            "second_record_number": 1084519,
+            "nu_cm1": 4142.053,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 7.434e-25
+          },
+          {
+            "second_record_number": 1085763,
+            "nu_cm1": 4148.8761,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 2.456e-24
+          },
+          {
+            "second_record_number": 1086622,
+            "nu_cm1": 4152.2137,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 5.324e-25
+          },
+          {
+            "second_record_number": 1086946,
+            "nu_cm1": 4154.9248,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 9.345e-28
+          },
+          {
+            "second_record_number": 1086956,
+            "nu_cm1": 4155.0323,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 9.167e-28
+          },
+          {
+            "second_record_number": 1087303,
+            "nu_cm1": 4159.0526,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 1.601e-27
+          },
+          {
+            "second_record_number": 1087318,
+            "nu_cm1": 4159.2575,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 7.427e-25
+          },
+          {
+            "second_record_number": 1087373,
+            "nu_cm1": 4159.7983,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 5.894e-28
+          },
+          {
+            "second_record_number": 1087377,
+            "nu_cm1": 4159.8087,
+            "isotope": 1,
+            "retained": false,
+            "reference_strength_cm_per_molecule": 3.794e-27
+          }
+        ],
+        "duplicate_audit": "Counts are excess records equal to the immediately preceding complete record. All source records are retained unchanged. Default error applies only to nonzero-strength duplicates in the selected isotopes and wing interval; outside-interval duplicates cannot affect this calculation. Explicit 'retain' sums every retained source record without deciding whether its duplication is erroneous. Nonadjacent duplicates are not exhaustively searched.",
+        "declared_download_range_cm1": null,
+        "declared_download_all_available": true,
+        "query_coverage_status": "Provenance declaration: all available transitions were requested from the database, including outside the output interval. This is a query-selection statement, not a certification of complete molecular/band absorption."
+      },
+      "explicit_parameter_changes": {}
+    },
+    "pnnl_records": [
+      {
+        "temperature_K": 298.15,
+        "temperature_basis": "PNNL metadata",
+        "file": "NO2_25T.TXT",
+        "file_sha256": "ac701199ef838d017fe432c3f51d7bd0e3ebb0100e124b0f75c4c0c30a7391e3",
+        "metadata": "NO2_25T_Metadata.pdf",
+        "metadata_sha256": "ef776dc6149400eaf154a827c8560517168f6e911202dce0b013ce02b26aafda",
+        "native_grid_extent_cm1": [
+          599.99831,
+          6499.973506
+        ]
+      },
+      {
+        "temperature_K": 323.15,
+        "temperature_basis": "PNNL metadata",
+        "file": "NO2_50T.TXT",
+        "file_sha256": "887f07675b3541d1c466fbf41dd6df529ddc7e11d5c5503fe957033810e938ef",
+        "metadata": "NO2_50T_Metadata.pdf",
+        "metadata_sha256": "55e5944d52511b4d1894e3f8b56c510c8b1154c794f9e912f3d4492eb62657ca",
+        "native_grid_extent_cm1": [
+          599.99831,
+          6499.973506
+        ]
+      }
+    ]
+  },
+  {
+    "species": "CF4",
+    "molecule_id": 42,
+    "file": "outputs/hitran_augmentation_expanded/official_lines/42_hit24.par",
+    "sha256": "79775184c4ddbeeb698bd19f60d51e25e51e5ec329493016daf864729c141ba8",
+    "n_lines": 926064,
+    "minimum_cm1": 2.148145,
+    "maximum_cm1": 1518.016062,
+    "source": "HITRAN2024 official static archive",
+    "url": "https://hitran.org/files/LBLstatic/42/42_hit24.zip",
+    "retrieved_UTC": "2026-10-29T13:25:01.458288+00:00",
+    "archive_file": "outputs/hitran_augmentation_expanded/official_lines/42_hit24.zip",
+    "archive_sha256": "7c2fd01e866901300850f21924bf462fe10616afe07080cf47663ae1f6e5e347",
+    "extraction": "Copied complete Chrome download staging file after ZIP CRC validation; all extracted160-character records validated molecule42."
+  }
+]

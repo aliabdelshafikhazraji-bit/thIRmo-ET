@@ -1,5 +1,5 @@
 {
-  "model": "thIRmo-ET 2.5.0",
+  "model": "thIRmo-ET 2.5.1",
   "model_weights_sha256": "a20b2a2322de0a3466293a364be6ed3d056781d0786b482e3735f94840f93a8e",
   "matches_metadata": true,
   "manuscript_protocol_sha256": "8ce9bfa4b93ed82cc5c8baf13b85356504188e60effeedcea3dd0e8d970bbf93",
@@ -9,5 +9,11 @@
   "all_retained_target_pressures_atm": [
     0.6,
     2.0
-  ]
+  ],
+  "evaluation_protocol_sha256": "fa814604e151b2c1e08a0e859818e3dd5e7a012de7941035f40fa414f20e16f6",
+  "reference_counts": {
+    "measurement": 45,
+    "HITEMP": 39
+  },
+  "fitted_weights_changed": false
 }

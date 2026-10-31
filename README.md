@@ -2,7 +2,7 @@
 
 **thIRmo-ET predicts a high-temperature infrared absorption band for a molecule absent from its training set.** The user supplies one to three measured near-ambient spectra, the temperature of each spectrum, a wavenumber interval, and a hotter target temperature. The program returns the predicted molecular absorption cross section at 512 wavenumbers. Molecular identity and structure are not model inputs.
 
-The default model, version 2.5.0, is an ensemble of 128 extremely randomized regression trees. It was fitted on 46 molecular identities using spectra at 0.6–2.0 atm from published experiments and qualified HITEMP and HITRAN calculations. Eight molecular identities were withheld: three acyclic ethers as a complete family, n-propyl acetate, toluene, acetone, NO, and CH₄. The six molecules with published hot measurements have a 21.61% equal-molecule mean normalized integrated absolute error across 45 band–temperature comparisons. NO and CH₄ have a 30.09% two-molecule mean against 30 HITEMP comparisons; an additional CH₄ window was checked against nine HITRAN spectra. Across the eight test molecules, the equal-molecule mean is 22.90%. [Benchmark details](benchmark_summary.json) report each molecule, source, and paired fit without added HITRAN training spectra.
+The default model, version 2.5.1, is an ensemble of 128 extremely randomized regression trees. It was fitted on 46 molecular identities using spectra at 0.6–2.0 atm from published experiments and qualified HITEMP and HITRAN calculations. Eight molecular identities were withheld: three non-acetal acyclic ethers, n-propyl acetate, toluene, acetone, NO, and CH₄. Dimethoxymethane and cyclic acetals remain in training. The six molecules with published hot measurements have a 21.61% equal-molecule mean normalized integrated absolute error across 45 band–temperature comparisons. NO and CH₄ have a 26.17% two-molecule mean against 39 HITEMP comparisons, including the CH₄ outer window. Across the eight test molecules, the equal-molecule mean is 22.75%. These reported test scores use three measured near-ambient inputs per molecule. [Benchmark details](benchmark_summary.json) report each molecule, source, and paired fit without added HITRAN training spectra. This release updates evaluation provenance and reproducibility files; its fitted weights are unchanged.
 
 ## Install
 
@@ -72,9 +72,9 @@ The model provides an approximate band envelope. For n-propyl acetate, the measu
 
 ## Provenance and citation
 
-The final model partition, experimental sources, data processing, predictions, and per-record errors are documented in the companion manuscript and Supplementary Archive S1. The archive accompanies the manuscript; this repository distributes the inference code and trained weights. Published spectra remain with their original providers, including [PNNL](https://nwir.pnl.gov/), [HITRAN](https://hitran.org/), and [HITEMP](https://hitran.org/hitemp/).
+The final model partition, source records, preparation/training/evaluation code, array checksums and per-record errors are provided in [the reproduction directory](reproduction/README.md) and [study files](study/). The inference code and fitted weights are ready to use. The public per-record errors can reproduce the published aggregates without external spectra; rerunning source preparation, fitting or independent spectral scoring requires the externally supplied source arrays identified by the manifests. Published spectra remain with their original providers, including [PNNL](https://nwir.pnl.gov/), [HITRAN](https://hitran.org/), and [HITEMP](https://hitran.org/hitemp/). No supplementary archive is needed by this release.
 
-Until the manuscript has a DOI, cite **thIRmo-ET version 2.5.0** and this repository URL. Run the local inference checks with:
+Until the manuscript has a DOI, cite **thIRmo-ET version 2.5.1** and this repository URL. Run the local inference and reproduction checks with:
 
 ```sh
 python -m unittest discover -s tests -v

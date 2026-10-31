@@ -1,0 +1,36 @@
+{
+  "model_weights_sha256": "a20b2a2322de0a3466293a364be6ed3d056781d0786b482e3735f94840f93a8e",
+  "fitted_weights_changed": false,
+  "new_model_fit_performed": false,
+  "all_90_prepared_groups_feature_equations_match": true,
+  "fit_array_checks": {
+    "0.0": {
+      "n_rows": 111052,
+      "n_features": 42,
+      "X_sha256": "71af25e934b12c76873f4dfb3af3519f69e1f76f7532f66195f1f4f5541a9b51",
+      "y_sha256": "4f866e4aff34926c4e08aa6bb47cf03a0d269cdf48006a42c0b40cde8417be93",
+      "weights_sha256": "6a285f302a8034931ac7564abd715d9c6a414ce58915eefc2429a76b1206e273",
+      "matches_historical_fit_arrays_exactly": true
+    },
+    "0.5": {
+      "n_rows": 254412,
+      "n_features": 42,
+      "X_sha256": "fbe3ebed106fda710a18ea709161d284fce5b9265e0f529d299809fcdd83184f",
+      "y_sha256": "dc8edfd9805bf569425763574b0f50e8cfd2c718e737b1d756121055989f12f3",
+      "weights_sha256": "5b4457e941502ee651fedceb6aeb2d2cd8129bd2bd4fab8869ac685f7fd5eaa7",
+      "matches_historical_fit_arrays_exactly": true
+    }
+  },
+  "current_reference_counts": {
+    "measurement": 45,
+    "HITEMP": 39
+  },
+  "recomputed_error_percent": {
+    "all": 22.74867520735205,
+    "measurement": 21.606796659375785,
+    "HITEMP": 26.174310851280858
+  },
+  "evaluation_matches_existing_results": true,
+  "scope": "Feature assembly, sample weights, current numeric-model predictions and scoring checked against existing source arrays. No retraining, redigitization or full line-list resimulation performed.",
+  "public_data_access_limit": "Third-party source spectral arrays are not redistributed; dataset_manifest.json specifies expected arrays and provider provenance."
+}

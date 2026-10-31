@@ -1,0 +1,7 @@
+{
+  "Python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "scipy": "1.18.1",
+  "scikit_learn": "1.9.1",
+  "reproducibility_note": "Installed scientific environment recorded during release validation; fitted model weights are retained unchanged."
+}

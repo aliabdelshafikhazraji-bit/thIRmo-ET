@@ -1,0 +1,29 @@
+{
+  "note": "Illustrative file mapping only; replace with actual acquired source curves. No numerical spectra are supplied in this example.",
+  "groups": [
+    {
+      "species": "n-propyl acetate",
+      "window": "n-propyl acetate",
+      "window_cm1": [1150, 1350],
+      "split": "testing",
+      "input_origin": "PNNL",
+      "inputs": [
+        {"file": "cold.csv", "units": "pnnl", "temperature_K": 278.28},
+        {"file": "room.csv", "units": "pnnl", "temperature_K": 298.22},
+        {"file": "warm.csv", "units": "pnnl", "temperature_K": 323.12}
+      ],
+      "targets": [
+        {
+          "file": "hot671.csv",
+          "units": "m2/mol",
+          "record_id": "replace_with_actual_source_record_identifier",
+          "temperature_K": 671,
+          "pressure_atm": 1.48,
+          "bath_gas": "argon",
+          "source_kind": "measurement",
+          "source_doi": "10.1016/j.jqsrt.2023.108522"
+        }
+      ]
+    }
+  ]
+}
