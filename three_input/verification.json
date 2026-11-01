@@ -1,80 +1,102 @@
 {
-  "portable_test_count": 9,
-  "portable_tests_passed": true,
-  "historical_test_count": 14,
-  "historical_tests_passed": true,
-  "full_band_model_unchanged": true,
-  "private_broad_ether_probe_parity": "Exactly equal to both saved generic broad predictions",
-  "private_NO_probe_parity": "All three predicted cross-section histories exactly equal to the frozen mass-free candidate",
-  "independent_file_access_audit": "Inference opens only four packaged model/configuration files; external data reads were blocked in the audit",
-  "portable_training_script_executed": true,
-  "reproduced_line_weights_sha256": "0c7ceea900341a80dcea3a5a6533b42ed9602830de0bf3127578b2fbbf833d97",
-  "distributed_line_weights_sha256": "0c7ceea900341a80dcea3a5a6533b42ed9602830de0bf3127578b2fbbf833d97",
-  "reproduced_weights_byte_identical": true,
-  "environment": {
-    "python": "3.12.14",
-    "numpy": "2.3.5",
-    "scipy": "1.18.1",
-    "scikit_learn": "1.9.1"
+  "version": "4.0.1-experimental",
+  "verified_utc": "2026-11-01T18:51:49.774481+00:00",
+  "correction": "Avoid a second Gaussian convolution of the envelope already learned at 2 cm-1.",
+  "inputs": "Exactly three measured cold spectra and their temperatures; no molecular identity, mass or hot target input.",
+  "training_weights_unchanged": true,
+  "numeric_model_weights": {
+    "three_input/broad_model/models/thirmo_et_final.npz": "258cfaffa9820b8f36f974febaa6e544a53eb9b18035db063f9e63222ec1064c",
+    "three_input/broad_model/models/thirmo_et_without_added_hitran.npz": "3a686402e9be6fec9e3eb006681743185a427138a6d82d5238fa259a347cc74e",
+    "three_input/line_model/model_frozen/narrow_residual_forest.npz": "39d9e0b3d93e2dc7db052cf452caafcda66984fcb7187c84ff690580254e2a5c"
   },
-  "raw_private_or_licensed_data_included": false,
-  "evaluation_scope": "Developmental held-out-species benchmark, not a newly blind external test",
-  "history_evaluator_tests": 7,
-  "history_evaluator_matches_all_nine_saved_cases": true,
-  "history_evaluator_case_checks": [
+  "default_fine_and_probe_outputs_unchanged": true,
+  "default_output_gaussian_fwhm_cm1": 0.0,
+  "band_output_gaussian_fwhm_cm1": 2.0,
+  "new_hyperparameter_tuning_performed": false,
+  "hot_references_used_only_after_inference_for_scoring": true,
+  "public_reproduction": {
+    "script": "reproduction/three_input/evaluate_common.py",
+    "source": "Acquired original native cold files and prepared reference bundles, kept outside this repository.",
+    "window_count": 13,
+    "primary_record_count": 84,
+    "all_record_errors_identical_to_manuscript": true,
+    "summaries_match_within_absolute_tolerance": 1e-12,
+    "summary_max_absolute_difference": 7.105427357601002e-15
+  },
+  "window_checks": [
     {
-      "species": "di-n-propyl ether",
-      "temperature_K": 1151.0,
-      "integrated_absolute_difference_percent": 21.575390099285695,
-      "max_absolute_molefraction_difference": 0.0
+      "window": "1,2-dimethoxyethane",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
     },
     {
-      "species": "di-n-propyl ether",
-      "temperature_K": 1228.0,
-      "integrated_absolute_difference_percent": 18.514207882241358,
-      "max_absolute_molefraction_difference": 0.0
+      "window": "acetone",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
     },
     {
-      "species": "di-n-propyl ether",
-      "temperature_K": 1306.0,
-      "integrated_absolute_difference_percent": 23.45289908899348,
-      "max_absolute_molefraction_difference": 0.0
+      "window": "di-n-propyl ether",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
     },
     {
-      "species": "1,2-dimethoxyethane",
-      "temperature_K": 1184.0,
-      "integrated_absolute_difference_percent": 37.10288696167834,
-      "max_absolute_molefraction_difference": 0.0
+      "window": "diisopropyl ether",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
     },
     {
-      "species": "1,2-dimethoxyethane",
-      "temperature_K": 1226.0,
-      "integrated_absolute_difference_percent": 35.56066012031012,
-      "max_absolute_molefraction_difference": 0.0
+      "window": "n-propyl acetate",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
     },
     {
-      "species": "1,2-dimethoxyethane",
-      "temperature_K": 1249.0,
-      "integrated_absolute_difference_percent": 32.42267808738231,
-      "max_absolute_molefraction_difference": 0.0
+      "window": "NO_1600_2050",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
     },
     {
-      "species": "NO",
-      "temperature_K": 1523.2,
-      "integrated_absolute_difference_percent": 13.510820043159933,
-      "max_absolute_molefraction_difference": 1.734723475976807e-18
+      "window": "CH4_1280_1340",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
     },
     {
-      "species": "NO",
-      "temperature_K": 1575.9,
-      "integrated_absolute_difference_percent": 14.21387761758899,
-      "max_absolute_molefraction_difference": 3.469446951953614e-18
+      "window": "CH4_2980_3040",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
     },
     {
-      "species": "NO",
-      "temperature_K": 1653.4,
-      "integrated_absolute_difference_percent": 15.043066467945087,
-      "max_absolute_molefraction_difference": 1.734723475976807e-18
+      "window": "toluene__added_640.094_1000.000",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "toluene__added_1000.000_1400.000",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "toluene__added_2600.000_3000.000",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "toluene__added_3000.000_3196.958",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "CH4_4000_4700",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
     }
-  ]
+  ],
+  "tests": {
+    "current_inference_and_cli": 15,
+    "history_evaluator": 7,
+    "historical_inference_and_aggregation": 14,
+    "all_passed": true
+  },
+  "raw_private_or_licensed_spectra_included": false,
+  "method_limit": "Finer output restores eligible cold-observed line contrast; unresolved background retains 2 cm-1 envelope resolution.",
+  "evaluation_scope": "Developmental held-out-species assessment; not a newly blinded validation."
 }

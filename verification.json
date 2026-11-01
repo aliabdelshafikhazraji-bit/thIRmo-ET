@@ -83,11 +83,20 @@
   ],
   "qualification_rule_applied_to_all_learned_spectral_constants": true,
   "public_reproduction_all_84_records_verified": true,
-  "portable_and_history_tests_passed": 16,
+  "portable_and_history_tests_passed": 22,
   "historical_unit_tests_passed_after_aggregation_schema_update": 14,
   "numeric_model_weights": {
     "three_input/broad_model/models/thirmo_et_final.npz": "258cfaffa9820b8f36f974febaa6e544a53eb9b18035db063f9e63222ec1064c",
     "three_input/broad_model/models/thirmo_et_without_added_hitran.npz": "3a686402e9be6fec9e3eb006681743185a427138a6d82d5238fa259a347cc74e",
     "three_input/line_model/model_frozen/narrow_residual_forest.npz": "39d9e0b3d93e2dc7db052cf452caafcda66984fcb7187c84ff690580254e2a5c"
-  }
+  },
+  "version": "4.0.1-experimental",
+  "resolution_correction": {
+    "version": "4.0.1-experimental",
+    "default_fine_and_probe_unchanged": true,
+    "public_84_record_reproduction_verified": true,
+    "band_output_gaussian_fwhm_cm1": 2.0,
+    "weights_unchanged": true
+  },
+  "current_public_release_verification": "three_input/verification.json"
 }

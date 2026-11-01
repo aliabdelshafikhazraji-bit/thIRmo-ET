@@ -1,6 +1,6 @@
 # Study reproduction
 
-The current study uses the strict three-input shared spectral function, version 4.0.0-experimental. Follow [the current reproduction guide](three_input/README.md). `study/` contains the current 69-group dataset manifest, 33 training and eight test identities, source records and revised errors. Every fitting and testing group has three actual near-ambient input spectra.
+The current study uses the strict three-input shared spectral function, version 4.0.1-experimental. Follow [the current reproduction guide](three_input/README.md). `study/` contains the current 69-group dataset manifest, 33 training and eight test identities, source records and revised errors. Every fitting and testing group has three actual near-ambient input spectra.
 
 `pipeline.py` retains the source-unit conversion, 2 cm⁻¹ segmented convolution, fixed 512-point feature construction, species/source weights and numeric forest export. The current `train_broad.py` enforces the three-input restriction before invoking it. The root model and older protocol records are historical reproduction resources and are not the current default predictor.
 

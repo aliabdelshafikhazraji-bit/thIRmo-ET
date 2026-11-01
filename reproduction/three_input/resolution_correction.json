@@ -1,0 +1,102 @@
+{
+  "version": "4.0.1-experimental",
+  "verified_utc": "2026-11-01T18:51:49.774481+00:00",
+  "correction": "Avoid a second Gaussian convolution of the envelope already learned at 2 cm-1.",
+  "inputs": "Exactly three measured cold spectra and their temperatures; no molecular identity, mass or hot target input.",
+  "training_weights_unchanged": true,
+  "numeric_model_weights": {
+    "three_input/broad_model/models/thirmo_et_final.npz": "258cfaffa9820b8f36f974febaa6e544a53eb9b18035db063f9e63222ec1064c",
+    "three_input/broad_model/models/thirmo_et_without_added_hitran.npz": "3a686402e9be6fec9e3eb006681743185a427138a6d82d5238fa259a347cc74e",
+    "three_input/line_model/model_frozen/narrow_residual_forest.npz": "39d9e0b3d93e2dc7db052cf452caafcda66984fcb7187c84ff690580254e2a5c"
+  },
+  "default_fine_and_probe_outputs_unchanged": true,
+  "default_output_gaussian_fwhm_cm1": 0.0,
+  "band_output_gaussian_fwhm_cm1": 2.0,
+  "new_hyperparameter_tuning_performed": false,
+  "hot_references_used_only_after_inference_for_scoring": true,
+  "public_reproduction": {
+    "script": "reproduction/three_input/evaluate_common.py",
+    "source": "Acquired original native cold files and prepared reference bundles, kept outside this repository.",
+    "window_count": 13,
+    "primary_record_count": 84,
+    "all_record_errors_identical_to_manuscript": true,
+    "summaries_match_within_absolute_tolerance": 1e-12,
+    "summary_max_absolute_difference": 7.105427357601002e-15
+  },
+  "window_checks": [
+    {
+      "window": "1,2-dimethoxyethane",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "acetone",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "di-n-propyl ether",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "diisopropyl ether",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "n-propyl acetate",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "NO_1600_2050",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "CH4_1280_1340",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "CH4_2980_3040",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "toluene__added_640.094_1000.000",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "toluene__added_1000.000_1400.000",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "toluene__added_2600.000_3000.000",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "toluene__added_3000.000_3196.958",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    },
+    {
+      "window": "CH4_4000_4700",
+      "default_spectrum_and_probe_unchanged_bitwise": true,
+      "band_prediction_matches_manuscript_arrays_bitwise": true
+    }
+  ],
+  "tests": {
+    "current_inference_and_cli": 15,
+    "history_evaluator": 7,
+    "historical_inference_and_aggregation": 14,
+    "all_passed": true
+  },
+  "raw_private_or_licensed_spectra_included": false,
+  "method_limit": "Finer output restores eligible cold-observed line contrast; unresolved background retains 2 cm-1 envelope resolution.",
+  "evaluation_scope": "Developmental held-out-species assessment; not a newly blinded validation."
+}

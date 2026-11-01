@@ -2,7 +2,7 @@
 
 **Predict a hot infrared spectrum from exactly three measured near-ambient spectra of a molecule absent from training.** Supply the spectra, their three distinct measurement temperatures (275–350 K), a spectral interval, and the output temperature and pressure. No molecular identity, formula, mass, other molecular properties, line list, or hot spectrum is supplied to prediction.
 
-The current entry point is `three_input/thirmo_three.py`, version **4.0.0-experimental**. Broad envelopes and isolated-line corrections are fitted separately, both using three cold measurements paired with hot reference spectra from training molecules. One function combines their outputs. Requesting a probe value changes only the output coordinates; it never selects another model.
+The current entry point is `three_input/thirmo_three.py`, version **4.0.1-experimental**. Broad envelopes and isolated-line corrections are fitted separately, both using three cold measurements paired with hot reference spectra from training molecules. One function combines their outputs. Requesting a probe value changes only the output coordinates; it never selects another model.
 
 ## Run
 
@@ -17,7 +17,9 @@ Add `--probe 1812.64` to evaluate the same function at one sensing wavenumber. I
 
 The three cold spectra determine which individual peaks receive a line correction. Each peak must satisfy fixed width (≤0.40 cm⁻¹), separation (≥1.30 cm⁻¹), prominence/height (≥0.50), sampling (≤0.08 cm⁻¹) and cold-fit checks in all inputs. A band can contain both treatments. No molecular-size label is required.
 
-The spectral function is `max(B + sum(L − G*L), 0)`: `B` is the interpolated tree envelope, `L` is a fitted cold-observed line prediction, and `G` is a unit-area 2 cm⁻¹ FWHM Gaussian. Subtraction avoids adding the line's smoothed contribution twice. Gaussian convolution of the Voigt component is analytic. The envelope uses 512 points; qualifying line contrast is evaluated on the requested grid (default spacing no larger than 0.002 cm⁻¹). This spacing is not an instrumental-resolution claim.
+The tree envelope `B` is fitted to a 2 cm⁻¹ Gaussian response. For a requested Gaussian full width at half maximum (FWHM) `r ≤ 2 cm⁻¹`, the spectral function is `max(B + sum(G_r*L − G_2*L), 0)`, where `L` is a predicted line observed in the cold inputs and `G_r` is a unit-area Gaussian of FWHM `r`. The default `r = 0` preserves the fine-spectrum and probe calculation. At `r = 2`, the line contrasts cancel and the learned envelope is returned without a second convolution. For `r > 2`, only the additional Gaussian width `sqrt(r² − 2²)` is applied to the envelope.
+
+Use `--output-fwhm-cm1 2` for the response used in the reported band comparisons. The Python argument is `output_fwhm_cm1=2.0`. Finer output restores eligible cold-observed line contrast while the unresolved background retains the envelope response; it is not a complete deconvolution of the spectrum. The envelope uses 512 points, and default line-resolved sampling is at most 0.002 cm⁻¹. Sampling is distinct from instrumental resolution. See [output-resolution details](three_input/RESOLUTION_HANDLING.md).
 
 Line areas and effective widths are supervised by fits to hot training spectra, not tabulated transition parameters. A common Gaussian-width coefficient is learned from those spectral shapes; molecular masses are not read. The line-population baseline uses a linear-rotor/one-vibration approximation inferred from the cold band. New transitions absent from all three inputs enter only through the learned envelope. Cold shape alone does not establish that the line-population approximation is valid for every polyatomic band.
 
@@ -27,13 +29,13 @@ Target pressures must be 0.6–2.0 atm. The envelope is not pressure-conditioned
 
 The envelope fit uses **33 training identities**, all with three actual cold measurements. **Eight identities are excluded from both fitted components**: 1,2-dimethoxyethane, di-n-propyl ether, diisopropyl ether, n-propyl acetate, toluene, acetone, NO and CH₄. The three non-acetal acyclic ethers are withheld together; dimethoxymethane remains an acetal training molecule.
 
-Band errors use a 2 cm⁻¹ Gaussian display response and positive integrated reference absorption as denominator. Errors are averaged within windows, then molecules, with molecules equally weighted. Single-wavelength retrieval uses the same function before display convolution. These are different reported metrics, not different spectral models.
+Band errors compare the learned 2 cm⁻¹ response directly against reference spectra at that response, using positive integrated reference absorption as denominator. Errors are averaged within windows, then molecules, with molecules equally weighted. Single-wavelength retrieval uses the same fitted components at the default fine-output setting. The response setting changes no fitted parameter, training identity or cold-input selection rule.
 
 | Reference group | Molecules / band–temperature records | Mean band error |
 |---|---:|---:|
-| Published measurements | 6 / 45 | 22.51% |
-| HITEMP | 2 / 39 | 28.51% |
-| All | 8 / 84 | 24.01% |
+| Published measurements | 6 / 45 | 22.54% |
+| HITEMP | 2 / 39 | 26.47% |
+| All | 8 / 84 | 23.52% |
 
 The line head uses CO, HCl and HF only: 50 cold-qualified lines and 1021 usable spectral-reference fits. Leave-one-training-species-out mean local spectral error is 15.63%. The shared Gaussian coefficient is estimated from the fitting species only in each fold. The fixed rules retain 32 NO fundamental lines and five CH₄ lines in 4000–4700 cm⁻¹; no peak passes in the CH₄ 1280–1340 cm⁻¹ window.
 
@@ -50,4 +52,4 @@ python -m unittest discover -s three_input/tests -v
 python -m unittest discover -s reproduction/three_input -p "test_*.py" -v
 ```
 
-Inference uses NumPy and SciPy, runs offline, and does not load a target reference spectrum. Refitting additionally requires scikit-learn and acquired source arrays. The root `thirmo_et.py` and its frozen weights are retained for historical reproduction; use the explicit current entry point above. Cite **thIRmo-ET 4.0.0-experimental** and this repository until a manuscript DOI is assigned.
+Inference uses NumPy and SciPy, runs offline, and does not load a target reference spectrum. Refitting additionally requires scikit-learn and acquired source arrays. The root `thirmo_et.py` and its frozen weights are retained for historical reproduction; use the explicit current entry point above. Cite **thIRmo-ET 4.0.1-experimental** and this repository until a manuscript DOI is assigned.

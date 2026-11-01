@@ -1,5 +1,5 @@
 {
-  "version": "4.0.0-experimental",
+  "version": "4.0.1-experimental",
   "source_doi": "10.1016/j.combustflame.2025.114135",
   "probe_cm1": 1812.64,
   "concentration_uncertainty_fraction": 0.059,
@@ -42,5 +42,7 @@
     "max_absolute_difference": 0.0,
     "relative_tolerance": 2e-15
   },
-  "source_measurement_and_temperature_histories_not_included": true
+  "source_measurement_and_temperature_histories_not_included": true,
+  "probe_output_gaussian_fwhm_cm1": 0.0,
+  "probe_calculations_unchanged_from_4_0_0": true
 }

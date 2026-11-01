@@ -1,12 +1,15 @@
 {
-  "version": "4.0.0-experimental",
+  "version": "4.0.1-experimental",
   "strict_three_input_training": true,
   "old_validation_not_applicable_to_new_weights": true,
   "model_fit_rows": 195284,
-  "band_summary_sha256": "bb04c3b731129fce6fa253f33eaaf716ae9b18330e034c35086cf216b3f3786a",
+  "band_summary_sha256": "430085c99ca80e23ba0a6f708b6fd281c688d2c076fb36fc79e6d145706b2bc8",
   "same_function_probe_check": {
     "point_matches_full_spectrum": true,
     "max_absolute_difference": 0.0,
     "relative_tolerance": 2e-15
-  }
+  },
+  "resolution_correction": "No refit; envelope response applied once; default fine/probe calculation unchanged.",
+  "public_84_records_reproduced_from_native_files": true,
+  "release_verification": "three_input/verification.json"
 }

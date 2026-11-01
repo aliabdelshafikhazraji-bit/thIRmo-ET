@@ -12,7 +12,8 @@ def main(argv=None):
     parser.add_argument('--target-temperature',type=float,nargs='+',required=True,metavar='K')
     parser.add_argument('--target-pressure',type=float,nargs='+',required=True,metavar='ATM')
     parser.add_argument('--context-band',type=float,nargs=2,required=True,metavar=('LOW_CM1','HIGH_CM1'))
-    parser.add_argument('--probe',type=float,metavar='CM1',help='Optional single sensing wavenumber; enables local cold-feature routing.')
+    parser.add_argument('--probe',type=float,metavar='CM1',help='Optional single sensing wavenumber; uses the same prediction function.')
+    parser.add_argument('--output-fwhm-cm1',type=float,default=0.,metavar='CM1',help='Requested Gaussian FWHM: 0 keeps fine output; 2 returns the learned band response without extra convolution.')
     parser.add_argument('--output',type=Path,required=True,help='CSV path; matching JSON records branch and assumptions.')
     parser.add_argument('--overwrite',action='store_true')
     args=parser.parse_args(argv)
@@ -35,7 +36,7 @@ def main(argv=None):
         if not args.overwrite and (output.exists() or metapath.exists()):raise ValueError('Output already exists; choose a new path or use --overwrite.')
         result=ThreeSpectrumPredictor().predict([core.read_spectrum(p) for p in paths],
             [float(s[1]) for s in args.spectrum],args.target_temperature,args.target_pressure,
-            args.context_band,units=args.units,probe_wavenumber_cm1=args.probe)
+            args.context_band,units=args.units,probe_wavenumber_cm1=args.probe,output_fwhm_cm1=args.output_fwhm_cm1)
         meta=result['metadata']
         meta['input_files']=[dict(file_name=p.name,temperature_K=float(s[1]),sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p,s in zip(paths,args.spectrum)]
         output.parent.mkdir(parents=True,exist_ok=True)

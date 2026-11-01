@@ -1,7 +1,7 @@
 {
-  "version": "4.0.0-experimental",
+  "version": "4.0.1-experimental",
   "files": {
-    "benchmark_summary.json": "177322ed41125507b5d0fde314bce5ffec901a241f4377d2672e1a04c27dcf0e",
+    "benchmark_summary.json": "6dbd1c9e4a9732127db8feb792be02d4121eb847f8404257a01c6e69de4290ef",
     "broad_model/__init__.py": "4dbfc2c579d2f79f03a4c6086d8928241399fc6ffb8644e6c50ea7a856a3c3c8",
     "broad_model/frozen_core.py": "25dd376e4124fcb87ecaa5b34dd71c75bf9a50189a9e8f6f23af99324d5f22e8",
     "broad_model/models/thirmo_et_final.json": "29a5acae0012117da15141df2226bebb5910ca9b8715fabbf76c37b01451fc1a",
@@ -15,12 +15,13 @@
     "line_model/model_frozen/narrow_model_config.json": "24006119864d6e02c0260f614cae700e5a67c0369a255c1e4d2e303b9e84e676",
     "line_model/model_frozen/narrow_residual_forest.npz": "39d9e0b3d93e2dc7db052cf452caafcda66984fcb7187c84ff690580254e2a5c",
     "line_model/spectra_only_line.py": "2e32447a437e7c083d8a58f3975432dab2487d766ec5d8ab0d4a5950e533b040",
-    "organic_benchmark_summary.json": "d1b4edd2afc33816d7a08486d3c8fab825379e6c0d4c9e57b2a08618a1b565e7",
-    "README.md": "3ad8859e746be897f31e499dbdcabcc32c8cf405e909d338d8c72ae53ea7b19e",
+    "organic_benchmark_summary.json": "eccdcd5308c5206ed7259c6ff2e60a027c5baf437aefa8e549dc4f53a19f523c",
+    "README.md": "302e35afc6526aff5d1e6a8e4d1411637f7e0bd6a20058672e0c012fb9dcff15",
     "requirements.txt": "247cac82bee90f66c969c1966d2ed2e953e746037593bba521fe878b0c84aa40",
-    "spectral_model.py": "2b066509802b3f9b58e451fb1ae8cc0345ff70477eb05bc02314ccddd197f532",
-    "tests/test_three_input.py": "a4df061b9907516a11631c3010988bd8177e176bb993df58d3fc70ea9583b96a",
-    "thirmo_three.py": "a0bc0cbfbe0998f12c0bd0e061a4f594495bfdbc20915c28b413e835c421842e",
-    "verification.json": "aad7e66b325fd71f328d072e133bcb09d6add6a33adc2692a3f4285c037eaaca"
+    "RESOLUTION_HANDLING.md": "14536e2f651eacb44c64d8f94ecc7854fa248a6da2264d927f1ebf5092199308",
+    "spectral_model.py": "45fddac90a895cc70ebacc23164c66f93e5b24a37af4dfcaa0f9445363fe5f19",
+    "tests/test_three_input.py": "a6c9c05a7c03f3a0736d52575d1ffbc74fec48008264b0e0aca1bd3958d19fc1",
+    "thirmo_three.py": "5d96eb0656989fa4ae5f28a8c96d57b3b32a6ae2be697422522c402bb4772292",
+    "verification.json": "013d6f6e81c55f6128f023a9eddbf920bc4049893eac1e5493fe0586e6f77371"
   }
 }

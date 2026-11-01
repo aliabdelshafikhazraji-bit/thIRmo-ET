@@ -2,7 +2,6 @@
 from pathlib import Path
 import sys,json,csv,argparse,hashlib
 import numpy as np
-from scipy.ndimage import gaussian_filter1d
 REPO=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(REPO/'three_input'));sys.path.insert(0,str(REPO))
 from spectral_model import ThreeSpectrumPredictor
@@ -29,14 +28,11 @@ def main():
             if s.get('sha256') and hashlib.sha256(path.read_bytes()).hexdigest()!=s['sha256'][i]:raise ValueError('Native input checksum differs.')
             curves.append(core.read_spectrum(path))
         context=models['final'].prepare(curves,g['input_temperatures_K'],[g['x'][0],g['x'][-1]],s['units'])
-        step=.005 if context['line_records'] else .05
-        grid=np.linspace(*context['bounds'],int(np.ceil(np.ptp(context['bounds'])/step))+1)
         T=[r['temperature_K'] for r in g['records']];P=[r['pressure_atm'] for r in g['records']]
         predictions={}
         for name,model in models.items():
-            values=model.evaluate(context,T,P,grid)
-            values=gaussian_filter1d(values,core.SIGMA_CM1/np.median(np.diff(grid)),axis=1,mode='nearest',truncate=6)
-            predictions[name]=np.array([np.interp(g['x'],grid,y) for y in values])
+            # The supervised envelope already has the reference's 2 cm-1 response.
+            predictions[name]=model.evaluate(context,T,P,g['x'],output_fwhm_cm1=core.FWHM)
         for i,r in enumerate(g['records']):
             if not r.get('primary_evaluation',True):continue
             m=g['masks'][i];ref=g['references'][i];den=np.maximum(ref[m],0).sum()

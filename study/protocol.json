@@ -63,5 +63,8 @@
   "selection": "No architecture, thresholds, hyperparameters, or training subset chosen from NO/CH4 or ether hot errors. Evaluate line residual versus physical baseline using training-species-only LOSO; use residual only if species-balanced LOSO improves.",
   "evaluation": "Freeze code, both fitted heads and training protocol before recomputing all fixed held-out bands, then all concentration histories. Report envelope-resolution errors and native-grid errors separately. Use each same function in figures and retrieval.",
   "source_dataset_manifest_sha256": "6b08fb45d015007bc69bc231879ed8092045d3077c65c3f6347f3d25f90f4308",
-  "display_projection": "All common-function predictions receive the declared 2 cm-1 Gaussian display convolution before band scoring; sensing values do not."
+  "display_projection": "Band scoring requests output_fwhm_cm1=2.0 and uses the learned envelope directly, without a second Gaussian convolution. Sensing uses the unchanged default output_fwhm_cm1=0.",
+  "resolution_revision_version": "4.0.1-experimental",
+  "resolution_revision": "For r<=2, max(B + sum(G_r L - G_2 L), 0); for r>2, convolve B only by sqrt(r^2-2^2). Unresolved background retains the envelope resolution for r<2.",
+  "resolution_correction_record": "reproduction/three_input/resolution_correction.json"
 }

@@ -1,7 +1,10 @@
 """One three-spectrum calculation for band plots and sensing wavenumbers.
 
 Broad envelopes and cold-observed isolated-line contrast are fitted separately.
-The same sum is evaluated for every output, independent of requested grid.
+The default fine-spectrum sum is independent of the requested grid. A requested
+Gaussian response preserves the learned 2 cm-1 envelope; only cold-observed
+eligible line contrast is restored at finer responses. The unresolved background
+retains the learned envelope resolution.
 """
 from pathlib import Path
 import hashlib,json
@@ -13,7 +16,7 @@ from line_model import SpectraOnlyNarrowHead,eligible
 from line_model.cold_line_representation import fit_line,cold_band_centroid,add_cold_thermal_parameters
 from cold_router import route_cold_spectra
 
-VERSION='4.0.0-experimental'
+VERSION='4.0.1-experimental'
 class ThreeSpectrumPredictor:
     def __init__(self,broad_model_path=None,line_model_dir=None):
         self.broad=ThreeInputBroadModel(broad_model_path)
@@ -60,7 +63,9 @@ class ThreeSpectrumPredictor:
         self._cache[key]=context
         return context
 
-    def evaluate(self,context,target_temperatures_K,target_pressures_atm,wavenumber_cm1):
+    def evaluate(self,context,target_temperatures_K,target_pressures_atm,wavenumber_cm1,output_fwhm_cm1=0.):
+        resolution=float(output_fwhm_cm1)
+        if not np.isfinite(resolution) or resolution<0:raise ValueError('Output FWHM must be finite and nonnegative.')
         T=np.atleast_1d(np.asarray(target_temperatures_K,float));P=np.atleast_1d(np.asarray(target_pressures_atm,float))
         if T.ndim!=1 or not len(T) or not np.isfinite(T).all() or np.any(T<=context['temperatures_K'][-1]):raise ValueError('Target temperatures must exceed the warmest input.')
         if P.ndim!=1 or len(P) not in (1,len(T)) or not np.isfinite(P).all():raise ValueError('One pressure or one pressure per target temperature is required.')
@@ -80,24 +85,37 @@ class ThreeSpectrumPredictor:
         else:
             envelope=np.array([np.maximum((context['anchor']+self.broad.forest.predict(core.features_at(context['features'],context['temperatures_K'][-1],t)))*context['area']/np.ptp(context['bounds']),0) for t in T])
             result=np.array([np.interp(x,context['grid'],b) for b in envelope])
+        if not np.isfinite(result).all():
+            raise ValueError('The supplied cold spectra do not constrain a finite extrapolation at these target conditions.')
+        if resolution>core.FWHM:
+            # B is learned at 2 cm-1, so only apply the additional variance.
+            from scipy.ndimage import gaussian_filter1d
+            native=np.linspace(*context['bounds'],int(np.ceil(np.ptp(context['bounds'])/.05))+1)
+            coarse=self.evaluate(dict(context,line_records=[]),T,P,native,output_fwhm_cm1=0.)
+            extra=np.sqrt(resolution**2-core.FWHM**2)/np.sqrt(8*np.log(2))
+            coarse=gaussian_filter1d(coarse,extra/np.median(np.diff(native)),axis=1,mode='nearest',truncate=6)
+            return np.array([np.interp(x,native,y) for y in coarse])
+        if resolution==core.FWHM:return result
+        output_sigma=resolution/np.sqrt(8*np.log(2))
         for r in context['line_records']:
             A,g=self.line.parameters(r,T,P)
             s=self.line.gaussian_coefficient*r['center_cm1']*np.sqrt(T)
             delta=x[None,:]-r['center_cm1']
-            result+=A[:,None]*(voigt_profile(delta,s[:,None],g[:,None])-voigt_profile(delta,np.hypot(s,core.SIGMA_CM1)[:,None],g[:,None]))
+            result+=A[:,None]*(voigt_profile(delta,np.hypot(s,output_sigma)[:,None],g[:,None])-voigt_profile(delta,np.hypot(s,core.SIGMA_CM1)[:,None],g[:,None]))
         if not np.isfinite(result).all():
             raise ValueError('The supplied cold spectra do not constrain a finite extrapolation at these target conditions.')
         return np.maximum(result,0)
 
     def predict(self,spectra,input_temperatures_K,target_temperatures_K,target_pressures_atm,
-                context_window_cm1,units='cm2/molecule',probe_wavenumber_cm1=None,wavenumber_grid_cm1=None):
+                context_window_cm1,units='cm2/molecule',probe_wavenumber_cm1=None,wavenumber_grid_cm1=None,output_fwhm_cm1=0.):
         c=self.prepare(spectra,input_temperatures_K,context_window_cm1,units)
         if probe_wavenumber_cm1 is not None and wavenumber_grid_cm1 is not None:raise ValueError('Supply a grid or a probe, not both.')
         if probe_wavenumber_cm1 is not None:x=np.array([float(probe_wavenumber_cm1)])
         elif wavenumber_grid_cm1 is not None:x=np.asarray(wavenumber_grid_cm1,float)
+        elif float(output_fwhm_cm1)>=core.FWHM:x=c['grid']
         elif c['line_records']:x=np.linspace(*c['bounds'],int(np.ceil(np.ptp(c['bounds'])/.002))+1)
         else:x=c['grid']
-        y=self.evaluate(c,target_temperatures_K,target_pressures_atm,x)
+        y=self.evaluate(c,target_temperatures_K,target_pressures_atm,x,output_fwhm_cm1=output_fwhm_cm1)
         T=np.atleast_1d(target_temperatures_K).astype(float);P=np.broadcast_to(np.atleast_1d(target_pressures_atm).astype(float),T.shape)
         warnings=[]
         if T.max()>1800:warnings.append('Some output temperatures exceed the isolated-line training maximum of 1800 K.')
@@ -109,7 +127,12 @@ class ThreeSpectrumPredictor:
             broad_weights_sha256=self.broad.forest.sha256,line_weights_sha256=self.line.sha256,
             gaussian_width_coefficient=self.line.gaussian_coefficient,
             output_units='cm2/molecule (natural-log convention)',input_units=units,
-            reconstruction='max(B + sum(L - Gaussian_FWHM_2cm_convolution(L)), 0)',
+            reconstruction='For output FWHM r <= 2 cm-1: max(B + sum(G_r L - G_2 L), 0); for r > 2, B receives only the additional Gaussian variance.',
+            output_gaussian_fwhm_cm1=float(output_fwhm_cm1),envelope_training_gaussian_fwhm_cm1=core.FWHM,
+            unresolved_background_resolution_cm1=core.FWHM,
+            resolution_note='Fine output restores only eligible cold-observed line contrast; it does not deconvolve the unresolved envelope background.',
+            prediction_scope='Learned 2 cm-1 envelope with eligible cold-observed line contrast at the requested output response.',
+
             retained_cold_line_count=len(c['line_records']),retained_cold_line_centers_cm1=[r['center_cm1'] for r in c['line_records']],
             rejected_cold_fits=c['rejected_cold_fits'],cold_routing_thresholds={k:v for k,v in c['cold_diagnostics']['thresholds'].items() if k not in ['minimum_qualified_peak_count','minimum_qualified_prominence_fraction']},
             pressure_handling='Envelope independent of pressure; Lorentz widths of retained lines scale with target pressure/1 atm.',
