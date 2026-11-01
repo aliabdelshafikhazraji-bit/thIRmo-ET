@@ -1,7 +1,7 @@
 """Broad-band inference from exactly three measured ambient spectra.
 
 No species name, hot reference spectrum, molecular constants, or external source
-lookup is accepted. The frozen ExtraTrees model is the existing trained model.
+lookup is accepted. The fitted ExtraTrees model uses only genuine three-spectrum training records.
 Optional native-detail transport carries forward the warmest cold contrast; it
 does not infer new hot lines or their broadening.
 """
@@ -14,9 +14,8 @@ class ThreeInputBroadModel:
     """Three arrays plus their temperatures, band boundaries and output T.
 
     Input temperatures must be distinct and within 275-350 K. This is an
-    interface restriction, not a claim that the frozen forest was trained only
-    on three-spectrum records: its historical training includes one/two-input
-    records. All eight historically held-out species have three actual inputs.
+    training and inference requirement. Every fitted group and every withheld
+    group contains three actual cold measurements; no input is synthesized.
     """
     def __init__(self, model_path=None):
         path=Path(model_path) if model_path is not None else Path(__file__).parent/'models/thirmo_et_final.npz'
@@ -25,10 +24,10 @@ class ThreeInputBroadModel:
     def predict(self, spectra, input_temperatures_K, target_temperatures_K,
                 window_cm1, preserve_native_detail=False, units='cross-section',
                 input_columns_molecules_cm2=None):
-        """Return spectra in cm²/molecule (natural-log convention).
+        """Return spectra in cmÂ²/molecule (natural-log convention).
 
         spectra: exactly three (wavenumber_cm1, ordinate) array pairs.
-        units: cross-section [cm²/molecule], pnnl, absorbance-ln, or
+        units: cross-section [cmÂ²/molecule], pnnl, absorbance-ln, or
         absorbance-decadic. Absorbance needs known column densities.
         window_cm1: two boundaries covered by every input spectrum.
         target_temperatures_K: scalar or one-dimensional temperature array.

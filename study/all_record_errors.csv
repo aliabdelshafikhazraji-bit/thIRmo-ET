@@ -1,421 +1,85 @@
-species,window,record_id,temperature_K,pressure_atm,source_kind,method,error_percent
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_340K_1.01bar",340.0,0.9967924993831729,measurement,expanded_no_HITRAN,18.826008686739858
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_340K_1.01bar",340.0,0.9967924993831729,measurement,expanded_ET,21.706816434399002
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_340K_1.01bar",340.0,0.9967924993831729,measurement,frozen,17.475801655232008
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_340K_1.01bar",340.0,0.9967924993831729,measurement,linear,19.35046564698105
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_340K_1.01bar",340.0,0.9967924993831729,measurement,inverse_T,19.273232736022976
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_431K_1.01bar",431.0,0.9967924993831729,measurement,expanded_no_HITRAN,11.261475661598414
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_431K_1.01bar",431.0,0.9967924993831729,measurement,expanded_ET,12.779136288897023
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_431K_1.01bar",431.0,0.9967924993831729,measurement,frozen,22.017213405787516
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_431K_1.01bar",431.0,0.9967924993831729,measurement,linear,23.207896515564688
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_431K_1.01bar",431.0,0.9967924993831729,measurement,inverse_T,22.17836184152347
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_512K_1.01bar",512.0,0.9967924993831729,measurement,expanded_no_HITRAN,15.134513906607463
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_512K_1.01bar",512.0,0.9967924993831729,measurement,expanded_ET,14.420257310417725
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_512K_1.01bar",512.0,0.9967924993831729,measurement,frozen,31.378829939978676
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_512K_1.01bar",512.0,0.9967924993831729,measurement,linear,30.65215256342243
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_512K_1.01bar",512.0,0.9967924993831729,measurement,inverse_T,27.17409643923873
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_537K_0.96bar",537.0,0.9474463360473723,measurement,expanded_no_HITRAN,21.29041357524862
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_537K_0.96bar",537.0,0.9474463360473723,measurement,expanded_ET,21.192231312526385
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_537K_0.96bar",537.0,0.9474463360473723,measurement,frozen,33.888329483397264
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_537K_0.96bar",537.0,0.9474463360473723,measurement,linear,37.20768104060653
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_537K_0.96bar",537.0,0.9474463360473723,measurement,inverse_T,32.77253020284312
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_579K_1.01bar",579.0,0.9967924993831729,measurement,expanded_no_HITRAN,22.05423691418144
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_579K_1.01bar",579.0,0.9967924993831729,measurement,expanded_ET,18.956040424222095
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_579K_1.01bar",579.0,0.9967924993831729,measurement,frozen,39.48643394476738
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_579K_1.01bar",579.0,0.9967924993831729,measurement,linear,42.4213076993384
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_579K_1.01bar",579.0,0.9967924993831729,measurement,inverse_T,35.5271178240405
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_613K_0.94bar",613.0,0.927707870713052,measurement,expanded_no_HITRAN,29.225209285177744
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_613K_0.94bar",613.0,0.927707870713052,measurement,expanded_ET,28.34242068608993
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_613K_0.94bar",613.0,0.927707870713052,measurement,frozen,45.39421194154378
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_613K_0.94bar",613.0,0.927707870713052,measurement,linear,50.66989171700788
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_613K_0.94bar",613.0,0.927707870713052,measurement,inverse_T,42.56907480186353
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_690K_0.95bar",690.0,0.9375771033802122,measurement,expanded_no_HITRAN,28.22795580075762
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_690K_0.95bar",690.0,0.9375771033802122,measurement,expanded_ET,24.59589132514961
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_690K_0.95bar",690.0,0.9375771033802122,measurement,frozen,50.978070417094536
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_690K_0.95bar",690.0,0.9375771033802122,measurement,linear,55.36933726087769
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_690K_0.95bar",690.0,0.9375771033802122,measurement,inverse_T,46.55047733275731
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_800K_0.97bar",800.0,0.9573155687145324,measurement,expanded_no_HITRAN,44.41904262558958
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_800K_0.97bar",800.0,0.9573155687145324,measurement,expanded_ET,38.80349635413516
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_800K_0.97bar",800.0,0.9573155687145324,measurement,frozen,61.339431641082754
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_800K_0.97bar",800.0,0.9573155687145324,measurement,linear,78.07993003953457
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_800K_0.97bar",800.0,0.9573155687145324,measurement,inverse_T,61.50104773361097
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_816K_0.96bar",816.0,0.9474463360473723,measurement,expanded_no_HITRAN,49.50482391205257
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_816K_0.96bar",816.0,0.9474463360473723,measurement,expanded_ET,42.196689088098424
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_816K_0.96bar",816.0,0.9474463360473723,measurement,frozen,65.48315369253793
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_816K_0.96bar",816.0,0.9474463360473723,measurement,linear,84.96109989687568
-"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_816K_0.96bar",816.0,0.9474463360473723,measurement,inverse_T,66.75677371031563
-acetone,acetone,Acetone_605K_1atm,604.81,1.25,measurement,expanded_no_HITRAN,7.0775715066586615
-acetone,acetone,Acetone_605K_1atm,604.81,1.25,measurement,expanded_ET,7.828966095219049
-acetone,acetone,Acetone_605K_1atm,604.81,1.25,measurement,frozen,28.454349671217212
-acetone,acetone,Acetone_605K_1atm,604.81,1.25,measurement,linear,16.32637516191592
-acetone,acetone,Acetone_605K_1atm,604.81,1.25,measurement,inverse_T,16.90293671129181
-acetone,acetone,Acetone_782K_1atm,782.23,1.1,measurement,expanded_no_HITRAN,11.19944263539127
-acetone,acetone,Acetone_782K_1atm,782.23,1.1,measurement,expanded_ET,9.67314611128399
-acetone,acetone,Acetone_782K_1atm,782.23,1.1,measurement,frozen,44.81157664266911
-acetone,acetone,Acetone_782K_1atm,782.23,1.1,measurement,linear,35.65031065961559
-acetone,acetone,Acetone_782K_1atm,782.23,1.1,measurement,inverse_T,32.88370017384135
-acetone,acetone,Acetone_974K_1atm,974.22,1.18,measurement,expanded_no_HITRAN,16.646904562366412
-acetone,acetone,Acetone_974K_1atm,974.22,1.18,measurement,expanded_ET,15.347286915613253
-acetone,acetone,Acetone_974K_1atm,974.22,1.18,measurement,frozen,60.1359036050763
-acetone,acetone,Acetone_974K_1atm,974.22,1.18,measurement,linear,57.11839243503283
-acetone,acetone,Acetone_974K_1atm,974.22,1.18,measurement,inverse_T,48.054946228412646
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_604K_1.05bar,604.0,1.0362694300518136,measurement,expanded_no_HITRAN,24.012364899765764
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_604K_1.05bar,604.0,1.0362694300518136,measurement,expanded_ET,23.97373338612225
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_604K_1.05bar,604.0,1.0362694300518136,measurement,frozen,42.36395743353784
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_604K_1.05bar,604.0,1.0362694300518136,measurement,linear,30.123160662482167
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_604K_1.05bar,604.0,1.0362694300518136,measurement,inverse_T,23.639282344215147
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_690K_1.12bar,690.0,1.1053540587219346,measurement,expanded_no_HITRAN,33.08585229772874
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_690K_1.12bar,690.0,1.1053540587219346,measurement,expanded_ET,30.169479283483124
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_690K_1.12bar,690.0,1.1053540587219346,measurement,frozen,53.80342956656844
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_690K_1.12bar,690.0,1.1053540587219346,measurement,linear,45.919480237226175
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_690K_1.12bar,690.0,1.1053540587219346,measurement,inverse_T,37.26625314862769
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_758K_1.03bar,758.0,1.0165309647174932,measurement,expanded_no_HITRAN,39.650944189263846
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_758K_1.03bar,758.0,1.0165309647174932,measurement,expanded_ET,35.163337662039496
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_758K_1.03bar,758.0,1.0165309647174932,measurement,frozen,61.93637305755605
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_758K_1.03bar,758.0,1.0165309647174932,measurement,linear,58.06570546874653
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_758K_1.03bar,758.0,1.0165309647174932,measurement,inverse_T,47.55599712450487
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_838K_0.96bar,838.0,0.9474463360473723,measurement,expanded_no_HITRAN,43.796768672901806
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_838K_0.96bar,838.0,0.9474463360473723,measurement,expanded_ET,38.664619105080305
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_838K_0.96bar,838.0,0.9474463360473723,measurement,frozen,67.54417248309225
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_838K_0.96bar,838.0,0.9474463360473723,measurement,linear,68.180189015471
-di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_838K_0.96bar,838.0,0.9474463360473723,measurement,inverse_T,55.50378364031974
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_559K_1.07bar,559.0,1.0560078953861338,measurement,expanded_no_HITRAN,17.791164654584524
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_559K_1.07bar,559.0,1.0560078953861338,measurement,expanded_ET,17.662115643049987
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_559K_1.07bar,559.0,1.0560078953861338,measurement,frozen,28.496776136538738
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_559K_1.07bar,559.0,1.0560078953861338,measurement,linear,21.00478882070144
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_559K_1.07bar,559.0,1.0560078953861338,measurement,inverse_T,18.74007687903845
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_595K_0.95bar,595.0,0.9375771033802122,measurement,expanded_no_HITRAN,20.88961112652142
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_595K_0.95bar,595.0,0.9375771033802122,measurement,expanded_ET,21.11551505562087
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_595K_0.95bar,595.0,0.9375771033802122,measurement,frozen,32.73376539317545
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_595K_0.95bar,595.0,0.9375771033802122,measurement,linear,26.544038858832952
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_595K_0.95bar,595.0,0.9375771033802122,measurement,inverse_T,22.585901752412607
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_690K_1.05bar,690.0,1.0362694300518136,measurement,expanded_no_HITRAN,25.001945279569394
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_690K_1.05bar,690.0,1.0362694300518136,measurement,expanded_ET,25.518588658764983
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_690K_1.05bar,690.0,1.0362694300518136,measurement,frozen,38.39082330484288
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_690K_1.05bar,690.0,1.0362694300518136,measurement,linear,36.78225535345142
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_690K_1.05bar,690.0,1.0362694300518136,measurement,inverse_T,28.99776512041614
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_764K_1.05bar,764.0,1.0362694300518136,measurement,expanded_no_HITRAN,29.504494097219457
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_764K_1.05bar,764.0,1.0362694300518136,measurement,expanded_ET,29.998768391087573
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_764K_1.05bar,764.0,1.0362694300518136,measurement,frozen,42.37106214962039
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_764K_1.05bar,764.0,1.0362694300518136,measurement,linear,45.90291888386393
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_764K_1.05bar,764.0,1.0362694300518136,measurement,inverse_T,34.18103846322247
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_853K_1.04bar,853.0,1.0264001973846535,measurement,expanded_no_HITRAN,31.876604984796707
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_853K_1.04bar,853.0,1.0264001973846535,measurement,expanded_ET,30.961848449878282
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_853K_1.04bar,853.0,1.0264001973846535,measurement,frozen,42.639738245487464
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_853K_1.04bar,853.0,1.0264001973846535,measurement,linear,58.928751847985936
-diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_853K_1.04bar,853.0,1.0264001973846535,measurement,inverse_T,40.842589657467265
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_671K_1.5bar,671.0,1.4803849000740192,measurement,expanded_no_HITRAN,11.959453318143549
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_671K_1.5bar,671.0,1.4803849000740192,measurement,expanded_ET,17.539739441761075
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_671K_1.5bar,671.0,1.4803849000740192,measurement,frozen,62.835172139502774
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_671K_1.5bar,671.0,1.4803849000740192,measurement,linear,43.82310151814883
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_671K_1.5bar,671.0,1.4803849000740192,measurement,inverse_T,46.304765439033226
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_754K_1.35bar,754.0,1.3323464100666174,measurement,expanded_no_HITRAN,16.37540487802937
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_754K_1.35bar,754.0,1.3323464100666174,measurement,expanded_ET,21.757797651298148
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_754K_1.35bar,754.0,1.3323464100666174,measurement,frozen,76.9752333230748
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_754K_1.35bar,754.0,1.3323464100666174,measurement,linear,60.98247644833148
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_754K_1.35bar,754.0,1.3323464100666174,measurement,inverse_T,61.36564770574062
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_806K_1.26bar,806.0,1.2435233160621761,measurement,expanded_no_HITRAN,18.503395148859624
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_806K_1.26bar,806.0,1.2435233160621761,measurement,expanded_ET,24.342793792983368
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_806K_1.26bar,806.0,1.2435233160621761,measurement,frozen,85.94143525365075
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_806K_1.26bar,806.0,1.2435233160621761,measurement,linear,72.5677838231537
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_806K_1.26bar,806.0,1.2435233160621761,measurement,inverse_T,71.2433134063436
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_862K_1.19bar,862.0,1.1744386873920551,measurement,expanded_no_HITRAN,25.37084184440691
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_862K_1.19bar,862.0,1.1744386873920551,measurement,expanded_ET,28.868394320456293
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_862K_1.19bar,862.0,1.1744386873920551,measurement,frozen,96.0635187707648
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_862K_1.19bar,862.0,1.1744386873920551,measurement,linear,86.40910423102662
-n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_862K_1.19bar,862.0,1.1744386873920551,measurement,inverse_T,83.51090853418809
-NO,NO_1600_2050,NO_1600_2050_373.15K,373.15,1.0,HITEMP,expanded_no_HITRAN,10.117916052784869
-NO,NO_1600_2050,NO_1600_2050_373.15K,373.15,1.0,HITEMP,expanded_ET,7.056274450289733
-NO,NO_1600_2050,NO_1600_2050_373.15K,373.15,1.0,HITEMP,frozen,10.52595256059466
-NO,NO_1600_2050,NO_1600_2050_373.15K,373.15,1.0,HITEMP,linear,2.778063198730562
-NO,NO_1600_2050,NO_1600_2050_373.15K,373.15,1.0,HITEMP,inverse_T,1.9655189595763338
-NO,NO_1600_2050,NO_1600_2050_473.15K,473.15,1.0,HITEMP,expanded_no_HITRAN,7.927227252737219
-NO,NO_1600_2050,NO_1600_2050_473.15K,473.15,1.0,HITEMP,expanded_ET,7.676861366020815
-NO,NO_1600_2050,NO_1600_2050_473.15K,473.15,1.0,HITEMP,frozen,27.728469843133567
-NO,NO_1600_2050,NO_1600_2050_473.15K,473.15,1.0,HITEMP,linear,14.487222186474305
-NO,NO_1600_2050,NO_1600_2050_473.15K,473.15,1.0,HITEMP,inverse_T,9.44318868811564
-NO,NO_1600_2050,NO_1600_2050_573.15K,573.15,1.0,HITEMP,expanded_no_HITRAN,11.939934316255632
-NO,NO_1600_2050,NO_1600_2050_573.15K,573.15,1.0,HITEMP,expanded_ET,12.27986733748302
-NO,NO_1600_2050,NO_1600_2050_573.15K,573.15,1.0,HITEMP,frozen,41.27149325308016
-NO,NO_1600_2050,NO_1600_2050_573.15K,573.15,1.0,HITEMP,linear,31.606890669623837
-NO,NO_1600_2050,NO_1600_2050_573.15K,573.15,1.0,HITEMP,inverse_T,23.984641308067555
-NO,NO_1600_2050,NO_1600_2050_673.15K,673.15,1.0,HITEMP,expanded_no_HITRAN,17.581724441852028
-NO,NO_1600_2050,NO_1600_2050_673.15K,673.15,1.0,HITEMP,expanded_ET,16.253226106757324
-NO,NO_1600_2050,NO_1600_2050_673.15K,673.15,1.0,HITEMP,frozen,52.32904053767662
-NO,NO_1600_2050,NO_1600_2050_673.15K,673.15,1.0,HITEMP,linear,49.496378767952656
-NO,NO_1600_2050,NO_1600_2050_673.15K,673.15,1.0,HITEMP,inverse_T,55.201973005113615
-NO,NO_1600_2050,NO_1600_2050_773.15K,773.15,1.0,HITEMP,expanded_no_HITRAN,23.41379581628215
-NO,NO_1600_2050,NO_1600_2050_773.15K,773.15,1.0,HITEMP,expanded_ET,20.682783523245874
-NO,NO_1600_2050,NO_1600_2050_773.15K,773.15,1.0,HITEMP,frozen,61.424759429751894
-NO,NO_1600_2050,NO_1600_2050_773.15K,773.15,1.0,HITEMP,linear,64.75584975323112
-NO,NO_1600_2050,NO_1600_2050_773.15K,773.15,1.0,HITEMP,inverse_T,120.9993236386644
-NO,NO_1600_2050,NO_1600_2050_873.15K,873.15,1.0,HITEMP,expanded_no_HITRAN,28.328042800563964
-NO,NO_1600_2050,NO_1600_2050_873.15K,873.15,1.0,HITEMP,expanded_ET,24.01511181422346
-NO,NO_1600_2050,NO_1600_2050_873.15K,873.15,1.0,HITEMP,frozen,69.08259712954312
-NO,NO_1600_2050,NO_1600_2050_873.15K,873.15,1.0,HITEMP,linear,79.18378222660982
-NO,NO_1600_2050,NO_1600_2050_873.15K,873.15,1.0,HITEMP,inverse_T,243.98359977294365
-NO,NO_1600_2050,NO_1600_2050_973.15K,973.15,1.0,HITEMP,expanded_no_HITRAN,29.413625726856452
-NO,NO_1600_2050,NO_1600_2050_973.15K,973.15,1.0,HITEMP,expanded_ET,27.570586764067585
-NO,NO_1600_2050,NO_1600_2050_973.15K,973.15,1.0,HITEMP,frozen,75.53781747870563
-NO,NO_1600_2050,NO_1600_2050_973.15K,973.15,1.0,HITEMP,linear,93.5159663939164
-NO,NO_1600_2050,NO_1600_2050_973.15K,973.15,1.0,HITEMP,inverse_T,446.9637780104195
-NO,NO_1600_2050,NO_1600_2050_1173.15K,1173.15,1.0,HITEMP,expanded_no_HITRAN,32.62872580665204
-NO,NO_1600_2050,NO_1600_2050_1173.15K,1173.15,1.0,HITEMP,expanded_ET,37.65745882678561
-NO,NO_1600_2050,NO_1600_2050_1173.15K,1173.15,1.0,HITEMP,frozen,85.85491392542532
-NO,NO_1600_2050,NO_1600_2050_1173.15K,1173.15,1.0,HITEMP,linear,122.21745349241087
-NO,NO_1600_2050,NO_1600_2050_1173.15K,1173.15,1.0,HITEMP,inverse_T,1164.9332495925946
-NO,NO_1600_2050,NO_1600_2050_1373.15K,1373.15,1.0,HITEMP,expanded_no_HITRAN,34.88657377698179
-NO,NO_1600_2050,NO_1600_2050_1373.15K,1373.15,1.0,HITEMP,expanded_ET,40.706050765674824
-NO,NO_1600_2050,NO_1600_2050_1373.15K,1373.15,1.0,HITEMP,frozen,93.67118242941619
-NO,NO_1600_2050,NO_1600_2050_1373.15K,1373.15,1.0,HITEMP,linear,151.33530395407934
-NO,NO_1600_2050,NO_1600_2050_1373.15K,1373.15,1.0,HITEMP,inverse_T,2364.3018735106457
-NO,NO_1600_2050,NO_1600_2050_1573.15K,1573.15,1.0,HITEMP,expanded_no_HITRAN,38.59379882051361
-NO,NO_1600_2050,NO_1600_2050_1573.15K,1573.15,1.0,HITEMP,expanded_ET,40.47433868859348
-NO,NO_1600_2050,NO_1600_2050_1573.15K,1573.15,1.0,HITEMP,frozen,99.7728701478683
-NO,NO_1600_2050,NO_1600_2050_1573.15K,1573.15,1.0,HITEMP,linear,180.77176001943204
-NO,NO_1600_2050,NO_1600_2050_1573.15K,1573.15,1.0,HITEMP,inverse_T,4055.680075684821
-CH4,CH4_1280_1340,CH4_1280_1340_373.15K,373.15,1.0,HITEMP,expanded_no_HITRAN,13.542244841646085
-CH4,CH4_1280_1340,CH4_1280_1340_373.15K,373.15,1.0,HITEMP,expanded_ET,5.165479705579306
-CH4,CH4_1280_1340,CH4_1280_1340_373.15K,373.15,1.0,HITEMP,frozen,12.191529487157112
-CH4,CH4_1280_1340,CH4_1280_1340_373.15K,373.15,1.0,HITEMP,linear,3.6973970979482247
-CH4,CH4_1280_1340,CH4_1280_1340_373.15K,373.15,1.0,HITEMP,inverse_T,5.652188164473025
-CH4,CH4_1280_1340,CH4_1280_1340_473.15K,473.15,1.0,HITEMP,expanded_no_HITRAN,16.57344562392363
-CH4,CH4_1280_1340,CH4_1280_1340_473.15K,473.15,1.0,HITEMP,expanded_ET,11.678893138693946
-CH4,CH4_1280_1340,CH4_1280_1340_473.15K,473.15,1.0,HITEMP,frozen,30.027874501144353
-CH4,CH4_1280_1340,CH4_1280_1340_473.15K,473.15,1.0,HITEMP,linear,14.272891890799363
-CH4,CH4_1280_1340,CH4_1280_1340_473.15K,473.15,1.0,HITEMP,inverse_T,13.385492721245479
-CH4,CH4_1280_1340,CH4_1280_1340_573.15K,573.15,1.0,HITEMP,expanded_no_HITRAN,20.045734234215757
-CH4,CH4_1280_1340,CH4_1280_1340_573.15K,573.15,1.0,HITEMP,expanded_ET,17.27026819192235
-CH4,CH4_1280_1340,CH4_1280_1340_573.15K,573.15,1.0,HITEMP,frozen,46.895655027946425
-CH4,CH4_1280_1340,CH4_1280_1340_573.15K,573.15,1.0,HITEMP,linear,30.04660644286446
-CH4,CH4_1280_1340,CH4_1280_1340_573.15K,573.15,1.0,HITEMP,inverse_T,24.460149388460092
-CH4,CH4_1280_1340,CH4_1280_1340_673.15K,673.15,1.0,HITEMP,expanded_no_HITRAN,25.158873634157157
-CH4,CH4_1280_1340,CH4_1280_1340_673.15K,673.15,1.0,HITEMP,expanded_ET,21.166334849030473
-CH4,CH4_1280_1340,CH4_1280_1340_673.15K,673.15,1.0,HITEMP,frozen,62.47077227315597
-CH4,CH4_1280_1340,CH4_1280_1340_673.15K,673.15,1.0,HITEMP,linear,43.87312833343543
-CH4,CH4_1280_1340,CH4_1280_1340_673.15K,673.15,1.0,HITEMP,inverse_T,36.95015778565885
-CH4,CH4_1280_1340,CH4_1280_1340_773.15K,773.15,1.0,HITEMP,expanded_no_HITRAN,31.97734392751423
-CH4,CH4_1280_1340,CH4_1280_1340_773.15K,773.15,1.0,HITEMP,expanded_ET,25.3910205860418
-CH4,CH4_1280_1340,CH4_1280_1340_773.15K,773.15,1.0,HITEMP,frozen,76.53383168806867
-CH4,CH4_1280_1340,CH4_1280_1340_773.15K,773.15,1.0,HITEMP,linear,56.47631623037256
-CH4,CH4_1280_1340,CH4_1280_1340_773.15K,773.15,1.0,HITEMP,inverse_T,49.67520574932983
-CH4,CH4_1280_1340,CH4_1280_1340_873.15K,873.15,1.0,HITEMP,expanded_no_HITRAN,39.564542283541
-CH4,CH4_1280_1340,CH4_1280_1340_873.15K,873.15,1.0,HITEMP,expanded_ET,31.365835476139807
-CH4,CH4_1280_1340,CH4_1280_1340_873.15K,873.15,1.0,HITEMP,frozen,89.25377583229015
-CH4,CH4_1280_1340,CH4_1280_1340_873.15K,873.15,1.0,HITEMP,linear,69.6558576738753
-CH4,CH4_1280_1340,CH4_1280_1340_873.15K,873.15,1.0,HITEMP,inverse_T,62.185093964974946
-CH4,CH4_1280_1340,CH4_1280_1340_973.15K,973.15,1.0,HITEMP,expanded_no_HITRAN,46.183984719261574
-CH4,CH4_1280_1340,CH4_1280_1340_973.15K,973.15,1.0,HITEMP,expanded_ET,38.14536697052912
-CH4,CH4_1280_1340,CH4_1280_1340_973.15K,973.15,1.0,HITEMP,frozen,101.58312783610661
-CH4,CH4_1280_1340,CH4_1280_1340_973.15K,973.15,1.0,HITEMP,linear,84.9639069249083
-CH4,CH4_1280_1340,CH4_1280_1340_973.15K,973.15,1.0,HITEMP,inverse_T,74.77804774424216
-CH4,CH4_1280_1340,CH4_1280_1340_1173.15K,1173.15,1.0,HITEMP,expanded_no_HITRAN,56.99626385488281
-CH4,CH4_1280_1340,CH4_1280_1340_1173.15K,1173.15,1.0,HITEMP,expanded_ET,38.18870282676568
-CH4,CH4_1280_1340,CH4_1280_1340_1173.15K,1173.15,1.0,HITEMP,frozen,125.00121646448112
-CH4,CH4_1280_1340,CH4_1280_1340_1173.15K,1173.15,1.0,HITEMP,linear,113.18242367025772
-CH4,CH4_1280_1340,CH4_1280_1340_1173.15K,1173.15,1.0,HITEMP,inverse_T,99.2701816235054
-CH4,CH4_1280_1340,CH4_1280_1340_1373.15K,1373.15,1.0,HITEMP,expanded_no_HITRAN,64.00690977977355
-CH4,CH4_1280_1340,CH4_1280_1340_1373.15K,1373.15,1.0,HITEMP,expanded_ET,38.62763674554652
-CH4,CH4_1280_1340,CH4_1280_1340_1373.15K,1373.15,1.0,HITEMP,frozen,146.59784260600784
-CH4,CH4_1280_1340,CH4_1280_1340_1373.15K,1373.15,1.0,HITEMP,linear,143.27701479191774
-CH4,CH4_1280_1340,CH4_1280_1340_1373.15K,1373.15,1.0,HITEMP,inverse_T,122.00375994664935
-CH4,CH4_1280_1340,CH4_1280_1340_1573.15K,1573.15,1.0,HITEMP,expanded_no_HITRAN,71.97798003980766
-CH4,CH4_1280_1340,CH4_1280_1340_1573.15K,1573.15,1.0,HITEMP,expanded_ET,37.67421238783623
-CH4,CH4_1280_1340,CH4_1280_1340_1573.15K,1573.15,1.0,HITEMP,frozen,167.59159551732182
-CH4,CH4_1280_1340,CH4_1280_1340_1573.15K,1573.15,1.0,HITEMP,linear,175.49866281113958
-CH4,CH4_1280_1340,CH4_1280_1340_1573.15K,1573.15,1.0,HITEMP,inverse_T,141.92713893040988
-CH4,CH4_2980_3040,CH4_2980_3040_373.15K,373.15,1.0,HITEMP,expanded_no_HITRAN,18.354457337341827
-CH4,CH4_2980_3040,CH4_2980_3040_373.15K,373.15,1.0,HITEMP,expanded_ET,11.545629531911002
-CH4,CH4_2980_3040,CH4_2980_3040_373.15K,373.15,1.0,HITEMP,frozen,12.634387417029943
-CH4,CH4_2980_3040,CH4_2980_3040_373.15K,373.15,1.0,HITEMP,linear,4.306082235986287
-CH4,CH4_2980_3040,CH4_2980_3040_373.15K,373.15,1.0,HITEMP,inverse_T,1.9568334319281697
-CH4,CH4_2980_3040,CH4_2980_3040_473.15K,473.15,1.0,HITEMP,expanded_no_HITRAN,22.73620290901315
-CH4,CH4_2980_3040,CH4_2980_3040_473.15K,473.15,1.0,HITEMP,expanded_ET,19.68596944860176
-CH4,CH4_2980_3040,CH4_2980_3040_473.15K,473.15,1.0,HITEMP,frozen,36.2669240886818
-CH4,CH4_2980_3040,CH4_2980_3040_473.15K,473.15,1.0,HITEMP,linear,21.444062335159096
-CH4,CH4_2980_3040,CH4_2980_3040_473.15K,473.15,1.0,HITEMP,inverse_T,15.815381466925205
-CH4,CH4_2980_3040,CH4_2980_3040_573.15K,573.15,1.0,HITEMP,expanded_no_HITRAN,32.013251505180676
-CH4,CH4_2980_3040,CH4_2980_3040_573.15K,573.15,1.0,HITEMP,expanded_ET,27.440589053988163
-CH4,CH4_2980_3040,CH4_2980_3040_573.15K,573.15,1.0,HITEMP,frozen,57.75275565818158
-CH4,CH4_2980_3040,CH4_2980_3040_573.15K,573.15,1.0,HITEMP,linear,46.79290137177984
-CH4,CH4_2980_3040,CH4_2980_3040_573.15K,573.15,1.0,HITEMP,inverse_T,35.36115010930206
-CH4,CH4_2980_3040,CH4_2980_3040_673.15K,673.15,1.0,HITEMP,expanded_no_HITRAN,41.568005126803456
-CH4,CH4_2980_3040,CH4_2980_3040_673.15K,673.15,1.0,HITEMP,expanded_ET,36.649588887887894
-CH4,CH4_2980_3040,CH4_2980_3040_673.15K,673.15,1.0,HITEMP,frozen,76.96210933826069
-CH4,CH4_2980_3040,CH4_2980_3040_673.15K,673.15,1.0,HITEMP,linear,69.33220690719172
-CH4,CH4_2980_3040,CH4_2980_3040_673.15K,673.15,1.0,HITEMP,inverse_T,56.748617316823456
-CH4,CH4_2980_3040,CH4_2980_3040_773.15K,773.15,1.0,HITEMP,expanded_no_HITRAN,51.15918597584665
-CH4,CH4_2980_3040,CH4_2980_3040_773.15K,773.15,1.0,HITEMP,expanded_ET,44.31391348789529
-CH4,CH4_2980_3040,CH4_2980_3040_773.15K,773.15,1.0,HITEMP,frozen,93.55759044181282
-CH4,CH4_2980_3040,CH4_2980_3040_773.15K,773.15,1.0,HITEMP,linear,91.18240059888846
-CH4,CH4_2980_3040,CH4_2980_3040_773.15K,773.15,1.0,HITEMP,inverse_T,77.8130009509066
-CH4,CH4_2980_3040,CH4_2980_3040_873.15K,873.15,1.0,HITEMP,expanded_no_HITRAN,61.73129946051259
-CH4,CH4_2980_3040,CH4_2980_3040_873.15K,873.15,1.0,HITEMP,expanded_ET,53.30673937105488
-CH4,CH4_2980_3040,CH4_2980_3040_873.15K,873.15,1.0,HITEMP,frozen,107.92314251023444
-CH4,CH4_2980_3040,CH4_2980_3040_873.15K,873.15,1.0,HITEMP,linear,113.60823504563844
-CH4,CH4_2980_3040,CH4_2980_3040_873.15K,873.15,1.0,HITEMP,inverse_T,97.73412973893313
-CH4,CH4_2980_3040,CH4_2980_3040_973.15K,973.15,1.0,HITEMP,expanded_no_HITRAN,68.7612714942068
-CH4,CH4_2980_3040,CH4_2980_3040_973.15K,973.15,1.0,HITEMP,expanded_ET,59.550401974733965
-CH4,CH4_2980_3040,CH4_2980_3040_973.15K,973.15,1.0,HITEMP,frozen,120.59133272930063
-CH4,CH4_2980_3040,CH4_2980_3040_973.15K,973.15,1.0,HITEMP,linear,137.81395069282772
-CH4,CH4_2980_3040,CH4_2980_3040_973.15K,973.15,1.0,HITEMP,inverse_T,116.63519916393356
-CH4,CH4_2980_3040,CH4_2980_3040_1173.15K,1173.15,1.0,HITEMP,expanded_no_HITRAN,81.68458290117486
-CH4,CH4_2980_3040,CH4_2980_3040_1173.15K,1173.15,1.0,HITEMP,expanded_ET,66.51556834983468
-CH4,CH4_2980_3040,CH4_2980_3040_1173.15K,1173.15,1.0,HITEMP,frozen,142.46091849199195
-CH4,CH4_2980_3040,CH4_2980_3040_1173.15K,1173.15,1.0,HITEMP,linear,192.3744701353322
-CH4,CH4_2980_3040,CH4_2980_3040_1173.15K,1173.15,1.0,HITEMP,inverse_T,152.5883197318677
-CH4,CH4_2980_3040,CH4_2980_3040_1373.15K,1373.15,1.0,HITEMP,expanded_no_HITRAN,92.1948222559724
-CH4,CH4_2980_3040,CH4_2980_3040_1373.15K,1373.15,1.0,HITEMP,expanded_ET,72.31104337608487
-CH4,CH4_2980_3040,CH4_2980_3040_1373.15K,1373.15,1.0,HITEMP,frozen,162.01800667460157
-CH4,CH4_2980_3040,CH4_2980_3040_1373.15K,1373.15,1.0,HITEMP,linear,257.02858967400306
-CH4,CH4_2980_3040,CH4_2980_3040_1373.15K,1373.15,1.0,HITEMP,inverse_T,189.63874956794746
-CH4,CH4_2980_3040,CH4_2980_3040_1573.15K,1573.15,1.0,HITEMP,expanded_no_HITRAN,102.15017364827341
-CH4,CH4_2980_3040,CH4_2980_3040_1573.15K,1573.15,1.0,HITEMP,expanded_ET,79.06139164544443
-CH4,CH4_2980_3040,CH4_2980_3040_1573.15K,1573.15,1.0,HITEMP,frozen,181.96512626665253
-CH4,CH4_2980_3040,CH4_2980_3040_1573.15K,1573.15,1.0,HITEMP,linear,336.3602831729014
-CH4,CH4_2980_3040,CH4_2980_3040_1573.15K,1573.15,1.0,HITEMP,inverse_T,232.60007512910823
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_350K,350.0,1.0,measurement,expanded_no_HITRAN,16.75848802396313
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_350K,350.0,1.0,measurement,expanded_ET,11.898769117429246
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_350K,350.0,1.0,measurement,frozen,5.793949392844087
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_350K,350.0,1.0,measurement,linear,4.013845625071491
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_350K,350.0,1.0,measurement,inverse_T,3.9420679967286265
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_400K,400.0,1.0,measurement,expanded_no_HITRAN,14.272501293679877
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_400K,400.0,1.0,measurement,expanded_ET,13.285007810448338
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_400K,400.0,1.0,measurement,frozen,11.998530572246338
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_400K,400.0,1.0,measurement,linear,6.155152879282694
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_400K,400.0,1.0,measurement,inverse_T,6.476040027136517
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_450K,450.0,1.0,measurement,expanded_no_HITRAN,14.671648773951462
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_450K,450.0,1.0,measurement,expanded_ET,16.809477592602956
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_450K,450.0,1.0,measurement,frozen,17.4162105979487
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_450K,450.0,1.0,measurement,linear,9.289934450907428
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_450K,450.0,1.0,measurement,inverse_T,13.7839261666746
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_500K,500.0,1.0,measurement,expanded_no_HITRAN,16.939764356091903
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_500K,500.0,1.0,measurement,expanded_ET,20.970357645111598
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_500K,500.0,1.0,measurement,frozen,22.095238644591902
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_500K,500.0,1.0,measurement,linear,13.436832399817147
-toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_500K,500.0,1.0,measurement,inverse_T,43.96969917956477
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_350K,350.0,1.0,measurement,expanded_no_HITRAN,10.990283841825093
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_350K,350.0,1.0,measurement,expanded_ET,11.89749476796707
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_350K,350.0,1.0,measurement,frozen,5.295535842528681
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_350K,350.0,1.0,measurement,linear,7.455624182094407
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_350K,350.0,1.0,measurement,inverse_T,6.680726934340631
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_400K,400.0,1.0,measurement,expanded_no_HITRAN,12.179837378141656
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_400K,400.0,1.0,measurement,expanded_ET,17.010440177350482
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_400K,400.0,1.0,measurement,frozen,10.568932101132248
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_400K,400.0,1.0,measurement,linear,15.536532194994713
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_400K,400.0,1.0,measurement,inverse_T,12.524414695248845
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_450K,450.0,1.0,measurement,expanded_no_HITRAN,14.43404477341524
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_450K,450.0,1.0,measurement,expanded_ET,21.09662001055261
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_450K,450.0,1.0,measurement,frozen,14.929871004760201
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_450K,450.0,1.0,measurement,linear,22.371358989193904
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_450K,450.0,1.0,measurement,inverse_T,17.16381064756565
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_500K,500.0,1.0,measurement,expanded_no_HITRAN,17.407906473564896
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_500K,500.0,1.0,measurement,expanded_ET,24.822630573935378
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_500K,500.0,1.0,measurement,frozen,19.037548780010543
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_500K,500.0,1.0,measurement,linear,29.138781641520676
-toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_500K,500.0,1.0,measurement,inverse_T,21.5969434927199
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_350K,350.0,1.0,measurement,expanded_no_HITRAN,7.0247534844719715
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_350K,350.0,1.0,measurement,expanded_ET,6.137271091748845
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_350K,350.0,1.0,measurement,frozen,2.654259087713405
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_350K,350.0,1.0,measurement,linear,1.7083299497799926
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_350K,350.0,1.0,measurement,inverse_T,1.727401607947168
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_400K,400.0,1.0,measurement,expanded_no_HITRAN,4.915759830528486
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_400K,400.0,1.0,measurement,expanded_ET,4.817395933630763
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_400K,400.0,1.0,measurement,frozen,6.132636120087766
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_400K,400.0,1.0,measurement,linear,1.8889263835002155
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_400K,400.0,1.0,measurement,inverse_T,2.1771842586477366
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_450K,450.0,1.0,measurement,expanded_no_HITRAN,6.056452355006563
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_450K,450.0,1.0,measurement,expanded_ET,6.6678387546452305
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_450K,450.0,1.0,measurement,frozen,9.151002281546052
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_450K,450.0,1.0,measurement,linear,2.9271955334076307
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_450K,450.0,1.0,measurement,inverse_T,3.5247337848989932
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_500K,500.0,1.0,measurement,expanded_no_HITRAN,7.22870924496447
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_500K,500.0,1.0,measurement,expanded_ET,8.141999968466022
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_500K,500.0,1.0,measurement,frozen,11.851639066764797
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_500K,500.0,1.0,measurement,linear,4.595430499910439
-toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_500K,500.0,1.0,measurement,inverse_T,5.444522107793103
-toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_524.15K,524.15,1.0,measurement,expanded_no_HITRAN,5.980879016227754
-toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_524.15K,524.15,1.0,measurement,expanded_ET,7.0198470060053335
-toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_524.15K,524.15,1.0,measurement,frozen,17.713238374102332
-toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_524.15K,524.15,1.0,measurement,linear,9.023635688752387
-toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_524.15K,524.15,1.0,measurement,inverse_T,10.29801474999313
-toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_774.15K,774.15,1.0,measurement,expanded_no_HITRAN,10.942824089021366
-toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_774.15K,774.15,1.0,measurement,expanded_ET,12.641851325623266
-toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_774.15K,774.15,1.0,measurement,frozen,29.49665784198523
-toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_774.15K,774.15,1.0,measurement,linear,24.728093943983843
-toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_774.15K,774.15,1.0,measurement,inverse_T,21.500045601870728
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_350K,350.0,1.0,measurement,expanded_no_HITRAN,7.693490685510422
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_350K,350.0,1.0,measurement,expanded_ET,6.74166490995229
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_350K,350.0,1.0,measurement,frozen,2.432869059989492
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_350K,350.0,1.0,measurement,linear,1.9393280006329807
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_350K,350.0,1.0,measurement,inverse_T,1.8436892880107754
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_400K,400.0,1.0,measurement,expanded_no_HITRAN,7.995945640135285
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_400K,400.0,1.0,measurement,expanded_ET,9.877569132931965
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_400K,400.0,1.0,measurement,frozen,5.716662591743331
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_400K,400.0,1.0,measurement,linear,2.7843065973231007
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_400K,400.0,1.0,measurement,inverse_T,2.7116806407987384
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_450K,450.0,1.0,measurement,expanded_no_HITRAN,9.84187974644193
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_450K,450.0,1.0,measurement,expanded_ET,13.075054746943488
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_450K,450.0,1.0,measurement,frozen,8.898658776583499
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_450K,450.0,1.0,measurement,linear,4.963884966264109
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_450K,450.0,1.0,measurement,inverse_T,4.59016975661473
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_500K,500.0,1.0,measurement,expanded_no_HITRAN,11.876366238918354
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_500K,500.0,1.0,measurement,expanded_ET,15.870178857611656
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_500K,500.0,1.0,measurement,frozen,12.228284455782855
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_500K,500.0,1.0,measurement,linear,8.065766919103705
-toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_500K,500.0,1.0,measurement,inverse_T,7.013768792821893
-toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_524.15K,524.15,1.0,measurement,expanded_no_HITRAN,8.776899894286993
-toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_524.15K,524.15,1.0,measurement,expanded_ET,12.925228738489405
-toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_524.15K,524.15,1.0,measurement,frozen,13.959425153334653
-toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_524.15K,524.15,1.0,measurement,linear,10.765586807300203
-toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_524.15K,524.15,1.0,measurement,inverse_T,9.385492515144039
-toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_774.15K,774.15,1.0,measurement,expanded_no_HITRAN,15.226334675885006
-toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_774.15K,774.15,1.0,measurement,expanded_ET,19.22130275520408
-toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_774.15K,774.15,1.0,measurement,frozen,24.266661691260634
-toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_774.15K,774.15,1.0,measurement,linear,33.818966886426296
-toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_774.15K,774.15,1.0,measurement,inverse_T,22.48388237459674
-CH4,CH4_4000_4700,CH4_4000_4700_373.15K,373.15,1.0,HITEMP,expanded_no_HITRAN,13.043163338295589
-CH4,CH4_4000_4700,CH4_4000_4700_373.15K,373.15,1.0,HITEMP,expanded_ET,11.107943598547127
-CH4,CH4_4000_4700,CH4_4000_4700_373.15K,373.15,1.0,HITEMP,frozen,10.55748008999523
-CH4,CH4_4000_4700,CH4_4000_4700_373.15K,373.15,1.0,HITEMP,linear,9.940414534785193
-CH4,CH4_4000_4700,CH4_4000_4700_373.15K,373.15,1.0,HITEMP,inverse_T,9.506779101336779
-CH4,CH4_4000_4700,CH4_4000_4700_423.15K,423.15,1.0,HITEMP,expanded_no_HITRAN,11.19880097262833
-CH4,CH4_4000_4700,CH4_4000_4700_423.15K,423.15,1.0,HITEMP,expanded_ET,9.835441817703087
-CH4,CH4_4000_4700,CH4_4000_4700_423.15K,423.15,1.0,HITEMP,frozen,14.136045396956835
-CH4,CH4_4000_4700,CH4_4000_4700_423.15K,423.15,1.0,HITEMP,linear,11.03807727613678
-CH4,CH4_4000_4700,CH4_4000_4700_423.15K,423.15,1.0,HITEMP,inverse_T,9.321998333537996
-CH4,CH4_4000_4700,CH4_4000_4700_473.15K,473.15,1.0,HITEMP,expanded_no_HITRAN,11.068713735428883
-CH4,CH4_4000_4700,CH4_4000_4700_473.15K,473.15,1.0,HITEMP,expanded_ET,9.899401413056946
-CH4,CH4_4000_4700,CH4_4000_4700_473.15K,473.15,1.0,HITEMP,frozen,18.515873377427027
-CH4,CH4_4000_4700,CH4_4000_4700_473.15K,473.15,1.0,HITEMP,linear,14.407219919501
-CH4,CH4_4000_4700,CH4_4000_4700_473.15K,473.15,1.0,HITEMP,inverse_T,10.623146963535214
-CH4,CH4_4000_4700,CH4_4000_4700_523.15K,523.15,1.0,HITEMP,expanded_no_HITRAN,12.160234516812903
-CH4,CH4_4000_4700,CH4_4000_4700_523.15K,523.15,1.0,HITEMP,expanded_ET,10.519296432625605
-CH4,CH4_4000_4700,CH4_4000_4700_523.15K,523.15,1.0,HITEMP,frozen,22.72165641424054
-CH4,CH4_4000_4700,CH4_4000_4700_523.15K,523.15,1.0,HITEMP,linear,19.43815224280355
-CH4,CH4_4000_4700,CH4_4000_4700_523.15K,523.15,1.0,HITEMP,inverse_T,13.181036074550196
-CH4,CH4_4000_4700,CH4_4000_4700_573.15K,573.15,1.0,HITEMP,expanded_no_HITRAN,13.655894773483029
-CH4,CH4_4000_4700,CH4_4000_4700_573.15K,573.15,1.0,HITEMP,expanded_ET,12.195203151592574
-CH4,CH4_4000_4700,CH4_4000_4700_573.15K,573.15,1.0,HITEMP,frozen,26.623190867716218
-CH4,CH4_4000_4700,CH4_4000_4700_573.15K,573.15,1.0,HITEMP,linear,25.406674444100695
-CH4,CH4_4000_4700,CH4_4000_4700_573.15K,573.15,1.0,HITEMP,inverse_T,16.251992601581907
-CH4,CH4_4000_4700,CH4_4000_4700_623.15K,623.15,1.0,HITEMP,expanded_no_HITRAN,15.668955157413041
-CH4,CH4_4000_4700,CH4_4000_4700_623.15K,623.15,1.0,HITEMP,expanded_ET,13.094007708596124
-CH4,CH4_4000_4700,CH4_4000_4700_623.15K,623.15,1.0,HITEMP,frozen,30.201905395969824
-CH4,CH4_4000_4700,CH4_4000_4700_623.15K,623.15,1.0,HITEMP,linear,31.67744710352122
-CH4,CH4_4000_4700,CH4_4000_4700_623.15K,623.15,1.0,HITEMP,inverse_T,19.441895594470658
-CH4,CH4_4000_4700,CH4_4000_4700_673.15K,673.15,1.0,HITEMP,expanded_no_HITRAN,18.630582234953685
-CH4,CH4_4000_4700,CH4_4000_4700_673.15K,673.15,1.0,HITEMP,expanded_ET,15.622193567193285
-CH4,CH4_4000_4700,CH4_4000_4700_673.15K,673.15,1.0,HITEMP,frozen,33.47864036663806
-CH4,CH4_4000_4700,CH4_4000_4700_673.15K,673.15,1.0,HITEMP,linear,37.94082607817818
-CH4,CH4_4000_4700,CH4_4000_4700_673.15K,673.15,1.0,HITEMP,inverse_T,22.516046536850094
-CH4,CH4_4000_4700,CH4_4000_4700_723.15K,723.15,1.0,HITEMP,expanded_no_HITRAN,22.146479111273614
-CH4,CH4_4000_4700,CH4_4000_4700_723.15K,723.15,1.0,HITEMP,expanded_ET,17.329356402761555
-CH4,CH4_4000_4700,CH4_4000_4700_723.15K,723.15,1.0,HITEMP,frozen,36.3882280147094
-CH4,CH4_4000_4700,CH4_4000_4700_723.15K,723.15,1.0,HITEMP,linear,43.77335044562581
-CH4,CH4_4000_4700,CH4_4000_4700_723.15K,723.15,1.0,HITEMP,inverse_T,25.427808939966507
-CH4,CH4_4000_4700,CH4_4000_4700_773.15K,773.15,1.0,HITEMP,expanded_no_HITRAN,25.234854065144503
-CH4,CH4_4000_4700,CH4_4000_4700_773.15K,773.15,1.0,HITEMP,expanded_ET,19.454903435637508
-CH4,CH4_4000_4700,CH4_4000_4700_773.15K,773.15,1.0,HITEMP,frozen,38.87738273029121
-CH4,CH4_4000_4700,CH4_4000_4700_773.15K,773.15,1.0,HITEMP,linear,49.20626311748292
-CH4,CH4_4000_4700,CH4_4000_4700_773.15K,773.15,1.0,HITEMP,inverse_T,28.083534727413905
+species,window,record_id,temperature_K,pressure_atm,source_kind,final_error_percent,without_hitran_error_percent,unchanged_error_percent
+"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_340K_1.01bar",340.0,0.9967924993831729,measurement,24.503814635951077,18.62818137298181,17.475801655232008
+"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_431K_1.01bar",431.0,0.9967924993831729,measurement,15.28322079655362,10.403212299358236,22.017213405787516
+"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_512K_1.01bar",512.0,0.9967924993831729,measurement,16.68833926802066,14.549181466047429,31.378829939978676
+"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_537K_0.96bar",537.0,0.9474463360473723,measurement,23.45655980428746,21.052756112110355,33.88832948339726
+"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_579K_1.01bar",579.0,0.9967924993831729,measurement,21.208985845810687,21.977592063844707,39.48643394476738
+"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_613K_0.94bar",613.0,0.927707870713052,measurement,28.02879087604241,28.44295102373864,45.39421194154379
+"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_690K_0.95bar",690.0,0.9375771033802122,measurement,23.946858361706507,26.33397545348143,50.97807041709453
+"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_800K_0.97bar",800.0,0.9573155687145324,measurement,38.97408008779528,44.037951062711976,61.339431641082754
+"1,2-dimethoxyethane","1,2-dimethoxyethane","Adil_1,2-dimethoxyethane_816K_0.96bar",816.0,0.9474463360473723,measurement,42.78724769385397,48.51051844687216,65.48315369253793
+acetone,acetone,Acetone_605K_1atm,604.81,1.25,measurement,8.299380731219886,7.444680380531,28.454349671217212
+acetone,acetone,Acetone_782K_1atm,782.23,1.1,measurement,11.655356011825411,11.19856006705473,44.81157664266911
+acetone,acetone,Acetone_974K_1atm,974.22,1.18,measurement,15.952299394899846,16.529253835699787,60.135903605076294
+di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_604K_1.05bar,604.0,1.0362694300518136,measurement,23.263724381603662,23.028871515735588,42.36395743353784
+di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_690K_1.12bar,690.0,1.1053540587219346,measurement,30.98665027985316,33.00919327600032,53.80342956656843
+di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_758K_1.03bar,758.0,1.0165309647174932,measurement,36.325473052120124,39.99730189643079,61.93637305755604
+di-n-propyl ether,di-n-propyl ether,Adil_di-n-propyl_ether_838K_0.96bar,838.0,0.9474463360473723,measurement,40.32572708494437,44.70337122454393,67.54417248309227
+diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_559K_1.07bar,559.0,1.0560078953861338,measurement,17.8591768310666,17.638062136380874,28.496776136538738
+diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_595K_0.95bar,595.0,0.9375771033802122,measurement,20.7960588308072,20.175730151428706,32.73376539317545
+diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_690K_1.05bar,690.0,1.0362694300518136,measurement,25.56408863130243,24.396049143204632,38.39082330484289
+diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_764K_1.05bar,764.0,1.0362694300518136,measurement,29.646714401923834,28.830421053203043,42.37106214962039
+diisopropyl ether,diisopropyl ether,Adil_diisopropyl_ether_853K_1.04bar,853.0,1.0264001973846535,measurement,30.524001698328817,31.186118838395434,42.63973824548746
+n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_671K_1.5bar,671.0,1.4803849000740192,measurement,17.095965614344852,10.117325709944307,62.83517213950277
+n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_754K_1.35bar,754.0,1.3323464100666174,measurement,21.789110836192627,15.18211011960452,76.97523332307482
+n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_806K_1.26bar,806.0,1.2435233160621761,measurement,24.494018769399023,17.558937136766286,85.94143525365075
+n-propyl acetate,n-propyl acetate,Adil_n-propyl_acetate_862K_1.19bar,862.0,1.1744386873920551,measurement,29.632088582037134,24.99064478834645,96.0635187707648
+NO,NO_1600_2050,NO_1600_2050_373.15K,373.15,1.0,HITEMP,16.567186060885696,17.051650250245196,10.528082260332111
+NO,NO_1600_2050,NO_1600_2050_473.15K,473.15,1.0,HITEMP,15.28508416768883,14.732994831700466,27.730601044027196
+NO,NO_1600_2050,NO_1600_2050_573.15K,573.15,1.0,HITEMP,17.503958537549355,16.345821943148138,41.273626235785734
+NO,NO_1600_2050,NO_1600_2050_673.15K,673.15,1.0,HITEMP,19.99234763215685,19.313637827123046,52.3311755720706
+NO,NO_1600_2050,NO_1600_2050_773.15K,773.15,1.0,HITEMP,22.327379636655436,22.6665824337272,61.42689679114463
+NO,NO_1600_2050,NO_1600_2050_873.15K,873.15,1.0,HITEMP,24.839088000957727,26.27953942040398,69.08473710965534
+NO,NO_1600_2050,NO_1600_2050_973.15K,973.15,1.0,HITEMP,27.774761640650265,27.751311643795777,75.53996039021904
+NO,NO_1600_2050,NO_1600_2050_1173.15K,1173.15,1.0,HITEMP,36.97262266688229,30.772901530789362,85.85706377128024
+NO,NO_1600_2050,NO_1600_2050_1373.15K,1373.15,1.0,HITEMP,42.445257129231436,34.307884711546244,93.67334094074411
+NO,NO_1600_2050,NO_1600_2050_1573.15K,1573.15,1.0,HITEMP,43.67574887848138,38.315335227115156,99.77503948792905
+CH4,CH4_1280_1340,CH4_1280_1340_373.15K,373.15,1.0,HITEMP,15.55799132986933,23.461906260236344,12.191529487157114
+CH4,CH4_1280_1340,CH4_1280_1340_473.15K,473.15,1.0,HITEMP,13.09528425544265,18.719965880475666,30.027874501144353
+CH4,CH4_1280_1340,CH4_1280_1340_573.15K,573.15,1.0,HITEMP,14.12014019224023,21.32426156091295,46.895655027946425
+CH4,CH4_1280_1340,CH4_1280_1340_673.15K,673.15,1.0,HITEMP,16.77238101044139,30.083268129649266,62.47077227315597
+CH4,CH4_1280_1340,CH4_1280_1340_773.15K,773.15,1.0,HITEMP,21.161277866030858,41.205992785179454,76.53383168806869
+CH4,CH4_1280_1340,CH4_1280_1340_873.15K,873.15,1.0,HITEMP,25.786918948531643,52.99110496233109,89.25377583229015
+CH4,CH4_1280_1340,CH4_1280_1340_973.15K,973.15,1.0,HITEMP,31.8752388941438,62.450646853143695,101.58312783610661
+CH4,CH4_1280_1340,CH4_1280_1340_1173.15K,1173.15,1.0,HITEMP,35.02764086755666,75.03655291437107,125.00121646448112
+CH4,CH4_1280_1340,CH4_1280_1340_1373.15K,1373.15,1.0,HITEMP,38.54009333662053,88.26965654802014,146.59784260600784
+CH4,CH4_1280_1340,CH4_1280_1340_1573.15K,1573.15,1.0,HITEMP,41.9203500366728,100.99230259916284,167.59159551732182
+CH4,CH4_2980_3040,CH4_2980_3040_373.15K,373.15,1.0,HITEMP,14.804696381084415,21.43433729958117,12.634387417029943
+CH4,CH4_2980_3040,CH4_2980_3040_473.15K,473.15,1.0,HITEMP,18.18813971731099,23.2896375164141,36.2669240886818
+CH4,CH4_2980_3040,CH4_2980_3040_573.15K,573.15,1.0,HITEMP,25.521183751996162,31.13804207793513,57.75275565818158
+CH4,CH4_2980_3040,CH4_2980_3040_673.15K,673.15,1.0,HITEMP,35.40081410005316,42.22172057241113,76.96210933826069
+CH4,CH4_2980_3040,CH4_2980_3040_773.15K,773.15,1.0,HITEMP,46.88068089089078,55.9692455782978,93.5575904418128
+CH4,CH4_2980_3040,CH4_2980_3040_873.15K,873.15,1.0,HITEMP,57.23506478310852,67.72341074311515,107.92314251023446
+CH4,CH4_2980_3040,CH4_2980_3040_973.15K,973.15,1.0,HITEMP,65.62144567943221,75.7357500412565,120.59133272930063
+CH4,CH4_2980_3040,CH4_2980_3040_1173.15K,1173.15,1.0,HITEMP,75.19830886928395,88.43639470971915,142.46091849199192
+CH4,CH4_2980_3040,CH4_2980_3040_1373.15K,1373.15,1.0,HITEMP,80.42022059035965,100.13927328171063,162.01800667460157
+CH4,CH4_2980_3040,CH4_2980_3040_1573.15K,1573.15,1.0,HITEMP,86.33504545435954,112.16512556569263,181.96512626665253
+toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_350K,350.0,1.0,measurement,14.171462414407078,18.18465649017963,5.797640138541602
+toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_400K,400.0,1.0,measurement,18.638051349174216,19.84102652243987,12.002058424934415
+toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_450K,450.0,1.0,measurement,24.610522879128663,23.333965228100023,17.41960611787445
+toluene,toluene__added_640.094_1000.000,Farouki2025_F13_d_500K,500.0,1.0,measurement,29.186557536983653,26.104172641684237,22.0985232857683
+toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_350K,350.0,1.0,measurement,13.792186543402378,9.648781125533985,5.295535842528681
+toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_400K,400.0,1.0,measurement,20.411416417474815,14.314712610310524,10.568932101132246
+toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_450K,450.0,1.0,measurement,24.942293648191608,18.408882337761902,14.9298710047602
+toluene,toluene__added_1000.000_1400.000,Farouki2025_S5_a_500K,500.0,1.0,measurement,28.976255008021372,21.126018611847304,19.037548780010543
+toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_350K,350.0,1.0,measurement,5.255909146058539,6.402188055788668,2.6542590877134047
+toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_400K,400.0,1.0,measurement,4.913384678292484,5.505377739627285,6.132636120087766
+toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_450K,450.0,1.0,measurement,7.6343585514030945,7.68321504317767,9.15100228154605
+toluene,toluene__added_2600.000_3000.000,Farouki2025_S5_b_500K,500.0,1.0,measurement,9.616323537381628,8.916682282225585,11.851639066764797
+toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_524.15K,524.15,1.0,measurement,8.483968980164628,7.450909337328449,17.713238374102332
+toluene,toluene__added_2600.000_3000.000,klingbeil_toluene_774.15K,774.15,1.0,measurement,11.613575001566844,10.064517901645768,29.49665784198523
+toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_350K,350.0,1.0,measurement,5.929760859527921,5.935352142056908,2.432869059989492
+toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_400K,400.0,1.0,measurement,9.878060122105387,6.225620279953729,5.71666259174333
+toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_450K,450.0,1.0,measurement,12.783746899821686,8.4733259977855,8.8986587765835
+toluene,toluene__added_3000.000_3196.958,Farouki2025_S5_b_500K,500.0,1.0,measurement,15.784086410831405,10.499954863041125,12.228284455782855
+toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_524.15K,524.15,1.0,measurement,12.147351913951258,6.695308701676763,13.959425153334655
+toluene,toluene__added_3000.000_3196.958,klingbeil_toluene_774.15K,774.15,1.0,measurement,20.558670564127947,14.375699953371763,24.266661691260637
+CH4,CH4_4000_4700,CH4_4000_4700_373.15K,373.15,1.0,HITEMP,14.520992407905394,14.852112608705434,10.55748008999523
+CH4,CH4_4000_4700,CH4_4000_4700_423.15K,423.15,1.0,HITEMP,12.808138514551016,12.992193631646629,14.136045396956833
+CH4,CH4_4000_4700,CH4_4000_4700_473.15K,473.15,1.0,HITEMP,11.950858983881297,12.40220828533897,18.51587337742703
+CH4,CH4_4000_4700,CH4_4000_4700_523.15K,523.15,1.0,HITEMP,11.906408583750684,12.772234383621255,22.72165641424054
+CH4,CH4_4000_4700,CH4_4000_4700_573.15K,573.15,1.0,HITEMP,13.404604527257748,14.030130150724943,26.623190867716215
+CH4,CH4_4000_4700,CH4_4000_4700_623.15K,623.15,1.0,HITEMP,14.19999922538668,15.933702095659584,30.20190539596982
+CH4,CH4_4000_4700,CH4_4000_4700_673.15K,673.15,1.0,HITEMP,16.653210432212624,18.480238762314176,33.478640366638054
+CH4,CH4_4000_4700,CH4_4000_4700_723.15K,723.15,1.0,HITEMP,18.207782230628208,22.159916915014726,36.3882280147094
+CH4,CH4_4000_4700,CH4_4000_4700_773.15K,773.15,1.0,HITEMP,20.276250564307624,25.38179722435117,38.87738273029121

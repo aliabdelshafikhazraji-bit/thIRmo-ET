@@ -1,21 +1,347 @@
 {
-  "weights_sha256": "a20b2a2322de0a3466293a364be6ed3d056781d0786b482e3735f94840f93a8e",
-  "version": "2.5.1",
-  "parameters": {
-    "n_estimators": 128,
-    "max_depth": 16,
-    "min_samples_leaf": 16,
-    "max_features": 0.8,
-    "random_state": 20261029,
-    "n_jobs": 3
-  },
   "hitran_weight": 0.5,
-  "protocol_sha256": "8ce9bfa4b93ed82cc5c8baf13b85356504188e60effeedcea3dd0e8d970bbf93",
+  "fit_rows": 195284,
+  "weight_audit": [
+    {
+      "species": "1,3-butadiene",
+      "window": "1,3-butadiene",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "acetaldehyde",
+      "window": "acetaldehyde",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "ethanol",
+      "window": "ethanol",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "ethyl acetate",
+      "window": "ethyl acetate",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "ethylene",
+      "window": "ethylene",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "isobutene",
+      "window": "isobutene",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "methyl acetate",
+      "window": "methyl acetate",
+      "block": "training",
+      "raw_weight": 0.3333333333333333
+    },
+    {
+      "species": "n-butyl acetate",
+      "window": "n-butyl acetate",
+      "block": "training",
+      "raw_weight": 0.9999999999999999
+    },
+    {
+      "species": "propene",
+      "window": "propene",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "CO",
+      "window": "CO_1800_2300",
+      "block": "training",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "CO",
+      "window": "CO_4000_4400",
+      "block": "training",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "CO2",
+      "window": "CO2_650_700",
+      "block": "training",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "CO2",
+      "window": "CO2_2320_2370",
+      "block": "training",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "1,3-butadiene",
+      "window": "1,3-butadiene__added_750.231_1000.000",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "1,3-butadiene",
+      "window": "1,3-butadiene__added_1000.000_1400.000",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "1,3-butadiene",
+      "window": "1,3-butadiene__added_2600.000_3000.000",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "1,3-butadiene",
+      "window": "1,3-butadiene__added_3000.000_3199.986",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "methyl acetate",
+      "window": "methyl acetate__added_2600.000_3000.000",
+      "block": "training",
+      "raw_weight": 0.3333333333333333
+    },
+    {
+      "species": "methyl acetate",
+      "window": "methyl acetate__added_3000.000_3400.000",
+      "block": "training",
+      "raw_weight": 0.3333333333333333
+    },
+    {
+      "species": "methyl formate",
+      "window": "methyl formate__added_1655.830_1873.970",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "methyl propionate",
+      "window": "methyl propionate__added_2600.000_3000.000",
+      "block": "training",
+      "raw_weight": 0.4999999999999999
+    },
+    {
+      "species": "methyl propionate",
+      "window": "methyl propionate__added_3000.000_3400.000",
+      "block": "training",
+      "raw_weight": 0.4999999999999999
+    },
+    {
+      "species": "n-heptane",
+      "window": "n-heptane__added_2802.198_3097.802",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "propene",
+      "window": "propene__added_600.000_1000.000",
+      "block": "training",
+      "raw_weight": 0.19999999999999998
+    },
+    {
+      "species": "propene",
+      "window": "propene__added_1000.000_1400.000",
+      "block": "training",
+      "raw_weight": 0.19999999999999998
+    },
+    {
+      "species": "propene",
+      "window": "propene__added_2600.000_3000.000",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "propene",
+      "window": "propene__added_3000.000_3400.000",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "1-butene",
+      "window": "1-butene",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "dimethoxymethane",
+      "window": "dimethoxymethane",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "propane",
+      "window": "propane__added_2600.000_3000.000",
+      "block": "training",
+      "raw_weight": 0.5
+    },
+    {
+      "species": "propane",
+      "window": "propane__added_3000.000_3400.000",
+      "block": "training",
+      "raw_weight": 0.5
+    },
+    {
+      "species": "NH3",
+      "window": "NH3_650_1250",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "NH3",
+      "window": "NH3_1350_1900",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "SO2",
+      "window": "SO2_950_1220",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "SO2",
+      "window": "SO2_1220_1450",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "HCl",
+      "window": "HCl_2400_3150",
+      "block": "hitran",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "HF",
+      "window": "HF_3945_4215",
+      "block": "hitran",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "HBr",
+      "window": "HBr_2365_2725",
+      "block": "hitran",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "OCS",
+      "window": "OCS_1990_2125",
+      "block": "hitran",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "formaldehyde",
+      "window": "H2CO_1662_1845",
+      "block": "hitran",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "CH3Cl",
+      "window": "CH3Cl_2820_3145",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "CH3Cl",
+      "window": "CH3Cl_650_805",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "C2H2",
+      "window": "C2H2_650_815",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "C2H2",
+      "window": "C2H2_3190_3385",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "PH3",
+      "window": "PH3_2180_2470",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "PH3",
+      "window": "PH3_880_1280",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "H2S",
+      "window": "H2S_3615_3980",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "H2S",
+      "window": "H2S_1055_1450",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "ethylene",
+      "window": "C2H4_865_1178",
+      "block": "hitran",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "CH3Br",
+      "window": "CH3Br_1230_1565",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "CH3Br",
+      "window": "CH3Br_850_1075",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "CF4",
+      "window": "CF4_1220_1340",
+      "block": "hitran",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "GeH4",
+      "window": "GeH4_1980_2235",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "GeH4",
+      "window": "GeH4_740_900",
+      "block": "hitran",
+      "raw_weight": 0.24999999999999997
+    },
+    {
+      "species": "CS2",
+      "window": "CS2_1465_1595",
+      "block": "hitran",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "CH3F",
+      "window": "CH3F_955_1135",
+      "block": "hitran",
+      "raw_weight": 0.49999999999999994
+    }
+  ],
   "training_identities": [
     "1,3-butadiene",
-    "1,3-dioxolane",
     "1-butene",
-    "2-methyl-1,3-dioxolane",
     "C2H2",
     "CF4",
     "CH3Br",
@@ -25,21 +351,15 @@
     "CO2",
     "CS2",
     "GeH4",
-    "H2O",
-    "H2O2",
     "H2S",
     "HBr",
-    "HCN",
     "HCl",
     "HF",
     "NH3",
-    "NO2",
     "OCS",
     "PH3",
     "SO2",
     "acetaldehyde",
-    "benzene",
-    "cis-2-butene",
     "dimethoxymethane",
     "ethanol",
     "ethyl acetate",
@@ -47,17 +367,12 @@
     "formaldehyde",
     "isobutene",
     "methyl acetate",
-    "methyl butanoate",
-    "methyl crotonate",
     "methyl formate",
     "methyl propionate",
     "n-butyl acetate",
-    "n-dodecane",
     "n-heptane",
-    "naphthalene",
     "propane",
-    "propene",
-    "trans-2-butene"
+    "propene"
   ],
   "testing_identities": [
     "1,2-dimethoxyethane",
@@ -69,9 +384,13 @@
     "n-propyl acetate",
     "toluene"
   ],
-  "name": "thIRmo-ET",
-  "algorithm": "Extremely randomized regression trees",
-  "input_mode": "One, two, or three measured spectra at temperatures up to 350 K",
-  "output": "Predicted cross section in cm2/molecule at 512 wavenumbers",
-  "evaluation_protocol_sha256": "fa814604e151b2c1e08a0e859818e3dd5e7a012de7941035f40fa414f20e16f6"
+  "weights_sha256": "258cfaffa9820b8f36f974febaa6e544a53eb9b18035db063f9e63222ec1064c",
+  "parameters": {
+    "n_estimators": 128,
+    "max_depth": 16,
+    "min_samples_leaf": 16,
+    "max_features": 0.8,
+    "random_state": 20261029,
+    "n_jobs": 3
+  }
 }

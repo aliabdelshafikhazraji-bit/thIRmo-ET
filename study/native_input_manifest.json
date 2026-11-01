@@ -1,0 +1,171 @@
+{
+  "1,2-dimethoxyethane": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/1_2-Dimethoxyethane/DME12_5T.TXT",
+      "PNNL/1_2-Dimethoxyethane/DME12_25T.TXT",
+      "PNNL/1_2-Dimethoxyethane/DME12_50T.TXT"
+    ],
+    "sha256": [
+      "4814e4e07084358406a04c70086e6756a65b2204495a4212064d41fdc295d3c7",
+      "c224730de22fe523ae15ac6f41041b45656eaf1366060385f43543d3850031a9",
+      "1451c59c803ee4bceabbe4d1563de977eecc7b47d3166b1127dd48574efc55b8"
+    ]
+  },
+  "acetone": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Acetone/ACETONE_5T.TXT",
+      "PNNL/Acetone/ACETONE_25T.TXT",
+      "PNNL/Acetone/ACETONE_50T.TXT"
+    ],
+    "sha256": [
+      "e254294fb572f11d007cd2d75e67b7958e40a37c877d8dc198bb139dea779f67",
+      "6e5044585ae2fd798b641e1b2c9b6683aa778e051f2c38414a6d8f3a4d9498e2",
+      "2271478315eae2dddaca0c9d5499350314472d4610c91da33679928514046f48"
+    ]
+  },
+  "di-n-propyl ether": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Dipropyl_ether/DIPETHER_5T.TXT",
+      "PNNL/Dipropyl_ether/DIPETHER_25T.TXT",
+      "PNNL/Dipropyl_ether/DIPETHER_50T.TXT"
+    ],
+    "sha256": [
+      "9d2c6726972ffcac72d4152b22b49feeb43a8414bedd2da730c0b3db982096c7",
+      "f744497699fe31e4cbb518aa7d60fd878e6531dcad76c50f8d0d3b897d2b92d2",
+      "a2c02646bb05ca09411740d924dfb699efe74d756579f259de02984f212b7ee0"
+    ]
+  },
+  "diisopropyl ether": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Diisopropyl_ether/DIPE_5T.TXT",
+      "PNNL/Diisopropyl_ether/DIPE_25T.TXT",
+      "PNNL/Diisopropyl_ether/DIPE_50T.TXT"
+    ],
+    "sha256": [
+      "38f7e66dd9a2f34375b9552a5f0870f7cde2230e8fd83f9b8637d63119d50cd2",
+      "d9f06224d407deccb411806aa3dc7445a612235cc2f3b519da6c3f72182fa541",
+      "399467314c9b50699314ac88154169f91e938ff519ac183f650e1c4ac349d4c5"
+    ]
+  },
+  "n-propyl acetate": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Propyl_acetate/PACETATE_5T.TXT",
+      "PNNL/Propyl_acetate/PACETATE_25T.TXT",
+      "PNNL/Propyl_acetate/PACETATE_50T.TXT"
+    ],
+    "sha256": [
+      "3645c96476f5bcae0c7c3b2cc2c9dc07786389bd462d0f7ceb6708e6b41bf44e",
+      "4f83a36a7c4e609aec87a6374517bbdd410f836514b69df4169120af883fead5",
+      "91dbef4f517538ce0bc20e6ca6cb11da7312d191cc7d8e2d5bf147431de396c8"
+    ]
+  },
+  "NO_1600_2050": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Nitric_oxide/NO_5T.TXT",
+      "PNNL/Nitric_oxide/NO_25T.TXT",
+      "PNNL/Nitric_oxide/NO_50T.TXT"
+    ],
+    "sha256": [
+      "b37de867c503476513adae7fcc2376763ffc380c80aba2e3ab2654fd5684f9b0",
+      "c2b089d29cf572fabb57eb69b266f1171133b3d77c544d3044f3f5625b85aa01",
+      "e30663d739f4f21bca652f29b45542a7711b1bd025a8884310ec8447830265b1"
+    ]
+  },
+  "CH4_1280_1340": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Methane/CH4_5T.TXT",
+      "PNNL/Methane/CH4_25T.TXT",
+      "PNNL/Methane/CH4_50T.TXT"
+    ],
+    "sha256": [
+      "6f7835372764e3a6f7cd685e227a0eafd29b21b8ab93b6b73b09d45b6685176e",
+      "ad3e68182af7ec71edb24310a98ab1ff492795c524fac3d98150b8a22a39f927",
+      "ac55840a45128f7eb41c60de38d02ae57aed45fdbcbb887756d35480dd649d3d"
+    ]
+  },
+  "CH4_2980_3040": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Methane/CH4_5T.TXT",
+      "PNNL/Methane/CH4_25T.TXT",
+      "PNNL/Methane/CH4_50T.TXT"
+    ],
+    "sha256": [
+      "6f7835372764e3a6f7cd685e227a0eafd29b21b8ab93b6b73b09d45b6685176e",
+      "ad3e68182af7ec71edb24310a98ab1ff492795c524fac3d98150b8a22a39f927",
+      "ac55840a45128f7eb41c60de38d02ae57aed45fdbcbb887756d35480dd649d3d"
+    ]
+  },
+  "toluene__added_640.094_1000.000": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Toluene/TOLUENE_5T.TXT",
+      "PNNL/Toluene/TOLUENE_25T.TXT",
+      "PNNL/Toluene/TOLUENE_50T.TXT"
+    ],
+    "sha256": [
+      "265f8cfbcc3d42a1c048e1e487fc01cf0b2f0c2342b0fee0d6715d14c3bf4743",
+      "f3d41bbec413c747faff68077477bbb415544caff0b5d30ae77c46aa1df73cbc",
+      "e19f8d58f09bfea05a20fd5f711cb1d151d934add65bd9d1d341cdb06bdb9ca8"
+    ]
+  },
+  "toluene__added_1000.000_1400.000": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Toluene/TOLUENE_5T.TXT",
+      "PNNL/Toluene/TOLUENE_25T.TXT",
+      "PNNL/Toluene/TOLUENE_50T.TXT"
+    ],
+    "sha256": [
+      "265f8cfbcc3d42a1c048e1e487fc01cf0b2f0c2342b0fee0d6715d14c3bf4743",
+      "f3d41bbec413c747faff68077477bbb415544caff0b5d30ae77c46aa1df73cbc",
+      "e19f8d58f09bfea05a20fd5f711cb1d151d934add65bd9d1d341cdb06bdb9ca8"
+    ]
+  },
+  "toluene__added_2600.000_3000.000": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Toluene/TOLUENE_5T.TXT",
+      "PNNL/Toluene/TOLUENE_25T.TXT",
+      "PNNL/Toluene/TOLUENE_50T.TXT"
+    ],
+    "sha256": [
+      "265f8cfbcc3d42a1c048e1e487fc01cf0b2f0c2342b0fee0d6715d14c3bf4743",
+      "f3d41bbec413c747faff68077477bbb415544caff0b5d30ae77c46aa1df73cbc",
+      "e19f8d58f09bfea05a20fd5f711cb1d151d934add65bd9d1d341cdb06bdb9ca8"
+    ]
+  },
+  "toluene__added_3000.000_3196.958": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Toluene/TOLUENE_5T.TXT",
+      "PNNL/Toluene/TOLUENE_25T.TXT",
+      "PNNL/Toluene/TOLUENE_50T.TXT"
+    ],
+    "sha256": [
+      "265f8cfbcc3d42a1c048e1e487fc01cf0b2f0c2342b0fee0d6715d14c3bf4743",
+      "f3d41bbec413c747faff68077477bbb415544caff0b5d30ae77c46aa1df73cbc",
+      "e19f8d58f09bfea05a20fd5f711cb1d151d934add65bd9d1d341cdb06bdb9ca8"
+    ]
+  },
+  "CH4_4000_4700": {
+    "units": "pnnl",
+    "files": [
+      "PNNL/Methane/CH4_5T.TXT",
+      "PNNL/Methane/CH4_25T.TXT",
+      "PNNL/Methane/CH4_50T.TXT"
+    ],
+    "sha256": [
+      "6f7835372764e3a6f7cd685e227a0eafd29b21b8ab93b6b73b09d45b6685176e",
+      "ad3e68182af7ec71edb24310a98ab1ff492795c524fac3d98150b8a22a39f927",
+      "ac55840a45128f7eb41c60de38d02ae57aed45fdbcbb887756d35480dd649d3d"
+    ]
+  }
+}

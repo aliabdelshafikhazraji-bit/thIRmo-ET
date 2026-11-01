@@ -1,239 +1,70 @@
 {
-  "schema_version": 1,
-  "model": "Frozen broad branch of the common three-spectrum interface",
-  "weights_sha256": "a20b2a2322de0a3466293a364be6ed3d056781d0786b482e3735f94840f93a8e",
-  "branch": "broad_band_envelope",
-  "model_retrained_for_these_cases": false,
-  "molecular_identity_or_hot_spectrum_used_at_inference": false,
-  "comparison_scope": "Evaluation only: published concentration histories are rescaled with published/predicted cross-section ratios.",
-  "history_provenance": "The histories were extracted from the measured traces in published figures. Raw source histories are not redistributed.",
-  "temperature_pressure_handling": "Reported post-shock T5 and P5 held constant; no measured temperature or pressure history was supplied for these six organic cases.",
-  "uncertainty": "Both articles report cross-section uncertainty below 6%. Bars show only this upper-bound calibration contribution propagated inversely: x/1.06 to x/0.94. They are not total mole-fraction confidence intervals. Model uncertainty is not estimated.",
-  "percent_definition": "Plotted mole fraction (%) equals 100 times mole fraction. Concentration bias (%) equals 100*(sigma_reference/sigma_model - 1), relative to published retrieved concentration.",
-  "reference_cross_section_correlations": {
-    "di-n-propyl ether": "sigma(T) = -7.27e-8*T^3 + 2.438e-4*T^2 - 0.2856*T + 128.03 [m2/mol]",
-    "1,2-dimethoxyethane": "sigma(T) = 48.9 - 0.0251*T [m2/mol]"
-  },
-  "reference_and_predicted_cross_section_units": "m2/mol",
-  "metric": "100 integral(abs(x_recalculated-x_published),dt)/integral(max(x_published,0),dt)",
-  "source_articles": [
-    {
-      "species": "di-n-propyl ether",
-      "doi": "10.1021/acs.jpca.3c04446",
-      "figure": "6",
-      "bath_gas": "argon"
-    },
-    {
-      "species": "1,2-dimethoxyethane",
-      "doi": "10.1016/j.fuel.2025.134998",
-      "figure": "10(b)",
-      "bath_gas": "argon"
-    }
-  ],
-  "ambient_inputs": [
-    {
-      "species_for_provenance_only": "di-n-propyl ether",
-      "temperatures_K": [
-        278.1,
-        298.15,
-        323.15
-      ],
-      "context_window_cm1": [
-        910.0,
-        1190.0
-      ],
-      "files": [
-        {
-          "relative_file": "Dipropyl_ether/DIPETHER_5T.TXT",
-          "sha256": "9d2c6726972ffcac72d4152b22b49feeb43a8414bedd2da730c0b3db982096c7"
-        },
-        {
-          "relative_file": "Dipropyl_ether/DIPETHER_25T.TXT",
-          "sha256": "f744497699fe31e4cbb518aa7d60fd878e6531dcad76c50f8d0d3b897d2b92d2"
-        },
-        {
-          "relative_file": "Dipropyl_ether/DIPETHER_50T.TXT",
-          "sha256": "a2c02646bb05ca09411740d924dfb699efe74d756579f259de02984f212b7ee0"
-        }
-      ]
-    },
-    {
-      "species_for_provenance_only": "1,2-dimethoxyethane",
-      "temperatures_K": [
-        278.14,
-        298.16,
-        323.12
-      ],
-      "context_window_cm1": [
-        910.0,
-        1190.0
-      ],
-      "files": [
-        {
-          "relative_file": "1_2-Dimethoxyethane/DME12_5T.TXT",
-          "sha256": "4814e4e07084358406a04c70086e6756a65b2204495a4212064d41fdc295d3c7"
-        },
-        {
-          "relative_file": "1_2-Dimethoxyethane/DME12_25T.TXT",
-          "sha256": "c224730de22fe523ae15ac6f41041b45656eaf1366060385f43543d3850031a9"
-        },
-        {
-          "relative_file": "1_2-Dimethoxyethane/DME12_50T.TXT",
-          "sha256": "1451c59c803ee4bceabbe4d1563de977eecc7b47d3166b1127dd48574efc55b8"
-        }
-      ]
-    }
-  ],
+  "version": "4.0.0-experimental",
   "cases": [
     {
       "species": "di-n-propyl ether",
-      "temperature_K": 1151.0,
-      "pressure_bar": 1.47,
-      "pressure_atm": 1.450777202072539,
-      "probe_wavenumber_cm1": 1121.82,
-      "reference_sigma_m2_per_mol": 11.434583162299958,
-      "model_sigma_m2_per_mol": 14.580350704678239,
-      "model_to_reference_sigma_ratio": 1.275109944781366,
-      "concentration_multiplier": 0.784246099007143,
-      "concentration_bias_percent": -21.575390099285695,
-      "concentration_absolute_relative_difference_percent": 21.575390099285695,
-      "source_doi": "10.1021/acs.jpca.3c04446",
-      "source_figure": "Figure 6, di-n-propyl ether",
-      "source_csv_sha256": "d03783b192cf1808b527a034afcbb6bf6d31a6697055b86210763fc2efcdecca",
-      "time_range_ms": [
-        0.02828282828282828,
-        0.8632996632996632
-      ],
-      "number_extracted_points": 311,
-      "source_url": "https://doi.org/10.1021/acs.jpca.3c04446",
-      "integrated_absolute_difference_percent": 21.575390099285695,
-      "calculation_verified_with_generic_evaluator": true,
-      "all_pressures_within_0p6_to_2atm": true
+      "T_K": 1151.0,
+      "P_atm": 1.450777202072539,
+      "probe_cm1": 1121.82,
+      "reference_sigma_m2_mol": 11.434583162299958,
+      "predicted_sigma_m2_mol": 14.487191139079359,
+      "concentration_bias_percent": -21.071082361472794,
+      "absolute_difference_percent": 21.071082361472794
     },
     {
       "species": "di-n-propyl ether",
-      "temperature_K": 1228.0,
-      "pressure_bar": 1.4,
-      "pressure_atm": 1.381692573402418,
-      "probe_wavenumber_cm1": 1121.82,
-      "reference_sigma_m2_per_mol": 10.33352280959997,
-      "model_sigma_m2_per_mol": 12.68137983449501,
-      "model_to_reference_sigma_ratio": 1.2272078039750252,
-      "concentration_multiplier": 0.8148579211775865,
-      "concentration_bias_percent": -18.51420788224135,
-      "concentration_absolute_relative_difference_percent": 18.51420788224135,
-      "source_doi": "10.1021/acs.jpca.3c04446",
-      "source_figure": "Figure 6, di-n-propyl ether",
-      "source_csv_sha256": "d03783b192cf1808b527a034afcbb6bf6d31a6697055b86210763fc2efcdecca",
-      "time_range_ms": [
-        0.02828282828282828,
-        0.8632996632996632
-      ],
-      "number_extracted_points": 311,
-      "source_url": "https://doi.org/10.1021/acs.jpca.3c04446",
-      "integrated_absolute_difference_percent": 18.514207882241358,
-      "calculation_verified_with_generic_evaluator": true,
-      "all_pressures_within_0p6_to_2atm": true
+      "T_K": 1228.0,
+      "P_atm": 1.381692573402418,
+      "probe_cm1": 1121.82,
+      "reference_sigma_m2_mol": 10.33352280959997,
+      "predicted_sigma_m2_mol": 13.053064626044517,
+      "concentration_bias_percent": -20.834508173799282,
+      "absolute_difference_percent": 20.834508173799282
     },
     {
       "species": "di-n-propyl ether",
-      "temperature_K": 1306.0,
-      "pressure_bar": 1.41,
-      "pressure_atm": 1.391561806069578,
-      "probe_wavenumber_cm1": 1121.82,
-      "reference_sigma_m2_per_mol": 8.926800016799973,
-      "model_sigma_m2_per_mol": 11.661839456439049,
-      "model_to_reference_sigma_ratio": 1.306385203487455,
-      "concentration_multiplier": 0.7654710091100652,
-      "concentration_bias_percent": -23.452899088993483,
-      "concentration_absolute_relative_difference_percent": 23.452899088993483,
-      "source_doi": "10.1021/acs.jpca.3c04446",
-      "source_figure": "Figure 6, di-n-propyl ether",
-      "source_csv_sha256": "d03783b192cf1808b527a034afcbb6bf6d31a6697055b86210763fc2efcdecca",
-      "time_range_ms": [
-        0.02828282828282828,
-        0.8632996632996632
-      ],
-      "number_extracted_points": 308,
-      "source_url": "https://doi.org/10.1021/acs.jpca.3c04446",
-      "integrated_absolute_difference_percent": 23.45289908899348,
-      "calculation_verified_with_generic_evaluator": true,
-      "all_pressures_within_0p6_to_2atm": true
+      "T_K": 1306.0,
+      "P_atm": 1.391561806069578,
+      "probe_cm1": 1121.82,
+      "reference_sigma_m2_mol": 8.926800016799973,
+      "predicted_sigma_m2_mol": 11.735571812270615,
+      "concentration_bias_percent": -23.93382990110302,
+      "absolute_difference_percent": 23.93382990110302
     },
     {
       "species": "1,2-dimethoxyethane",
-      "temperature_K": 1184.0,
-      "pressure_bar": 1.83,
-      "pressure_atm": 1.8060695780903036,
-      "probe_wavenumber_cm1": 1120.5,
-      "reference_sigma_m2_per_mol": 19.181599999999996,
-      "model_sigma_m2_per_mol": 13.990660900788653,
-      "model_to_reference_sigma_ratio": 0.7293792436912799,
-      "concentration_multiplier": 1.3710288696167834,
-      "concentration_bias_percent": 37.10288696167834,
-      "concentration_absolute_relative_difference_percent": 37.10288696167834,
-      "source_doi": "10.1016/j.fuel.2025.134998",
-      "source_figure": "Figure 10(b)",
-      "source_csv_sha256": "476e692915d9d3eb60e26247a945f627dc989fca520f0412a4aa9ce640222de0",
-      "time_range_ms": [
-        0.03042328042328042,
-        0.9973544973544973
-      ],
-      "number_extracted_points": 732,
-      "source_url": "https://doi.org/10.1016/j.fuel.2025.134998",
-      "integrated_absolute_difference_percent": 37.10288696167834,
-      "calculation_verified_with_generic_evaluator": true,
-      "all_pressures_within_0p6_to_2atm": true
+      "T_K": 1184.0,
+      "P_atm": 1.8060695780903036,
+      "probe_cm1": 1120.5,
+      "reference_sigma_m2_mol": 19.181599999999996,
+      "predicted_sigma_m2_mol": 15.109245092325137,
+      "concentration_bias_percent": 26.952735777272174,
+      "absolute_difference_percent": 26.952735777272174
     },
     {
       "species": "1,2-dimethoxyethane",
-      "temperature_K": 1226.0,
-      "pressure_bar": 1.94,
-      "pressure_atm": 1.9146311374290648,
-      "probe_wavenumber_cm1": 1120.5,
-      "reference_sigma_m2_per_mol": 18.127399999999998,
-      "model_sigma_m2_per_mol": 13.37216858040668,
-      "model_to_reference_sigma_ratio": 0.7376771396011939,
-      "concentration_multiplier": 1.3556066012031012,
-      "concentration_bias_percent": 35.56066012031012,
-      "concentration_absolute_relative_difference_percent": 35.56066012031012,
-      "source_doi": "10.1016/j.fuel.2025.134998",
-      "source_figure": "Figure 10(b)",
-      "source_csv_sha256": "5f883873d646182207dbb5611cc0e3581866f397fb5ae989dbdbb72f7ac0ad85",
-      "time_range_ms": [
-        0.03042328042328042,
-        0.9973544973544973
-      ],
-      "number_extracted_points": 732,
-      "source_url": "https://doi.org/10.1016/j.fuel.2025.134998",
-      "integrated_absolute_difference_percent": 35.56066012031012,
-      "calculation_verified_with_generic_evaluator": true,
-      "all_pressures_within_0p6_to_2atm": true
+      "T_K": 1226.0,
+      "P_atm": 1.9146311374290648,
+      "probe_cm1": 1120.5,
+      "reference_sigma_m2_mol": 18.127399999999998,
+      "predicted_sigma_m2_mol": 14.985814613937357,
+      "concentration_bias_percent": 20.963727811905876,
+      "absolute_difference_percent": 20.963727811905876
     },
     {
       "species": "1,2-dimethoxyethane",
-      "temperature_K": 1249.0,
-      "pressure_bar": 1.92,
-      "pressure_atm": 1.8948926720947445,
-      "probe_wavenumber_cm1": 1120.5,
-      "reference_sigma_m2_per_mol": 17.550099999999997,
-      "model_sigma_m2_per_mol": 13.25309248648418,
-      "model_to_reference_sigma_ratio": 0.7551576621491719,
-      "concentration_multiplier": 1.324226780873823,
-      "concentration_bias_percent": 32.42267808738231,
-      "concentration_absolute_relative_difference_percent": 32.42267808738231,
-      "source_doi": "10.1016/j.fuel.2025.134998",
-      "source_figure": "Figure 10(b)",
-      "source_csv_sha256": "7616d49f9a72085c84d75b099375f882c787a48097300aef942ea5ce5a84cb2b",
-      "time_range_ms": [
-        0.03042328042328042,
-        0.9973544973544973
-      ],
-      "number_extracted_points": 732,
-      "source_url": "https://doi.org/10.1016/j.fuel.2025.134998",
-      "integrated_absolute_difference_percent": 32.42267808738231,
-      "calculation_verified_with_generic_evaluator": true,
-      "all_pressures_within_0p6_to_2atm": true
+      "T_K": 1249.0,
+      "P_atm": 1.8948926720947445,
+      "probe_cm1": 1120.5,
+      "reference_sigma_m2_mol": 17.550099999999997,
+      "predicted_sigma_m2_mol": 14.586815153155342,
+      "concentration_bias_percent": 20.314817290350405,
+      "absolute_difference_percent": 20.314817290350405
     }
-  ]
+  ],
+  "assumption": "Constant initial post-shock temperature and pressure for each record; published corrected concentrations retained.",
+  "references": {
+    "di-n-propyl ether": "10.1021/acs.jpca.3c04446",
+    "1,2-dimethoxyethane": "10.1016/j.fuel.2025.134998"
+  }
 }

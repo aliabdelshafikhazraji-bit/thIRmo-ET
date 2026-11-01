@@ -1,298 +1,119 @@
 {
-  "summaries": {
+  "final": {
     "all": {
-      "expanded_ET": {
-        "n_molecules": 8,
-        "n_records": 84,
-        "n_windows": 13,
-        "mean_molecule_L1": 0.2274867520735205,
-        "molecule_values": {
-          "1,2-dimethoxyethane": 0.24776997691548372,
-          "CH4": 0.28911365738247546,
-          "NO": 0.2343725596431417,
-          "acetone": 0.10949799707372099,
-          "di-n-propyl ether": 0.31992792359181293,
-          "diisopropyl ether": 0.2505136723968034,
-          "n-propyl acetate": 0.23127181301624722,
-          "toluene": 0.1374264165684787
-        },
-        "window_values": {
-          "1,2-dimethoxyethane": 0.24776997691548372,
-          "CH4_1280_1340": 0.26467375087808526,
-          "CH4_2980_3040": 0.470380835127437,
-          "CH4_4000_4700": 0.13228638614190424,
-          "NO_1600_2050": 0.2343725596431417,
-          "acetone": 0.10949799707372099,
-          "di-n-propyl ether": 0.31992792359181293,
-          "diisopropyl ether": 0.2505136723968034,
-          "n-propyl acetate": 0.23127181301624722,
-          "toluene__added_1000.000_1400.000": 0.18706796382451385,
-          "toluene__added_2600.000_3000.000": 0.07571034013353244,
-          "toluene__added_3000.000_3196.958": 0.12951833190188813,
-          "toluene__added_640.094_1000.000": 0.15740903041398036
-        }
-      },
-      "expanded_no_HITRAN": {
-        "n_molecules": 8,
-        "n_records": 84,
-        "n_windows": 13,
-        "mean_molecule_L1": 0.23611247674640068,
-        "molecule_values": {
-          "1,2-dimethoxyethane": 0.26660408929772594,
-          "CH4": 0.3723519244085844,
-          "NO": 0.23483136481147976,
-          "acetone": 0.11641306234805449,
-          "di-n-propyl ether": 0.3513648251491504,
-          "diisopropyl ether": 0.25012764028538303,
-          "n-propyl acetate": 0.18052273797359863,
-          "toluene": 0.11668416969722853
-        },
-        "window_values": {
-          "1,2-dimethoxyethane": 0.26660408929772594,
-          "CH4_1280_1340": 0.3860273229387235,
-          "CH4_2980_3040": 0.5723532526143258,
-          "CH4_4000_4700": 0.15867519767270397,
-          "NO_1600_2050": 0.23483136481147976,
-          "acetone": 0.11641306234805449,
-          "di-n-propyl ether": 0.3513648251491504,
-          "diisopropyl ether": 0.25012764028538303,
-          "n-propyl acetate": 0.18052273797359863,
-          "toluene__added_1000.000_1400.000": 0.1375301811673672,
-          "toluene__added_2600.000_3000.000": 0.07024896336703434,
-          "toluene__added_3000.000_3196.958": 0.10235152813529665,
-          "toluene__added_640.094_1000.000": 0.15660600611921593
-        }
-      },
-      "frozen": {
-        "n_molecules": 8,
-        "n_records": 84,
-        "n_windows": 13,
-        "mean_molecule_L1": 0.504716563572217,
-        "molecule_values": {
-          "1,2-dimethoxyethane": 0.40826830680157983,
-          "CH4": 0.7025007281553073,
-          "NO": 0.6171990967351955,
-          "acetone": 0.44467276639654213,
-          "di-n-propyl ether": 0.5641198313518865,
-          "diisopropyl ether": 0.3692643304593298,
-          "n-propyl acetate": 0.8045383987174829,
-          "toluene": 0.12716904996041173
-        },
-        "window_values": {
-          "1,2-dimethoxyethane": 0.40826830680157983,
-          "CH4_1280_1340": 0.85814722123368,
-          "CH4_2980_3040": 0.9921322936167479,
-          "CH4_4000_4700": 0.25722266961549367,
-          "NO_1600_2050": 0.6171990967351955,
-          "acetone": 0.44467276639654213,
-          "di-n-propyl ether": 0.5641198313518865,
-          "diisopropyl ether": 0.3692643304593298,
-          "n-propyl acetate": 0.8045383987174829,
-          "toluene__added_1000.000_1400.000": 0.12457971932107918,
-          "toluene__added_2600.000_3000.000": 0.12833238795366597,
-          "toluene__added_3000.000_3196.958": 0.11250426954782411,
-          "toluene__added_640.094_1000.000": 0.14325982301907758
-        }
+      "n_molecules": 8,
+      "n_records": 84,
+      "mean_error_percent": 24.006126640220977,
+      "molecule_error_percent": {
+        "1,2-dimethoxyethane": 26.09754415222463,
+        "CH4": 30.275735952954353,
+        "NO": 26.738343435113926,
+        "acetone": 11.969012045981714,
+        "di-n-propyl ether": 32.725393699630324,
+        "diisopropyl ether": 24.878008078685774,
+        "n-propyl acetate": 23.252795950493407,
+        "toluene": 16.112179806683688
       }
     },
-    "experiment": {
-      "expanded_ET": {
-        "n_molecules": 6,
-        "n_records": 45,
-        "n_windows": 9,
-        "mean_molecule_L1": 0.21606796659375782,
-        "molecule_values": {
-          "1,2-dimethoxyethane": 0.24776997691548372,
-          "acetone": 0.10949799707372099,
-          "di-n-propyl ether": 0.31992792359181293,
-          "diisopropyl ether": 0.2505136723968034,
-          "n-propyl acetate": 0.23127181301624722,
-          "toluene": 0.1374264165684787
-        },
-        "window_values": {
-          "1,2-dimethoxyethane": 0.24776997691548372,
-          "acetone": 0.10949799707372099,
-          "di-n-propyl ether": 0.31992792359181293,
-          "diisopropyl ether": 0.2505136723968034,
-          "n-propyl acetate": 0.23127181301624722,
-          "toluene__added_1000.000_1400.000": 0.18706796382451385,
-          "toluene__added_2600.000_3000.000": 0.07571034013353244,
-          "toluene__added_3000.000_3196.958": 0.12951833190188813,
-          "toluene__added_640.094_1000.000": 0.15740903041398036
-        }
-      },
-      "expanded_no_HITRAN": {
-        "n_molecules": 6,
-        "n_records": 45,
-        "n_windows": 9,
-        "mean_molecule_L1": 0.21361942079185683,
-        "molecule_values": {
-          "1,2-dimethoxyethane": 0.26660408929772594,
-          "acetone": 0.11641306234805449,
-          "di-n-propyl ether": 0.3513648251491504,
-          "diisopropyl ether": 0.25012764028538303,
-          "n-propyl acetate": 0.18052273797359863,
-          "toluene": 0.11668416969722853
-        },
-        "window_values": {
-          "1,2-dimethoxyethane": 0.26660408929772594,
-          "acetone": 0.11641306234805449,
-          "di-n-propyl ether": 0.3513648251491504,
-          "diisopropyl ether": 0.25012764028538303,
-          "n-propyl acetate": 0.18052273797359863,
-          "toluene__added_1000.000_1400.000": 0.1375301811673672,
-          "toluene__added_2600.000_3000.000": 0.07024896336703434,
-          "toluene__added_3000.000_3196.958": 0.10235152813529665,
-          "toluene__added_640.094_1000.000": 0.15660600611921593
-        }
-      },
-      "frozen": {
-        "n_molecules": 6,
-        "n_records": 45,
-        "n_windows": 9,
-        "mean_molecule_L1": 0.4530054472812055,
-        "molecule_values": {
-          "1,2-dimethoxyethane": 0.40826830680157983,
-          "acetone": 0.44467276639654213,
-          "di-n-propyl ether": 0.5641198313518865,
-          "diisopropyl ether": 0.3692643304593298,
-          "n-propyl acetate": 0.8045383987174829,
-          "toluene": 0.12716904996041173
-        },
-        "window_values": {
-          "1,2-dimethoxyethane": 0.40826830680157983,
-          "acetone": 0.44467276639654213,
-          "di-n-propyl ether": 0.5641198313518865,
-          "diisopropyl ether": 0.3692643304593298,
-          "n-propyl acetate": 0.8045383987174829,
-          "toluene__added_1000.000_1400.000": 0.12457971932107918,
-          "toluene__added_2600.000_3000.000": 0.12833238795366597,
-          "toluene__added_3000.000_3196.958": 0.11250426954782411,
-          "toluene__added_640.094_1000.000": 0.14325982301907758
-        }
+    "measurement": {
+      "n_molecules": 6,
+      "n_records": 45,
+      "mean_error_percent": 22.505822288949926,
+      "molecule_error_percent": {
+        "1,2-dimethoxyethane": 26.09754415222463,
+        "acetone": 11.969012045981714,
+        "di-n-propyl ether": 32.725393699630324,
+        "diisopropyl ether": 24.878008078685774,
+        "n-propyl acetate": 23.252795950493407,
+        "toluene": 16.112179806683688
       }
     },
     "HITEMP": {
-      "expanded_ET": {
-        "n_molecules": 2,
-        "n_records": 39,
-        "n_windows": 4,
-        "mean_molecule_L1": 0.2617431085128086,
-        "molecule_values": {
-          "CH4": 0.28911365738247546,
-          "NO": 0.2343725596431417
-        },
-        "window_values": {
-          "CH4_1280_1340": 0.26467375087808526,
-          "CH4_2980_3040": 0.470380835127437,
-          "CH4_4000_4700": 0.13228638614190424,
-          "NO_1600_2050": 0.2343725596431417
-        }
-      },
-      "expanded_no_HITRAN": {
-        "n_molecules": 2,
-        "n_records": 39,
-        "n_windows": 4,
-        "mean_molecule_L1": 0.3035916446100321,
-        "molecule_values": {
-          "CH4": 0.3723519244085844,
-          "NO": 0.23483136481147976
-        },
-        "window_values": {
-          "CH4_1280_1340": 0.3860273229387235,
-          "CH4_2980_3040": 0.5723532526143258,
-          "CH4_4000_4700": 0.15867519767270397,
-          "NO_1600_2050": 0.23483136481147976
-        }
-      },
-      "frozen": {
-        "n_molecules": 2,
-        "n_records": 39,
-        "n_windows": 4,
-        "mean_molecule_L1": 0.6598499124452514,
-        "molecule_values": {
-          "CH4": 0.7025007281553073,
-          "NO": 0.6171990967351955
-        },
-        "window_values": {
-          "CH4_1280_1340": 0.85814722123368,
-          "CH4_2980_3040": 0.9921322936167479,
-          "CH4_4000_4700": 0.25722266961549367,
-          "NO_1600_2050": 0.6171990967351955
-        }
+      "n_molecules": 2,
+      "n_records": 39,
+      "mean_error_percent": 28.50703969403414,
+      "molecule_error_percent": {
+        "CH4": 30.275735952954353,
+        "NO": 26.738343435113926
       }
     }
   },
-  "temperature_bins": [
-    {
-      "source_kind": "measurement",
-      "T_interval": "(323.15, 500]",
-      "n_molecules": 2,
-      "n_records": 18,
-      "mean_error_pct": 15.16
+  "without_hitran": {
+    "all": {
+      "n_molecules": 8,
+      "n_records": 84,
+      "mean_error_percent": 24.483669344062342,
+      "molecule_error_percent": {
+        "1,2-dimethoxyethane": 25.992924366794085,
+        "CH4": 43.27830630922338,
+        "NO": 24.753765981959457,
+        "acetone": 11.724164761095173,
+        "di-n-propyl ether": 35.18468447817766,
+        "diisopropyl ether": 24.445276264522537,
+        "n-propyl acetate": 16.96225443866539,
+        "toluene": 13.527978152061058
+      }
     },
-    {
-      "source_kind": "measurement",
-      "T_interval": "(500, 700]",
+    "measurement": {
       "n_molecules": 6,
-      "n_records": 14,
-      "mean_error_pct": 17.56
+      "n_records": 45,
+      "mean_error_percent": 21.306213743552647,
+      "molecule_error_percent": {
+        "1,2-dimethoxyethane": 25.992924366794085,
+        "acetone": 11.724164761095173,
+        "di-n-propyl ether": 35.18468447817766,
+        "diisopropyl ether": 24.445276264522537,
+        "n-propyl acetate": 16.96225443866539,
+        "toluene": 13.527978152061058
+      }
     },
-    {
-      "source_kind": "measurement",
-      "T_interval": "(700, 900]",
-      "n_molecules": 6,
-      "n_records": 12,
-      "mean_error_pct": 26.41
-    },
-    {
-      "source_kind": "measurement",
-      "T_interval": "(900, 1100]",
-      "n_molecules": 1,
-      "n_records": 1,
-      "mean_error_pct": 15.35
-    },
-    {
-      "source_kind": "HITEMP",
-      "T_interval": "(323.15, 500]",
+    "HITEMP": {
       "n_molecules": 2,
-      "n_records": 9,
-      "mean_error_pct": 9.4
-    },
-    {
-      "source_kind": "HITEMP",
-      "T_interval": "(500, 700]",
-      "n_molecules": 2,
-      "n_records": 10,
-      "mean_error_pct": 17.82
-    },
-    {
-      "source_kind": "HITEMP",
-      "T_interval": "(700, 900]",
-      "n_molecules": 2,
-      "n_records": 8,
-      "mean_error_pct": 27.1
-    },
-    {
-      "source_kind": "HITEMP",
-      "T_interval": "(900, 1100]",
-      "n_molecules": 2,
-      "n_records": 3,
-      "mean_error_pct": 38.21
-    },
-    {
-      "source_kind": "HITEMP",
-      "T_interval": "(1100, 1300]",
-      "n_molecules": 2,
-      "n_records": 3,
-      "mean_error_pct": 45.0
-    },
-    {
-      "source_kind": "HITEMP",
-      "T_interval": "(1300, 1600]",
-      "n_molecules": 2,
-      "n_records": 6,
-      "mean_error_pct": 48.75
+      "n_records": 39,
+      "mean_error_percent": 34.01603614559142,
+      "molecule_error_percent": {
+        "CH4": 43.27830630922338,
+        "NO": 24.753765981959457
+      }
     }
-  ]
+  },
+  "unchanged": {
+    "all": {
+      "n_molecules": 8,
+      "n_records": 84,
+      "mean_error_percent": 50.472032777130096,
+      "molecule_error_percent": {
+        "1,2-dimethoxyethane": 40.82683068015798,
+        "CH4": 70.25007281553071,
+        "NO": 61.7220523603188,
+        "acetone": 44.46727663965421,
+        "di-n-propyl ether": 56.41198313518865,
+        "diisopropyl ether": 36.92643304593299,
+        "n-propyl acetate": 80.45383987174829,
+        "toluene": 12.717773668509155
+      }
+    },
+    "measurement": {
+      "n_molecules": 6,
+      "n_records": 45,
+      "mean_error_percent": 45.30068950686521,
+      "molecule_error_percent": {
+        "1,2-dimethoxyethane": 40.82683068015798,
+        "acetone": 44.46727663965421,
+        "di-n-propyl ether": 56.41198313518865,
+        "diisopropyl ether": 36.92643304593299,
+        "n-propyl acetate": 80.45383987174829,
+        "toluene": 12.717773668509155
+      }
+    },
+    "HITEMP": {
+      "n_molecules": 2,
+      "n_records": 39,
+      "mean_error_percent": 65.98606258792475,
+      "molecule_error_percent": {
+        "CH4": 70.25007281553071,
+        "NO": 61.7220523603188
+      }
+    }
+  }
 }

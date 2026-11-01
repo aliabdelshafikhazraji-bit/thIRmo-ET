@@ -1,0 +1,68 @@
+[
+  {
+    "species": "CO",
+    "input_temperatures_K": [
+      278.19,
+      298.15,
+      323.17999999999995
+    ],
+    "pnnl_inputs": [
+      {
+        "file": "PNNL/Carbon_monoxide/CO_5T.TXT",
+        "sha256": "eef4817e3187d31e93332f6b3730e620f1d6350c532482460b5e451e6cdd77db"
+      },
+      {
+        "file": "PNNL/Carbon_monoxide/CO_25T.TXT",
+        "sha256": "77d5438991fca1642be28e3ee55bacf3db15949c37e47ced5b2be16b06adff4c"
+      },
+      {
+        "file": "PNNL/Carbon_monoxide/CO_50T.TXT",
+        "sha256": "c55da1fdef77dbbd2c560525fe20ae91c147b197fcc1093175e1f093942c86d6"
+      }
+    ]
+  },
+  {
+    "species": "HCl",
+    "input_temperatures_K": [
+      278.19,
+      298.16999999999996,
+      323.13
+    ],
+    "pnnl_inputs": [
+      {
+        "file": "PNNL/Hydrogen_chloride__anhydrous/HCL_5T.TXT",
+        "sha256": null
+      },
+      {
+        "file": "PNNL/Hydrogen_chloride__anhydrous/HCL_25T.TXT",
+        "sha256": null
+      },
+      {
+        "file": "PNNL/Hydrogen_chloride__anhydrous/HCl_50T.TXT",
+        "sha256": null
+      }
+    ]
+  },
+  {
+    "species": "HF",
+    "input_temperatures_K": [
+      278.10999999999996,
+      298.21,
+      323.21999999999997
+    ],
+    "pnnl_inputs": [
+      {
+        "file": "PNNL/Hydrogen_fluoride__anhydrous/HF_5T.TXT",
+        "sha256": null
+      },
+      {
+        "file": "PNNL/Hydrogen_fluoride__anhydrous/HF_25T.TXT",
+        "sha256": null
+      },
+      {
+        "file": "PNNL/Hydrogen_fluoride__anhydrous/HF_50T.TXT",
+        "sha256": null
+      }
+    ]
+  }
+]

@@ -1,151 +1,150 @@
-"""Reproduce the three-spectrum-only line model from externally supplied arrays.
+"""Line learning from measured cold spectra and spectral hot references only.
 
-No NO hot data are loaded. Raw source spectra and line arrays are not distributed.
+Tabulated masses/energies/strengths/widths in the archival NPZ are not loaded.
+The spectral-to-spectral supervision fits the reference ordinate arrays.
 """
 from pathlib import Path
-import argparse
-import csv
 from datetime import datetime,timezone
-import hashlib
-import json
-import sys
+import sys,json,hashlib,csv
 import numpy as np
-
+from scipy.optimize import least_squares
+from scipy.special import voigt_profile
+from sklearn.ensemble import ExtraTreesRegressor
 HERE=Path(__file__).resolve().parent
 REPO=HERE.parents[1]
 sys.path.insert(0,str(REPO/'three_input'))
-from line_model.cold_line_representation import fit_line,cold_band_centroid,add_cold_thermal_parameters,PNNL_COLUMN
-import train_helpers as h
-DATA=OUT=ARTIFACTS=PNNLROOT=None
+from line_model.cold_line_representation import fit_line,cold_band_centroid,add_cold_thermal_parameters,predict_diatomic_line,PNNL_COLUMN
+from line_model.spectra_only_line import feature_rows,eligible
+from cold_router import route_cold_spectra
+DATA=None
+OUT=None
+MODEL_OUTPUT=None
 SPECIES=['CO','HCl','HF']
 WINDOWS={'CO':[1800,2300],'HCl':[2400,3150],'HF':[3500,4300]}
-
-def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
-
-def fit_cold(selection,mass_proxy,tag):
-    records=[]
-    for s in selection:
-        curves=[]
-        for d,T in zip(s['pnnl_inputs'],s['input_temperatures_K']):
-            a=np.loadtxt(d['file']);a=a[np.argsort(a[:,0])]
-            curves.append((a[:,0],a[:,1]*np.log(10)/PNNL_COLUMN,float(T)))
-        vib=cold_band_centroid(curves,WINDOWS[s['species']])
-        for i,line in enumerate(s['lines']):
-            x,y,_=curves[-1];mask=abs(x-line['nu'])<.12
-            center=float(x[mask][np.argmax(y[mask])])
-            r=fit_line(curves,center,mass_proxy,'sinc_0.056')
-            r=add_cold_thermal_parameters(r,vib)
-            r.update(species=s['species'],line_index=i,reference_center_for_matching_only=line['nu'],
-                cold_vibrational_proxy_window_cm1=WINDOWS[s['species']],
-                mass_basis='Equal-species mean training Doppler proxy',
-                usable_cold_representation=bool(r['fit_success'] and r['fit_relative_rms']<.03 and not r['fit_at_bound']))
-            records.append(r)
-        print(tag,s['species'],'fitted',len(s['lines']),'cold lines',flush=True)
-    dest=ARTIFACTS/(tag+'_cold_records.json')
-    dest.write_text(json.dumps(dict(records=records,mass_proxy_amu=mass_proxy,
-        no_hot_references_used=True),indent=2),encoding='utf-8')
-    return dest
-
+PARAMS=dict(n_estimators=128,max_depth=8,min_samples_leaf=4,max_features=1.,random_state=20261101,n_jobs=3)
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def write(p,v):p.write_text(json.dumps(v,indent=2,ensure_ascii=False)+'\n',encoding='utf8',newline='\n')
+def hot_fit(x,y,guess):
+    """Five profile parameters and a linear background, all fitted to ordinate."""
+    scale=max(float(y.max()),1e-40); yy=y/scale; delta=x-guess
+    a=max(float(np.trapezoid(yy,x)),.001)
+    initial=[np.log(a),np.log(.035),np.log(.006),0.,0.,0.]
+    lower=[-15,np.log(.0001),np.log(.00005),-.12,-.1,-.2]
+    upper=[5,np.log(.4),np.log(.08),.12,.3,.2]
+    def residual(p):return np.exp(p[0])*voigt_profile(delta-p[3],np.exp(p[2]),np.exp(p[1]))+p[4]+p[5]*delta-yy
+    fit=least_squares(residual,initial,bounds=(lower,upper),max_nfev=250,ftol=1e-10,xtol=1e-10,gtol=1e-10)
+    p=fit.x
+    return dict(area=float(np.exp(p[0])*scale),gamma=float(np.exp(p[1])),gaussian_sigma=float(np.exp(p[2])),center=float(guess+p[3]),
+        relative_rms=float(np.sqrt(np.mean(residual(p)**2))),fit_success=bool(fit.success),at_bound=bool(np.any(p-np.array(lower)<1e-5)|np.any(np.array(upper)-p<1e-5)))
+def load():
+    select=json.loads((DATA/'training_inputs.json').read_text())
+    gate=json.loads((DATA/'cold_gate.json').read_text())
+    passed={(r['species'],r['line_index']) for r in gate['line_decisions'] if r['pass']}
+    # Only file paths, temperatures and reference-grid alignment are read here.
+    bundles={};curves={};fits=[]
+    for entry in select:
+        sp=entry['species']; assert sp in SPECIES
+        curves[sp]=[]
+        for item,Tinput in zip(entry['pnnl_inputs'],entry['input_temperatures_K']):
+            a=np.loadtxt(DATA/item['file']);a=a[np.argsort(a[:,0])]
+            curves[sp].append((a[:,0],a[:,1]*np.log(10)/PNNL_COLUMN,float(Tinput)))
+        keys=['wavenumber_cm1','temperatures_K','pressures_atm','spectra_native_cm2_molecule']
+        with np.load(DATA/f'{sp}_native_training.npz') as z:bundles[sp]={k:z[k] for k in keys}
+        z=bundles[sp]
+        for j,x in enumerate(z['wavenumber_cm1']):
+            if (sp,j) not in passed:continue
+            for it,T in enumerate(z['temperatures_K']):
+                if T<350:continue
+                for ip,P in enumerate(z['pressures_atm']):
+                    r=hot_fit(x,z['spectra_native_cm2_molecule'][j,it,ip],float(x[len(x)//2]))
+                    fits.append(dict(species=sp,line_index=j,it=it,ip=ip,T=float(T),P=float(P),**r))
+        print('SPECTRAL TARGET FITS',sp,flush=True)
+    write(OUT/'hot_spectral_fit_labels.json',fits)
+    return curves,bundles,fits
+def gaussian_coefficient(fits,ids):
+    per={}
+    for sp in ids:
+        f=[r['gaussian_sigma']/(r['center']*np.sqrt(r['T'])) for r in fits if r['species']==sp and r['fit_success'] and not r['at_bound'] and r['relative_rms']<.03]
+        if not f:raise ValueError('No spectral estimates for Gaussian width.')
+        per[sp]=float(np.median(f))
+    return float(np.mean(list(per.values()))),per
+def cold_records(curves,bundles,d,tag):
+    gate=json.loads((DATA/'cold_gate.json').read_text());gd={(r['species'],r['line_index']):r['pass'] for r in gate['line_decisions']}
+    records=[];decisions=[]
+    for sp in SPECIES:
+        cold=curves[sp];diag=route_cold_spectra(cold,WINDOWS[sp]);vib=cold_band_centroid(cold,WINDOWS[sp])
+        for j,x in enumerate(bundles[sp]['wavenumber_cm1']):
+            if not gd[(sp,j)]:continue
+            guess=float(x[len(x)//2]);warmx,warmy,_=cold[-1];m=abs(warmx-guess)<.12
+            center=float(warmx[m][np.argmax(warmy[m])])
+            morphology=all(any(p['qualified'] and abs(p['center_cm1']-center)<.12 for p in a['peaks']) for a in diag['input_diagnostics'])
+            if not morphology:continue
+            r=add_cold_thermal_parameters(fit_line(cold,center,d,'sinc_0.056'),vib)
+            r.update(species=sp,line_index=j)
+            decisions.append(dict(species=sp,line_index=j,retained=eligible(r),rms=r['fit_relative_rms']))
+            if eligible(r): records.append(r)
+        print('COLD',tag,sp,sum(r['species']==sp for r in records),flush=True)
+    write(OUT/f'cold_{tag}.json',dict(gaussian_coefficient=d,records=records,decisions=decisions))
+    return records
+def cases(records,bundles,fits):
+    by={(r['species'],r['line_index']):r for r in records};result=[]
+    for f in fits:
+        key=f['species'],f['line_index']
+        if key not in by:continue
+        # Reference profiles must be representable; no test spectrum is involved.
+        if not f['fit_success'] or f['relative_rms']>=.03 or f['at_bound']:continue
+        r=by[key];a,g=predict_diatomic_line(r,f['T'],f['P'])
+        result.append(dict(f,r=r,area_base=float(a),gamma_base=float(g)))
+    return result
+def train(cc):
+    X=np.stack([feature_rows(c['r'],[c['T']])[0] for c in cc]);y=np.array([[np.log(c['area']/c['area_base']),np.log(c['gamma']/c['gamma_base'])] for c in cc])
+    ids={c['species'] for c in cc};count={s:sum(c['species']==s for c in cc) for s in ids}
+    weights=np.array([1/count[c['species']]*(.5 if c['species'] in ['HCl','HF'] else 1.) for c in cc]);weights*=len(weights)/weights.sum()
+    return ExtraTreesRegressor(**PARAMS).fit(X,y,sample_weight=weights)
+def evaluate(cc,bundles,d,model=None):
+    X=np.stack([feature_rows(c['r'],[c['T']])[0] for c in cc]);corr=np.zeros((len(cc),2)) if model is None else model.predict(X);rows=[]
+    for c,q in zip(cc,corr):
+        z=bundles[c['species']];x=z['wavenumber_cm1'][c['line_index']];ref=z['spectra_native_cm2_molecule'][c['line_index'],c['it'],c['ip']]
+        A=c['area_base']*np.exp(q[0]);g=c['gamma_base']*np.exp(q[1]);pred=A*voigt_profile(x-c['r']['center_cm1'],d*c['r']['center_cm1']*np.sqrt(c['T']),g)
+        rows.append(dict(species=c['species'],line_index=c['line_index'],T=c['T'],P=c['P'],error_percent=float(100*np.trapezoid(abs(pred-ref),x)/np.trapezoid(np.maximum(ref,0),x))))
+    return rows
+def mean(rows):return float(np.mean([np.mean([r['error_percent'] for r in rows if r['species']==sp]) for sp in {r['species'] for r in rows}]))
+def export(model,path):
+    offsets=np.r_[0,np.cumsum([t.tree_.node_count for t in model.estimators_])]
+    a={x:np.concatenate([getattr(t.tree_,y) for t in model.estimators_]) for x,y in [('left','children_left'),('right','children_right'),('feature','feature'),('threshold','threshold')]}
+    a.update(offsets=offsets,value=np.concatenate([t.tree_.value[:,:,0] for t in model.estimators_]))
+    np.savez_compressed(path,**a)
 def main():
-    OUT.mkdir(parents=True,exist_ok=True)
-    selected_path=DATA/'selected_lines.json'
-    selection=json.loads(selected_path.read_text())
-    # Resolve every external cold input under the explicitly supplied PNNL root.
-    # Original workstation directories are neither required nor accessed.
-    for species in selection:
-        for entry in species['pnnl_inputs']:
-            source_path=Path(str(entry['file']).replace(chr(92),'/'))
-            mapped=PNNLROOT/source_path.parent.name/source_path.name
-            if not mapped.is_file():raise FileNotFoundError(mapped)
-            expected_hash=entry.get('file_sha256') or entry.get('sha256')
-            if expected_hash and sha(mapped)!=expected_hash:
-                raise ValueError('PNNL input checksum mismatch: '+mapped.name)
-            entry['file']=str(mapped)
-    assert sorted(s['species'] for s in selection)==sorted(SPECIES)
-    masses={s['species']:s['mass_main_isotopologue_u'] for s in selection}
-    proxy=float(np.mean(list(masses.values())))
-    protocol=dict(candidate='Three-spectra line branch with training-derived constant Doppler proxy',
-        created_utc=datetime.now(timezone.utc).isoformat(),
-        allowed_training_species=SPECIES,forbidden_for_training='All NO hot spectra, cross sections, concentration histories and performance scores',
-        molecular_inference_inputs='Three near-ambient cross-section spectra with their measured temperatures; no target species identity, formula, mass, line list or measured hot spectrum',
-        operational_inputs='Context wavenumber interval, target wavenumber grid, target temperature and pressure; input spectra pressure defaults to 1 atm',
-        doppler_proxy_rule='Equal-species arithmetic mean of training isotopologue masses. Each LOSO fold uses only the two fitting species; the final model uses all three.',
-        training_species_masses_amu=masses,final_doppler_proxy_amu=proxy,
-        removed_feature='mass_per100amu',feature_names=h.FEATURE_NAMES,parameters=h.PARAMS,
-        cold_refit='Refit every training and evaluation cold spectrum with the applicable fixed Doppler proxy; unchanged sinc first-zero0.056cm^-1, optimization, peak and quality rules',
-        branch_selection='Select residual head only if equal-species LOSO mean local integrated L1 is strictly below physical baseline',
-        evaluation_plan='Freeze model, configuration, code and protocol hashes; then fit NO cold inputs with frozen proxy; then evaluate existing three NO histories once with no recalibration',
-        scope='Post hoc exploratory extension motivated by earlier narrow-model results; this is not a newly blinded external test. Linear-rotor population approximation remains and is not validated for every polyatomic resolved band.',
-        selected_training_source_sha256=sha(selected_path))
-    protocol_path=ARTIFACTS/'protocol_before_training.json'
-    if protocol_path.exists():
-        raise RuntimeError('A protocol already exists: do not silently rerun or alter the candidate after testing.')
-    protocol_path.write_text(json.dumps(protocol,indent=2),encoding='utf-8')
-    h.DATA=DATA
-    baseline=[];residual=[];fold_reports=[]
-    for held in SPECIES:
-        fold_proxy=float(np.mean([masses[s] for s in SPECIES if s!=held]))
-        path=fit_cold(selection,fold_proxy,'fold_hold_'+held)
-        h.COLD=path
-        records,datasets,decisions=h.load_training()
-        training=[r for r in records if r['species']!=held]
-        testing=[r for r in records if r['species']==held]
-        assert training and testing
-        model=h.train(training,datasets)
-        p=h.evaluate(testing,datasets);q=h.evaluate(testing,datasets,model)
-        baseline+=p;residual+=q
-        report=dict(held_species=held,proxy_amu=fold_proxy,physical=h.summarize(p),residual=h.summarize(q),cold_records_sha256=sha(path))
-        fold_reports.append(report)
-        print('LOSO',json.dumps(report),flush=True)
-    p=h.summarize(baseline);q=h.summarize(residual)
-    choose=q['mean_species_local_integrated_L1_percent']<p['mean_species_local_integrated_L1_percent']
-    finalcold=fit_cold(selection,proxy,'final_training')
-    h.COLD=finalcold
-    records,datasets,decisions=h.load_training()
-    final=h.train(records,datasets)
-    weights=OUT/'narrow_residual_forest.npz'
-    h.export_numeric(final,weights)
-    config=dict(schema_version=2,
-        selected_branch='physical_plus_extra_trees_residual' if choose else 'physical_baseline',
-        doppler_mass_proxy_amu=proxy,doppler_mass_proxy_basis=protocol['doppler_proxy_rule'],
-        molecular_mass_is_inference_input=False,species_identity_is_inference_input=False,
-        training_species=SPECIES,parameters=h.PARAMS,feature_names=h.FEATURE_NAMES,features_count=len(h.FEATURE_NAMES),
-        numeric_model_sha256=sha(weights),cold_records_sha256=sha(finalcold),
-        line_filter_decisions=decisions,line_counts={sp:sum(r['species']==sp for r in records) for sp in SPECIES},
-        validation=dict(physical_baseline=p,residual_head=q,folds=fold_reports),
-        temperature_training_K=sorted({float(t) for z in datasets.values() for t in z['temperatures_K'] if t>=350}),
-        pressure_training_atm=sorted({float(p) for z in datasets.values() for p in z['pressures_atm']}),
-        physical_proxy='Linear rigid rotor plus one harmonic vibration; vibrational scale is warm-input band centroid; lower-energy scale is inferred from three cold line areas',
-        no_hot_NO_consumed=True,selection_rule=protocol['branch_selection'],scope=protocol['scope'])
-    configpath=OUT/'narrow_model_config.json'
-    configpath.write_text(json.dumps(config,indent=2),encoding='utf-8')
-    for name,rows in [('physical_LOSO.csv',baseline),('residual_LOSO.csv',residual)]:
-        with (OUT/name).open('w',newline='',encoding='utf-8') as f:
-            writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
-    from line_model.spectra_only_line import SpectraOnlyNarrowHead,feature_rows
-    frozen=SpectraOnlyNarrowHead(OUT)
-    X=np.concatenate([feature_rows(r,[400,800,1500]) for r in records])
-    expected=final.predict(X) if choose else np.zeros((len(X),2))
-    np.testing.assert_allclose(frozen.correction(X),expected,rtol=1e-12,atol=1e-14)
-    freeze=dict(frozen_utc=datetime.now(timezone.utc).isoformat(),
-        hot_NO_test_not_run=True,protocol_sha256=sha(protocol_path),
-        weights_sha256=sha(weights),config_sha256=sha(configpath),
-        inference_code_sha256=sha(REPO/'three_input/line_model/spectra_only_line.py'),
-        cold_physics_code_sha256=sha(REPO/'three_input/line_model/cold_line_representation.py'),
-        training_script_sha256=sha(Path(__file__)),training_helpers_sha256=sha(HERE/'train_helpers.py'),
-        training_cold_records_sha256=sha(finalcold),
-        input_data_sha256={sp:sha(DATA/f'{sp}_native_training.npz') for sp in SPECIES},
-        no_target_fitting=True,numeric_evaluator_verified_against_sklearn=True)
-    (OUT/'frozen_manifest.json').write_text(json.dumps(freeze,indent=2),encoding='utf-8')
-    print('FROZEN',json.dumps(freeze),flush=True)
-    print('BASELINE',p['mean_species_local_integrated_L1_percent'],'RESIDUAL',q['mean_species_local_integrated_L1_percent'],'SELECTED',config['selected_branch'],flush=True)
-
-if __name__=='__main__':
+    import argparse
+    global DATA,OUT,MODEL_OUTPUT
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--data-dir',type=Path,required=True,help='External selected_lines.json, cold_gate.json, and three native training NPZ files.')
-    parser.add_argument('--pnnl-root',type=Path,required=True,help='Directory containing the original CO, HCl, and HF PNNL species folders.')
-    parser.add_argument('--output-dir',type=Path,required=True,help='New output directory for reproduced weights and audits.')
+    parser.add_argument('--data',type=Path,required=True,help='Acquired native reference NPZs, cold_gate.json and training_inputs.json.')
+    parser.add_argument('--output',type=Path,required=True,help='New weight/config directory.')
     args=parser.parse_args()
-    DATA=args.data_dir.resolve();PNNLROOT=args.pnnl_root.resolve();OUT=args.output_dir.resolve()
-    ARTIFACTS=OUT/'audit';ARTIFACTS.mkdir(parents=True,exist_ok=True)
-    main()
+    DATA=args.data.resolve();MODEL_OUTPUT=args.output.resolve();OUT=MODEL_OUTPUT/'audit'
+    OUT.mkdir(parents=True,exist_ok=True)
+    cold,bundles,fits=load();base=[];corr=[];folds=[]
+    for held in SPECIES:
+        d,per=gaussian_coefficient(fits,[s for s in SPECIES if s!=held])
+        rec=cold_records(cold,bundles,d,'hold_'+held);cc=cases(rec,bundles,fits)
+        tr=[c for c in cc if c['species']!=held];te=[c for c in cc if c['species']==held]
+        model=train(tr);a=evaluate(te,bundles,d);b=evaluate(te,bundles,d,model);base+=a;corr+=b
+        folds.append(dict(held_species=held,gaussian_coefficient=d,physical_error=mean(a),residual_error=mean(b)))
+        print('LOSO',folds[-1],flush=True)
+    d,per=gaussian_coefficient(fits,SPECIES);rec=cold_records(cold,bundles,d,'final');cc=cases(rec,bundles,fits);model=train(cc)
+    dest=MODEL_OUTPUT;dest.mkdir(parents=True,exist_ok=True)
+    weights=dest/'narrow_residual_forest.npz';export(model,weights)
+    choose=mean(corr)<mean(base)
+    config=dict(schema_version=3,selected_branch='physical_plus_extra_trees_residual' if choose else 'physical_baseline',
+        gaussian_coefficient_cm1_per_cm1_sqrtK=d,gaussian_coefficient_basis='Equal-species mean of median fitted hot-spectral Voigt Gaussian-width coefficients; no molecular properties used.',
+        gaussian_coefficient_training_species=per,training_species=SPECIES,numeric_model_sha256=sha(weights),parameters=PARAMS,
+        features_count=10,training_cases=len(cc),line_counts={sp:sum(r['species']==sp for r in rec) for sp in SPECIES},
+        temperature_training_K=sorted({c['T'] for c in cc}),pressure_training_atm=sorted({c['P'] for c in cc}),
+        validation=dict(physical_LOSO_error=mean(base),residual_LOSO_error=mean(corr),folds=folds),
+        identity_is_feature=False,molecular_mass_used=False,reference_parameters_read=False,strict_three_input=True,
+        target_basis='Area and effective Lorentz width fitted to native reference spectra, never read from tabulated line parameters.',
+        scope='Developmental transfer evaluation; fixed NO/CH4 heldout from all fitting, previously inspected during earlier development.')
+    write(dest/'narrow_model_config.json',config);write(OUT/'LOSO_records.json',dict(physical=base,residual=corr))
+    write(OUT/'frozen_manifest.json',dict(frozen_utc=datetime.now(timezone.utc).isoformat(),no_new_holdout_evaluation=True,weights_sha256=sha(weights),config_sha256=sha(dest/'narrow_model_config.json'),training_code_sha256=sha(__file__)))
+    print('FROZEN',json.dumps(config),flush=True)
+if __name__=='__main__':main()

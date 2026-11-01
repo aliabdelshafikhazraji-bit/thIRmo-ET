@@ -1,85 +1,62 @@
-import inspect
-import json
 from pathlib import Path
-import subprocess
-import sys
-import tempfile
-import unittest
+import sys,unittest,inspect,json
 import numpy as np
+from scipy.special import voigt_profile
+PACKAGE=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(PACKAGE))
+from spectral_model import ThreeSpectrumPredictor
+from line_model.cold_line_representation import profile,add_cold_thermal_parameters,predict_diatomic_line
 
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from thirmo_three import ThreeSpectrumPredictor
-from broad_model import frozen_core as core
-from cold_router import route_probe,route_cold_spectra
-
-class ThreeInputTests(unittest.TestCase):
+class CommonPredictionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.model=ThreeSpectrumPredictor()
-        cls.x=np.linspace(1000,1100,5001)
-        cls.ts=[278.15,298.15,323.15]
-        cls.spectra=[(cls.x,(1-.002*(T-278.15))*1e-20*np.exp(-.5*((cls.x-1050)/8)**2)) for T in cls.ts]
-    def call(self,spectra=None,ts=None,**kwargs):
-        return self.model.predict(self.spectra if spectra is None else spectra,self.ts if ts is None else ts,
-            [700],1,[1000,1100],**kwargs)
-    def test_exactly_three(self):
-        for n in [1,2,4]:
-            with self.assertRaises(ValueError):self.call(self.spectra[:n] if n<3 else self.spectra+[self.spectra[0]],self.ts[:n] if n<3 else self.ts+[330])
-    def test_temperatures_are_measured_distinct_near_ambient(self):
-        for ts in [[278,278,323],[270,298,323],[278,298,351]]:
-            with self.assertRaises(ValueError):self.call(ts=ts)
-    def test_full_band_is_original_broad_prediction(self):
-        actual=self.call()
-        direct=self.model.broad.predict(self.spectra,self.ts,[700],[1000,1100],units='cross-section')
-        self.assertEqual(actual['cross_section_cm2_molecule'].shape,(1,512))
-        np.testing.assert_array_equal(actual['cross_section_cm2_molecule'],direct['cross_section_cm2_molecule'])
-    def test_pnnl_conversion_and_temperature_order(self):
-        pnnl=[(x,y*core.PNNL_COLUMN/np.log(10)) for x,y in self.spectra]
-        a=self.call();b=self.call(pnnl,units='pnnl')
-        np.testing.assert_allclose(a['cross_section_cm2_molecule'],b['cross_section_cm2_molecule'],rtol=1e-12,atol=1e-35)
-        perm=[2,0,1]
-        c=self.call([self.spectra[i] for i in perm],[self.ts[i] for i in perm])
-        np.testing.assert_array_equal(a['cross_section_cm2_molecule'],c['cross_section_cm2_molecule'])
-    def test_broad_probe_is_envelope_interpolation(self):
-        band=self.call();probe=self.call(probe_wavenumber_cm1=1050)
-        self.assertEqual(probe['metadata']['branch'],'broad_band_envelope')
-        self.assertAlmostEqual(probe['cross_section_cm2_molecule'][0,0]/np.interp(1050,band['wavenumber_cm1'],band['cross_section_cm2_molecule'][0]),1,places=14)
-    def test_mixed_band_uses_local_not_global_gate(self):
+        cls.model=ThreeSpectrumPredictor();cls.temps=[278.15,298.15,323.15]
+        x=np.linspace(1900,1940,2001);d=cls.model.line.gaussian_coefficient
         curves=[]
-        for T in self.ts:
-            y=2e-20*np.exp(-.5*((self.x-1035)/5)**2)+8e-21/(1+((self.x-1070)/.055)**2)
-            curves.append((self.x,y,T))
-        self.assertFalse(route_cold_spectra(curves,[1000,1100])['passed'])
-        self.assertTrue(route_probe(curves,[1000,1100],1070)['passed'])
-        altered=list(curves)
-        altered[0]=(self.x,2e-20*np.exp(-.5*((self.x-1035)/5)**2)+8e-21/(1+((self.x-1070)/1.5)**2),self.ts[0])
-        self.assertFalse(route_probe(altered,[1000,1100],1070)['passed'])
-    def test_no_target_molecular_identity_arguments(self):
-        names=inspect.signature(self.model.predict).parameters
-        self.assertFalse({'species','molecule','mass','mass_amu','formula'}&set(names))
-    def test_invalid_probe_and_pressure(self):
-        with self.assertRaises(ValueError):self.call(probe_wavenumber_cm1=900)
-        with self.assertRaises(ValueError):self.model.predict(self.spectra,self.ts,[700],.5,[1000,1100])
-    def test_cli_roundtrip_overwrite_and_two_input_rejection(self):
-        with tempfile.TemporaryDirectory() as directory:
-            root=Path(directory)
-            command=[sys.executable,str(Path(__file__).resolve().parents[1]/'thirmo_three.py')]
-            spectra_args=[]
-            for i,((x,y),T) in enumerate(zip(self.spectra,self.ts)):
-                path=root/f'input_{i}.csv'
-                np.savetxt(path,np.column_stack([x,y]),delimiter=',',header='wavenumber,cross_section',comments='')
-                spectra_args.extend(['--spectrum',str(path),str(T)])
-            options=['--units','cm2-molecule','--target-temperature','700','--target-pressure','1',
-                '--context-band','1000','1100','--probe','1050','--output',str(root/'result.csv')]
-            run=subprocess.run(command+spectra_args+options,capture_output=True,text=True)
-            self.assertEqual(run.returncode,0,run.stderr)
-            meta=json.loads((root/'result.json').read_text())
-            self.assertEqual(meta['branch'],'broad_band_envelope')
-            self.assertEqual(meta['input_count'],3)
-            again=subprocess.run(command+spectra_args+options+['--overwrite'],capture_output=True,text=True)
-            self.assertEqual(again.returncode,0,again.stderr)
-            invalid=subprocess.run(command+spectra_args[:6]+options+['--overwrite'],capture_output=True,text=True)
-            self.assertNotEqual(invalid.returncode,0)
-            self.assertIn('exactly three',invalid.stderr)
+        for T in cls.temps:
+            y=np.zeros_like(x)
+            for center,energy in [(1908,280),(1920,400),(1932,600)]:
+                area=1e-20*(323.15/T)*np.exp(1.438776877*energy*(1/323.15-1/T))
+                y+=area*voigt_profile(x-center,d*center*np.sqrt(T),.085*(296/T)**.7)
+            curves.append((x,y))
+        cls.curves=curves;cls.context=cls.model.prepare(curves,cls.temps,[1900,1940])
+    def test_three_actual_input_requirement(self):
+        for curves,ts in [(self.curves[:2],self.temps[:2]),(self.curves,[298.15,298.15,323.15])]:
+            with self.assertRaises(ValueError):self.model.prepare(curves,ts,[1900,1940])
+    def test_no_molecular_property_argument(self):
+        params=inspect.signature(self.model.predict).parameters
+        for name in ['species','mass','formula','molecular_identity','hot_reference']:self.assertNotIn(name,params)
+        self.assertNotIn('mass_amu',self.context['line_records'][0])
+    def test_cold_only_selection_is_nonempty(self):
+        self.assertEqual(len(self.context['line_records']),3)
+        np.testing.assert_allclose([r['center_cm1'] for r in self.context['line_records']],[1908,1920,1932],atol=.01)
+    def test_same_value_inside_spectrum_or_as_probe(self):
+        Ts=[500.,1200.];Ps=[1.,1.5];probe=1920.013
+        single=self.model.evaluate(self.context,Ts,Ps,[probe])[:,0]
+        grid=self.model.evaluate(self.context,Ts,Ps,[1900,1910,probe,1930,1940])[:,2]
+        np.testing.assert_allclose(single,grid,rtol=2e-15,atol=0)
+    def test_input_order_does_not_change_prediction(self):
+        a=self.model.predict(self.curves,self.temps,[1000],[1],[1900,1940],probe_wavenumber_cm1=1920)
+        b=self.model.predict(self.curves[::-1],self.temps[::-1],[1000],[1],[1900,1940],probe_wavenumber_cm1=1920)
+        np.testing.assert_array_equal(a['cross_section_cm2_molecule'],b['cross_section_cm2_molecule'])
+    def test_pressure_affects_resolved_shape_only(self):
+        a=self.model.evaluate(self.context,[800,800],[1,1.5],[1920])[:,0]
+        self.assertGreater(a[0],a[1])
+        x=np.linspace(1900,1940,1001);curves=[(x,(1+.0003*(T-298))*np.exp(-((x-1920)/7)**2)*1e-20) for T in self.temps]
+        c=self.model.prepare(curves,self.temps,[1900,1940]);self.assertEqual(c['line_records'],[])
+        z=self.model.evaluate(c,[800,800],[1,1.5],[1920]);np.testing.assert_array_equal(z[0],z[1])
+    def test_convolution_subtraction_avoids_double_line_area(self):
+        # Before nonnegative clipping, each contrast correction integrates to zero
+        # on the infinite domain. A very wide numerical interval approaches it.
+        from scipy.special import voigt_profile
+        x=np.linspace(-300,300,600001);s=.006;g=.03
+        contrast=voigt_profile(x,s,g)-voigt_profile(x,np.hypot(s,2/np.sqrt(8*np.log(2))),g)
+        self.assertLess(abs(np.trapezoid(contrast,x)),1e-8)
+    def test_native_prediction_nonnegative_and_finite(self):
+        x=np.linspace(1900,1940,8001);y=self.model.evaluate(self.context,[500,1800],[.7,1.5],x)
+        self.assertTrue(np.isfinite(y).all());self.assertTrue((y>=0).all())
+    def test_invalid_condition_is_rejected(self):
+        for T,P in [(298,1),(800,.5),(800,2.1)]:
+            with self.assertRaises(ValueError):self.model.evaluate(self.context,[T],[P],[1920])
 
 if __name__=='__main__':unittest.main()

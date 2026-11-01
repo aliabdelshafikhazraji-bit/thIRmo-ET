@@ -1,19 +1,93 @@
 {
-  "model": "thIRmo-ET 2.5.1",
-  "model_weights_sha256": "a20b2a2322de0a3466293a364be6ed3d056781d0786b482e3735f94840f93a8e",
-  "matches_metadata": true,
-  "manuscript_protocol_sha256": "8ce9bfa4b93ed82cc5c8baf13b85356504188e60effeedcea3dd0e8d970bbf93",
-  "training_test_identity_overlap": false,
-  "heldout_molecules": 8,
-  "primary_band_temperature_records": 84,
-  "all_retained_target_pressures_atm": [
-    0.6,
-    2.0
+  "strict_three_input_training": true,
+  "all_inputs_labeled_measured_PNNL": true,
+  "training_identities": [
+    "1,3-butadiene",
+    "1-butene",
+    "C2H2",
+    "CF4",
+    "CH3Br",
+    "CH3Cl",
+    "CH3F",
+    "CO",
+    "CO2",
+    "CS2",
+    "GeH4",
+    "H2S",
+    "HBr",
+    "HCl",
+    "HF",
+    "NH3",
+    "OCS",
+    "PH3",
+    "SO2",
+    "acetaldehyde",
+    "dimethoxymethane",
+    "ethanol",
+    "ethyl acetate",
+    "ethylene",
+    "formaldehyde",
+    "isobutene",
+    "methyl acetate",
+    "methyl formate",
+    "methyl propionate",
+    "n-butyl acetate",
+    "n-heptane",
+    "propane",
+    "propene"
   ],
-  "evaluation_protocol_sha256": "fa814604e151b2c1e08a0e859818e3dd5e7a012de7941035f40fa414f20e16f6",
-  "reference_counts": {
-    "measurement": 45,
-    "HITEMP": 39
-  },
-  "fitted_weights_changed": false
+  "testing_identities": [
+    "1,2-dimethoxyethane",
+    "CH4",
+    "NO",
+    "acetone",
+    "di-n-propyl ether",
+    "diisopropyl ether",
+    "n-propyl acetate",
+    "toluene"
+  ],
+  "no_molecule_overlap": true,
+  "line_training": [
+    "CO",
+    "HCl",
+    "HF"
+  ],
+  "molecular_properties_not_used": true,
+  "grid_checks": [
+    {
+      "window": "NO_1600_2050",
+      "T_K": 1573.15,
+      "probe_matches_full_spectrum": true,
+      "max_projection_change_percent": 4.413863117929906e-05
+    },
+    {
+      "window": "CH4_4000_4700",
+      "T_K": 773.15,
+      "probe_matches_full_spectrum": true,
+      "max_projection_change_percent": 2.1142648416986115e-05
+    }
+  ],
+  "public_private_parity": [
+    {
+      "case": "NO_1523K",
+      "maximum_public_private_difference": 0.0
+    },
+    {
+      "case": "NO_1576K",
+      "maximum_public_private_difference": 0.0
+    },
+    {
+      "case": "NO_1653K",
+      "maximum_public_private_difference": 0.0
+    }
+  ],
+  "qualification_rule_applied_to_all_learned_spectral_constants": true,
+  "public_reproduction_all_84_records_verified": true,
+  "portable_and_history_tests_passed": 16,
+  "historical_unit_tests_passed_after_aggregation_schema_update": 14,
+  "numeric_model_weights": {
+    "three_input/broad_model/models/thirmo_et_final.npz": "258cfaffa9820b8f36f974febaa6e544a53eb9b18035db063f9e63222ec1064c",
+    "three_input/broad_model/models/thirmo_et_without_added_hitran.npz": "3a686402e9be6fec9e3eb006681743185a427138a6d82d5238fa259a347cc74e",
+    "three_input/line_model/model_frozen/narrow_residual_forest.npz": "39d9e0b3d93e2dc7db052cf452caafcda66984fcb7187c84ff690580254e2a5c"
+  }
 }

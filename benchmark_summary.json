@@ -1,45 +1,146 @@
 {
-  "model": "thIRmo-ET 2.5.1",
-  "algorithm": "128 extremely randomized regression trees",
-  "target_pressure_range_atm": [
-    0.6,
-    2.0
-  ],
-  "training_identities": 46,
-  "withheld_benchmark_identities": 8,
-  "primary_band_temperature_records": 84,
-  "reference_record_counts": {
-    "experiment": 45,
-    "HITEMP": 39
+  "version": "4.0.0-experimental",
+  "band": {
+    "final": {
+      "all": {
+        "n_molecules": 8,
+        "n_records": 84,
+        "mean_error_percent": 24.006126640220977,
+        "molecule_error_percent": {
+          "1,2-dimethoxyethane": 26.09754415222463,
+          "CH4": 30.275735952954353,
+          "NO": 26.738343435113926,
+          "acetone": 11.969012045981714,
+          "di-n-propyl ether": 32.725393699630324,
+          "diisopropyl ether": 24.878008078685774,
+          "n-propyl acetate": 23.252795950493407,
+          "toluene": 16.112179806683688
+        }
+      },
+      "measurement": {
+        "n_molecules": 6,
+        "n_records": 45,
+        "mean_error_percent": 22.505822288949926,
+        "molecule_error_percent": {
+          "1,2-dimethoxyethane": 26.09754415222463,
+          "acetone": 11.969012045981714,
+          "di-n-propyl ether": 32.725393699630324,
+          "diisopropyl ether": 24.878008078685774,
+          "n-propyl acetate": 23.252795950493407,
+          "toluene": 16.112179806683688
+        }
+      },
+      "HITEMP": {
+        "n_molecules": 2,
+        "n_records": 39,
+        "mean_error_percent": 28.50703969403414,
+        "molecule_error_percent": {
+          "CH4": 30.275735952954353,
+          "NO": 26.738343435113926
+        }
+      }
+    },
+    "without_hitran": {
+      "all": {
+        "n_molecules": 8,
+        "n_records": 84,
+        "mean_error_percent": 24.483669344062342,
+        "molecule_error_percent": {
+          "1,2-dimethoxyethane": 25.992924366794085,
+          "CH4": 43.27830630922338,
+          "NO": 24.753765981959457,
+          "acetone": 11.724164761095173,
+          "di-n-propyl ether": 35.18468447817766,
+          "diisopropyl ether": 24.445276264522537,
+          "n-propyl acetate": 16.96225443866539,
+          "toluene": 13.527978152061058
+        }
+      },
+      "measurement": {
+        "n_molecules": 6,
+        "n_records": 45,
+        "mean_error_percent": 21.306213743552647,
+        "molecule_error_percent": {
+          "1,2-dimethoxyethane": 25.992924366794085,
+          "acetone": 11.724164761095173,
+          "di-n-propyl ether": 35.18468447817766,
+          "diisopropyl ether": 24.445276264522537,
+          "n-propyl acetate": 16.96225443866539,
+          "toluene": 13.527978152061058
+        }
+      },
+      "HITEMP": {
+        "n_molecules": 2,
+        "n_records": 39,
+        "mean_error_percent": 34.01603614559142,
+        "molecule_error_percent": {
+          "CH4": 43.27830630922338,
+          "NO": 24.753765981959457
+        }
+      }
+    },
+    "unchanged": {
+      "all": {
+        "n_molecules": 8,
+        "n_records": 84,
+        "mean_error_percent": 50.472032777130096,
+        "molecule_error_percent": {
+          "1,2-dimethoxyethane": 40.82683068015798,
+          "CH4": 70.25007281553071,
+          "NO": 61.7220523603188,
+          "acetone": 44.46727663965421,
+          "di-n-propyl ether": 56.41198313518865,
+          "diisopropyl ether": 36.92643304593299,
+          "n-propyl acetate": 80.45383987174829,
+          "toluene": 12.717773668509155
+        }
+      },
+      "measurement": {
+        "n_molecules": 6,
+        "n_records": 45,
+        "mean_error_percent": 45.30068950686521,
+        "molecule_error_percent": {
+          "1,2-dimethoxyethane": 40.82683068015798,
+          "acetone": 44.46727663965421,
+          "di-n-propyl ether": 56.41198313518865,
+          "diisopropyl ether": 36.92643304593299,
+          "n-propyl acetate": 80.45383987174829,
+          "toluene": 12.717773668509155
+        }
+      },
+      "HITEMP": {
+        "n_molecules": 2,
+        "n_records": 39,
+        "mean_error_percent": 65.98606258792475,
+        "molecule_error_percent": {
+          "CH4": 70.25007281553071,
+          "NO": 61.7220523603188
+        }
+      }
+    }
   },
-  "reference_note": "All NO and CH4 targets are HITEMP references; CH4 outer window uses nine temperatures from 373.15 to 773.15 K at 50 K intervals.",
-  "metric": "Integrated absolute prediction-reference difference divided by integrated positive reference cross section; records averaged within windows, windows within molecules, molecules weighted equally",
-  "all_heldout_mean_error_percent": 22.75,
-  "without_HITRAN_mean_error_percent": 23.61,
-  "measurement_mean_error_percent": 21.61,
-  "HITEMP_mean_error_percent": 26.17,
-  "per_molecule_error_percent": {
-    "1,2-dimethoxyethane": 24.78,
-    "CH4": 28.91,
-    "NO": 23.44,
-    "acetone": 10.95,
-    "di-n-propyl ether": 31.99,
-    "diisopropyl ether": 25.05,
-    "n-propyl acetate": 23.13,
-    "toluene": 13.74
-  },
-  "model_weights_sha256": "a20b2a2322de0a3466293a364be6ed3d056781d0786b482e3735f94840f93a8e",
-  "scope": "All eight test identities are absent from fitting at every target temperature and band window.",
-  "withheld_non_acetal_acyclic_ethers": [
-    "1,2-dimethoxyethane",
-    "di-n-propyl ether",
-    "diisopropyl ether"
+  "NO_concentration": [
+    {
+      "case": "NO_1523K",
+      "initial_temperature_K": 1523.2,
+      "initial_pressure_atm": 1.4338021218850237,
+      "error_percent": 16.22748174319004
+    },
+    {
+      "case": "NO_1576K",
+      "initial_temperature_K": 1575.9,
+      "initial_pressure_atm": 1.5384159881569208,
+      "error_percent": 17.088457273411912
+    },
+    {
+      "case": "NO_1653K",
+      "initial_temperature_K": 1653.4,
+      "initial_pressure_atm": 1.5328892178633111,
+      "error_percent": 17.992548073904704
+    }
   ],
-  "training_acetals": [
-    "dimethoxymethane",
-    "1,3-dioxolane",
-    "2-methyl-1,3-dioxolane"
-  ],
-  "input_mode_of_reported_test_scores": "Three measured near-ambient spectra for each test molecule.",
-  "fitted_weights_changed": false
+  "training_identities": 33,
+  "testing_identities": 8,
+  "strict_three_input": true,
+  "developmental_holdout_not_newly_blinded": true
 }

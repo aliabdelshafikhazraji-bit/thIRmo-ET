@@ -13,8 +13,8 @@ class ReproductionTests(unittest.TestCase):
     def test_published_record_aggregation(self):
         with (ROOT/'study/record_errors.csv').open(newline='',encoding='utf8') as f:
             rows=list(csv.DictReader(f))
-        for r in rows:r['error_percent']=float(r['error_percent'])
-        expected=json.loads((ROOT/'study/aggregation_expected.json').read_text())
+        for r in rows:r['error_percent']=float(r['final_error_percent'])
+        expected=json.loads((ROOT/'study/aggregation_expected.json').read_text())['expected']['final']
         actual=summarize(rows)
         self.assertEqual(actual['all']['n_records'],84)
         self.assertEqual(actual['HITEMP']['n_records'],39)

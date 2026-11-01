@@ -1,0 +1,230 @@
+{
+  "hitran_weight": 0.0,
+  "fit_rows": 67284,
+  "weight_audit": [
+    {
+      "species": "1,3-butadiene",
+      "window": "1,3-butadiene",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "acetaldehyde",
+      "window": "acetaldehyde",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "ethanol",
+      "window": "ethanol",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "ethyl acetate",
+      "window": "ethyl acetate",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "ethylene",
+      "window": "ethylene",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "isobutene",
+      "window": "isobutene",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "methyl acetate",
+      "window": "methyl acetate",
+      "block": "training",
+      "raw_weight": 0.3333333333333333
+    },
+    {
+      "species": "n-butyl acetate",
+      "window": "n-butyl acetate",
+      "block": "training",
+      "raw_weight": 0.9999999999999999
+    },
+    {
+      "species": "propene",
+      "window": "propene",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "CO",
+      "window": "CO_1800_2300",
+      "block": "training",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "CO",
+      "window": "CO_4000_4400",
+      "block": "training",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "CO2",
+      "window": "CO2_650_700",
+      "block": "training",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "CO2",
+      "window": "CO2_2320_2370",
+      "block": "training",
+      "raw_weight": 0.49999999999999994
+    },
+    {
+      "species": "1,3-butadiene",
+      "window": "1,3-butadiene__added_750.231_1000.000",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "1,3-butadiene",
+      "window": "1,3-butadiene__added_1000.000_1400.000",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "1,3-butadiene",
+      "window": "1,3-butadiene__added_2600.000_3000.000",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "1,3-butadiene",
+      "window": "1,3-butadiene__added_3000.000_3199.986",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "methyl acetate",
+      "window": "methyl acetate__added_2600.000_3000.000",
+      "block": "training",
+      "raw_weight": 0.3333333333333333
+    },
+    {
+      "species": "methyl acetate",
+      "window": "methyl acetate__added_3000.000_3400.000",
+      "block": "training",
+      "raw_weight": 0.3333333333333333
+    },
+    {
+      "species": "methyl formate",
+      "window": "methyl formate__added_1655.830_1873.970",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "methyl propionate",
+      "window": "methyl propionate__added_2600.000_3000.000",
+      "block": "training",
+      "raw_weight": 0.4999999999999999
+    },
+    {
+      "species": "methyl propionate",
+      "window": "methyl propionate__added_3000.000_3400.000",
+      "block": "training",
+      "raw_weight": 0.4999999999999999
+    },
+    {
+      "species": "n-heptane",
+      "window": "n-heptane__added_2802.198_3097.802",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "propene",
+      "window": "propene__added_600.000_1000.000",
+      "block": "training",
+      "raw_weight": 0.19999999999999998
+    },
+    {
+      "species": "propene",
+      "window": "propene__added_1000.000_1400.000",
+      "block": "training",
+      "raw_weight": 0.19999999999999998
+    },
+    {
+      "species": "propene",
+      "window": "propene__added_2600.000_3000.000",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "propene",
+      "window": "propene__added_3000.000_3400.000",
+      "block": "training",
+      "raw_weight": 0.2
+    },
+    {
+      "species": "1-butene",
+      "window": "1-butene",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "dimethoxymethane",
+      "window": "dimethoxymethane",
+      "block": "training",
+      "raw_weight": 1.0
+    },
+    {
+      "species": "propane",
+      "window": "propane__added_2600.000_3000.000",
+      "block": "training",
+      "raw_weight": 0.5
+    },
+    {
+      "species": "propane",
+      "window": "propane__added_3000.000_3400.000",
+      "block": "training",
+      "raw_weight": 0.5
+    }
+  ],
+  "training_identities": [
+    "1,3-butadiene",
+    "1-butene",
+    "CO",
+    "CO2",
+    "acetaldehyde",
+    "dimethoxymethane",
+    "ethanol",
+    "ethyl acetate",
+    "ethylene",
+    "isobutene",
+    "methyl acetate",
+    "methyl formate",
+    "methyl propionate",
+    "n-butyl acetate",
+    "n-heptane",
+    "propane",
+    "propene"
+  ],
+  "testing_identities": [
+    "1,2-dimethoxyethane",
+    "CH4",
+    "NO",
+    "acetone",
+    "di-n-propyl ether",
+    "diisopropyl ether",
+    "n-propyl acetate",
+    "toluene"
+  ],
+  "weights_sha256": "3a686402e9be6fec9e3eb006681743185a427138a6d82d5238fa259a347cc74e",
+  "parameters": {
+    "n_estimators": 128,
+    "max_depth": 16,
+    "min_samples_leaf": 16,
+    "max_features": 0.8,
+    "random_state": 20261029,
+    "n_jobs": 3
+  }
+}

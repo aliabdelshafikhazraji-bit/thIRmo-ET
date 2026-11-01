@@ -1,0 +1,20 @@
+{
+  "frozen_utc": "2026-11-01T13:59:15.249799+00:00",
+  "no_new_holdout_evaluation": true,
+  "audit_correction": "Apply frozen 20% screen to every line-training-derived constant; no threshold/architecture/test-based selection change.",
+  "files": {
+    "package\\cold_router.py": "ab06d674cebb71cf5c7a415cd2ae3ae66012c2e35dabdd5ecd857d2aface2b3a",
+    "package\\spectral_model.py": "1dc919f8df15695383b6249b40355917ba396d257abaea6d44d8d78e8cb89abb",
+    "package\\thirmo_three.py": "a0bc0cbfbe0998f12c0bd0e061a4f594495bfdbc20915c28b413e835c421842e",
+    "package\\broad_model\\frozen_core.py": "25dd376e4124fcb87ecaa5b34dd71c75bf9a50189a9e8f6f23af99324d5f22e8",
+    "package\\broad_model\\predictor.py": "5e911bc6024b8d9471924402a6085af150a4ece9e9b474594523e6dc6e74b1b1",
+    "package\\broad_model\\__init__.py": "4dbfc2c579d2f79f03a4c6086d8928241399fc6ffb8644e6c50ea7a856a3c3c8",
+    "package\\line_model\\cold_line_representation.py": "f272f669f20e21817b6721a38a012b1e900ab6d80f00449409fb843626aa8e79",
+    "package\\line_model\\spectra_only_line.py": "2e32447a437e7c083d8a58f3975432dab2487d766ec5d8ab0d4a5950e533b040",
+    "package\\line_model\\__init__.py": "d76a2a720f47ec1a4bb0124cf21d9e14c325f369ce13786d6f129b3fb4c9f397",
+    "package\\tests\\test_three_input.py": "d26ef2c30b3bd3b0ba498b8034bd50502c67b23e17830bd6d1f7bc51f4aabbd6",
+    "package\\broad_model\\models\\thirmo_et_final.npz": "258cfaffa9820b8f36f974febaa6e544a53eb9b18035db063f9e63222ec1064c",
+    "package\\line_model\\model_frozen\\narrow_residual_forest.npz": "39d9e0b3d93e2dc7db052cf452caafcda66984fcb7187c84ff690580254e2a5c",
+    "package\\line_model\\model_frozen\\narrow_model_config.json": "f84694318b060187fd6607d1adb9f6484e390db588cfe368d7a7d37f0edbc8ba"
+  }
+}

@@ -1,72 +1,53 @@
 # thIRmo-ET
 
-**thIRmo-ET predicts a hot infrared band or a cross-section at one sensing wavenumber from exactly three measured near-ambient spectra.** Supply the three spectra, their distinct temperatures between 275 and 350 K, a context wavenumber interval, the target temperature and pressure, and optionally a sensing wavenumber. No target molecular identity, formula, molecular mass, line list, or measured hot spectrum is required.
+**Predict a hot infrared spectrum from exactly three measured near-ambient spectra of a molecule absent from training.** Supply the spectra, their three distinct measurement temperatures (275–350 K), a spectral interval, and the output temperature and pressure. No molecular identity, formula, mass, other molecular properties, line list, or hot spectrum is supplied to prediction.
 
-The default entry point is [`three_input/thirmo_three.py`](three_input/thirmo_three.py), version **3.0.0-experimental**. It combines the unchanged broad-band model with a mass-free-input narrow-feature branch. The historical [`thirmo_et.py`](thirmo_et.py), model weights, benchmark records, and reproduction files are retained for earlier results; [historical usage](reproduction/HISTORICAL_2_5_1_USAGE.md) documents that older one-to-three-input interface.
+The current entry point is `three_input/thirmo_three.py`, version **4.0.0-experimental**. Broad envelopes and isolated-line corrections are fitted separately, both using three cold measurements paired with hot reference spectra from training molecules. One function combines their outputs. Requesting a probe value changes only the output coordinates; it never selects another model.
 
-## Install and predict
-
-Use Python 3.10 or newer:
+## Run
 
 ```sh
 python -m pip install -r three_input/requirements.txt
-python three_input/thirmo_three.py --help
+python three_input/thirmo_three.py --spectrum cold.csv 278.15 --spectrum room.csv 298.15 --spectrum warm.csv 323.15 --units pnnl --context-band 1600 2050 --target-temperature 700 1000 --target-pressure 1 --output hot_spectrum.csv
 ```
 
-Predict a complete band envelope:
+Add `--probe 1812.64` to evaluate the same function at one sensing wavenumber. Inputs are two-column CSV or whitespace-delimited arrays: wavenumber in cm⁻¹, then cross section. Use `--units cm2-molecule` for natural-log cm²/molecule, or `--units pnnl` for PNNL's decadic 1 ppm-m ordinate referenced to 296 K. The CSV output contains temperature, pressure, wavenumber and predicted cross section; JSON records model hashes, selected cold peaks and assumptions.
 
-```sh
-python three_input/thirmo_three.py --spectrum cold.csv 278.15 --spectrum room.csv 298.15 --spectrum warm.csv 323.15 --units pnnl --context-band 1100 1350 --target-temperature 700 1000 --target-pressure 1 --output predictions/hot_band.csv
-```
+## How features are treated
 
-Predict at a single sensing wavenumber:
+The three cold spectra determine which individual peaks receive a line correction. Each peak must satisfy fixed width (≤0.40 cm⁻¹), separation (≥1.30 cm⁻¹), prominence/height (≥0.50), sampling (≤0.08 cm⁻¹) and cold-fit checks in all inputs. A band can contain both treatments. No molecular-size label is required.
 
-```sh
-python three_input/thirmo_three.py --spectrum cold.csv 278.15 --spectrum room.csv 298.15 --spectrum warm.csv 323.15 --units pnnl --context-band 1600 2050 --probe 1812.64 --target-temperature 700 1000 --target-pressure 1 --output predictions/hot_probe.csv
-```
+The spectral function is `max(B + sum(L − G*L), 0)`: `B` is the interpolated tree envelope, `L` is a fitted cold-observed line prediction, and `G` is a unit-area 2 cm⁻¹ FWHM Gaussian. Subtraction avoids adding the line's smoothed contribution twice. Gaussian convolution of the Voigt component is analytic. The envelope uses 512 points; qualifying line contrast is evaluated on the requested grid (default spacing no larger than 0.002 cm⁻¹). This spacing is not an instrumental-resolution claim.
 
-Each input is a two-column CSV or whitespace-delimited text file containing wavenumber in cm⁻¹ and the spectral ordinate. Choose `pnnl` for the standard PNNL decadic 1 ppm-m ordinate at its fixed 296 K reference density, or `cm2-molecule` for absorption cross-section in cm²/molecule under the natural-log Beer–Lambert convention. Each spectrum must cover the context band. Input spectra must be actual measurements at three distinct near-ambient temperatures; the interface does not synthesize a missing third measurement.
+Line areas and effective widths are supervised by fits to hot training spectra, not tabulated transition parameters. A common Gaussian-width coefficient is learned from those spectral shapes; molecular masses are not read. The line-population baseline uses a linear-rotor/one-vibration approximation inferred from the cold band. New transitions absent from all three inputs enter only through the learned envelope. Cold shape alone does not establish that the line-population approximation is valid for every polyatomic band.
 
-Outputs are a CSV of cross-sections and a JSON file identifying the selected calculation, model hashes, temperatures, pressures, and assumptions. Supply either one target pressure or one pressure per target temperature. The study pressure range is 0.6–2.0 atm. The [three-input guide](three_input/README.md) documents the Python API and all options.
+Target pressures must be 0.6–2.0 atm. The envelope is not pressure-conditioned. The resolved Lorentz widths scale with target pressure relative to the assumed 1 atm cold input; bath-gas-specific widths and pressure shifts are not inferred. The cold line fit assumes the PNNL-like boxcar/sinc instrument response (first zero 0.056 cm⁻¹). The line training covers 400–1800 K and 0.7–1.5 atm.
 
-## What is predicted
+## Evaluation
 
-For a complete band, the original 128-tree extremely randomized regression model returns the same 512-point envelope as before. Input spectra receive an additional 2 cm⁻¹ full-width-at-half-maximum Gaussian smoothing. The broad model uses spectral-shape and temperature features and is not pressure-conditioned.
+The envelope fit uses **33 training identities**, all with three actual cold measurements. **Eight identities are excluded from both fitted components**: 1,2-dimethoxyethane, di-n-propyl ether, diisopropyl ether, n-propyl acetate, toluene, acetone, NO and CH₄. The three non-acetal acyclic ethers are withheld together; dimethoxymethane remains an acetal training molecule.
 
-At a specified probe wavenumber, the code checks the nearest peak within ±0.65 cm⁻¹ in all three cold spectra. Fixed cold-only width, separation, contrast, and sampling criteria are followed by a cold line-fit quality check. When these pass, the narrow branch sums retained lines observed in the cold inputs and evaluates their contribution at the probe. Otherwise, it interpolates the original broad envelope. This is a local decision: a mixed band does not have to satisfy a whole-window 90% resolved-peak criterion.
+Band errors use a 2 cm⁻¹ Gaussian display response and positive integrated reference absorption as denominator. Errors are averaged within windows, then molecules, with molecules equally weighted. Single-wavelength retrieval uses the same function before display convolution. These are different reported metrics, not different spectral models.
 
-The narrow branch uses a training-derived constant Doppler mass proxy of 27.9926073333 amu, rather than an input or inferred target molecular mass. Its ten-feature residual model was fitted using CO, HCl, and HF only. Cold line areas, widths, positions, and their near-ambient temperature trends are obtained from the three input spectra. The thermal population approximation remains linear-rotor-like; cold morphology alone does not establish that this approximation applies to every polyatomic molecule. The calculated narrow contribution does not generate transitions absent from all three cold spectra. The complete-band output remains the broad envelope.
-
-For the line branch, input pressure is assumed to be 1 atm and the cold instrument response is PNNL-like. Pressure scaling transfers fitted cold widths to target conditions, without inferring bath-gas-specific broadening. Training targets extend to 1800 K and 1.5 atm; metadata flags predictions beyond these limits. A pressure inside the wider 0.6–2.0 atm study range does not by itself establish that the result lies inside the line model's training range.
-
-## Evaluation and provenance
-
-The **unchanged full-band benchmark** uses 46 training molecular identities and eight withheld identities: three non-acetal acyclic ethers, n-propyl acetate, toluene, acetone, NO, and CH₄. Dimethoxymethane and cyclic acetals remain in training. The six molecules evaluated against published hot measurements have a 21.61% equal-molecule mean normalized integrated absolute error over 45 band–temperature comparisons. NO and CH₄ have a 26.17% two-molecule mean over 39 HITEMP comparisons. The eight-molecule mean is 22.75%. These values are reproduced from [the original benchmark records](benchmark_summary.json). All reported test cases use three measured cold inputs; historical broad-model training includes one-, two-, and three-input records.
-
-The **new narrow-probe benchmark** replaces the published NO calibration in three shock-tube concentration histories from [Zou et al., Combustion and Flame 276 (2025) 114135](https://doi.org/10.1016/j.combustflame.2025.114135). The calculation retains published corrected NO concentrations, measured pressure histories, and author-calculated temperature histories, and multiplies concentration by the published-to-predicted cross-section ratio. No normalization is fitted to those histories.
-
-| Initial reflected-shock temperature | Initial pressure | Integrated NO concentration difference |
+| Reference group | Molecules / band–temperature records | Mean band error |
 |---|---:|---:|
-| 1523.2 K | 1.434 atm | 13.51% |
-| 1575.9 K | 1.538 atm | 14.21% |
-| 1653.4 K | 1.533 atm | 15.04% |
+| Published measurements | 6 / 45 | 22.51% |
+| HITEMP | 2 / 39 | 28.51% |
+| All | 8 / 84 | 24.01% |
 
-The percentage is 100 times the time integral of the absolute recalculated-minus-published concentration difference, divided by the time integral of positive published concentration. All measured pressure samples lie within 0.6–2.0 atm. Some later samples in the second and third histories exceed 1800 K. The reported measurement uncertainty is ±5.9% of NO concentration; it is not a model prediction interval. [Narrow benchmark metadata](three_input/benchmark_summary.json) provides the source, temperature ranges, and temperature-separated results.
+The line head uses CO, HCl and HF only: 50 cold-qualified lines and 1021 usable spectral-reference fits. Leave-one-training-species-out mean local spectral error is 15.63%. The shared Gaussian coefficient is estimated from the fitting species only in each fold. The fixed rules retain 32 NO fundamental lines and five CH₄ lines in 4000–4700 cm⁻¹; no peak passes in the CH₄ 1280–1340 cm⁻¹ window.
 
-The mass-free-input model and protocol were frozen before these three histories were evaluated, with no subsequent calibration to their errors. The development followed earlier inspection of related NO cases, so this is a developmental held-out-species benchmark, not a newly blinded external validation. The results do not replace the original full-band HITEMP benchmark.
+Replacing the calibration in three NO concentration histories gives 16.23%, 17.09% and 17.99% integrated concentration differences. The reported NO measurement uncertainty is ±5.9%; it is not a model uncertainty interval. The source is [Zou et al., Combustion and Flame 276 (2025) 114135](https://doi.org/10.1016/j.combustflame.2025.114135). Concentration is recalculated as published concentration times reference/predicted cross section; no kinetic history is predicted or fitted.
 
-The broad branch was also used for six shock-tube cases: three di-n-propyl ether histories and three 1,2-dimethoxyethane histories. Their published cross-section correlations, source figures, pressures, temperatures, and all six results are provided in [the organic benchmark summary](three_input/organic_benchmark_summary.json). The reference and predicted cross-sections are held at the reported post-shock conditions for these cases. The [standalone history evaluator](reproduction/three_input/recalculate_histories.py) reproduces the concentration substitution and integrated error calculation from user-supplied histories. Hot reference data are evaluation inputs to that script, not inputs to spectral prediction.
+These are developmental transfer tests. Earlier versions' results for these molecules had already been inspected; the new calculation is not represented as newly blinded. Test identities and hot measurements never supply fit features, training labels, or calibration factors to the current predictor. A qualification audit correction and the freeze records are retained in `reproduction/three_input/`.
 
-## Reproduction and tests
+## Reproduce and test
 
-The historical [reproduction directory](reproduction/README.md) and [study files](study/) remain unchanged. The [three-input reproduction guide](reproduction/three_input/README.md) documents training-only model selection, the frozen protocol, source-array requirements, and the portable line-model training script. The distributed package contains numeric model weights and code; licensed raw PNNL spectra and line lists remain with their providers: [PNNL](https://nwir.pnl.gov/), [HITRAN](https://hitran.org/), and [HITEMP](https://hitran.org/hitemp/).
+See [the three-input guide](three_input/README.md) and [reproduction instructions](reproduction/three_input/README.md). Numeric weights, exact dataset manifests, source records and 84 error records are included. Licensed PNNL spectra and HITRAN/HITEMP line lists remain with [PNNL](https://nwir.pnl.gov/), [HITRAN](https://hitran.org/) and [HITEMP](https://hitran.org/hitemp/); the repository does not redistribute the raw spectra.
 
 ```sh
 python -m unittest discover -s three_input/tests -v
-python -m unittest discover -s tests -v
 python -m unittest discover -s reproduction/three_input -p "test_*.py" -v
 ```
 
-Ordinary inference requires only NumPy and SciPy. It does not access private files, download reference spectra, or require scikit-learn. The packaged broad and narrow predictions were checked against the saved developmental outputs with zero numerical differences.
-
-Until a manuscript DOI is available, cite **thIRmo-ET version 3.0.0-experimental** and this repository URL. Cite version 2.5.1 when reproducing the historical interface or its original full-band results.
+Inference uses NumPy and SciPy, runs offline, and does not load a target reference spectrum. Refitting additionally requires scikit-learn and acquired source arrays. The root `thirmo_et.py` and its frozen weights are retained for historical reproduction; use the explicit current entry point above. Cite **thIRmo-ET 4.0.0-experimental** and this repository until a manuscript DOI is assigned.

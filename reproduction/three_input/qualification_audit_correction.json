@@ -1,0 +1,6 @@
+{
+  "utc": "2026-11-01T13:58:02.864412+00:00",
+  "reason": "Audit correction: apply the already frozen 20% PNNL compatibility screen to spectral Gaussian-coefficient calibration as well as line-supervision rows.",
+  "no_test_based_parameter_choice": true,
+  "no_threshold_or_architecture_change": true
+}

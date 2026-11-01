@@ -2,7 +2,7 @@
 
 No hot reference spectrum or line-list parameters are consumed. The cold line
 model is a Voigt profile convolved with an explicitly specified instrument.
-It is a representation prototype, not a claimed high-temperature predictor.
+The Gaussian-width coefficient is learned from reference spectral shapes in the training collection; no molecular properties are read.
 """
 from pathlib import Path
 import argparse,json
@@ -12,7 +12,7 @@ from scipy.signal import find_peaks
 from scipy.special import voigt_profile
 from numpy.polynomial.legendre import leggauss
 
-KB=1.380649e-23; AMU=1.66053906660e-27; C=299792458.; NA=6.02214076e23
+KB=1.380649e-23; NA=6.02214076e23
 C2=1.438776877
 PNNL_COLUMN=1e-6*101325/(KB*296)*1e-6*100
 NOMINAL_RESOLUTION=.112
@@ -26,8 +26,8 @@ def load_cold(directory,prefix,temperatures):
         curves.append((a[:,0],a[:,1]*np.log(10)/PNNL_COLUMN,float(T)))
     return curves
 
-def doppler_sigma(nu,T,mass_amu):
-    return nu*np.sqrt(KB*T/(mass_amu*AMU))/C
+def thermal_gaussian_sigma(nu,T,gaussian_coefficient):
+    return np.asarray(nu)*np.sqrt(np.asarray(T))*gaussian_coefficient
 
 def profile(delta,gamma,sigma_doppler,instrument='sinc_0.112'):
     """Unit-area profile; sinc number means FIRST ZERO in cm^-1.
@@ -55,7 +55,7 @@ def detect_candidates(curves,window,relative_prominence=.005,min_spacing=.8):
             result.append(dict(candidate_center_cm1=float(x[p]),prominence=float(props['prominences'][j]),nearest_detected_peak_distance_cm1=float(nearest)))
     return result
 
-def fit_line(curves,center,mass_amu,instrument='sinc_0.112',half_window=.65):
+def fit_line(curves,center,gaussian_coefficient,instrument='sinc_0.112',half_window=.65):
     xx=[];yy=[];ts=[]
     for x,y,T in curves:
         m=abs(x-center)<=half_window
@@ -69,7 +69,7 @@ def fit_line(curves,center,mass_amu,instrument='sinc_0.112',half_window=.65):
     lower=np.r_[-.09,[-12.]*3,[np.log(.0001)]*3,[-.1]*3,[-.15]*3]
     upper=np.r_[.09,[3.]*3,[np.log(.3)]*3,[.15]*3,[.15]*3]
     def render(p,j,x):
-        c=center+p[0];A=np.exp(p[1+j]);g=np.exp(p[4+j]);s=doppler_sigma(c,ts[j],mass_amu)
+        c=center+p[0];A=np.exp(p[1+j]);g=np.exp(p[4+j]);s=thermal_gaussian_sigma(c,ts[j],gaussian_coefficient)
         return A*profile(x-c,g,s,instrument)+p[7+j]+p[10+j]*(x-c)
     def residual(p):
         return np.concatenate([render(p,j,x)-y for j,(x,y) in enumerate(zip(xx,yy))])
@@ -83,21 +83,21 @@ def fit_line(curves,center,mass_amu,instrument='sinc_0.112',half_window=.65):
         inverse_temperature_area_slope=float(area_slopes[0]),
         fit_relative_rms=float(np.sqrt(np.mean(rr**2))),fit_relative_max_error=float(np.max(abs(rr))),
         fit_success=bool(fit.success),optimizer_evaluations=int(fit.nfev),instrument=instrument,
-        half_window_cm1=half_window,mass_amu=mass_amu,
+        half_window_cm1=half_window,gaussian_coefficient=gaussian_coefficient,
         baseline_cm2_molecule=(p[7:10]*scale).tolist(),baseline_slope=(p[10:13]*scale).tolist(),
         fit_at_bound=bool(np.any((p-lower)<1e-5)|np.any((upper-p)<1e-5)),
         fitted_parameters=p.tolist(),scale=scale)
 
 def reconstruct_cold(record,x,index):
     c=record['center_cm1'];T=record['temperatures_K'][index]
-    return record['area_cm_molecule'][index]*profile(np.asarray(x)-c,record['lorentz_hwhm_cm1'][index],doppler_sigma(c,T,record['mass_amu']),record['instrument'])+record['baseline_cm2_molecule'][index]+record['baseline_slope'][index]*(np.asarray(x)-c)
+    return record['area_cm_molecule'][index]*profile(np.asarray(x)-c,record['lorentz_hwhm_cm1'][index],thermal_gaussian_sigma(c,T,record['gaussian_coefficient']),record['instrument'])+record['baseline_cm2_molecule'][index]+record['baseline_slope'][index]*(np.asarray(x)-c)
 
 def render_intrinsic(record,x,area,gamma,T):
     """Remove instrument response; area/gamma/T must be explicitly supplied.
 
     This function alone does not predict thermally populated new lines.
     """
-    return area*voigt_profile(np.asarray(x)-record['center_cm1'],doppler_sigma(record['center_cm1'],T,record['mass_amu']),gamma)
+    return area*voigt_profile(np.asarray(x)-record['center_cm1'],thermal_gaussian_sigma(record['center_cm1'],T,record['gaussian_coefficient']),gamma)
 
 def cold_band_centroid(curves,window):
     """Estimate a vibrational scale from the warmest measured band only."""
