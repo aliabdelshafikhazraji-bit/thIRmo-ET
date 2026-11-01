@@ -62,3 +62,5 @@ Test the evaluation equations, including a known constant cross-section ratio, n
 ```sh
 python -m unittest discover -s reproduction/three_input -p "test_*.py" -v
 ```
+
+The original frozen protocol and line-model configuration retain their exact bytes, protected by `.gitattributes`. Other packaged text files use LF line endings; current distribution checksums are recorded separately from the original freeze checksums.

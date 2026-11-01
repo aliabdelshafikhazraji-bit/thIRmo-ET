@@ -140,4 +140,3 @@ def predict_diatomic_line(record,T,P_atm=1.,width_exponent=None,area_log_correct
     n=record['width_temperature_exponent'] if width_exponent is None else width_exponent
     gamma=record['gamma_at296_cm1']*(296/T)**n*P_atm*np.exp(width_log_correction)
     return area,gamma
-

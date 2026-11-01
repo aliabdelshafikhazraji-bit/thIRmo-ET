@@ -4,3 +4,6 @@
 *.csv text eol=lf
 *.txt text eol=lf
 *.npz binary
+# Preserve the bytes recorded in the original training freeze manifest.
+reproduction/three_input/frozen_protocol.json -text !eol whitespace=cr-at-eol
+three_input/line_model/model_frozen/narrow_model_config.json -text !eol whitespace=cr-at-eol
