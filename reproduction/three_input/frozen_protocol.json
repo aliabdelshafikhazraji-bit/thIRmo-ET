@@ -1,0 +1,45 @@
+{
+  "candidate": "Three-spectra line branch with training-derived constant Doppler proxy",
+  "created_utc": "2026-11-01T10:32:01.096733+00:00",
+  "allowed_training_species": [
+    "CO",
+    "HCl",
+    "HF"
+  ],
+  "forbidden_for_training": "All NO hot spectra, cross sections, concentration histories and performance scores",
+  "molecular_inference_inputs": "Three near-ambient cross-section spectra with their measured temperatures; no target species identity, formula, mass, line list or measured hot spectrum",
+  "operational_inputs": "Context wavenumber interval, target wavenumber grid, target temperature and pressure; input spectra pressure defaults to 1 atm",
+  "doppler_proxy_rule": "Equal-species arithmetic mean of training isotopologue masses. Each LOSO fold uses only the two fitting species; the final model uses all three.",
+  "training_species_masses_amu": {
+    "CO": 27.994915,
+    "HCl": 35.976678,
+    "HF": 20.006229
+  },
+  "final_doppler_proxy_amu": 27.992607333333336,
+  "removed_feature": "mass_per100amu",
+  "feature_names": [
+    "effective_lower_energy_per1000cm1",
+    "cold_width_temperature_exponent",
+    "log_gamma296_cm1",
+    "line_to_vibrational_wavenumber_ratio",
+    "log_cold_anchor_line_area",
+    "cold_thermal_fit_log_residual",
+    "target_to_anchor_temperature",
+    "anchor_to_target_temperature",
+    "vibrational_temperature_to_target_temperature",
+    "inverse_temperature_change_per1000K"
+  ],
+  "parameters": {
+    "n_estimators": 128,
+    "max_depth": 8,
+    "min_samples_leaf": 4,
+    "max_features": 1.0,
+    "random_state": 20261101,
+    "n_jobs": 3
+  },
+  "cold_refit": "Refit every training and evaluation cold spectrum with the applicable fixed Doppler proxy; unchanged sinc first-zero0.056cm^-1, optimization, peak and quality rules",
+  "branch_selection": "Select residual head only if equal-species LOSO mean local integrated L1 is strictly below physical baseline",
+  "evaluation_plan": "Freeze model, configuration, code and protocol hashes; then fit NO cold inputs with frozen proxy; then evaluate existing three NO histories once with no recalibration",
+  "scope": "Post hoc exploratory extension motivated by earlier narrow-model results; this is not a newly blinded external test. Linear-rotor population approximation remains and is not validated for every polyatomic resolved band.",
+  "selected_training_source_sha256": "0892d09820b3a25d32c691832af11f14f453cfab2136dd1d3549659c509101a1"
+}

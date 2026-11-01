@@ -1,0 +1,80 @@
+{
+  "portable_test_count": 9,
+  "portable_tests_passed": true,
+  "historical_test_count": 14,
+  "historical_tests_passed": true,
+  "full_band_model_unchanged": true,
+  "private_broad_ether_probe_parity": "Exactly equal to both saved generic broad predictions",
+  "private_NO_probe_parity": "All three predicted cross-section histories exactly equal to the frozen mass-free candidate",
+  "independent_file_access_audit": "Inference opens only four packaged model/configuration files; external data reads were blocked in the audit",
+  "portable_training_script_executed": true,
+  "reproduced_line_weights_sha256": "0c7ceea900341a80dcea3a5a6533b42ed9602830de0bf3127578b2fbbf833d97",
+  "distributed_line_weights_sha256": "0c7ceea900341a80dcea3a5a6533b42ed9602830de0bf3127578b2fbbf833d97",
+  "reproduced_weights_byte_identical": true,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1"
+  },
+  "raw_private_or_licensed_data_included": false,
+  "evaluation_scope": "Developmental held-out-species benchmark, not a newly blind external test",
+  "history_evaluator_tests": 7,
+  "history_evaluator_matches_all_nine_saved_cases": true,
+  "history_evaluator_case_checks": [
+    {
+      "species": "di-n-propyl ether",
+      "temperature_K": 1151.0,
+      "integrated_absolute_difference_percent": 21.575390099285695,
+      "max_absolute_molefraction_difference": 0.0
+    },
+    {
+      "species": "di-n-propyl ether",
+      "temperature_K": 1228.0,
+      "integrated_absolute_difference_percent": 18.514207882241358,
+      "max_absolute_molefraction_difference": 0.0
+    },
+    {
+      "species": "di-n-propyl ether",
+      "temperature_K": 1306.0,
+      "integrated_absolute_difference_percent": 23.45289908899348,
+      "max_absolute_molefraction_difference": 0.0
+    },
+    {
+      "species": "1,2-dimethoxyethane",
+      "temperature_K": 1184.0,
+      "integrated_absolute_difference_percent": 37.10288696167834,
+      "max_absolute_molefraction_difference": 0.0
+    },
+    {
+      "species": "1,2-dimethoxyethane",
+      "temperature_K": 1226.0,
+      "integrated_absolute_difference_percent": 35.56066012031012,
+      "max_absolute_molefraction_difference": 0.0
+    },
+    {
+      "species": "1,2-dimethoxyethane",
+      "temperature_K": 1249.0,
+      "integrated_absolute_difference_percent": 32.42267808738231,
+      "max_absolute_molefraction_difference": 0.0
+    },
+    {
+      "species": "NO",
+      "temperature_K": 1523.2,
+      "integrated_absolute_difference_percent": 13.510820043159933,
+      "max_absolute_molefraction_difference": 1.734723475976807e-18
+    },
+    {
+      "species": "NO",
+      "temperature_K": 1575.9,
+      "integrated_absolute_difference_percent": 14.21387761758899,
+      "max_absolute_molefraction_difference": 3.469446951953614e-18
+    },
+    {
+      "species": "NO",
+      "temperature_K": 1653.4,
+      "integrated_absolute_difference_percent": 15.043066467945087,
+      "max_absolute_molefraction_difference": 1.734723475976807e-18
+    }
+  ]
+}

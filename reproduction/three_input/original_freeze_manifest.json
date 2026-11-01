@@ -1,0 +1,19 @@
+{
+  "frozen_utc": "2026-11-01T10:32:09.595391+00:00",
+  "hot_NO_test_not_run": true,
+  "protocol_sha256": "8c67f6204d87caa144b44f330c6e843885bdf87155769f373330c6dcd194f428",
+  "weights_sha256": "0c7ceea900341a80dcea3a5a6533b42ed9602830de0bf3127578b2fbbf833d97",
+  "config_sha256": "a6c98dd2d4a0313eff072bcfeca8d5a1abf5f9a26ebf34a581d797a326239abb",
+  "inference_code_sha256": "eb15b4c2b65aa571ffefead6dda1b3dff1e974d04177e07b58eb8326ef545f10",
+  "cold_physics_code_sha256": "99868d1549bc8dce6b634883b79b433e12c11e1f0babdcd6632570d42a922c13",
+  "training_script_sha256": "41ebfa03460cf636b62020bd8de702f954cf281999a24bc4829052538335f336",
+  "training_helpers_sha256": "1b114e0343b28ae6b5efb48be7957830be70082a3b6f7d0ec0eaca1a12c29218",
+  "training_cold_records_sha256": "d2aa8142bad8d671f15e8ec860e7701aba64a88fb21d8871e8925a1b41d0156f",
+  "input_data_sha256": {
+    "CO": "cd0cbbc0010ad55ec2bff38b66163064c0e61165a3acbf6f17c7525ccca5e6b4",
+    "HCl": "21b4fbbf83b714796a4f81aff2b9978d941c7281e3bcf4c340038a4b0158bfc1",
+    "HF": "a3913678e43488a560c64c920df33737df8209e405b61e212e4e6f4af4cce91d"
+  },
+  "no_target_fitting": true,
+  "numeric_evaluator_verified_against_sklearn": true
+}

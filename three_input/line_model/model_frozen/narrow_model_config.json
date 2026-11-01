@@ -1,0 +1,761 @@
+{
+  "schema_version": 2,
+  "selected_branch": "physical_plus_extra_trees_residual",
+  "doppler_mass_proxy_amu": 27.992607333333336,
+  "doppler_mass_proxy_basis": "Equal-species arithmetic mean of training isotopologue masses. Each LOSO fold uses only the two fitting species; the final model uses all three.",
+  "molecular_mass_is_inference_input": false,
+  "species_identity_is_inference_input": false,
+  "training_species": [
+    "CO",
+    "HCl",
+    "HF"
+  ],
+  "parameters": {
+    "n_estimators": 128,
+    "max_depth": 8,
+    "min_samples_leaf": 4,
+    "max_features": 1.0,
+    "random_state": 20261101,
+    "n_jobs": 3
+  },
+  "feature_names": [
+    "effective_lower_energy_per1000cm1",
+    "cold_width_temperature_exponent",
+    "log_gamma296_cm1",
+    "line_to_vibrational_wavenumber_ratio",
+    "log_cold_anchor_line_area",
+    "cold_thermal_fit_log_residual",
+    "target_to_anchor_temperature",
+    "anchor_to_target_temperature",
+    "vibrational_temperature_to_target_temperature",
+    "inverse_temperature_change_per1000K"
+  ],
+  "features_count": 10,
+  "numeric_model_sha256": "0c7ceea900341a80dcea3a5a6533b42ed9602830de0bf3127578b2fbbf833d97",
+  "cold_records_sha256": "d2aa8142bad8d671f15e8ec860e7701aba64a88fb21d8871e8925a1b41d0156f",
+  "line_filter_decisions": [
+    {
+      "species": "CO",
+      "line_index": 0,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09613696742572153
+    },
+    {
+      "species": "CO",
+      "line_index": 1,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.08720402262211659
+    },
+    {
+      "species": "CO",
+      "line_index": 2,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09958829550175523
+    },
+    {
+      "species": "CO",
+      "line_index": 3,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.08903127068478522
+    },
+    {
+      "species": "CO",
+      "line_index": 4,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.11287398658211638
+    },
+    {
+      "species": "CO",
+      "line_index": 5,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.08524859072456215
+    },
+    {
+      "species": "CO",
+      "line_index": 6,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09303781546357602
+    },
+    {
+      "species": "CO",
+      "line_index": 7,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.07647515632043655
+    },
+    {
+      "species": "CO",
+      "line_index": 8,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09184895098252459
+    },
+    {
+      "species": "CO",
+      "line_index": 9,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09948403777520197
+    },
+    {
+      "species": "CO",
+      "line_index": 10,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.11808513760850413
+    },
+    {
+      "species": "CO",
+      "line_index": 11,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.1062586667386942
+    },
+    {
+      "species": "CO",
+      "line_index": 12,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.07309620089808386
+    },
+    {
+      "species": "CO",
+      "line_index": 13,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09071241098274617
+    },
+    {
+      "species": "CO",
+      "line_index": 14,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.10701403696489459
+    },
+    {
+      "species": "CO",
+      "line_index": 15,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.11470301915836593
+    },
+    {
+      "species": "CO",
+      "line_index": 16,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09236041725075514
+    },
+    {
+      "species": "CO",
+      "line_index": 17,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.07438895602249519
+    },
+    {
+      "species": "CO",
+      "line_index": 18,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.10924779980663399
+    },
+    {
+      "species": "CO",
+      "line_index": 19,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.07125565123473403
+    },
+    {
+      "species": "CO",
+      "line_index": 20,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09074290922833567
+    },
+    {
+      "species": "CO",
+      "line_index": 21,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09205135772393819
+    },
+    {
+      "species": "CO",
+      "line_index": 22,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.05727335733079371
+    },
+    {
+      "species": "CO",
+      "line_index": 23,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09139912469261306
+    },
+    {
+      "species": "CO",
+      "line_index": 24,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.0553795451864631
+    },
+    {
+      "species": "CO",
+      "line_index": 25,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.10946759601168361
+    },
+    {
+      "species": "CO",
+      "line_index": 26,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.11792935428173935
+    },
+    {
+      "species": "CO",
+      "line_index": 27,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.05107987425081046
+    },
+    {
+      "species": "CO",
+      "line_index": 28,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09082818415690956
+    },
+    {
+      "species": "CO",
+      "line_index": 29,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.04911962776601759
+    },
+    {
+      "species": "CO",
+      "line_index": 30,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.09971376820647032
+    },
+    {
+      "species": "CO",
+      "line_index": 31,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.12767170072349002
+    },
+    {
+      "species": "CO",
+      "line_index": 32,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.10762402299632864
+    },
+    {
+      "species": "CO",
+      "line_index": 33,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.04575205688912794
+    },
+    {
+      "species": "CO",
+      "line_index": 34,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.11558063792765413
+    },
+    {
+      "species": "CO",
+      "line_index": 35,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.11656445982657765
+    },
+    {
+      "species": "CO",
+      "line_index": 36,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.13663933493438343
+    },
+    {
+      "species": "CO",
+      "line_index": 37,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.12173061639280452
+    },
+    {
+      "species": "CO",
+      "line_index": 38,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.1705194826839798
+    },
+    {
+      "species": "CO",
+      "line_index": 39,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.138134577630844
+    },
+    {
+      "species": "HCl",
+      "line_index": 0,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.13731225848991813
+    },
+    {
+      "species": "HCl",
+      "line_index": 1,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.13625614909336597
+    },
+    {
+      "species": "HCl",
+      "line_index": 2,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.15808687553862472
+    },
+    {
+      "species": "HCl",
+      "line_index": 3,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.11880695474340333
+    },
+    {
+      "species": "HCl",
+      "line_index": 4,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.11198944973333959
+    },
+    {
+      "species": "HCl",
+      "line_index": 5,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.1015137127071325
+    },
+    {
+      "species": "HCl",
+      "line_index": 6,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.15821196498140272
+    },
+    {
+      "species": "HCl",
+      "line_index": 7,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.17219548168820997
+    },
+    {
+      "species": "HCl",
+      "line_index": 8,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.10182860052349016
+    },
+    {
+      "species": "HCl",
+      "line_index": 9,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.32386137766066764
+    },
+    {
+      "species": "HCl",
+      "line_index": 10,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.2729130982161828
+    },
+    {
+      "species": "HCl",
+      "line_index": 11,
+      "retained": false,
+      "reasons": [
+        "negative_effective_energy"
+      ],
+      "worst_cold_relative_mismatch": 0.08124271733688729
+    },
+    {
+      "species": "HCl",
+      "line_index": 12,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.08436591192994417
+    },
+    {
+      "species": "HCl",
+      "line_index": 13,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.4506982728501101
+    },
+    {
+      "species": "HCl",
+      "line_index": 14,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.386238231946447
+    },
+    {
+      "species": "HCl",
+      "line_index": 15,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.45867158208089387
+    },
+    {
+      "species": "HCl",
+      "line_index": 16,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.532761881455693
+    },
+    {
+      "species": "HCl",
+      "line_index": 17,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent",
+        "width_exponent_outside0to2"
+      ],
+      "worst_cold_relative_mismatch": 1.1703851269197183
+    },
+    {
+      "species": "HCl",
+      "line_index": 18,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent",
+        "width_exponent_outside0to2"
+      ],
+      "worst_cold_relative_mismatch": 0.8352393796406642
+    },
+    {
+      "species": "HCl",
+      "line_index": 19,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.9807109185506938
+    },
+    {
+      "species": "HCl",
+      "line_index": 20,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.8397922943302211
+    },
+    {
+      "species": "HCl",
+      "line_index": 21,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent",
+        "width_exponent_outside0to2"
+      ],
+      "worst_cold_relative_mismatch": 0.8047912250248331
+    },
+    {
+      "species": "HCl",
+      "line_index": 22,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent",
+        "width_exponent_outside0to2"
+      ],
+      "worst_cold_relative_mismatch": 0.5946310194559987
+    },
+    {
+      "species": "HCl",
+      "line_index": 23,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent",
+        "width_exponent_outside0to2"
+      ],
+      "worst_cold_relative_mismatch": 0.516031952879998
+    },
+    {
+      "species": "HF",
+      "line_index": 0,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.1937022774436094
+    },
+    {
+      "species": "HF",
+      "line_index": 1,
+      "retained": true,
+      "reasons": [],
+      "worst_cold_relative_mismatch": 0.1445406282341736
+    },
+    {
+      "species": "HF",
+      "line_index": 2,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.30459366737736904
+    },
+    {
+      "species": "HF",
+      "line_index": 3,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.539645106953649
+    },
+    {
+      "species": "HF",
+      "line_index": 4,
+      "retained": false,
+      "reasons": [
+        "negative_effective_energy"
+      ],
+      "worst_cold_relative_mismatch": 0.10273683860822092
+    },
+    {
+      "species": "HF",
+      "line_index": 5,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.7315338599053777
+    },
+    {
+      "species": "HF",
+      "line_index": 6,
+      "retained": false,
+      "reasons": [
+        "native_cold_mismatch_above20percent"
+      ],
+      "worst_cold_relative_mismatch": 0.9245390041955767
+    }
+  ],
+  "line_counts": {
+    "CO": 40,
+    "HCl": 10,
+    "HF": 2
+  },
+  "validation": {
+    "physical_baseline": {
+      "per_species": {
+        "CO": {
+          "n_lines": 40,
+          "n_cases": 960,
+          "mean_local_integrated_L1_percent": 23.766085153405655,
+          "mean_absolute_area_error_percent": 2.4526784923225837,
+          "mean_absolute_width_error_percent": 35.16113867154509
+        },
+        "HCl": {
+          "n_lines": 10,
+          "n_cases": 240,
+          "mean_local_integrated_L1_percent": 11.851147115385812,
+          "mean_absolute_area_error_percent": 5.165884276297315,
+          "mean_absolute_width_error_percent": 13.90914223417479
+        },
+        "HF": {
+          "n_lines": 2,
+          "n_cases": 48,
+          "mean_local_integrated_L1_percent": 19.03270317146419,
+          "mean_absolute_area_error_percent": 17.844919085094556,
+          "mean_absolute_width_error_percent": 19.29052541289389
+        }
+      },
+      "mean_species_local_integrated_L1_percent": 18.216645146751887,
+      "mean_species_absolute_area_error_percent": 8.487827284571486,
+      "mean_species_absolute_width_error_percent": 22.786935439537924
+    },
+    "residual_head": {
+      "per_species": {
+        "CO": {
+          "n_lines": 40,
+          "n_cases": 960,
+          "mean_local_integrated_L1_percent": 21.133503885211532,
+          "mean_absolute_area_error_percent": 13.137331777739648,
+          "mean_absolute_width_error_percent": 21.132028501298553
+        },
+        "HCl": {
+          "n_lines": 10,
+          "n_cases": 240,
+          "mean_local_integrated_L1_percent": 11.39323527050745,
+          "mean_absolute_area_error_percent": 4.174836800869452,
+          "mean_absolute_width_error_percent": 12.571425187733723
+        },
+        "HF": {
+          "n_lines": 2,
+          "n_cases": 48,
+          "mean_local_integrated_L1_percent": 18.74402057566847,
+          "mean_absolute_area_error_percent": 18.857911316357598,
+          "mean_absolute_width_error_percent": 10.388543592874225
+        }
+      },
+      "mean_species_local_integrated_L1_percent": 17.090253243795818,
+      "mean_species_absolute_area_error_percent": 12.056693298322232,
+      "mean_species_absolute_width_error_percent": 14.697332427302166
+    },
+    "folds": [
+      {
+        "held_species": "CO",
+        "proxy_amu": 27.9914535,
+        "physical": {
+          "per_species": {
+            "CO": {
+              "n_lines": 40,
+              "n_cases": 960,
+              "mean_local_integrated_L1_percent": 23.766085153405655,
+              "mean_absolute_area_error_percent": 2.4526784923225837,
+              "mean_absolute_width_error_percent": 35.16113867154509
+            }
+          },
+          "mean_species_local_integrated_L1_percent": 23.766085153405655,
+          "mean_species_absolute_area_error_percent": 2.4526784923225837,
+          "mean_species_absolute_width_error_percent": 35.16113867154509
+        },
+        "residual": {
+          "per_species": {
+            "CO": {
+              "n_lines": 40,
+              "n_cases": 960,
+              "mean_local_integrated_L1_percent": 21.133503885211532,
+              "mean_absolute_area_error_percent": 13.137331777739648,
+              "mean_absolute_width_error_percent": 21.132028501298553
+            }
+          },
+          "mean_species_local_integrated_L1_percent": 21.133503885211532,
+          "mean_species_absolute_area_error_percent": 13.137331777739648,
+          "mean_species_absolute_width_error_percent": 21.132028501298553
+        },
+        "cold_records_sha256": "f2a59b9aa8128d1d42bacf27b111521a04306e25a78ead61ca274b5dc8e89856"
+      },
+      {
+        "held_species": "HCl",
+        "proxy_amu": 24.000572,
+        "physical": {
+          "per_species": {
+            "HCl": {
+              "n_lines": 10,
+              "n_cases": 240,
+              "mean_local_integrated_L1_percent": 11.851147115385812,
+              "mean_absolute_area_error_percent": 5.165884276297315,
+              "mean_absolute_width_error_percent": 13.90914223417479
+            }
+          },
+          "mean_species_local_integrated_L1_percent": 11.851147115385812,
+          "mean_species_absolute_area_error_percent": 5.165884276297315,
+          "mean_species_absolute_width_error_percent": 13.90914223417479
+        },
+        "residual": {
+          "per_species": {
+            "HCl": {
+              "n_lines": 10,
+              "n_cases": 240,
+              "mean_local_integrated_L1_percent": 11.39323527050745,
+              "mean_absolute_area_error_percent": 4.174836800869452,
+              "mean_absolute_width_error_percent": 12.571425187733723
+            }
+          },
+          "mean_species_local_integrated_L1_percent": 11.39323527050745,
+          "mean_species_absolute_area_error_percent": 4.174836800869452,
+          "mean_species_absolute_width_error_percent": 12.571425187733723
+        },
+        "cold_records_sha256": "b2a0f6139b90c7bfb0c78d68cc36ddb277b731351e79c709cde62518c42a0a28"
+      },
+      {
+        "held_species": "HF",
+        "proxy_amu": 31.9857965,
+        "physical": {
+          "per_species": {
+            "HF": {
+              "n_lines": 2,
+              "n_cases": 48,
+              "mean_local_integrated_L1_percent": 19.03270317146419,
+              "mean_absolute_area_error_percent": 17.844919085094556,
+              "mean_absolute_width_error_percent": 19.29052541289389
+            }
+          },
+          "mean_species_local_integrated_L1_percent": 19.03270317146419,
+          "mean_species_absolute_area_error_percent": 17.844919085094556,
+          "mean_species_absolute_width_error_percent": 19.29052541289389
+        },
+        "residual": {
+          "per_species": {
+            "HF": {
+              "n_lines": 2,
+              "n_cases": 48,
+              "mean_local_integrated_L1_percent": 18.74402057566847,
+              "mean_absolute_area_error_percent": 18.857911316357598,
+              "mean_absolute_width_error_percent": 10.388543592874225
+            }
+          },
+          "mean_species_local_integrated_L1_percent": 18.74402057566847,
+          "mean_species_absolute_area_error_percent": 18.857911316357598,
+          "mean_species_absolute_width_error_percent": 10.388543592874225
+        },
+        "cold_records_sha256": "257ecbcd7763ba17081a7084ec070e9945d4d3ea5770acc778469d4a9cdb7aaf"
+      }
+    ]
+  },
+  "temperature_training_K": [
+    400.0,
+    600.0,
+    800.0,
+    1000.0,
+    1200.0,
+    1500.0,
+    1600.0,
+    1800.0
+  ],
+  "pressure_training_atm": [
+    0.7,
+    1.0,
+    1.5
+  ],
+  "physical_proxy": "Linear rigid rotor plus one harmonic vibration; vibrational scale is warm-input band centroid; lower-energy scale is inferred from three cold line areas",
+  "no_hot_NO_consumed": true,
+  "selection_rule": "Select residual head only if equal-species LOSO mean local integrated L1 is strictly below physical baseline",
+  "scope": "Post hoc exploratory extension motivated by earlier narrow-model results; this is not a newly blinded external test. Linear-rotor population approximation remains and is not validated for every polyatomic resolved band."
+}

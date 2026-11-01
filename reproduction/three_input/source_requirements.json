@@ -1,0 +1,94 @@
+{
+  "raw_licensed_spectral_data_included": false,
+  "source_providers": {
+    "PNNL": "https://nwir.pnl.gov/",
+    "HITRAN": "https://hitran.org/",
+    "HITEMP": "https://hitran.org/hitemp/"
+  },
+  "required_external_prepared_files": [
+    "selected_lines.json",
+    "cold_gate.json",
+    "CO_native_training.npz",
+    "HCl_native_training.npz",
+    "HF_native_training.npz"
+  ],
+  "native_array_sha256": {
+    "CO": "cd0cbbc0010ad55ec2bff38b66163064c0e61165a3acbf6f17c7525ccca5e6b4",
+    "HCl": "21b4fbbf83b714796a4f81aff2b9978d941c7281e3bcf4c340038a4b0158bfc1",
+    "HF": "a3913678e43488a560c64c920df33737df8209e405b61e212e4e6f4af4cce91d"
+  },
+  "species": [
+    {
+      "species": "CO",
+      "database": "HITEMP2019",
+      "training_isotopologue_mass_amu": 27.994915,
+      "source_line_cache_sha256": "28aadf8404a396bcf07d2422f0b5876a55505a67eaae104eb4d05f0f7c04c553",
+      "number_selected_lines": 40,
+      "pnnl_inputs": [
+        {
+          "relative_file": "Carbon_monoxide/CO_5T.TXT",
+          "temperature_K": 278.19,
+          "sha256": "eef4817e3187d31e93332f6b3730e620f1d6350c532482460b5e451e6cdd77db"
+        },
+        {
+          "relative_file": "Carbon_monoxide/CO_25T.TXT",
+          "temperature_K": 298.15,
+          "sha256": "77d5438991fca1642be28e3ee55bacf3db15949c37e47ced5b2be16b06adff4c"
+        },
+        {
+          "relative_file": "Carbon_monoxide/CO_50T.TXT",
+          "temperature_K": 323.17999999999995,
+          "sha256": "c55da1fdef77dbbd2c560525fe20ae91c147b197fcc1093175e1f093942c86d6"
+        }
+      ]
+    },
+    {
+      "species": "HCl",
+      "database": "HITRAN2024",
+      "training_isotopologue_mass_amu": 35.976678,
+      "source_line_cache_sha256": "7cbcf8c7a1f792fa0e47f02a3c0ab72014c3a83f0ea08855eaac3db6c559ae3a",
+      "number_selected_lines": 24,
+      "pnnl_inputs": [
+        {
+          "relative_file": "Hydrogen_chloride__anhydrous/HCL_5T.TXT",
+          "temperature_K": 278.19,
+          "sha256": "984959885c3e22d333a1e826712345c1bea24967adb5f60180e7049c2d3f901d"
+        },
+        {
+          "relative_file": "Hydrogen_chloride__anhydrous/HCL_25T.TXT",
+          "temperature_K": 298.16999999999996,
+          "sha256": "6c45e0528abc6f65293d18720eae68b19a0f289f7d495003cf8bdfda082a899a"
+        },
+        {
+          "relative_file": "Hydrogen_chloride__anhydrous/HCl_50T.TXT",
+          "temperature_K": 323.13,
+          "sha256": "5abd9bbab34635bffcc8ad2f86244a5808b4ef7a5813eeb369e5a7f846679d87"
+        }
+      ]
+    },
+    {
+      "species": "HF",
+      "database": "HITRAN2024",
+      "training_isotopologue_mass_amu": 20.006229,
+      "source_line_cache_sha256": "88c249fefb183b471cb63465e77680261344089320be3de161f86297b28633c5",
+      "number_selected_lines": 7,
+      "pnnl_inputs": [
+        {
+          "relative_file": "Hydrogen_fluoride__anhydrous/HF_5T.TXT",
+          "temperature_K": 278.10999999999996,
+          "sha256": "22e440d6cf5433fcd8d49423b72ecbc3e7acf1832b49783c6d751654844ab356"
+        },
+        {
+          "relative_file": "Hydrogen_fluoride__anhydrous/HF_25T.TXT",
+          "temperature_K": 298.21,
+          "sha256": "6b7c4fcbfd1b76abd8e6427c95afca0efc1c460f87755f51a6feac5eee53f12f"
+        },
+        {
+          "relative_file": "Hydrogen_fluoride__anhydrous/HF_50T.TXT",
+          "temperature_K": 323.21999999999997,
+          "sha256": "ba93e5fe429ebd7cffe12eaf629914c5596723fb425784ab88c3085d10e4740c"
+        }
+      ]
+    }
+  ]
+}

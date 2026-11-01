@@ -1,0 +1,181 @@
+{
+  "model_version": "3.0.0-experimental",
+  "model_sha256": "0c7ceea900341a80dcea3a5a6533b42ed9602830de0bf3127578b2fbbf833d97",
+  "target_species": "NO",
+  "source_doi": "10.1016/j.combustflame.2025.114135",
+  "source_url": "https://doi.org/10.1016/j.combustflame.2025.114135",
+  "numeric_source_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0010218025001737-mmc3.zip",
+  "published_source_workbook": "SMM2. Experiment data-NH3-NOx.xlsx",
+  "cold_inputs_K": [
+    278.13,
+    298.15,
+    323.13
+  ],
+  "probe_wavenumber_cm1": 1812.64,
+  "reported_relative_measurement_uncertainty": 0.059,
+  "metric": "100 integral(abs(x_recalculated-x_published),dt) / integral(max(x_published,0),dt)",
+  "calculation": "x_recalculated(t)=x_published(t)*sigma_published(T(t),P(t))/sigma_predicted(T(t),P(t))",
+  "published_calibration": "sigma_m2_per_mol=exp(4.2585-0.0006902*T_K-0.5872*ln(P_bar))",
+  "temperature_history": "Author-calculated temperature; not directly measured",
+  "pressure_history": "Published measured pressure",
+  "measurement_uncertainty_note": "The source reports 5.9% NO concentration uncertainty and 6.4% cross-section-fit RMS; its combined uncertainty budget is not reconciled here. Reported 5.9% bars are retained.",
+  "processing_note": "Published interference-corrected concentration is retained. The original channel-only inversion is about 3.7% below the published concentration; no normalization factor is fitted.",
+  "no_target_fitting": true,
+  "developmental_benchmark": true,
+  "not_new_blind_external_validation": true,
+  "cases": [
+    {
+      "case": "NO_1523K",
+      "sheet": "5%NH3-1%NO-94%Ar",
+      "source_data_range": "H4:S7654",
+      "figure": "5(h)",
+      "original_curve": "green solid",
+      "composition": {
+        "NH3": 0.05,
+        "NO": 0.01,
+        "Ar": 0.94
+      },
+      "T5_K": 1523.2,
+      "P5_bar": 1.4528,
+      "P5_atm": 1.4338021218850237,
+      "n_points": 7651,
+      "time_ms_range": [
+        0,
+        3.06
+      ],
+      "temperature_K_range": [
+        1523.2,
+        1608.24847
+      ],
+      "measured_pressure_atm_range": [
+        1.4320552677029361,
+        1.710870959782877
+      ],
+      "temperature_samples_above_1800K": 0,
+      "first_time_above_1800K_ms": null,
+      "metrics": {
+        "all": {
+          "n_samples": 7651,
+          "duration_ms": 3.06,
+          "integrated_absolute_error_percent": 13.510820043159935,
+          "fraction_samples_within_reported_uncertainty": 0.0,
+          "denominator_molefraction_ms": 0.026000888
+        },
+        "within_temperature_training_range": {
+          "n_samples": 7651,
+          "duration_ms": 3.06,
+          "integrated_absolute_error_percent": 13.510820043159935,
+          "fraction_samples_within_reported_uncertainty": 0.0,
+          "denominator_molefraction_ms": 0.026000888
+        },
+        "above_temperature_training_range": null
+      }
+    },
+    {
+      "case": "NO_1576K",
+      "sheet": "2%NH3-2%NO-96%Ar",
+      "source_data_range": "I4:T8004",
+      "figure": "5(b)",
+      "original_curve": "green solid",
+      "composition": {
+        "NH3": 0.02,
+        "NO": 0.02,
+        "Ar": 0.96
+      },
+      "T5_K": 1575.9,
+      "P5_bar": 1.5588,
+      "P5_atm": 1.5384159881569208,
+      "n_points": 8001,
+      "time_ms_range": [
+        0,
+        3.2
+      ],
+      "temperature_K_range": [
+        1575.9,
+        1993.74228
+      ],
+      "measured_pressure_atm_range": [
+        1.512292129286948,
+        1.9081877128053293
+      ],
+      "temperature_samples_above_1800K": 4109,
+      "first_time_above_1800K_ms": 1.5568,
+      "metrics": {
+        "all": {
+          "n_samples": 8001,
+          "duration_ms": 3.2,
+          "integrated_absolute_error_percent": 14.213877617588986,
+          "fraction_samples_within_reported_uncertainty": 0.0,
+          "denominator_molefraction_ms": 0.033038078000000005
+        },
+        "within_temperature_training_range": {
+          "n_samples": 3892,
+          "duration_ms": 1.5564,
+          "integrated_absolute_error_percent": 13.97604788068217,
+          "fraction_samples_within_reported_uncertainty": 0.0,
+          "denominator_molefraction_ms": 0.026252051999999998
+        },
+        "above_temperature_training_range": {
+          "n_samples": 4109,
+          "duration_ms": 1.6432000000000002,
+          "integrated_absolute_error_percent": 15.13433144069638,
+          "fraction_samples_within_reported_uncertainty": 0.0,
+          "denominator_molefraction_ms": 0.006782194000000002
+        }
+      }
+    },
+    {
+      "case": "NO_1653K",
+      "sheet": "5%NH3-1%NO-94%Ar",
+      "source_data_range": "U4:AF7778",
+      "figure": "5(h)",
+      "original_curve": "blue solid",
+      "composition": {
+        "NH3": 0.05,
+        "NO": 0.01,
+        "Ar": 0.94
+      },
+      "T5_K": 1653.4,
+      "P5_bar": 1.5532,
+      "P5_atm": 1.5328892178633111,
+      "n_points": 7775,
+      "time_ms_range": [
+        0.0004,
+        3.11
+      ],
+      "temperature_K_range": [
+        1654.25223,
+        1851.86957
+      ],
+      "measured_pressure_atm_range": [
+        1.5818800888230942,
+        1.8600515173945227
+      ],
+      "temperature_samples_above_1800K": 5664,
+      "first_time_above_1800K_ms": 0.8448,
+      "metrics": {
+        "all": {
+          "n_samples": 7775,
+          "duration_ms": 3.1096,
+          "integrated_absolute_error_percent": 15.043066467945087,
+          "fraction_samples_within_reported_uncertainty": 0.0,
+          "denominator_molefraction_ms": 0.006580587098799999
+        },
+        "within_temperature_training_range": {
+          "n_samples": 2111,
+          "duration_ms": 0.8440000000000001,
+          "integrated_absolute_error_percent": 14.778656618225648,
+          "fraction_samples_within_reported_uncertainty": 0.0,
+          "denominator_molefraction_ms": 0.005793048
+        },
+        "above_temperature_training_range": {
+          "n_samples": 5664,
+          "duration_ms": 2.2652,
+          "integrated_absolute_error_percent": 16.990072678926836,
+          "fraction_samples_within_reported_uncertainty": 0.0,
+          "denominator_molefraction_ms": 0.0007865450987999997
+        }
+      }
+    }
+  ]
+}

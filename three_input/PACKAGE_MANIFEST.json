@@ -1,0 +1,31 @@
+{
+  "tool": "thIRmo-ET",
+  "version": "3.0.0-experimental",
+  "purpose": "Portable three-near-ambient-spectrum inference with local probe routing",
+  "training_derived_Doppler_proxy_amu": 27.992607333333336,
+  "broad_model_retrained": false,
+  "line_model_mass_feature_removed": true,
+  "no_target_identity_or_mass_required": true,
+  "routing_scope": "Full spectra use the original broad envelope. A probe uses fixed per-peak cold-shape checks in all three inputs, then cold-fit eligibility, to select the observed-line component. No whole-window90% gate.",
+  "evaluation_scope": "Developmental held-out-species benchmark; no claim of a newly blind external test.",
+  "files": {
+    "benchmark_summary.json": "c7e304b872da989ede4793d049d9a036022273f6cb6d71b49bc7e3d2292b76f6",
+    "broad_model/__init__.py": "4dbfc2c579d2f79f03a4c6086d8928241399fc6ffb8644e6c50ea7a856a3c3c8",
+    "broad_model/frozen_core.py": "babe6f14be791f79b8e1ff7cfa37c4080f6323d74b148418642a26f9151dd197",
+    "broad_model/models/thirmo_et_final.json": "829d58bc6174b0c5a1d2a0b29764c48ee02704f84d0f4325cbf60326817dc063",
+    "broad_model/models/thirmo_et_final.npz": "a20b2a2322de0a3466293a364be6ed3d056781d0786b482e3735f94840f93a8e",
+    "broad_model/predictor.py": "5e911bc6024b8d9471924402a6085af150a4ece9e9b474594523e6dc6e74b1b1",
+    "cold_router.py": "ab06d674cebb71cf5c7a415cd2ae3ae66012c2e35dabdd5ecd857d2aface2b3a",
+    "line_model/__init__.py": "d76a2a720f47ec1a4bb0124cf21d9e14c325f369ce13786d6f129b3fb4c9f397",
+    "line_model/cold_line_representation.py": "e55bfb63aa9f11e6dcd33d559c68c9bd42ebda3ccda59312eb7591057661fb7d",
+    "line_model/model_frozen/narrow_model_config.json": "a6c98dd2d4a0313eff072bcfeca8d5a1abf5f9a26ebf34a581d797a326239abb",
+    "line_model/model_frozen/narrow_residual_forest.npz": "0c7ceea900341a80dcea3a5a6533b42ed9602830de0bf3127578b2fbbf833d97",
+    "line_model/spectra_only_line.py": "75f6f8cab314559bc2a1a441632d3830bce0d78ec3d7373d6fa97631df94ad31",
+    "organic_benchmark_summary.json": "e0046a78a7a3d1c7b94f4d258d246cc4ece4de0ae930a84a3edc0e2adde2f285",
+    "README.md": "0099c1485dd9bf3583700a4cbae6e83668e899238d9acafc9bc5a601ee8ca602",
+    "requirements.txt": "247cac82bee90f66c969c1966d2ed2e953e746037593bba521fe878b0c84aa40",
+    "tests/test_three_input.py": "d26ef2c30b3bd3b0ba498b8034bd50502c67b23e17830bd6d1f7bc51f4aabbd6",
+    "thirmo_three.py": "746c71d4782c1c8fbdacbc4fc87e2ddf1dcd6c6657fa6764ea8438cd182d7668",
+    "verification.json": "9a66ca0a44ba47c5bc3d100e981fef9659a5c9fd4180f86b42114d0ac39cefc2"
+  }
+}
