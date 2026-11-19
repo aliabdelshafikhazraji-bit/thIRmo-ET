@@ -1,0 +1,33 @@
+{
+ "T_K": 961.0,
+ "P_bar": 1.36,
+ "sigma_corr_673_94": 2.5844176698043065e-19,
+ "sigma_pred_673_94": 2.235944389726822e-19,
+ "sigma_pred_interval": [
+  0,
+  5.568826479310036e-19
+ ],
+ "ratio_pred_over_corr": 0.8651637139967894,
+ "recalculated_over_published": 1.1558506024025308,
+ "nu_opt_cm1": 671.5830319763131,
+ "sigma_pred_opt": 8.5315443285405725e-19,
+ "gain": 3.301147654352087,
+ "gain_interval": [
+  2.1149255735174894,
+  4.487369735186684
+ ],
+ "noise_post_sd": 0.0003986409724081731,
+ "noise_pre_sd": 0.0002604785482032524,
+ "preshock_mean": 0.0007725,
+ "mean_x_post": 0.013046370370370371,
+ "snr_post": 32.72711856876579,
+ "detection_limit_3sd_fixed": 0.0011959229172245193,
+ "detection_limit_3sd_opt": 0.00036227489420167787,
+ "detection_limit_3sd_opt_interval": [
+  0.00026650866494172813,
+  0.0005654680865367245
+ ],
+ "absorbance_per_mole_fraction_fixed_L1cm": 2.649079181851639,
+ "absorbance_per_mole_fraction_opt_L1cm": 8.745001527362485,
+ "note": "Noise is that of the digitized plotted trace; projection assumes equal absorbance noise at both wavenumbers."
+}

@@ -1,0 +1,1740 @@
+{
+ "broad_global": {
+  "q": {
+   "None": 0.9820421289262029
+  },
+  "test_rows": [
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 340.0,
+    "cov_cal": 0.8168421052631579,
+    "cov_raw": 0.7642105263157895,
+    "relwidth_cal": 0.04865759166018061,
+    "relwidth_raw": 0.04106711090041312,
+    "cov_cal_core": 0.2698412698412698,
+    "relwidth_cal_core": 0.09574774534422778
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 431.0,
+    "cov_cal": 0.7372093023255814,
+    "cov_raw": 0.7023255813953488,
+    "relwidth_cal": 0.05536262067751504,
+    "relwidth_raw": 0.05277881488947018,
+    "cov_cal_core": 0.6266666666666667,
+    "relwidth_cal_core": 0.10811883602156266
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 512.0,
+    "cov_cal": 0.7017167381974249,
+    "cov_raw": 0.7124463519313304,
+    "relwidth_cal": 0.058959723518499915,
+    "relwidth_raw": 0.058952185229010905,
+    "cov_cal_core": 0.6588235294117647,
+    "relwidth_cal_core": 0.11607529574033912
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 537.0,
+    "cov_cal": 0.8034188034188035,
+    "cov_raw": 0.8354700854700855,
+    "relwidth_cal": 0.060680805095341774,
+    "relwidth_raw": 0.06290775064478396,
+    "cov_cal_core": 0.7142857142857143,
+    "relwidth_cal_core": 0.11928501069581134
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 579.0,
+    "cov_cal": 0.6390658174097664,
+    "cov_raw": 0.6581740976645435,
+    "relwidth_cal": 0.06782672599296437,
+    "relwidth_raw": 0.07177113080592218,
+    "cov_cal_core": 0.673469387755102,
+    "relwidth_cal_core": 0.12735140284892962
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 613.0,
+    "cov_cal": 0.7720090293453724,
+    "cov_raw": 0.7381489841986456,
+    "relwidth_cal": 0.07488476972925592,
+    "relwidth_raw": 0.08337490326110322,
+    "cov_cal_core": 0.6504854368932039,
+    "relwidth_cal_core": 0.13300181368084518
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 690.0,
+    "cov_cal": 0.7956403269754768,
+    "cov_raw": 0.8119891008174387,
+    "relwidth_cal": 0.0902628801811669,
+    "relwidth_raw": 0.09976861628905927,
+    "cov_cal_core": 0.7894736842105263,
+    "relwidth_cal_core": 0.13532911332803735
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 800.0,
+    "cov_cal": 0.8097345132743363,
+    "cov_raw": 0.8207964601769911,
+    "relwidth_cal": 0.1150757297025502,
+    "relwidth_raw": 0.12443796073380652,
+    "cov_cal_core": 0.7461538461538462,
+    "relwidth_cal_core": 0.15610659257501341
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 816.0,
+    "cov_cal": 0.7821350762527233,
+    "cov_raw": 0.7494553376906318,
+    "relwidth_cal": 0.12076252156158461,
+    "relwidth_raw": 0.12845070611234535,
+    "cov_cal_core": 0.6893939393939394,
+    "relwidth_cal_core": 0.1601666791450895
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "T": 604.81,
+    "cov_cal": 0.9887640449438202,
+    "cov_raw": 0.8247191011235955,
+    "relwidth_cal": 0.07943737413971344,
+    "relwidth_raw": 0.08303157902229252,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.12201275636377101
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "T": 782.23,
+    "cov_cal": 0.8556701030927835,
+    "cov_raw": 0.7958762886597938,
+    "relwidth_cal": 0.09270498656662808,
+    "relwidth_raw": 0.10156518934522236,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.14022312429275208
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "T": 974.22,
+    "cov_cal": 1.0,
+    "cov_raw": 0.8318777292576419,
+    "relwidth_cal": 0.16387437086909754,
+    "relwidth_raw": 0.18735930832735148,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.18778587019827675
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "T": 604.0,
+    "cov_cal": 0.7845188284518828,
+    "cov_raw": 0.7343096234309623,
+    "relwidth_cal": 0.05652538303934091,
+    "relwidth_raw": 0.062332638310886,
+    "cov_cal_core": 0.6176470588235294,
+    "relwidth_cal_core": 0.11203845534655098
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "T": 690.0,
+    "cov_cal": 0.7318087318087318,
+    "cov_raw": 0.7276507276507277,
+    "relwidth_cal": 0.07015573314875846,
+    "relwidth_raw": 0.07802331423484518,
+    "cov_cal_core": 0.7692307692307693,
+    "relwidth_cal_core": 0.12271744170696212
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "T": 758.0,
+    "cov_cal": 0.7871900826446281,
+    "cov_raw": 0.7768595041322314,
+    "relwidth_cal": 0.08953054425416093,
+    "relwidth_raw": 0.1009708491463126,
+    "cov_cal_core": 0.8064516129032258,
+    "relwidth_cal_core": 0.14099937354423356
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "T": 838.0,
+    "cov_cal": 0.7603305785123967,
+    "cov_raw": 0.7747933884297521,
+    "relwidth_cal": 0.1140735133806343,
+    "relwidth_raw": 0.13066510468397838,
+    "cov_cal_core": 0.7443609022556391,
+    "relwidth_cal_core": 0.1484911012727574
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "T": 559.0,
+    "cov_cal": 0.8309859154929577,
+    "cov_raw": 0.7847082494969819,
+    "relwidth_cal": 0.07240948308854497,
+    "relwidth_raw": 0.08037131225447605,
+    "cov_cal_core": 0.9411764705882353,
+    "relwidth_cal_core": 0.10821710203781336
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "T": 595.0,
+    "cov_cal": 0.8108651911468813,
+    "cov_raw": 0.7847082494969819,
+    "relwidth_cal": 0.0780951992303692,
+    "relwidth_raw": 0.08939387776931958,
+    "cov_cal_core": 0.9642857142857143,
+    "relwidth_cal_core": 0.11557645713070926
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "T": 690.0,
+    "cov_cal": 0.702576112412178,
+    "cov_raw": 0.7892271662763466,
+    "relwidth_cal": 0.09646567279192679,
+    "relwidth_raw": 0.11212011753769778,
+    "cov_cal_core": 0.8263473053892215,
+    "relwidth_cal_core": 0.13026343612992553
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "T": 764.0,
+    "cov_cal": 0.7538461538461538,
+    "cov_raw": 0.7666666666666667,
+    "relwidth_cal": 0.1203679683551719,
+    "relwidth_raw": 0.1394560195463557,
+    "cov_cal_core": 0.7678571428571429,
+    "relwidth_cal_core": 0.14881727397211458
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "T": 853.0,
+    "cov_cal": 0.8567164179104477,
+    "cov_raw": 0.7164179104477612,
+    "relwidth_cal": 0.16019774786424434,
+    "relwidth_raw": 0.1980254559394405,
+    "cov_cal_core": 0.7919463087248322,
+    "relwidth_cal_core": 0.17098537191464494
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "T": 671.0,
+    "cov_cal": 1.0,
+    "cov_raw": 1.0,
+    "relwidth_cal": 0.07626254714688735,
+    "relwidth_raw": 0.07874708957343451,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.125538982520625
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "T": 754.0,
+    "cov_cal": 1.0,
+    "cov_raw": 0.9938650306748467,
+    "relwidth_cal": 0.1037110480627915,
+    "relwidth_raw": 0.12309797496102676,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.16746751717294914
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "T": 806.0,
+    "cov_cal": 1.0,
+    "cov_raw": 0.943089430894309,
+    "relwidth_cal": 0.10424469963150743,
+    "relwidth_raw": 0.10536896853342598,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.17008722933221648
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "T": 862.0,
+    "cov_cal": 0.9817813765182186,
+    "cov_raw": 0.9858299595141701,
+    "relwidth_cal": 0.1489413213380395,
+    "relwidth_raw": 0.18072549164374305,
+    "cov_cal_core": 0.9411764705882353,
+    "relwidth_cal_core": 0.24846065910658657
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "T": 350.0,
+    "cov_cal": 0.9315789473684211,
+    "cov_raw": 0.7421052631578947,
+    "relwidth_cal": 0.0394692178784633,
+    "relwidth_raw": 0.03432629557333372,
+    "cov_cal_core": 0.9166666666666666,
+    "relwidth_cal_core": 0.17236602065055764
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "T": 400.0,
+    "cov_cal": 0.7,
+    "cov_raw": 0.4842105263157895,
+    "relwidth_cal": 0.042448219548697916,
+    "relwidth_raw": 0.03773446798175058,
+    "cov_cal_core": 0.7857142857142857,
+    "relwidth_cal_core": 0.16423954530311896
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "T": 450.0,
+    "cov_cal": 0.6,
+    "cov_raw": 0.3,
+    "relwidth_cal": 0.04560772416401613,
+    "relwidth_raw": 0.04146857388675644,
+    "cov_cal_core": 0.7142857142857143,
+    "relwidth_cal_core": 0.16787941450524196
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "T": 500.0,
+    "cov_cal": 0.46842105263157896,
+    "cov_raw": 0.28421052631578947,
+    "relwidth_cal": 0.050368601538818406,
+    "relwidth_raw": 0.04843473032860659,
+    "cov_cal_core": 0.5,
+    "relwidth_cal_core": 0.15154547723765247
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "T": 350.0,
+    "cov_cal": 0.9825581395348837,
+    "cov_raw": 0.9709302325581395,
+    "relwidth_cal": 0.06600912535481512,
+    "relwidth_raw": 0.0750199276501562,
+    "cov_cal_core": 0.96,
+    "relwidth_cal_core": 0.08457801960568802
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "T": 400.0,
+    "cov_cal": 0.7267441860465116,
+    "cov_raw": 0.7325581395348837,
+    "relwidth_cal": 0.07119861170897492,
+    "relwidth_raw": 0.08279096035120347,
+    "cov_cal_core": 0.6705882352941176,
+    "relwidth_cal_core": 0.08864119360360928
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "T": 450.0,
+    "cov_cal": 0.5465116279069767,
+    "cov_raw": 0.5872093023255814,
+    "relwidth_cal": 0.07809413654371522,
+    "relwidth_raw": 0.0930243898624302,
+    "cov_cal_core": 0.5306122448979592,
+    "relwidth_cal_core": 0.09421206606181003
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "T": 500.0,
+    "cov_cal": 0.5581395348837209,
+    "cov_raw": 0.6802325581395349,
+    "relwidth_cal": 0.08927996027367417,
+    "relwidth_raw": 0.11498468551404677,
+    "cov_cal_core": 0.5094339622641509,
+    "relwidth_cal_core": 0.10498759575738008
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 350.0,
+    "cov_cal": 0.9404761904761905,
+    "cov_raw": 1.0,
+    "relwidth_cal": 0.0578411793701406,
+    "relwidth_raw": 0.05630874003481099,
+    "cov_cal_core": 0.8026315789473685,
+    "relwidth_cal_core": 0.07913317062066559
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 400.0,
+    "cov_cal": 0.8690476190476191,
+    "cov_raw": 0.9761904761904762,
+    "relwidth_cal": 0.059595298813138464,
+    "relwidth_raw": 0.06029996426822839,
+    "cov_cal_core": 0.6071428571428571,
+    "relwidth_cal_core": 0.08062428579379968
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 450.0,
+    "cov_cal": 0.8492063492063492,
+    "cov_raw": 0.8968253968253969,
+    "relwidth_cal": 0.06239428962861385,
+    "relwidth_raw": 0.06580846052165304,
+    "cov_cal_core": 0.5957446808510638,
+    "relwidth_cal_core": 0.08308908757634352
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 500.0,
+    "cov_cal": 0.8174603174603174,
+    "cov_raw": 0.8373015873015873,
+    "relwidth_cal": 0.06704077508017693,
+    "relwidth_raw": 0.07496314403977045,
+    "cov_cal_core": 0.6181818181818182,
+    "relwidth_cal_core": 0.0864036885740388
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 524.15,
+    "cov_cal": 0.7257142857142858,
+    "cov_raw": 0.7771428571428571,
+    "relwidth_cal": 0.07088089376178605,
+    "relwidth_raw": 0.07777184778466047,
+    "cov_cal_core": 0.8695652173913043,
+    "relwidth_cal_core": 0.09310213404155596
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 774.15,
+    "cov_cal": 0.8951612903225806,
+    "cov_raw": 0.9314516129032258,
+    "relwidth_cal": 0.1723062684439782,
+    "relwidth_raw": 0.24557446447116973,
+    "cov_cal_core": 0.95,
+    "relwidth_cal_core": 0.18265485054125707
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 350.0,
+    "cov_cal": 0.9869109947643979,
+    "cov_raw": 0.9424083769633508,
+    "relwidth_cal": 0.0739194465626192,
+    "relwidth_raw": 0.07735287340210083,
+    "cov_cal_core": 0.9723756906077348,
+    "relwidth_cal_core": 0.09275802027834425
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 400.0,
+    "cov_cal": 0.9109947643979057,
+    "cov_raw": 0.8821989528795812,
+    "relwidth_cal": 0.07624719013960267,
+    "relwidth_raw": 0.081114975358867,
+    "cov_cal_core": 0.8201058201058201,
+    "relwidth_cal_core": 0.09590157996334712
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 450.0,
+    "cov_cal": 0.7958115183246073,
+    "cov_raw": 0.7853403141361257,
+    "relwidth_cal": 0.07770780524644598,
+    "relwidth_raw": 0.08441764700791259,
+    "cov_cal_core": 0.6060606060606061,
+    "relwidth_cal_core": 0.09707973810724548
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 500.0,
+    "cov_cal": 0.7513089005235603,
+    "cov_raw": 0.680628272251309,
+    "relwidth_cal": 0.07916183059221248,
+    "relwidth_raw": 0.08763822194098805,
+    "cov_cal_core": 0.5507246376811594,
+    "relwidth_cal_core": 0.09833028233907794
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 524.15,
+    "cov_cal": 0.8155737704918032,
+    "cov_raw": 0.8360655737704918,
+    "relwidth_cal": 0.10263776596083024,
+    "relwidth_raw": 0.12354476200275696,
+    "cov_cal_core": 0.7715736040609137,
+    "relwidth_cal_core": 0.10548606045728506
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 774.15,
+    "cov_cal": 0.873015873015873,
+    "cov_raw": 0.8373015873015873,
+    "relwidth_cal": 0.0900969776847399,
+    "relwidth_raw": 0.09830589917704596,
+    "cov_cal_core": 0.7366255144032922,
+    "relwidth_cal_core": 0.12597644808168257
+   }
+  ],
+  "cov_cal": {
+   "molecule": {
+    "1,2-dimethoxyethane": 76.19746347180714,
+    "acetone": 94.81447160122012,
+    "di-n-propyl ether": 76.59620553544099,
+    "diisopropyl ether": 79.09979581617237,
+    "n-propyl acetate": 99.54453441295547,
+    "toluene": 77.09005044293178
+   },
+   "mean": 83.89042021342131,
+   "calibration_molecule_mean": 85.36997931925079
+  },
+  "cov_raw": {
+   "molecule": {
+    "1,2-dimethoxyethane": 75.47796139623118,
+    "acetone": 81.74910396803438,
+    "di-n-propyl ether": 75.34033109109183,
+    "diisopropyl ether": 76.83456484769476,
+    "n-propyl acetate": 98.06961052708314,
+    "toluene": 73.14599929244753
+   },
+   "mean": 80.10292852043047,
+   "calibration_molecule_mean": 86.09352220894176
+  },
+  "relwidth_cal": {
+   "molecule": {
+    "1,2-dimethoxyethane": 7.6941485346562155,
+    "acetone": 11.2005577191813,
+    "di-n-propyl ether": 8.257129345572364,
+    "diisopropyl ether": 10.550721426605145,
+    "n-propyl acetate": 10.828990404480644,
+    "toluene": 7.13976298667103
+   },
+   "mean": 9.27855173619445,
+   "calibration_molecule_mean": 12.346283924141678
+  },
+  "relwidth_raw": {
+   "molecule": {
+    "1,2-dimethoxyethane": 8.03899087628794,
+    "acetone": 12.398535889828878,
+    "di-n-propyl ether": 9.299797659400554,
+    "diisopropyl ether": 12.38733566094579,
+    "n-propyl acetate": 12.198488117790756,
+    "toluene": 8.019904361384961
+   },
+   "mean": 10.390508760939813,
+   "calibration_molecule_mean": 14.579133200862824
+  },
+  "cov_cal_core": {
+   "molecule": {
+    "1,2-dimethoxyethane": 64.65103860680038,
+    "acetone": 100.0,
+    "di-n-propyl ether": 73.4422585803291,
+    "diisopropyl ether": 85.83225883690292,
+    "n-propyl acetate": 98.52941176470588,
+    "toluene": 72.00701537132616
+   },
+   "mean": 82.4103305266774,
+   "calibration_molecule_mean": 76.70273858025801
+  },
+  "relwidth_cal_core": {
+   "molecule": {
+    "1,2-dimethoxyethane": 12.790916548665068,
+    "acetone": 15.000725028493328,
+    "di-n-propyl ether": 13.1061592967626,
+    "diisopropyl ether": 13.477192823704153,
+    "n-propyl acetate": 17.78885970330943,
+    "toluene": 11.513388939425962
+   },
+   "mean": 13.946207056726758,
+   "calibration_molecule_mean": 17.856155518561042
+  },
+  "by_temperature": [
+   {
+    "lo": 0,
+    "hi": 500,
+    "records": 18,
+    "cov_cal": 77.71119188525924,
+    "cov_raw": 73.48324620807671,
+    "relwidth_cal": 5.839203472330283,
+    "relwidth_raw": 5.832673325130255
+   },
+   {
+    "lo": 500,
+    "hi": 700,
+    "records": 14,
+    "cov_cal": 84.02362893217578,
+    "cov_raw": 81.66272952046046,
+    "relwidth_cal": 7.644104030816966,
+    "relwidth_raw": 8.365527269924028
+   },
+   {
+    "lo": 700,
+    "hi": 900,
+    "records": 12,
+    "cov_cal": 85.14437035814045,
+    "cov_raw": 82.61681660381099,
+    "relwidth_cal": 11.71460519779344,
+    "relwidth_raw": 13.681764960497473
+   },
+   {
+    "lo": 900,
+    "hi": 3000,
+    "records": 1,
+    "cov_cal": 100.0,
+    "cov_raw": 83.1877729257642,
+    "relwidth_cal": 16.387437086909753,
+    "relwidth_raw": 18.73593083273515
+   }
+  ]
+ },
+ "broad_temperature_bins": {
+  "q": {
+   "1": 0.9657258040607122,
+   "0": 0.6220360917355828,
+   "2": 1.1121805325545284,
+   "3": 1.4007783172641104
+  },
+  "test_rows": [
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 340.0,
+    "cov_cal": 0.6484210526315789,
+    "cov_raw": 0.7642105263157895,
+    "relwidth_cal": 0.030820244119933355,
+    "relwidth_raw": 0.04106711090041312,
+    "cov_cal_core": 0.047619047619047616,
+    "relwidth_cal_core": 0.060647656095508415
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 431.0,
+    "cov_cal": 0.6558139534883721,
+    "cov_raw": 0.7023255813953488,
+    "relwidth_cal": 0.035067281922147434,
+    "relwidth_raw": 0.05277881488947018,
+    "cov_cal_core": 0.4533333333333333,
+    "relwidth_cal_core": 0.06848363855366443
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 512.0,
+    "cov_cal": 0.6952789699570815,
+    "cov_raw": 0.7124463519313304,
+    "relwidth_cal": 0.057980126030193334,
+    "relwidth_raw": 0.058952185229010905,
+    "cov_cal_core": 0.6588235294117647,
+    "relwidth_cal_core": 0.1141467407645682
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 537.0,
+    "cov_cal": 0.8034188034188035,
+    "cov_raw": 0.8354700854700855,
+    "relwidth_cal": 0.05967261237135169,
+    "relwidth_raw": 0.06290775064478396,
+    "cov_cal_core": 0.7142857142857143,
+    "relwidth_cal_core": 0.11730312730326838
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 579.0,
+    "cov_cal": 0.6390658174097664,
+    "cov_raw": 0.6581740976645435,
+    "relwidth_cal": 0.06669980601339698,
+    "relwidth_raw": 0.07177113080592218,
+    "cov_cal_core": 0.673469387755102,
+    "relwidth_cal_core": 0.12523549885687668
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 613.0,
+    "cov_cal": 0.7674943566591422,
+    "cov_raw": 0.7381489841986456,
+    "relwidth_cal": 0.07364058254584455,
+    "relwidth_raw": 0.08337490326110322,
+    "cov_cal_core": 0.6407766990291263,
+    "relwidth_cal_core": 0.13079202986832283
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 690.0,
+    "cov_cal": 0.7956403269754768,
+    "cov_raw": 0.8119891008174387,
+    "relwidth_cal": 0.08876319047035872,
+    "relwidth_raw": 0.09976861628905927,
+    "cov_cal_core": 0.7894736842105263,
+    "relwidth_cal_core": 0.133080662154936
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 800.0,
+    "cov_cal": 0.8119469026548672,
+    "cov_raw": 0.8207964601769911,
+    "relwidth_cal": 0.13032535221745142,
+    "relwidth_raw": 0.12443796073380652,
+    "cov_cal_core": 0.7538461538461538,
+    "relwidth_cal_core": 0.17679354902542893
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "T": 816.0,
+    "cov_cal": 0.8082788671023965,
+    "cov_raw": 0.7494553376906318,
+    "relwidth_cal": 0.13676574719849297,
+    "relwidth_raw": 0.12845070611234535,
+    "cov_cal_core": 0.7424242424242424,
+    "relwidth_cal_core": 0.1813916707461968
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "T": 604.81,
+    "cov_cal": 0.9842696629213483,
+    "cov_raw": 0.8247191011235955,
+    "relwidth_cal": 0.0781175468484522,
+    "relwidth_raw": 0.08303157902229252,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.11998555232442693
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "T": 782.23,
+    "cov_cal": 0.931958762886598,
+    "cov_raw": 0.7958762886597938,
+    "relwidth_cal": 0.10499007964441492,
+    "relwidth_raw": 0.10156518934522236,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.1588052329515613
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "T": 974.22,
+    "cov_cal": 1.0,
+    "cov_raw": 0.8318777292576419,
+    "relwidth_cal": 0.23374930535793664,
+    "relwidth_raw": 0.18735930832735148,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.2678565078974181
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "T": 604.0,
+    "cov_cal": 0.7761506276150628,
+    "cov_raw": 0.7343096234309623,
+    "relwidth_cal": 0.05558623136178035,
+    "relwidth_raw": 0.062332638310886,
+    "cov_cal_core": 0.6078431372549019,
+    "relwidth_cal_core": 0.11017697121973358
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "T": 690.0,
+    "cov_cal": 0.7234927234927235,
+    "cov_raw": 0.7276507276507277,
+    "relwidth_cal": 0.06899011743888718,
+    "relwidth_raw": 0.07802331423484518,
+    "cov_cal_core": 0.7435897435897436,
+    "relwidth_cal_core": 0.12067852953957671
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "T": 758.0,
+    "cov_cal": 0.8698347107438017,
+    "cov_raw": 0.7768595041322314,
+    "relwidth_cal": 0.10139496611756066,
+    "relwidth_raw": 0.1009708491463126,
+    "cov_cal_core": 0.9516129032258065,
+    "relwidth_cal_core": 0.15968434931579686
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "T": 838.0,
+    "cov_cal": 0.8657024793388429,
+    "cov_raw": 0.7747933884297521,
+    "relwidth_cal": 0.12919032404522618,
+    "relwidth_raw": 0.13066510468397838,
+    "cov_cal_core": 0.849624060150376,
+    "relwidth_cal_core": 0.1681688669239913
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "T": 559.0,
+    "cov_cal": 0.8229376257545271,
+    "cov_raw": 0.7847082494969819,
+    "relwidth_cal": 0.07120642202363243,
+    "relwidth_raw": 0.08037131225447605,
+    "cov_cal_core": 0.9411764705882353,
+    "relwidth_cal_core": 0.10641910850898016
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "T": 595.0,
+    "cov_cal": 0.806841046277666,
+    "cov_raw": 0.7847082494969819,
+    "relwidth_cal": 0.07679767175823193,
+    "relwidth_raw": 0.08939387776931958,
+    "cov_cal_core": 0.9583333333333334,
+    "relwidth_cal_core": 0.11365619020345526
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "T": 690.0,
+    "cov_cal": 0.6885245901639344,
+    "cov_raw": 0.7892271662763466,
+    "relwidth_cal": 0.0948629256090109,
+    "relwidth_raw": 0.11212011753769778,
+    "cov_cal_core": 0.8203592814371258,
+    "relwidth_cal_core": 0.12809914960963642
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "T": 764.0,
+    "cov_cal": 0.823076923076923,
+    "cov_raw": 0.7666666666666667,
+    "relwidth_cal": 0.13631890853210196,
+    "relwidth_raw": 0.1394560195463557,
+    "cov_cal_core": 0.8333333333333334,
+    "relwidth_cal_core": 0.16853826342521117
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "T": 853.0,
+    "cov_cal": 0.8895522388059701,
+    "cov_raw": 0.7164179104477612,
+    "relwidth_cal": 0.18142685663445718,
+    "relwidth_raw": 0.1980254559394405,
+    "cov_cal_core": 0.8187919463087249,
+    "relwidth_cal_core": 0.19364403663924104
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "T": 671.0,
+    "cov_cal": 1.0,
+    "cov_raw": 1.0,
+    "relwidth_cal": 0.074995468619738,
+    "relwidth_raw": 0.07874708957343451,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.12345319132923346
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "T": 754.0,
+    "cov_cal": 1.0,
+    "cov_raw": 0.9938650306748467,
+    "relwidth_cal": 0.11745464402060447,
+    "relwidth_raw": 0.12309797496102676,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.18966000230423063
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "T": 806.0,
+    "cov_cal": 1.0,
+    "cov_raw": 0.943089430894309,
+    "relwidth_cal": 0.1180590141065824,
+    "relwidth_raw": 0.10536896853342598,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.19262687386565677
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "T": 862.0,
+    "cov_cal": 0.9838056680161943,
+    "cov_raw": 0.9858299595141701,
+    "relwidth_cal": 0.16867874931826263,
+    "relwidth_raw": 0.18072549164374305,
+    "cov_cal_core": 0.9477124183006536,
+    "relwidth_cal_core": 0.2813862053618456
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "T": 350.0,
+    "cov_cal": 0.7052631578947368,
+    "cov_raw": 0.7421052631578947,
+    "relwidth_cal": 0.02500022892075382,
+    "relwidth_raw": 0.03432629557333372,
+    "cov_cal_core": 0.6666666666666666,
+    "relwidth_cal_core": 0.10917849924699585
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "T": 400.0,
+    "cov_cal": 0.5789473684210527,
+    "cov_raw": 0.4842105263157895,
+    "relwidth_cal": 0.026887160755595454,
+    "relwidth_raw": 0.03773446798175058,
+    "cov_cal_core": 0.2857142857142857,
+    "relwidth_cal_core": 0.10403110198590933
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "T": 450.0,
+    "cov_cal": 0.3894736842105263,
+    "cov_raw": 0.3,
+    "relwidth_cal": 0.02888842510550886,
+    "relwidth_raw": 0.04146857388675644,
+    "cov_cal_core": 0.2857142857142857,
+    "relwidth_cal_core": 0.10633663445363857
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "T": 500.0,
+    "cov_cal": 0.3,
+    "cov_raw": 0.28421052631578947,
+    "relwidth_cal": 0.03190401625809261,
+    "relwidth_raw": 0.04843473032860659,
+    "cov_cal_core": 0.2777777777777778,
+    "relwidth_cal_core": 0.09599054216155413
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "T": 350.0,
+    "cov_cal": 0.7267441860465116,
+    "cov_raw": 0.9709302325581395,
+    "relwidth_cal": 0.041810892980212344,
+    "relwidth_raw": 0.0750199276501562,
+    "cov_cal_core": 0.44,
+    "relwidth_cal_core": 0.053572631165817515
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "T": 400.0,
+    "cov_cal": 0.31976744186046513,
+    "cov_raw": 0.7325581395348837,
+    "relwidth_cal": 0.045097969689830035,
+    "relwidth_raw": 0.08279096035120347,
+    "cov_cal_core": 0.23529411764705882,
+    "relwidth_cal_core": 0.0561462894634225
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "T": 450.0,
+    "cov_cal": 0.20930232558139536,
+    "cov_raw": 0.5872093023255814,
+    "relwidth_cal": 0.04946566960038024,
+    "relwidth_raw": 0.0930243898624302,
+    "cov_cal_core": 0.22448979591836735,
+    "relwidth_cal_core": 0.05967494025078297
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "T": 500.0,
+    "cov_cal": 0.28488372093023256,
+    "cov_raw": 0.6802325581395349,
+    "relwidth_cal": 0.05655089117171436,
+    "relwidth_raw": 0.11498468551404677,
+    "cov_cal_core": 0.3018867924528302,
+    "relwidth_cal_core": 0.06650027714905037
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 350.0,
+    "cov_cal": 0.8690476190476191,
+    "cov_raw": 1.0,
+    "relwidth_cal": 0.03663722776956629,
+    "relwidth_raw": 0.05630874003481099,
+    "cov_cal_core": 0.5657894736842105,
+    "relwidth_cal_core": 0.0501238050075781
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 400.0,
+    "cov_cal": 0.8055555555555556,
+    "cov_raw": 0.9761904761904762,
+    "relwidth_cal": 0.03774830597142802,
+    "relwidth_raw": 0.06029996426822839,
+    "cov_cal_core": 0.4880952380952381,
+    "relwidth_cal_core": 0.051068293464135606
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 450.0,
+    "cov_cal": 0.7182539682539683,
+    "cov_raw": 0.8968253968253969,
+    "relwidth_cal": 0.039521216986524534,
+    "relwidth_raw": 0.06580846052165304,
+    "cov_cal_core": 0.35106382978723405,
+    "relwidth_cal_core": 0.05262952553611699
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 500.0,
+    "cov_cal": 0.6468253968253969,
+    "cov_raw": 0.8373015873015873,
+    "relwidth_cal": 0.04246435105935384,
+    "relwidth_raw": 0.07496314403977045,
+    "cov_cal_core": 0.34545454545454546,
+    "relwidth_cal_core": 0.054729029609861445
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 524.15,
+    "cov_cal": 0.7257142857142858,
+    "cov_raw": 0.7771428571428571,
+    "relwidth_cal": 0.06970322973362647,
+    "relwidth_raw": 0.07777184778466047,
+    "cov_cal_core": 0.8695652173913043,
+    "relwidth_cal_core": 0.0915552710099735
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "T": 774.15,
+    "cov_cal": 0.9475806451612904,
+    "cov_raw": 0.9314516129032258,
+    "relwidth_cal": 0.19513997592959476,
+    "relwidth_raw": 0.24557446447116973,
+    "cov_cal_core": 0.9714285714285714,
+    "relwidth_cal_core": 0.20685993295498298
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 350.0,
+    "cov_cal": 0.8455497382198953,
+    "cov_raw": 0.9424083769633508,
+    "relwidth_cal": 0.04682137587452136,
+    "relwidth_raw": 0.07735287340210083,
+    "cov_cal_core": 0.7458563535911602,
+    "relwidth_cal_core": 0.05875393194603678
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 400.0,
+    "cov_cal": 0.7146596858638743,
+    "cov_raw": 0.8821989528795812,
+    "relwidth_cal": 0.0482957937987021,
+    "relwidth_raw": 0.081114975358867,
+    "cov_cal_core": 0.5079365079365079,
+    "relwidth_cal_core": 0.06074509660486343
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 450.0,
+    "cov_cal": 0.5785340314136126,
+    "cov_raw": 0.7853403141361257,
+    "relwidth_cal": 0.04922096318383245,
+    "relwidth_raw": 0.08441764700791259,
+    "cov_cal_core": 0.3686868686868687,
+    "relwidth_cal_core": 0.061491354698778686
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 500.0,
+    "cov_cal": 0.3900523560209424,
+    "cov_raw": 0.680628272251309,
+    "relwidth_cal": 0.05014195854311916,
+    "relwidth_raw": 0.08763822194098805,
+    "cov_cal_core": 0.25120772946859904,
+    "relwidth_cal_core": 0.06228346292265103
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 524.15,
+    "cov_cal": 0.8155737704918032,
+    "cov_raw": 0.8360655737704918,
+    "relwidth_cal": 0.10093247136749518,
+    "relwidth_raw": 0.12354476200275696,
+    "cov_cal_core": 0.7715736040609137,
+    "relwidth_cal_core": 0.10373344233581627
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "T": 774.15,
+    "cov_cal": 0.9007936507936508,
+    "cov_raw": 0.8373015873015873,
+    "relwidth_cal": 0.10203646225700513,
+    "relwidth_raw": 0.09830589917704596,
+    "cov_cal_core": 0.7942386831275721,
+    "relwidth_cal_core": 0.14267061360189598
+   }
+  ],
+  "cov_cal": {
+   "molecule": {
+    "1,2-dimethoxyethane": 73.61510055886096,
+    "acetone": 97.2076141935982,
+    "di-n-propyl ether": 80.87951352976077,
+    "diisopropyl ether": 80.61864848158042,
+    "n-propyl acetate": 99.59514170040485,
+    "toluene": 59.29047304491365
+   },
+   "mean": 81.86774858485315,
+   "calibration_molecule_mean": 86.99055870427654
+  },
+  "cov_raw": {
+   "molecule": {
+    "1,2-dimethoxyethane": 75.47796139623118,
+    "acetone": 81.74910396803438,
+    "di-n-propyl ether": 75.34033109109183,
+    "diisopropyl ether": 76.83456484769476,
+    "n-propyl acetate": 98.06961052708314,
+    "toluene": 73.14599929244753
+   },
+   "mean": 80.10292852043047,
+   "calibration_molecule_mean": 86.09352220894176
+  },
+  "relwidth_cal": {
+   "molecule": {
+    "1,2-dimethoxyethane": 7.552610476546338,
+    "acetone": 13.895231061693458,
+    "di-n-propyl ether": 8.879040974086358,
+    "diisopropyl ether": 11.212255691148687,
+    "n-propyl acetate": 11.979696901629687,
+    "toluene": 5.3211300591579205
+   },
+   "mean": 9.806660860710409,
+   "calibration_molecule_mean": 14.168268241575552
+  },
+  "relwidth_raw": {
+   "molecule": {
+    "1,2-dimethoxyethane": 8.03899087628794,
+    "acetone": 12.398535889828878,
+    "di-n-propyl ether": 9.299797659400554,
+    "diisopropyl ether": 12.38733566094579,
+    "n-propyl acetate": 12.198488117790756,
+    "toluene": 8.019904361384961
+   },
+   "mean": 10.390508760939813,
+   "calibration_molecule_mean": 14.579133200862824
+  },
+  "cov_cal_core": {
+   "molecule": {
+    "1,2-dimethoxyethane": 60.82279768794456,
+    "acetone": 100.0,
+    "di-n-propyl ether": 78.8167461055207,
+    "diisopropyl ether": 87.43988730001504,
+    "n-propyl acetate": 98.69281045751634,
+    "toluene": 46.2800508564568
+   },
+   "mean": 78.67538206790891,
+   "calibration_molecule_mean": 77.21238190950778
+  },
+  "relwidth_cal_core": {
+   "molecule": {
+    "1,2-dimethoxyethane": 12.309717481875229,
+    "acetone": 18.221576439113544,
+    "di-n-propyl ether": 13.967717924977462,
+    "diisopropyl ether": 14.207134967730482,
+    "n-propyl acetate": 19.678156821524162,
+    "toluene": 8.224125556285198
+   },
+   "mean": 14.434738198584347,
+   "calibration_molecule_mean": 20.075755115138318
+  },
+  "by_temperature": [
+   {
+    "lo": 0,
+    "hi": 500,
+    "records": 18,
+    "cov_cal": 60.98981339095435,
+    "cov_raw": 73.48324620807671,
+    "relwidth_cal": 3.698614550018068,
+    "relwidth_raw": 5.832673325130255
+   },
+   {
+    "lo": 500,
+    "hi": 700,
+    "records": 14,
+    "cov_cal": 83.62804625879527,
+    "cov_raw": 81.66272952046046,
+    "relwidth_cal": 7.517099617260094,
+    "relwidth_raw": 8.365527269924028
+   },
+   {
+    "lo": 700,
+    "hi": 900,
+    "records": 12,
+    "cov_cal": 89.74906435107,
+    "cov_raw": 82.61681660381099,
+    "relwidth_cal": 13.267002976536276,
+    "relwidth_raw": 13.681764960497473
+   },
+   {
+    "lo": 900,
+    "hi": 3000,
+    "records": 1,
+    "cov_cal": 100.0,
+    "cov_raw": 83.1877729257642,
+    "relwidth_cal": 23.374930535793663,
+    "relwidth_raw": 18.73593083273515
+   }
+  ]
+ },
+ "line_resolved": {
+  "q": {
+   "None": 0.7712275241824156
+  },
+  "test_rows": [
+   {
+    "species": "NO",
+    "window": "NO_1600_2050",
+    "T": 373.15,
+    "cov_cal": 1.0,
+    "cov_raw": 1.0,
+    "relwidth_cal": 0.03542244385233931,
+    "relwidth_raw": 0.03501026521273198,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.06296945752856639
+   },
+   {
+    "species": "NO",
+    "window": "NO_1600_2050",
+    "T": 473.15,
+    "cov_cal": 0.990234375,
+    "cov_raw": 1.0,
+    "relwidth_cal": 0.04071159726094144,
+    "relwidth_raw": 0.04619027666474152,
+    "cov_cal_core": 0.9206349206349206,
+    "relwidth_cal_core": 0.07704019808095489
+   },
+   {
+    "species": "NO",
+    "window": "NO_1600_2050",
+    "T": 573.15,
+    "cov_cal": 0.96875,
+    "cov_raw": 0.99609375,
+    "relwidth_cal": 0.050862630396233934,
+    "relwidth_raw": 0.06861855997306554,
+    "cov_cal_core": 0.7887323943661971,
+    "relwidth_cal_core": 0.10427075107756384
+   },
+   {
+    "species": "NO",
+    "window": "NO_1600_2050",
+    "T": 673.15,
+    "cov_cal": 0.91796875,
+    "cov_raw": 0.962890625,
+    "relwidth_cal": 0.06363007525934161,
+    "relwidth_raw": 0.09391634511032124,
+    "cov_cal_core": 0.8,
+    "relwidth_cal_core": 0.13178444764761807
+   },
+   {
+    "species": "NO",
+    "window": "NO_1600_2050",
+    "T": 773.15,
+    "cov_cal": 0.880859375,
+    "cov_raw": 0.96875,
+    "relwidth_cal": 0.07627625865887054,
+    "relwidth_raw": 0.11722779935061972,
+    "cov_cal_core": 0.8,
+    "relwidth_cal_core": 0.1576744022790826
+   },
+   {
+    "species": "NO",
+    "window": "NO_1600_2050",
+    "T": 873.15,
+    "cov_cal": 0.8359375,
+    "cov_raw": 0.98046875,
+    "relwidth_cal": 0.08803303139356265,
+    "relwidth_raw": 0.14195732351048412,
+    "cov_cal_core": 0.7741935483870968,
+    "relwidth_cal_core": 0.18324193987519774
+   },
+   {
+    "species": "NO",
+    "window": "NO_1600_2050",
+    "T": 973.15,
+    "cov_cal": 0.779296875,
+    "cov_raw": 0.9765625,
+    "relwidth_cal": 0.09603212631049547,
+    "relwidth_raw": 0.1585048140256421,
+    "cov_cal_core": 0.6761904761904762,
+    "relwidth_cal_core": 0.18828304047034136
+   },
+   {
+    "species": "NO",
+    "window": "NO_1600_2050",
+    "T": 1173.15,
+    "cov_cal": 0.666015625,
+    "cov_raw": 0.939453125,
+    "relwidth_cal": 0.11340691290062886,
+    "relwidth_raw": 0.19055162177606993,
+    "cov_cal_core": 0.5433070866141733,
+    "relwidth_cal_core": 0.2199851497388695
+   },
+   {
+    "species": "NO",
+    "window": "NO_1600_2050",
+    "T": 1373.15,
+    "cov_cal": 0.576171875,
+    "cov_raw": 0.9140625,
+    "relwidth_cal": 0.12492551979817944,
+    "relwidth_raw": 0.21044157593131527,
+    "cov_cal_core": 0.3873239436619718,
+    "relwidth_cal_core": 0.2282420076436606
+   },
+   {
+    "species": "NO",
+    "window": "NO_1600_2050",
+    "T": 1573.15,
+    "cov_cal": 0.54296875,
+    "cov_raw": 0.853515625,
+    "relwidth_cal": 0.1377350709441412,
+    "relwidth_raw": 0.23088169245068133,
+    "cov_cal_core": 0.45394736842105265,
+    "relwidth_cal_core": 0.2452584772829989
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_1280_1340",
+    "T": 373.15,
+    "cov_cal": 1.0,
+    "cov_raw": 1.0,
+    "relwidth_cal": 0.041963065339011306,
+    "relwidth_raw": 0.04333695914391944,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.09257867889554154
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_1280_1340",
+    "T": 473.15,
+    "cov_cal": 1.0,
+    "cov_raw": 1.0,
+    "relwidth_cal": 0.050190257011090034,
+    "relwidth_raw": 0.06027247171844127,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.11861700852717307
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_1280_1340",
+    "T": 573.15,
+    "cov_cal": 0.93359375,
+    "cov_raw": 0.990234375,
+    "relwidth_cal": 0.06325371026979072,
+    "relwidth_raw": 0.08524970092090961,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.15130170503819457
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_1280_1340",
+    "T": 673.15,
+    "cov_cal": 0.892578125,
+    "cov_raw": 0.982421875,
+    "relwidth_cal": 0.08354800147414362,
+    "relwidth_raw": 0.12187721632291641,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.2036751494129226
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_1280_1340",
+    "T": 773.15,
+    "cov_cal": 0.849609375,
+    "cov_raw": 0.96484375,
+    "relwidth_cal": 0.1163321488924291,
+    "relwidth_raw": 0.17206556503598816,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.2616281166492955
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_1280_1340",
+    "T": 873.15,
+    "cov_cal": 0.8359375,
+    "cov_raw": 0.9453125,
+    "relwidth_cal": 0.15780487116274874,
+    "relwidth_raw": 0.237742545772655,
+    "cov_cal_core": 0.8454545454545455,
+    "relwidth_cal_core": 0.30674815232270103
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_1280_1340",
+    "T": 973.15,
+    "cov_cal": 0.818359375,
+    "cov_raw": 0.9453125,
+    "relwidth_cal": 0.21013581817157928,
+    "relwidth_raw": 0.32156205866238047,
+    "cov_cal_core": 0.70625,
+    "relwidth_cal_core": 0.33952330600932945
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_1280_1340",
+    "T": 1173.15,
+    "cov_cal": 0.818359375,
+    "cov_raw": 0.9453125,
+    "relwidth_cal": 0.36609771539358554,
+    "relwidth_raw": 0.5702635486081188,
+    "cov_cal_core": 0.6824034334763949,
+    "relwidth_cal_core": 0.4965260276210998
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_1280_1340",
+    "T": 1373.15,
+    "cov_cal": 0.83203125,
+    "cov_raw": 0.94921875,
+    "relwidth_cal": 0.4366006567183707,
+    "relwidth_raw": 0.6797031649219076,
+    "cov_cal_core": 0.7520325203252033,
+    "relwidth_cal_core": 0.5856630070553064
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_1280_1340",
+    "T": 1573.15,
+    "cov_cal": 0.8359375,
+    "cov_raw": 0.962890625,
+    "relwidth_cal": 0.532366991700796,
+    "relwidth_raw": 0.8164170158727329,
+    "cov_cal_core": 0.8440366972477065,
+    "relwidth_cal_core": 0.6607560342839147
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_2980_3040",
+    "T": 373.15,
+    "cov_cal": 0.98828125,
+    "cov_raw": 1.0,
+    "relwidth_cal": 0.03632786224774728,
+    "relwidth_raw": 0.034653484052262956,
+    "cov_cal_core": 0.85,
+    "relwidth_cal_core": 0.1087932856011148
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_2980_3040",
+    "T": 473.15,
+    "cov_cal": 0.8984375,
+    "cov_raw": 0.95703125,
+    "relwidth_cal": 0.04610294381914281,
+    "relwidth_raw": 0.052862296033297604,
+    "cov_cal_core": 0.8125,
+    "relwidth_cal_core": 0.14622481904024598
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_2980_3040",
+    "T": 573.15,
+    "cov_cal": 0.814453125,
+    "cov_raw": 0.845703125,
+    "relwidth_cal": 0.06228970089687574,
+    "relwidth_raw": 0.08168636156455708,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.191963844248759
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_2980_3040",
+    "T": 673.15,
+    "cov_cal": 0.703125,
+    "cov_raw": 0.748046875,
+    "relwidth_cal": 0.08383650510044119,
+    "relwidth_raw": 0.12297900391584604,
+    "cov_cal_core": 0.6923076923076923,
+    "relwidth_cal_core": 0.23861213118443597
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_2980_3040",
+    "T": 773.15,
+    "cov_cal": 0.640625,
+    "cov_raw": 0.734375,
+    "relwidth_cal": 0.1158216807893698,
+    "relwidth_raw": 0.17972676402865792,
+    "cov_cal_core": 0.4528301886792453,
+    "relwidth_cal_core": 0.2817796780196658
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_2980_3040",
+    "T": 873.15,
+    "cov_cal": 0.638671875,
+    "cov_raw": 0.736328125,
+    "relwidth_cal": 0.15929310720901718,
+    "relwidth_raw": 0.2578526155402686,
+    "cov_cal_core": 0.36054421768707484,
+    "relwidth_cal_core": 0.30450655568335333
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_2980_3040",
+    "T": 973.15,
+    "cov_cal": 0.58984375,
+    "cov_raw": 0.732421875,
+    "relwidth_cal": 0.20903535173464644,
+    "relwidth_raw": 0.3444695605992913,
+    "cov_cal_core": 0.3163841807909605,
+    "relwidth_cal_core": 0.3474597192905041
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_2980_3040",
+    "T": 1173.15,
+    "cov_cal": 0.498046875,
+    "cov_raw": 0.69921875,
+    "relwidth_cal": 0.2770030059780871,
+    "relwidth_raw": 0.4507069477692257,
+    "cov_cal_core": 0.2440944881889764,
+    "relwidth_cal_core": 0.35413375812759357
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_2980_3040",
+    "T": 1373.15,
+    "cov_cal": 0.484375,
+    "cov_raw": 0.6796875,
+    "relwidth_cal": 0.363715458408324,
+    "relwidth_raw": 0.5950331509706746,
+    "cov_cal_core": 0.20376175548589343,
+    "relwidth_cal_core": 0.3851323267692818
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_2980_3040",
+    "T": 1573.15,
+    "cov_cal": 0.4765625,
+    "cov_raw": 0.6953125,
+    "relwidth_cal": 0.45092827461911406,
+    "relwidth_raw": 0.7414545998316917,
+    "cov_cal_core": 0.1987179487179487,
+    "relwidth_cal_core": 0.4452050879497632
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_4000_4700",
+    "T": 373.15,
+    "cov_cal": 0.953125,
+    "cov_raw": 0.94140625,
+    "relwidth_cal": 0.03579438332003693,
+    "relwidth_raw": 0.029293451764705297,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.06951417780513448
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_4000_4700",
+    "T": 423.15,
+    "cov_cal": 0.958984375,
+    "cov_raw": 0.970703125,
+    "relwidth_cal": 0.0392640865182694,
+    "relwidth_raw": 0.036806285933266535,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.08768060726804855
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_4000_4700",
+    "T": 473.15,
+    "cov_cal": 0.951171875,
+    "cov_raw": 0.966796875,
+    "relwidth_cal": 0.04197651595789049,
+    "relwidth_raw": 0.04205421247906425,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.08740034735879884
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_4000_4700",
+    "T": 523.15,
+    "cov_cal": 0.955078125,
+    "cov_raw": 0.974609375,
+    "relwidth_cal": 0.04755984903152966,
+    "relwidth_raw": 0.051272094085607824,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.10718507648051281
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_4000_4700",
+    "T": 573.15,
+    "cov_cal": 0.947265625,
+    "cov_raw": 0.962890625,
+    "relwidth_cal": 0.0527917810992379,
+    "relwidth_raw": 0.06323701034951158,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.11694365393348795
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_4000_4700",
+    "T": 623.15,
+    "cov_cal": 0.939453125,
+    "cov_raw": 0.9609375,
+    "relwidth_cal": 0.061854373944974346,
+    "relwidth_raw": 0.07837735726459884,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.135895164161799
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_4000_4700",
+    "T": 673.15,
+    "cov_cal": 0.921875,
+    "cov_raw": 0.9453125,
+    "relwidth_cal": 0.06845813482061872,
+    "relwidth_raw": 0.08895295211683125,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.148638367356897
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_4000_4700",
+    "T": 723.15,
+    "cov_cal": 0.912109375,
+    "cov_raw": 0.947265625,
+    "relwidth_cal": 0.08069264778552673,
+    "relwidth_raw": 0.10869264761988551,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.1618580488408102
+   },
+   {
+    "species": "CH4",
+    "window": "CH4_4000_4700",
+    "T": 773.15,
+    "cov_cal": 0.888671875,
+    "cov_raw": 0.935546875,
+    "relwidth_cal": 0.09046056217297611,
+    "relwidth_raw": 0.12470711306907084,
+    "cov_cal_core": 1.0,
+    "relwidth_cal_core": 0.1687632517739505
+   }
+  ],
+  "cov_cal": {
+   "molecule": {
+    "CH4": 83.04325810185185,
+    "NO": 81.58203125
+   },
+   "mean": 82.31264467592592
+  },
+  "cov_raw": {
+   "molecule": {
+    "CH4": 90.25101273148148,
+    "NO": 95.91796875
+   },
+   "mean": 93.08449074074073
+  },
+  "relwidth_cal": {
+   "molecule": {
+    "CH4": 14.797165736643484,
+    "NO": 8.270356667747343
+   },
+   "mean": 11.533761202195414
+  },
+  "relwidth_raw": {
+   "molecule": {
+    "CH4": 22.208580195702634,
+    "NO": 12.933002740056727
+   },
+   "mean": 17.57079146787968
+  },
+  "by_temperature": [
+   {
+    "lo": 0,
+    "hi": 500,
+    "records": 9,
+    "cov_cal": 98.05230034722223,
+    "cov_raw": 98.96918402777777,
+    "relwidth_cal": 4.0084131301747075,
+    "relwidth_raw": 4.223578916930826
+   },
+   {
+    "lo": 500,
+    "hi": 700,
+    "records": 10,
+    "cov_cal": 90.71451822916666,
+    "cov_raw": 94.71028645833334,
+    "relwidth_cal": 6.264484201301318,
+    "relwidth_raw": 8.669305874022204
+   },
+   {
+    "lo": 700,
+    "hi": 900,
+    "records": 8,
+    "cov_cal": 82.63346354166666,
+    "cov_raw": 92.59440104166666,
+    "relwidth_cal": 10.111107401411394,
+    "relwidth_raw": 15.48618849708198
+   },
+   {
+    "lo": 900,
+    "hi": 1100,
+    "records": 3,
+    "cov_cal": 74.169921875,
+    "cov_raw": 90.771484375,
+    "relwidth_cal": 15.280885563180417,
+    "relwidth_raw": 24.576031182823897
+   },
+   {
+    "lo": 1100,
+    "hi": 1600,
+    "records": 9,
+    "cov_cal": 62.63020833333334,
+    "cov_raw": 86.21419270833333,
+    "relwidth_cal": 26.49039258420147,
+    "relwidth_raw": 42.64440173575403
+   }
+  ]
+ }
+}

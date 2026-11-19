@@ -1,0 +1,104 @@
+{
+ "F3": {
+  "0": {
+   "mean": 26.012939153668935,
+   "per_molecule": {
+    "1,3-butadiene": 22.326237637915575,
+    "1-butene": 11.773889347617686,
+    "acetaldehyde": 28.919490242841306,
+    "dimethoxymethane": 8.91794492968965,
+    "ethanol": 29.647115525586674,
+    "ethyl acetate": 8.804883660328638,
+    "ethylene": 63.62383143836669,
+    "isobutene": 29.924296471359252,
+    "methyl acetate": 35.52295377574358,
+    "methyl formate": 55.00093545915008,
+    "methyl propionate": 19.46818527805571,
+    "n-butyl acetate": 15.969639339178118,
+    "n-heptane": 11.371363078118842,
+    "propane": 26.091129255138167,
+    "propene": 22.83219186594396
+   }
+  },
+  "0.25": {
+   "mean": 23.167258239125907,
+   "per_molecule": {
+    "1,3-butadiene": 18.94804036732853,
+    "1-butene": 12.714099192243147,
+    "acetaldehyde": 25.327260450501715,
+    "dimethoxymethane": 9.18869021815573,
+    "ethanol": 23.46855304297288,
+    "ethyl acetate": 10.686326486877633,
+    "ethylene": 56.78619789700113,
+    "isobutene": 23.94751321600861,
+    "methyl acetate": 31.30206420497396,
+    "methyl formate": 45.494349917098646,
+    "methyl propionate": 22.91954929459993,
+    "n-butyl acetate": 11.611540753445277,
+    "n-heptane": 10.682426845882933,
+    "propane": 24.604613808668617,
+    "propene": 19.827647891129857
+   }
+  },
+  "0.5": {
+   "mean": 21.091333030546252,
+   "per_molecule": {
+    "1,3-butadiene": 16.207875136535772,
+    "1-butene": 13.703948365769815,
+    "acetaldehyde": 22.20470878036741,
+    "dimethoxymethane": 9.768471749944766,
+    "ethanol": 18.361473519459338,
+    "ethyl acetate": 13.183594303311647,
+    "ethylene": 51.54125212409245,
+    "isobutene": 19.08885126313412,
+    "methyl acetate": 27.28744093221032,
+    "methyl formate": 36.536600916910665,
+    "methyl propionate": 28.52851153107458,
+    "n-butyl acetate": 8.282823811135978,
+    "n-heptane": 10.59718611497545,
+    "propane": 23.591449690427527,
+    "propene": 17.485807218843963
+   }
+  },
+  "0.75": {
+   "mean": 20.006874880762666,
+   "per_molecule": {
+    "1,3-butadiene": 14.304220107379885,
+    "1-butene": 14.737186161200558,
+    "acetaldehyde": 19.69576043021756,
+    "dimethoxymethane": 10.60992520901011,
+    "ethanol": 14.763299223356391,
+    "ethyl acetate": 16.11250071243365,
+    "ethylene": 48.32650712871161,
+    "isobutene": 17.323856835615732,
+    "methyl acetate": 23.683958436435333,
+    "methyl formate": 28.213294037945246,
+    "methyl propionate": 35.131124704428444,
+    "n-butyl acetate": 7.297978611774229,
+    "n-heptane": 11.002287105595416,
+    "propane": 22.97790983994736,
+    "propene": 15.923314667388468
+   }
+  },
+  "1.0": {
+   "mean": 20.205272158285297,
+   "per_molecule": {
+    "1,3-butadiene": 13.604431815953536,
+    "1-butene": 15.804443708640527,
+    "acetaldehyde": 17.67139110977458,
+    "dimethoxymethane": 11.762360426177027,
+    "ethanol": 15.070647236306629,
+    "ethyl acetate": 19.319341654838684,
+    "ethylene": 47.05627517077389,
+    "isobutene": 17.307247919839273,
+    "methyl acetate": 21.137862759658947,
+    "methyl formate": 22.11462311978317,
+    "methyl propionate": 41.938414873741934,
+    "n-butyl acetate": 10.056679157319083,
+    "n-heptane": 11.720731686275396,
+    "propane": 23.335218942156104,
+    "propene": 15.179412793040658
+   }
+  }
+ }
+}

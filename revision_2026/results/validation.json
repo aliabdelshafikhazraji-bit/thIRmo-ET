@@ -1,0 +1,3352 @@
+{
+ "lomo": {
+  "rows": [
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 340.0,
+    "model": 20.60861858498861,
+    "physics": 17.744291129107953,
+    "unchanged": 17.475801655232008
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 431.0,
+    "model": 16.633905204557838,
+    "physics": 14.754680007684312,
+    "unchanged": 22.017213405787516
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 512.0,
+    "model": 17.486683395603674,
+    "physics": 15.243839554591359,
+    "unchanged": 31.378829939978676
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 537.0,
+    "model": 19.6230457811623,
+    "physics": 13.495227212178767,
+    "unchanged": 33.888329483397264
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 579.0,
+    "model": 20.801711419466887,
+    "physics": 16.852848337521632,
+    "unchanged": 39.48643394476738
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 613.0,
+    "model": 25.16345305406567,
+    "physics": 18.072832303554243,
+    "unchanged": 45.39421194154378
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 690.0,
+    "model": 18.982040557976816,
+    "physics": 14.12046723264637,
+    "unchanged": 50.978070417094536
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 800.0,
+    "model": 24.888732239953313,
+    "physics": 20.4364101878841,
+    "unchanged": 61.339431641082754
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 816.0,
+    "model": 28.39491761528302,
+    "physics": 23.955019771430013,
+    "unchanged": 65.48315369253793
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene",
+    "temperature_K": 637.0,
+    "model": 16.550714524721776,
+    "physics": 27.59403430724081,
+    "unchanged": 27.872176526404825
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene",
+    "temperature_K": 640.0,
+    "model": 15.960804727150101,
+    "physics": 26.931499524718323,
+    "unchanged": 27.73495839339693
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_750.231_1000.000",
+    "temperature_K": 450.0,
+    "model": 9.97832761976445,
+    "physics": 19.191564558724277,
+    "unchanged": 19.631365516552506
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_750.231_1000.000",
+    "temperature_K": 550.0,
+    "model": 12.06710261805313,
+    "physics": 26.11778550397735,
+    "unchanged": 26.922743759540325
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_750.231_1000.000",
+    "temperature_K": 650.0,
+    "model": 14.552242671925667,
+    "physics": 32.35529808603804,
+    "unchanged": 33.26468124592857
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_750.231_1000.000",
+    "temperature_K": 750.0,
+    "model": 16.819082084717397,
+    "physics": 37.59794242722733,
+    "unchanged": 38.45701878272313
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_750.231_1000.000",
+    "temperature_K": 850.0,
+    "model": 19.82483071775778,
+    "physics": 42.05495872693433,
+    "unchanged": 42.83182835496661
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_1000.000_1400.000",
+    "temperature_K": 450.0,
+    "model": 8.717756797550571,
+    "physics": 14.952974585195781,
+    "unchanged": 15.312371788076618
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_1000.000_1400.000",
+    "temperature_K": 550.0,
+    "model": 8.406027129292216,
+    "physics": 18.103451161758116,
+    "unchanged": 19.687073214988743
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_1000.000_1400.000",
+    "temperature_K": 650.0,
+    "model": 11.352262617631146,
+    "physics": 21.885936391745826,
+    "unchanged": 23.93358616178484
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_1000.000_1400.000",
+    "temperature_K": 750.0,
+    "model": 15.841162003806078,
+    "physics": 25.97279668075274,
+    "unchanged": 27.930896869993422
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_1000.000_1400.000",
+    "temperature_K": 850.0,
+    "model": 23.49196871974652,
+    "physics": 30.63688914439675,
+    "unchanged": 32.53287752574906
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_2600.000_3000.000",
+    "temperature_K": 450.0,
+    "model": 6.979151164674817,
+    "physics": 12.462319477932867,
+    "unchanged": 10.915740615139523
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_2600.000_3000.000",
+    "temperature_K": 550.0,
+    "model": 6.065974512975208,
+    "physics": 11.580345905846041,
+    "unchanged": 15.556627758773859
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_2600.000_3000.000",
+    "temperature_K": 650.0,
+    "model": 17.30284558637295,
+    "physics": 14.322019684325598,
+    "unchanged": 23.76951381313552
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_2600.000_3000.000",
+    "temperature_K": 750.0,
+    "model": 28.653886612159656,
+    "physics": 20.620299370569242,
+    "unchanged": 34.052791750094215
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_2600.000_3000.000",
+    "temperature_K": 850.0,
+    "model": 40.39292078122096,
+    "physics": 29.493833554134685,
+    "unchanged": 46.261296399457905
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_3000.000_3199.986",
+    "temperature_K": 450.0,
+    "model": 10.150182082558432,
+    "physics": 11.073909391228895,
+    "unchanged": 12.30963086401961
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_3000.000_3199.986",
+    "temperature_K": 550.0,
+    "model": 5.836012637793786,
+    "physics": 9.881995962999534,
+    "unchanged": 13.52697020659656
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_3000.000_3199.986",
+    "temperature_K": 650.0,
+    "model": 6.376813056897544,
+    "physics": 11.540289611391993,
+    "unchanged": 16.263435691479845
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_3000.000_3199.986",
+    "temperature_K": 750.0,
+    "model": 8.01729707409674,
+    "physics": 14.004513406838731,
+    "unchanged": 19.382835288239207
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_3000.000_3199.986",
+    "temperature_K": 850.0,
+    "model": 10.886267917246355,
+    "physics": 17.992982735973364,
+    "unchanged": 23.03005602628832
+   },
+   {
+    "species": "1-butene",
+    "window": "1-butene",
+    "temperature_K": 634.0,
+    "model": 17.120304639074067,
+    "physics": 11.711356131964443,
+    "unchanged": 33.29059585992306
+   },
+   {
+    "species": "1-butene",
+    "window": "1-butene",
+    "temperature_K": 637.0,
+    "model": 13.282564680562633,
+    "physics": 11.836422563270931,
+    "unchanged": 23.041747552514984
+   },
+   {
+    "species": "acetaldehyde",
+    "window": "acetaldehyde",
+    "temperature_K": 627.86,
+    "model": 14.871488919191039,
+    "physics": 21.418789498832904,
+    "unchanged": 32.39916708488032
+   },
+   {
+    "species": "acetaldehyde",
+    "window": "acetaldehyde",
+    "temperature_K": 788.53,
+    "model": 20.914914916231705,
+    "physics": 29.010018824402707,
+    "unchanged": 44.2801923311387
+   },
+   {
+    "species": "acetaldehyde",
+    "window": "acetaldehyde",
+    "temperature_K": 962.29,
+    "model": 20.448664506835023,
+    "physics": 36.329662405288296,
+    "unchanged": 56.221563881021154
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 604.81,
+    "model": 10.462809420573658,
+    "physics": 9.413303268629848,
+    "unchanged": 28.454349671217212
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 782.23,
+    "model": 12.142616870777436,
+    "physics": 8.858553045142521,
+    "unchanged": 44.81157664266911
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 974.22,
+    "model": 18.10462651825368,
+    "physics": 8.25600794481692,
+    "unchanged": 60.1359036050763
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 604.0,
+    "model": 18.018020513696516,
+    "physics": 14.509465515982404,
+    "unchanged": 42.36395743353784
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 690.0,
+    "model": 16.42862963221624,
+    "physics": 15.759884461918455,
+    "unchanged": 53.80342956656844
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 758.0,
+    "model": 15.70836504415532,
+    "physics": 16.99613677484067,
+    "unchanged": 61.93637305755605
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 838.0,
+    "model": 17.683540150406053,
+    "physics": 19.790540257600618,
+    "unchanged": 67.54417248309225
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 559.0,
+    "model": 14.220894475701026,
+    "physics": 13.161199122693349,
+    "unchanged": 28.496776136538738
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 595.0,
+    "model": 14.931091549355596,
+    "physics": 13.81442087776867,
+    "unchanged": 32.73376539317545
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 690.0,
+    "model": 18.60261912056255,
+    "physics": 17.082478405986066,
+    "unchanged": 38.39082330484288
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 764.0,
+    "model": 19.757563318632947,
+    "physics": 18.09908698532941,
+    "unchanged": 42.37106214962039
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 853.0,
+    "model": 18.66168535961106,
+    "physics": 16.516313045128378,
+    "unchanged": 42.639738245487464
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 336.0,
+    "model": 7.883385994289135,
+    "physics": 5.346496461775463,
+    "unchanged": 2.691515056553328
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 431.0,
+    "model": 10.654935470211024,
+    "physics": 9.3197229498073,
+    "unchanged": 19.18738205037564
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 523.0,
+    "model": 11.825862688519486,
+    "physics": 10.23486293444417,
+    "unchanged": 30.17739988520562
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 587.0,
+    "model": 11.45598228130992,
+    "physics": 9.711270363238931,
+    "unchanged": 36.570393216052786
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 676.0,
+    "model": 10.00874958455283,
+    "physics": 8.60142327251778,
+    "unchanged": 44.521046808567284
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 717.0,
+    "model": 8.478970033130144,
+    "physics": 8.47363131855425,
+    "unchanged": 49.60093693768741
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 779.0,
+    "model": 9.4022781582256,
+    "physics": 9.467171153104168,
+    "unchanged": 52.968245176971415
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 822.0,
+    "model": 9.508633739561056,
+    "physics": 10.188980984075137,
+    "unchanged": 54.87865523797433
+   },
+   {
+    "species": "ethanol",
+    "window": "ethanol",
+    "temperature_K": 345.0,
+    "model": 10.172009950473766,
+    "physics": 3.5326350863946034,
+    "unchanged": 3.592368876716449
+   },
+   {
+    "species": "ethanol",
+    "window": "ethanol",
+    "temperature_K": 598.4,
+    "model": 9.543530644459402,
+    "physics": 18.68481093041996,
+    "unchanged": 21.241606626471018
+   },
+   {
+    "species": "ethanol",
+    "window": "ethanol",
+    "temperature_K": 982.7,
+    "model": 24.35847627872501,
+    "physics": 47.429112772336005,
+    "unchanged": 52.852566178793346
+   },
+   {
+    "species": "ethanol",
+    "window": "ethanol",
+    "temperature_K": 1018.0,
+    "model": 24.513113817026564,
+    "physics": 48.939561313138995,
+    "unchanged": 54.78421993968663
+   },
+   {
+    "species": "ethyl acetate",
+    "window": "ethyl acetate",
+    "temperature_K": 633.0,
+    "model": 12.97560691751442,
+    "physics": 10.005723225536133,
+    "unchanged": 54.42980651672988
+   },
+   {
+    "species": "ethyl acetate",
+    "window": "ethyl acetate",
+    "temperature_K": 741.0,
+    "model": 12.278134828331904,
+    "physics": 8.662219183848723,
+    "unchanged": 72.405335627662
+   },
+   {
+    "species": "ethyl acetate",
+    "window": "ethyl acetate",
+    "temperature_K": 834.0,
+    "model": 11.466008711048268,
+    "physics": 6.539150515393683,
+    "unchanged": 85.75339520181558
+   },
+   {
+    "species": "ethyl acetate",
+    "window": "ethyl acetate",
+    "temperature_K": 859.0,
+    "model": 13.109595067311474,
+    "physics": 8.353740874702808,
+    "unchanged": 87.67623496812284
+   },
+   {
+    "species": "ethyl acetate",
+    "window": "ethyl acetate",
+    "temperature_K": 927.0,
+    "model": 17.67507061668827,
+    "physics": 10.463584502161849,
+    "unchanged": 92.67958627554121
+   },
+   {
+    "species": "ethylene",
+    "window": "ethylene",
+    "temperature_K": 811.11,
+    "model": 30.796781887917312,
+    "physics": 45.04894850089883,
+    "unchanged": 45.967493568971605
+   },
+   {
+    "species": "ethylene",
+    "window": "ethylene",
+    "temperature_K": 1005.4,
+    "model": 52.38049514360505,
+    "physics": 56.68918596045367,
+    "unchanged": 57.865357689834305
+   },
+   {
+    "species": "ethylene",
+    "window": "ethylene",
+    "temperature_K": 1374.51,
+    "model": 50.13398892888654,
+    "physics": 69.40651459537706,
+    "unchanged": 70.72004875329442
+   },
+   {
+    "species": "ethylene",
+    "window": "ethylene",
+    "temperature_K": 1621.87,
+    "model": 57.224364391189944,
+    "physics": 83.32585938554807,
+    "unchanged": 83.70654310237514
+   },
+   {
+    "species": "isobutene",
+    "window": "isobutene",
+    "temperature_K": 614.0,
+    "model": 15.244341228186256,
+    "physics": 29.924296471359252,
+    "unchanged": 48.35664321847622
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate",
+    "temperature_K": 722.0,
+    "model": 30.751379694607134,
+    "physics": 48.593558496011056,
+    "unchanged": 71.20543922996954
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate",
+    "temperature_K": 784.0,
+    "model": 34.362142922211504,
+    "physics": 55.13666071088371,
+    "unchanged": 80.19577623339895
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate",
+    "temperature_K": 904.0,
+    "model": 37.985256599709814,
+    "physics": 63.60513469126799,
+    "unchanged": 94.09387158511291
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate",
+    "temperature_K": 978.0,
+    "model": 44.19705853591242,
+    "physics": 74.89492874596444,
+    "unchanged": 108.77060833141961
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 373.15,
+    "model": 9.869795546774677,
+    "physics": 8.245438019718982,
+    "unchanged": 8.617158831546126
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 423.15,
+    "model": 10.275860407309755,
+    "physics": 10.611969680575752,
+    "unchanged": 11.232187949598691
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 473.15,
+    "model": 12.575582498467114,
+    "physics": 13.210433876346656,
+    "unchanged": 14.15465819510191
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 523.15,
+    "model": 14.380819446894419,
+    "physics": 15.804882508652296,
+    "unchanged": 17.149809635591925
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 573.15,
+    "model": 15.325102530172721,
+    "physics": 18.12063360710524,
+    "unchanged": 19.885532638943513
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 623.15,
+    "model": 16.896615520780095,
+    "physics": 20.326150154590785,
+    "unchanged": 22.531330184360172
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 673.15,
+    "model": 15.858066139171509,
+    "physics": 23.80297415170417,
+    "unchanged": 26.607596306269354
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 373.15,
+    "model": 16.308689431585748,
+    "physics": 13.82022522706654,
+    "unchanged": 14.10024133855225
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 423.15,
+    "model": 20.59711854560456,
+    "physics": 20.241592195474144,
+    "unchanged": 20.699165525881256
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 473.15,
+    "model": 21.3122909860929,
+    "physics": 24.658043489648378,
+    "unchanged": 25.252629597219073
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 523.15,
+    "model": 23.349284982367855,
+    "physics": 30.249036755992915,
+    "unchanged": 30.980227044533056
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 573.15,
+    "model": 22.761925347378114,
+    "physics": 35.62245385398995,
+    "unchanged": 36.4821655710818
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 623.15,
+    "model": 25.47507788296687,
+    "physics": 40.66249063277013,
+    "unchanged": 41.63452481148951
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 673.15,
+    "model": 31.19793711069625,
+    "physics": 46.70271050975682,
+    "unchanged": 47.6539140819204
+   },
+   {
+    "species": "methyl formate",
+    "window": "methyl formate__added_1655.830_1873.970",
+    "temperature_K": 982.0,
+    "model": 22.814628738334726,
+    "physics": 65.8153198664592,
+    "unchanged": 70.04691258313892
+   },
+   {
+    "species": "methyl formate",
+    "window": "methyl formate__added_1655.830_1873.970",
+    "temperature_K": 835.0,
+    "model": 24.963316274777824,
+    "physics": 57.36577009094357,
+    "unchanged": 61.102860037944104
+   },
+   {
+    "species": "methyl formate",
+    "window": "methyl formate__added_1655.830_1873.970",
+    "temperature_K": 627.0,
+    "model": 18.563310945531946,
+    "physics": 41.82171642004746,
+    "unchanged": 44.323382652213105
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 373.15,
+    "model": 5.310799210104751,
+    "physics": 4.575952645815664,
+    "unchanged": 3.769153898221511
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 423.15,
+    "model": 7.80262968440823,
+    "physics": 7.316916977153586,
+    "unchanged": 7.029625317500221
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 473.15,
+    "model": 10.079929515933964,
+    "physics": 9.389937035809801,
+    "unchanged": 10.176851625345192
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 523.15,
+    "model": 12.788236574906565,
+    "physics": 11.279904605329847,
+    "unchanged": 12.418963237089981
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 573.15,
+    "model": 15.244465673121304,
+    "physics": 12.702591106840641,
+    "unchanged": 15.416804340642077
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 623.15,
+    "model": 18.729283063307168,
+    "physics": 13.672703816378743,
+    "unchanged": 17.81872359648819
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 673.15,
+    "model": 22.079420739468663,
+    "physics": 15.240556882830218,
+    "unchanged": 20.863918333751762
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 373.15,
+    "model": 63.69907073315459,
+    "physics": 12.35989543665478,
+    "unchanged": 9.277593386901083
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 423.15,
+    "model": 64.40172859025395,
+    "physics": 17.075454099481448,
+    "unchanged": 13.363283421167111
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 473.15,
+    "model": 68.45497084107775,
+    "physics": 23.253501463270528,
+    "unchanged": 18.181124705330546
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 523.15,
+    "model": 70.30474333107732,
+    "physics": 27.67820552810817,
+    "unchanged": 21.59005449513768
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 573.15,
+    "model": 74.68203330825237,
+    "physics": 33.59507823805994,
+    "unchanged": 26.41550190050553
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 623.15,
+    "model": 78.50535553471309,
+    "physics": 38.96877995520715,
+    "unchanged": 31.309999846453334
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 673.15,
+    "model": 82.44179136153139,
+    "physics": 45.445116101839425,
+    "unchanged": 37.05087642221659
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 586.0,
+    "model": 10.706799592885147,
+    "physics": 10.016813732803326,
+    "unchanged": 46.628150939125675
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 635.0,
+    "model": 10.066665338750784,
+    "physics": 12.66948032499348,
+    "unchanged": 54.131537575849386
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 692.0,
+    "model": 10.857750392628219,
+    "physics": 15.813883709210904,
+    "unchanged": 63.75170183821096
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 698.0,
+    "model": 10.517679282604913,
+    "physics": 16.069362842567667,
+    "unchanged": 65.32172274869326
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 705.0,
+    "model": 9.705302212773317,
+    "physics": 17.460685821225976,
+    "unchanged": 66.82458744238711
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 810.0,
+    "model": 7.775111577928897,
+    "physics": 23.78760960426735,
+    "unchanged": 82.23626574781395
+   },
+   {
+    "species": "n-heptane",
+    "window": "n-heptane__added_2802.198_3097.802",
+    "temperature_K": 524.15,
+    "model": 8.583506903519398,
+    "physics": 8.254079173207169,
+    "unchanged": 17.496126682991292
+   },
+   {
+    "species": "n-heptane",
+    "window": "n-heptane__added_2802.198_3097.802",
+    "temperature_K": 774.15,
+    "model": 12.573362243103228,
+    "physics": 14.488646983030515,
+    "unchanged": 31.6804916401483
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 671.0,
+    "model": 6.419291370586342,
+    "physics": 10.574996597479826,
+    "unchanged": 62.835172139502774
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 754.0,
+    "model": 10.505078132979886,
+    "physics": 13.516643053240207,
+    "unchanged": 76.9752333230748
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 806.0,
+    "model": 13.513935861334083,
+    "physics": 15.792535814256048,
+    "unchanged": 85.94143525365075
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 862.0,
+    "model": 18.952779355103477,
+    "physics": 23.92379765897963,
+    "unchanged": 96.0635187707648
+   },
+   {
+    "species": "propane",
+    "window": "propane__added_2600.000_3000.000",
+    "temperature_K": 800.0,
+    "model": 10.32709401936129,
+    "physics": 18.766191913624787,
+    "unchanged": 19.80461953559209
+   },
+   {
+    "species": "propane",
+    "window": "propane__added_2600.000_3000.000",
+    "temperature_K": 1000.0,
+    "model": 12.403643054147082,
+    "physics": 37.90601257503846,
+    "unchanged": 39.68358140001557
+   },
+   {
+    "species": "propane",
+    "window": "propane__added_3000.000_3400.000",
+    "temperature_K": 1000.0,
+    "model": 32.34015410663428,
+    "physics": 23.84615626594471,
+    "unchanged": 50.56924351462413
+   },
+   {
+    "species": "propene",
+    "window": "propene",
+    "temperature_K": 649.0,
+    "model": 14.168990353643354,
+    "physics": 27.398686406173457,
+    "unchanged": 27.54419762841998
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 450.0,
+    "model": 9.88388616002082,
+    "physics": 17.105283549553587,
+    "unchanged": 17.527862604350048
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 550.0,
+    "model": 12.45186109729449,
+    "physics": 24.115284947231828,
+    "unchanged": 25.013343201338532
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 650.0,
+    "model": 12.558167548233644,
+    "physics": 27.249306280900626,
+    "unchanged": 28.716075864005848
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 750.0,
+    "model": 12.29469782016938,
+    "physics": 28.133675995648073,
+    "unchanged": 30.260613258788933
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 850.0,
+    "model": 12.791301302198596,
+    "physics": 27.734945531975868,
+    "unchanged": 30.693493727688505
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 950.0,
+    "model": 18.851931161221394,
+    "physics": 27.125148499921103,
+    "unchanged": 30.87291327047658
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 450.0,
+    "model": 7.161984996439723,
+    "physics": 5.110551038814225,
+    "unchanged": 5.906914846788367
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 550.0,
+    "model": 11.69925009919953,
+    "physics": 10.178690844668724,
+    "unchanged": 12.25669734087045
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 650.0,
+    "model": 18.26343252044685,
+    "physics": 18.132767981873027,
+    "unchanged": 20.42471948549834
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 750.0,
+    "model": 25.64356474577266,
+    "physics": 26.126190533454757,
+    "unchanged": 28.540370960311424
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 850.0,
+    "model": 35.345317018795605,
+    "physics": 33.84650716341121,
+    "unchanged": 36.44887555604184
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 950.0,
+    "model": 45.836197480519516,
+    "physics": 41.2201369223184,
+    "unchanged": 43.94729264491708
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_2600.000_3000.000",
+    "temperature_K": 450.0,
+    "model": 13.16861952348544,
+    "physics": 19.748317088412875,
+    "unchanged": 19.921140693904064
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_2600.000_3000.000",
+    "temperature_K": 550.0,
+    "model": 15.001915946555425,
+    "physics": 26.674810181262348,
+    "unchanged": 27.11446042168553
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_2600.000_3000.000",
+    "temperature_K": 650.0,
+    "model": 12.543325453943153,
+    "physics": 28.496977351487875,
+    "unchanged": 29.05700601279498
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_2600.000_3000.000",
+    "temperature_K": 750.0,
+    "model": 13.349116638122002,
+    "physics": 27.735282749997864,
+    "unchanged": 28.110073830614752
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_2600.000_3000.000",
+    "temperature_K": 850.0,
+    "model": 12.322808456600221,
+    "physics": 26.850364088311835,
+    "unchanged": 27.547785032899615
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_3000.000_3400.000",
+    "temperature_K": 450.0,
+    "model": 9.296117439365743,
+    "physics": 12.446496479026488,
+    "unchanged": 14.32508612185267
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_3000.000_3400.000",
+    "temperature_K": 550.0,
+    "model": 10.18652763365602,
+    "physics": 15.536720839758338,
+    "unchanged": 19.942500343750915
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_3000.000_3400.000",
+    "temperature_K": 650.0,
+    "model": 8.343963942690976,
+    "physics": 14.918972716482887,
+    "unchanged": 22.32508430469995
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_3000.000_3400.000",
+    "temperature_K": 750.0,
+    "model": 10.168252323149234,
+    "physics": 12.655183055128532,
+    "unchanged": 22.833879606450374
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_3000.000_3400.000",
+    "temperature_K": 850.0,
+    "model": 15.514787748493362,
+    "physics": 10.349498993053208,
+    "unchanged": 22.468803513430718
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 350.0,
+    "model": 10.594907713316772,
+    "physics": 5.861879633001514,
+    "unchanged": 5.797640138541602
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 400.0,
+    "model": 15.359804527330848,
+    "physics": 10.612813162042817,
+    "unchanged": 12.002058424934415
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 450.0,
+    "model": 20.01488878572474,
+    "physics": 14.569419101304943,
+    "unchanged": 17.41960611787445
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 500.0,
+    "model": 23.13101350554449,
+    "physics": 17.966476319997795,
+    "unchanged": 22.0985232857683
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 350.0,
+    "model": 7.305503305472053,
+    "physics": 5.453714478401627,
+    "unchanged": 5.295535842528681
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 400.0,
+    "model": 11.644440051999567,
+    "physics": 10.133901886741866,
+    "unchanged": 10.568932101132248
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 450.0,
+    "model": 15.13448362239909,
+    "physics": 13.741614864278548,
+    "unchanged": 14.929871004760201
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 500.0,
+    "model": 16.848961025892102,
+    "physics": 17.119581635227448,
+    "unchanged": 19.037548780010543
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 350.0,
+    "model": 5.2387127777465,
+    "physics": 2.3886897424498716,
+    "unchanged": 2.654259087713405
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 400.0,
+    "model": 6.609429211643217,
+    "physics": 3.8013968270478316,
+    "unchanged": 6.132636120087766
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 450.0,
+    "model": 8.543366749279576,
+    "physics": 5.203084013848489,
+    "unchanged": 9.151002281546052
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 500.0,
+    "model": 9.638044893706601,
+    "physics": 6.549807674106237,
+    "unchanged": 11.851639066764797
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 524.15,
+    "model": 7.40886171844177,
+    "physics": 7.14676750320021,
+    "unchanged": 17.713238374102332
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 774.15,
+    "model": 15.726954782180835,
+    "physics": 11.72479211190864,
+    "unchanged": 29.49665784198523
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 350.0,
+    "model": 7.07302643883582,
+    "physics": 3.0443353066415857,
+    "unchanged": 2.432869059989492
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 400.0,
+    "model": 8.958394076778937,
+    "physics": 4.57338192206947,
+    "unchanged": 5.716662591743331
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 450.0,
+    "model": 10.484403021638524,
+    "physics": 5.644445999550392,
+    "unchanged": 8.898658776583499
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 500.0,
+    "model": 12.108260794256894,
+    "physics": 7.232713434868433,
+    "unchanged": 12.228284455782855
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 524.15,
+    "model": 8.568773837181986,
+    "physics": 5.543216620888961,
+    "unchanged": 13.959425153334653
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 774.15,
+    "model": 9.435879421514851,
+    "physics": 8.42730648110139,
+    "unchanged": 24.266661691260634
+   }
+  ],
+  "molecule": {
+   "model": {
+    "1,2-dimethoxyethane": 21.398123094784236,
+    "1,3-butadiene": 14.519636501436844,
+    "1-butene": 15.20143465981835,
+    "acetaldehyde": 18.74502278075259,
+    "acetone": 13.570017603201592,
+    "di-n-propyl ether": 16.959638835118533,
+    "diisopropyl ether": 17.234770764772634,
+    "dimethoxymethane": 9.9023497437249,
+    "ethanol": 17.146782672671186,
+    "ethyl acetate": 13.500883228178868,
+    "ethylene": 47.63390758789971,
+    "isobutene": 15.244341228186256,
+    "methyl acetate": 24.473899163954005,
+    "methyl formate": 22.113751986214833,
+    "methyl propionate": 42.466032725807935,
+    "n-butyl acetate": 9.93821806626188,
+    "n-heptane": 10.578434573311313,
+    "n-propyl acetate": 12.347771180000947,
+    "propane": 21.85276132169423,
+    "propene": 15.055668539981543,
+    "toluene": 12.076879647071873
+   },
+   "physics": {
+    "1,2-dimethoxyethane": 17.18617952628875,
+    "1,3-butadiene": 22.326237637915575,
+    "1-butene": 11.773889347617686,
+    "acetaldehyde": 28.919490242841306,
+    "acetone": 8.842621419529763,
+    "di-n-propyl ether": 16.764006752585537,
+    "diisopropyl ether": 15.734699687381175,
+    "dimethoxymethane": 8.91794492968965,
+    "ethanol": 29.64653002557239,
+    "ethyl acetate": 8.804883660328638,
+    "ethylene": 63.617627110569416,
+    "isobutene": 29.924296471359252,
+    "methyl acetate": 35.52295377574358,
+    "methyl formate": 55.00093545915008,
+    "methyl propionate": 19.46818527805571,
+    "n-butyl acetate": 15.969639339178118,
+    "n-heptane": 11.371363078118842,
+    "n-propyl acetate": 15.951993280988928,
+    "propane": 26.091129255138167,
+    "propene": 22.83219186594396,
+    "toluene": 8.93620996913235
+   },
+   "unchanged": {
+    "1,2-dimethoxyethane": 40.82683068015798,
+    "1,3-butadiene": 25.383647157321313,
+    "1-butene": 28.16617170621902,
+    "acetaldehyde": 44.30030776568006,
+    "acetone": 44.46727663965421,
+    "di-n-propyl ether": 56.41198313518865,
+    "diisopropyl ether": 36.92643304593298,
+    "dimethoxymethane": 36.324446796173476,
+    "ethanol": 33.11769040541686,
+    "ethyl acetate": 78.5888717179743,
+    "ethylene": 64.56486077861886,
+    "isobutene": 48.35664321847622,
+    "methyl acetate": 45.56886231556742,
+    "methyl formate": 58.491051757765376,
+    "methyl propionate": 17.47731960905363,
+    "n-butyl acetate": 63.14899438201339,
+    "n-heptane": 24.588309161569796,
+    "n-propyl acetate": 80.45383987174829,
+    "propane": 40.156671991213976,
+    "propene": 25.208311413003205,
+    "toluene": 12.717773668509155
+   }
+  }
+ },
+ "lofo": {
+  "rows": [
+   {
+    "species": "ethanol",
+    "window": "ethanol",
+    "temperature_K": 345.0,
+    "model": 10.172009950473763,
+    "physics": 3.5326350863946034,
+    "unchanged": 3.592368876716449,
+    "family": "alcohols"
+   },
+   {
+    "species": "ethanol",
+    "window": "ethanol",
+    "temperature_K": 598.4,
+    "model": 9.5435306444594,
+    "physics": 18.68481093041996,
+    "unchanged": 21.241606626471018,
+    "family": "alcohols"
+   },
+   {
+    "species": "ethanol",
+    "window": "ethanol",
+    "temperature_K": 982.7,
+    "model": 24.358476278725007,
+    "physics": 47.429112772336005,
+    "unchanged": 52.852566178793346,
+    "family": "alcohols"
+   },
+   {
+    "species": "ethanol",
+    "window": "ethanol",
+    "temperature_K": 1018.0,
+    "model": 24.513113817026564,
+    "physics": 48.939561313138995,
+    "unchanged": 54.78421993968663,
+    "family": "alcohols"
+   },
+   {
+    "species": "acetaldehyde",
+    "window": "acetaldehyde",
+    "temperature_K": 627.86,
+    "model": 15.604940721360538,
+    "physics": 21.418789498832904,
+    "unchanged": 32.39916708488032,
+    "family": "aldehydes and ketones"
+   },
+   {
+    "species": "acetaldehyde",
+    "window": "acetaldehyde",
+    "temperature_K": 788.53,
+    "model": 20.592662759528814,
+    "physics": 29.010018824402707,
+    "unchanged": 44.2801923311387,
+    "family": "aldehydes and ketones"
+   },
+   {
+    "species": "acetaldehyde",
+    "window": "acetaldehyde",
+    "temperature_K": 962.29,
+    "model": 17.7710722445953,
+    "physics": 36.329662405288296,
+    "unchanged": 56.221563881021154,
+    "family": "aldehydes and ketones"
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 604.81,
+    "model": 8.255536730609228,
+    "physics": 9.413303268629848,
+    "unchanged": 28.454349671217212,
+    "family": "aldehydes and ketones"
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 782.23,
+    "model": 10.208639645531303,
+    "physics": 8.858553045142521,
+    "unchanged": 44.81157664266911,
+    "family": "aldehydes and ketones"
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 974.22,
+    "model": 15.411235506879251,
+    "physics": 8.25600794481692,
+    "unchanged": 60.1359036050763,
+    "family": "aldehydes and ketones"
+   },
+   {
+    "species": "n-heptane",
+    "window": "n-heptane__added_2802.198_3097.802",
+    "temperature_K": 524.15,
+    "model": 8.601023391042894,
+    "physics": 8.254079173207169,
+    "unchanged": 17.496126682991292,
+    "family": "alkanes"
+   },
+   {
+    "species": "n-heptane",
+    "window": "n-heptane__added_2802.198_3097.802",
+    "temperature_K": 774.15,
+    "model": 12.132943160150607,
+    "physics": 14.488646983030515,
+    "unchanged": 31.6804916401483,
+    "family": "alkanes"
+   },
+   {
+    "species": "propane",
+    "window": "propane__added_2600.000_3000.000",
+    "temperature_K": 800.0,
+    "model": 9.594078916400424,
+    "physics": 18.766191913624787,
+    "unchanged": 19.80461953559209,
+    "family": "alkanes"
+   },
+   {
+    "species": "propane",
+    "window": "propane__added_2600.000_3000.000",
+    "temperature_K": 1000.0,
+    "model": 14.277188891878486,
+    "physics": 37.90601257503846,
+    "unchanged": 39.68358140001557,
+    "family": "alkanes"
+   },
+   {
+    "species": "propane",
+    "window": "propane__added_3000.000_3400.000",
+    "temperature_K": 1000.0,
+    "model": 32.881554620057955,
+    "physics": 23.84615626594471,
+    "unchanged": 50.56924351462413,
+    "family": "alkanes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene",
+    "temperature_K": 637.0,
+    "model": 17.923432770057847,
+    "physics": 27.59403430724081,
+    "unchanged": 27.872176526404825,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene",
+    "temperature_K": 640.0,
+    "model": 14.014756413781967,
+    "physics": 26.931499524718323,
+    "unchanged": 27.73495839339693,
+    "family": "alkenes"
+   },
+   {
+    "species": "ethylene",
+    "window": "ethylene",
+    "temperature_K": 811.11,
+    "model": 29.41770865555977,
+    "physics": 45.04894850089883,
+    "unchanged": 45.967493568971605,
+    "family": "alkenes"
+   },
+   {
+    "species": "ethylene",
+    "window": "ethylene",
+    "temperature_K": 1005.4,
+    "model": 51.57489484153813,
+    "physics": 56.68918596045367,
+    "unchanged": 57.865357689834305,
+    "family": "alkenes"
+   },
+   {
+    "species": "ethylene",
+    "window": "ethylene",
+    "temperature_K": 1374.51,
+    "model": 49.16911141946684,
+    "physics": 69.40651459537706,
+    "unchanged": 70.72004875329442,
+    "family": "alkenes"
+   },
+   {
+    "species": "ethylene",
+    "window": "ethylene",
+    "temperature_K": 1621.87,
+    "model": 57.632814259179824,
+    "physics": 83.32585938554807,
+    "unchanged": 83.70654310237514,
+    "family": "alkenes"
+   },
+   {
+    "species": "isobutene",
+    "window": "isobutene",
+    "temperature_K": 614.0,
+    "model": 17.921498382849876,
+    "physics": 29.924296471359252,
+    "unchanged": 48.35664321847622,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene",
+    "temperature_K": 649.0,
+    "model": 21.24077758729363,
+    "physics": 27.398686406173457,
+    "unchanged": 27.54419762841998,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_750.231_1000.000",
+    "temperature_K": 450.0,
+    "model": 12.25782696821435,
+    "physics": 19.191564558724277,
+    "unchanged": 19.631365516552506,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_750.231_1000.000",
+    "temperature_K": 550.0,
+    "model": 9.2345698392646,
+    "physics": 26.11778550397735,
+    "unchanged": 26.922743759540325,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_750.231_1000.000",
+    "temperature_K": 650.0,
+    "model": 9.92461291194535,
+    "physics": 32.35529808603804,
+    "unchanged": 33.26468124592857,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_750.231_1000.000",
+    "temperature_K": 750.0,
+    "model": 13.08119561824027,
+    "physics": 37.59794242722733,
+    "unchanged": 38.45701878272313,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_750.231_1000.000",
+    "temperature_K": 850.0,
+    "model": 16.571521551864485,
+    "physics": 42.05495872693433,
+    "unchanged": 42.83182835496661,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_1000.000_1400.000",
+    "temperature_K": 450.0,
+    "model": 12.364303182885177,
+    "physics": 14.952974585195781,
+    "unchanged": 15.312371788076618,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_1000.000_1400.000",
+    "temperature_K": 550.0,
+    "model": 10.572833525490285,
+    "physics": 18.103451161758116,
+    "unchanged": 19.687073214988743,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_1000.000_1400.000",
+    "temperature_K": 650.0,
+    "model": 13.309742178886284,
+    "physics": 21.885936391745826,
+    "unchanged": 23.93358616178484,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_1000.000_1400.000",
+    "temperature_K": 750.0,
+    "model": 11.875185010475937,
+    "physics": 25.97279668075274,
+    "unchanged": 27.930896869993422,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_1000.000_1400.000",
+    "temperature_K": 850.0,
+    "model": 10.90270244527498,
+    "physics": 30.63688914439675,
+    "unchanged": 32.53287752574906,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_2600.000_3000.000",
+    "temperature_K": 450.0,
+    "model": 8.022832431062254,
+    "physics": 12.462319477932867,
+    "unchanged": 10.915740615139523,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_2600.000_3000.000",
+    "temperature_K": 550.0,
+    "model": 5.8314126156353465,
+    "physics": 11.580345905846041,
+    "unchanged": 15.556627758773859,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_2600.000_3000.000",
+    "temperature_K": 650.0,
+    "model": 13.570059565589595,
+    "physics": 14.322019684325598,
+    "unchanged": 23.76951381313552,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_2600.000_3000.000",
+    "temperature_K": 750.0,
+    "model": 23.7834881768992,
+    "physics": 20.620299370569242,
+    "unchanged": 34.052791750094215,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_2600.000_3000.000",
+    "temperature_K": 850.0,
+    "model": 36.64053081558207,
+    "physics": 29.493833554134685,
+    "unchanged": 46.261296399457905,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_3000.000_3199.986",
+    "temperature_K": 450.0,
+    "model": 13.929313117510258,
+    "physics": 11.073909391228895,
+    "unchanged": 12.30963086401961,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_3000.000_3199.986",
+    "temperature_K": 550.0,
+    "model": 9.463059248114941,
+    "physics": 9.881995962999534,
+    "unchanged": 13.52697020659656,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_3000.000_3199.986",
+    "temperature_K": 650.0,
+    "model": 8.032305215779962,
+    "physics": 11.540289611391993,
+    "unchanged": 16.263435691479845,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_3000.000_3199.986",
+    "temperature_K": 750.0,
+    "model": 9.187862035577075,
+    "physics": 14.004513406838731,
+    "unchanged": 19.382835288239207,
+    "family": "alkenes"
+   },
+   {
+    "species": "1,3-butadiene",
+    "window": "1,3-butadiene__added_3000.000_3199.986",
+    "temperature_K": 850.0,
+    "model": 11.55474473204051,
+    "physics": 17.992982735973364,
+    "unchanged": 23.03005602628832,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 450.0,
+    "model": 15.009503247648379,
+    "physics": 17.105283549553587,
+    "unchanged": 17.527862604350048,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 550.0,
+    "model": 14.192718559199852,
+    "physics": 24.115284947231828,
+    "unchanged": 25.013343201338532,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 650.0,
+    "model": 13.158669414373655,
+    "physics": 27.249306280900626,
+    "unchanged": 28.716075864005848,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 750.0,
+    "model": 12.413382807141089,
+    "physics": 28.133675995648073,
+    "unchanged": 30.260613258788933,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 850.0,
+    "model": 11.128664374192889,
+    "physics": 27.734945531975868,
+    "unchanged": 30.693493727688505,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_600.000_1000.000",
+    "temperature_K": 950.0,
+    "model": 17.205112808521193,
+    "physics": 27.125148499921103,
+    "unchanged": 30.87291327047658,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 450.0,
+    "model": 11.492452635442884,
+    "physics": 5.110551038814225,
+    "unchanged": 5.906914846788367,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 550.0,
+    "model": 12.431813035971201,
+    "physics": 10.178690844668724,
+    "unchanged": 12.25669734087045,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 650.0,
+    "model": 19.157954797610543,
+    "physics": 18.132767981873027,
+    "unchanged": 20.42471948549834,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 750.0,
+    "model": 26.014880779954137,
+    "physics": 26.126190533454757,
+    "unchanged": 28.540370960311424,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 850.0,
+    "model": 34.369605022980785,
+    "physics": 33.84650716341121,
+    "unchanged": 36.44887555604184,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_1000.000_1400.000",
+    "temperature_K": 950.0,
+    "model": 42.77505193624245,
+    "physics": 41.2201369223184,
+    "unchanged": 43.94729264491708,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_2600.000_3000.000",
+    "temperature_K": 450.0,
+    "model": 12.289576759101205,
+    "physics": 19.748317088412875,
+    "unchanged": 19.921140693904064,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_2600.000_3000.000",
+    "temperature_K": 550.0,
+    "model": 13.497478440226832,
+    "physics": 26.674810181262348,
+    "unchanged": 27.11446042168553,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_2600.000_3000.000",
+    "temperature_K": 650.0,
+    "model": 11.670295303114395,
+    "physics": 28.496977351487875,
+    "unchanged": 29.05700601279498,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_2600.000_3000.000",
+    "temperature_K": 750.0,
+    "model": 11.774012578550577,
+    "physics": 27.735282749997864,
+    "unchanged": 28.110073830614752,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_2600.000_3000.000",
+    "temperature_K": 850.0,
+    "model": 14.228531721790667,
+    "physics": 26.850364088311835,
+    "unchanged": 27.547785032899615,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_3000.000_3400.000",
+    "temperature_K": 450.0,
+    "model": 9.245122448874886,
+    "physics": 12.446496479026488,
+    "unchanged": 14.32508612185267,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_3000.000_3400.000",
+    "temperature_K": 550.0,
+    "model": 9.062848524037618,
+    "physics": 15.536720839758338,
+    "unchanged": 19.942500343750915,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_3000.000_3400.000",
+    "temperature_K": 650.0,
+    "model": 8.592138028994166,
+    "physics": 14.918972716482887,
+    "unchanged": 22.32508430469995,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_3000.000_3400.000",
+    "temperature_K": 750.0,
+    "model": 9.638304772407835,
+    "physics": 12.655183055128532,
+    "unchanged": 22.833879606450374,
+    "family": "alkenes"
+   },
+   {
+    "species": "propene",
+    "window": "propene__added_3000.000_3400.000",
+    "temperature_K": 850.0,
+    "model": 16.618936180910286,
+    "physics": 10.349498993053208,
+    "unchanged": 22.468803513430718,
+    "family": "alkenes"
+   },
+   {
+    "species": "1-butene",
+    "window": "1-butene",
+    "temperature_K": 634.0,
+    "model": 14.759310271419585,
+    "physics": 11.711356131964443,
+    "unchanged": 33.29059585992306,
+    "family": "alkenes"
+   },
+   {
+    "species": "1-butene",
+    "window": "1-butene",
+    "temperature_K": 637.0,
+    "model": 11.258537124936378,
+    "physics": 11.836422563270931,
+    "unchanged": 23.041747552514984,
+    "family": "alkenes"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 350.0,
+    "model": 10.59490771331677,
+    "physics": 5.861879633001514,
+    "unchanged": 5.797640138541602,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 400.0,
+    "model": 15.359804527330848,
+    "physics": 10.612813162042817,
+    "unchanged": 12.002058424934415,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 450.0,
+    "model": 20.01488878572474,
+    "physics": 14.569419101304943,
+    "unchanged": 17.41960611787445,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 500.0,
+    "model": 23.13101350554449,
+    "physics": 17.966476319997795,
+    "unchanged": 22.0985232857683,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 350.0,
+    "model": 7.305503305472053,
+    "physics": 5.453714478401627,
+    "unchanged": 5.295535842528681,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 400.0,
+    "model": 11.644440051999567,
+    "physics": 10.133901886741866,
+    "unchanged": 10.568932101132248,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 450.0,
+    "model": 15.13448362239909,
+    "physics": 13.741614864278548,
+    "unchanged": 14.929871004760201,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 500.0,
+    "model": 16.848961025892102,
+    "physics": 17.119581635227448,
+    "unchanged": 19.037548780010543,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 350.0,
+    "model": 5.2387127777465,
+    "physics": 2.3886897424498716,
+    "unchanged": 2.654259087713405,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 400.0,
+    "model": 6.609429211643217,
+    "physics": 3.8013968270478316,
+    "unchanged": 6.132636120087766,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 450.0,
+    "model": 8.543366749279576,
+    "physics": 5.203084013848489,
+    "unchanged": 9.151002281546052,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 500.0,
+    "model": 9.638044893706601,
+    "physics": 6.549807674106237,
+    "unchanged": 11.851639066764797,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 524.15,
+    "model": 7.40886171844177,
+    "physics": 7.14676750320021,
+    "unchanged": 17.713238374102332,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 774.15,
+    "model": 15.726954782180835,
+    "physics": 11.72479211190864,
+    "unchanged": 29.49665784198523,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 350.0,
+    "model": 7.07302643883582,
+    "physics": 3.0443353066415857,
+    "unchanged": 2.432869059989492,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 400.0,
+    "model": 8.958394076778937,
+    "physics": 4.57338192206947,
+    "unchanged": 5.716662591743331,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 450.0,
+    "model": 10.484403021638524,
+    "physics": 5.644445999550392,
+    "unchanged": 8.898658776583499,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 500.0,
+    "model": 12.108260794256894,
+    "physics": 7.232713434868433,
+    "unchanged": 12.228284455782855,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 524.15,
+    "model": 8.568773837181986,
+    "physics": 5.543216620888961,
+    "unchanged": 13.959425153334653,
+    "family": "aromatics"
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 774.15,
+    "model": 9.435879421514851,
+    "physics": 8.42730648110139,
+    "unchanged": 24.266661691260634,
+    "family": "aromatics"
+   },
+   {
+    "species": "ethyl acetate",
+    "window": "ethyl acetate",
+    "temperature_K": 633.0,
+    "model": 10.417255528362166,
+    "physics": 10.005723225536133,
+    "unchanged": 54.42980651672988,
+    "family": "esters"
+   },
+   {
+    "species": "ethyl acetate",
+    "window": "ethyl acetate",
+    "temperature_K": 741.0,
+    "model": 9.288131260644017,
+    "physics": 8.662219183848723,
+    "unchanged": 72.405335627662,
+    "family": "esters"
+   },
+   {
+    "species": "ethyl acetate",
+    "window": "ethyl acetate",
+    "temperature_K": 834.0,
+    "model": 7.662837366249348,
+    "physics": 6.539150515393683,
+    "unchanged": 85.75339520181558,
+    "family": "esters"
+   },
+   {
+    "species": "ethyl acetate",
+    "window": "ethyl acetate",
+    "temperature_K": 859.0,
+    "model": 8.983072170783595,
+    "physics": 8.353740874702808,
+    "unchanged": 87.67623496812284,
+    "family": "esters"
+   },
+   {
+    "species": "ethyl acetate",
+    "window": "ethyl acetate",
+    "temperature_K": 927.0,
+    "model": 12.795438553511474,
+    "physics": 10.463584502161849,
+    "unchanged": 92.67958627554121,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate",
+    "temperature_K": 722.0,
+    "model": 33.56778454697913,
+    "physics": 48.593558496011056,
+    "unchanged": 71.20543922996954,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate",
+    "temperature_K": 784.0,
+    "model": 38.86974090780014,
+    "physics": 55.13666071088371,
+    "unchanged": 80.19577623339895,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate",
+    "temperature_K": 904.0,
+    "model": 44.34123185468361,
+    "physics": 63.60513469126799,
+    "unchanged": 94.09387158511291,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate",
+    "temperature_K": 978.0,
+    "model": 48.24750271788459,
+    "physics": 74.89492874596444,
+    "unchanged": 108.77060833141961,
+    "family": "esters"
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 586.0,
+    "model": 7.805809303084486,
+    "physics": 10.016813732803326,
+    "unchanged": 46.628150939125675,
+    "family": "esters"
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 635.0,
+    "model": 9.457488735687477,
+    "physics": 12.66948032499348,
+    "unchanged": 54.131537575849386,
+    "family": "esters"
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 692.0,
+    "model": 11.001668099432257,
+    "physics": 15.813883709210904,
+    "unchanged": 63.75170183821096,
+    "family": "esters"
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 698.0,
+    "model": 10.966924098794262,
+    "physics": 16.069362842567667,
+    "unchanged": 65.32172274869326,
+    "family": "esters"
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 705.0,
+    "model": 11.836902776462406,
+    "physics": 17.460685821225976,
+    "unchanged": 66.82458744238711,
+    "family": "esters"
+   },
+   {
+    "species": "n-butyl acetate",
+    "window": "n-butyl acetate",
+    "temperature_K": 810.0,
+    "model": 15.528484792763997,
+    "physics": 23.78760960426735,
+    "unchanged": 82.23626574781395,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 373.15,
+    "model": 9.796483259545699,
+    "physics": 8.245438019718982,
+    "unchanged": 8.617158831546126,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 423.15,
+    "model": 9.899738591795142,
+    "physics": 10.611969680575752,
+    "unchanged": 11.232187949598691,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 473.15,
+    "model": 12.012204533483303,
+    "physics": 13.210433876346656,
+    "unchanged": 14.15465819510191,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 523.15,
+    "model": 14.749192735139156,
+    "physics": 15.804882508652296,
+    "unchanged": 17.149809635591925,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 573.15,
+    "model": 15.080607127887244,
+    "physics": 18.12063360710524,
+    "unchanged": 19.885532638943513,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 623.15,
+    "model": 17.056264907605936,
+    "physics": 20.326150154590785,
+    "unchanged": 22.531330184360172,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_2600.000_3000.000",
+    "temperature_K": 673.15,
+    "model": 16.288537169625485,
+    "physics": 23.80297415170417,
+    "unchanged": 26.607596306269354,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 373.15,
+    "model": 16.887736379235086,
+    "physics": 13.82022522706654,
+    "unchanged": 14.10024133855225,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 423.15,
+    "model": 22.349335986343533,
+    "physics": 20.241592195474144,
+    "unchanged": 20.699165525881256,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 473.15,
+    "model": 24.077195234633546,
+    "physics": 24.658043489648378,
+    "unchanged": 25.252629597219073,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 523.15,
+    "model": 29.475538828172816,
+    "physics": 30.249036755992915,
+    "unchanged": 30.980227044533056,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 573.15,
+    "model": 29.162335309572423,
+    "physics": 35.62245385398995,
+    "unchanged": 36.4821655710818,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 623.15,
+    "model": 31.39233491140736,
+    "physics": 40.66249063277013,
+    "unchanged": 41.63452481148951,
+    "family": "esters"
+   },
+   {
+    "species": "methyl acetate",
+    "window": "methyl acetate__added_3000.000_3400.000",
+    "temperature_K": 673.15,
+    "model": 39.18864306357083,
+    "physics": 46.70271050975682,
+    "unchanged": 47.6539140819204,
+    "family": "esters"
+   },
+   {
+    "species": "methyl formate",
+    "window": "methyl formate__added_1655.830_1873.970",
+    "temperature_K": 982.0,
+    "model": 29.20355470462695,
+    "physics": 65.8153198664592,
+    "unchanged": 70.04691258313892,
+    "family": "esters"
+   },
+   {
+    "species": "methyl formate",
+    "window": "methyl formate__added_1655.830_1873.970",
+    "temperature_K": 835.0,
+    "model": 30.20885149817607,
+    "physics": 57.36577009094357,
+    "unchanged": 61.102860037944104,
+    "family": "esters"
+   },
+   {
+    "species": "methyl formate",
+    "window": "methyl formate__added_1655.830_1873.970",
+    "temperature_K": 627.0,
+    "model": 19.281344865672065,
+    "physics": 41.82171642004746,
+    "unchanged": 44.323382652213105,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 373.15,
+    "model": 7.118505718247356,
+    "physics": 4.575952645815664,
+    "unchanged": 3.769153898221511,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 423.15,
+    "model": 9.542791559759412,
+    "physics": 7.316916977153586,
+    "unchanged": 7.029625317500221,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 473.15,
+    "model": 12.019299883428742,
+    "physics": 9.389937035809801,
+    "unchanged": 10.176851625345192,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 523.15,
+    "model": 16.15255909246769,
+    "physics": 11.279904605329847,
+    "unchanged": 12.418963237089981,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 573.15,
+    "model": 18.0399864789074,
+    "physics": 12.702591106840641,
+    "unchanged": 15.416804340642077,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 623.15,
+    "model": 22.101775887141603,
+    "physics": 13.672703816378743,
+    "unchanged": 17.81872359648819,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_2600.000_3000.000",
+    "temperature_K": 673.15,
+    "model": 26.27608197490231,
+    "physics": 15.240556882830218,
+    "unchanged": 20.863918333751762,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 373.15,
+    "model": 89.8712486355652,
+    "physics": 12.35989543665478,
+    "unchanged": 9.277593386901083,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 423.15,
+    "model": 91.36283801783793,
+    "physics": 17.075454099481448,
+    "unchanged": 13.363283421167111,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 473.15,
+    "model": 95.21493924352103,
+    "physics": 23.253501463270528,
+    "unchanged": 18.181124705330546,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 523.15,
+    "model": 97.84700800958744,
+    "physics": 27.67820552810817,
+    "unchanged": 21.59005449513768,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 573.15,
+    "model": 102.66619914113006,
+    "physics": 33.59507823805994,
+    "unchanged": 26.41550190050553,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 623.15,
+    "model": 105.89097047804658,
+    "physics": 38.96877995520715,
+    "unchanged": 31.309999846453334,
+    "family": "esters"
+   },
+   {
+    "species": "methyl propionate",
+    "window": "methyl propionate__added_3000.000_3400.000",
+    "temperature_K": 673.15,
+    "model": 110.02675046732236,
+    "physics": 45.445116101839425,
+    "unchanged": 37.05087642221659,
+    "family": "esters"
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 671.0,
+    "model": 5.889681064099412,
+    "physics": 10.574996597479826,
+    "unchanged": 62.835172139502774,
+    "family": "esters"
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 754.0,
+    "model": 7.5918511153048245,
+    "physics": 13.516643053240207,
+    "unchanged": 76.9752333230748,
+    "family": "esters"
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 806.0,
+    "model": 12.292403360066288,
+    "physics": 15.792535814256048,
+    "unchanged": 85.94143525365075,
+    "family": "esters"
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 862.0,
+    "model": 16.953422863104347,
+    "physics": 23.92379765897963,
+    "unchanged": 96.0635187707648,
+    "family": "esters"
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 336.0,
+    "model": 7.845813592496607,
+    "physics": 5.346496461775463,
+    "unchanged": 2.691515056553328,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 431.0,
+    "model": 9.462994284248694,
+    "physics": 9.3197229498073,
+    "unchanged": 19.18738205037564,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 523.0,
+    "model": 8.909500165555775,
+    "physics": 10.23486293444417,
+    "unchanged": 30.17739988520562,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 587.0,
+    "model": 8.957108050906855,
+    "physics": 9.711270363238931,
+    "unchanged": 36.570393216052786,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 676.0,
+    "model": 9.299447786961284,
+    "physics": 8.60142327251778,
+    "unchanged": 44.521046808567284,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 717.0,
+    "model": 9.804075341944095,
+    "physics": 8.47363131855425,
+    "unchanged": 49.60093693768741,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 779.0,
+    "model": 11.098641067518047,
+    "physics": 9.467171153104168,
+    "unchanged": 52.968245176971415,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "dimethoxymethane",
+    "window": "dimethoxymethane",
+    "temperature_K": 822.0,
+    "model": 13.16211969103386,
+    "physics": 10.188980984075137,
+    "unchanged": 54.87865523797433,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 340.0,
+    "model": 17.89721060913012,
+    "physics": 17.744291129107953,
+    "unchanged": 17.475801655232008,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 431.0,
+    "model": 15.248750832346424,
+    "physics": 14.754680007684312,
+    "unchanged": 22.017213405787516,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 512.0,
+    "model": 14.805058166016389,
+    "physics": 15.243839554591359,
+    "unchanged": 31.378829939978676,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 537.0,
+    "model": 12.103784882533262,
+    "physics": 13.495227212178767,
+    "unchanged": 33.888329483397264,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 579.0,
+    "model": 15.402321975009253,
+    "physics": 16.852848337521632,
+    "unchanged": 39.48643394476738,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 613.0,
+    "model": 16.482984593499847,
+    "physics": 18.072832303554243,
+    "unchanged": 45.39421194154378,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 690.0,
+    "model": 13.350584159932785,
+    "physics": 14.12046723264637,
+    "unchanged": 50.978070417094536,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 800.0,
+    "model": 23.672833283288192,
+    "physics": 20.4364101878841,
+    "unchanged": 61.339431641082754,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 816.0,
+    "model": 29.10604069873234,
+    "physics": 23.955019771430013,
+    "unchanged": 65.48315369253793,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 604.0,
+    "model": 15.672745647906353,
+    "physics": 14.509465515982404,
+    "unchanged": 42.36395743353784,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 690.0,
+    "model": 15.604590722514386,
+    "physics": 15.759884461918455,
+    "unchanged": 53.80342956656844,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 758.0,
+    "model": 15.626660535472773,
+    "physics": 16.99613677484067,
+    "unchanged": 61.93637305755605,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 838.0,
+    "model": 19.615943541343327,
+    "physics": 19.790540257600618,
+    "unchanged": 67.54417248309225,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 559.0,
+    "model": 12.888284958437124,
+    "physics": 13.161199122693349,
+    "unchanged": 28.496776136538738,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 595.0,
+    "model": 13.245952102293955,
+    "physics": 13.81442087776867,
+    "unchanged": 32.73376539317545,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 690.0,
+    "model": 16.308269374635472,
+    "physics": 17.082478405986066,
+    "unchanged": 38.39082330484288,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 764.0,
+    "model": 17.74833022792197,
+    "physics": 18.09908698532941,
+    "unchanged": 42.37106214962039,
+    "family": "ethers and acetals"
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 853.0,
+    "model": 19.179275810186212,
+    "physics": 16.516313045128378,
+    "unchanged": 42.639738245487464,
+    "family": "ethers and acetals"
+   }
+  ],
+  "molecule": {
+   "model": {
+    "1,2-dimethoxyethane": 17.563285466720956,
+    "1,3-butadiene": 13.598222965837298,
+    "1-butene": 13.00892369817798,
+    "acetaldehyde": 17.989558575161553,
+    "acetone": 11.291803961006593,
+    "di-n-propyl ether": 16.629985111809212,
+    "diisopropyl ether": 15.874022494694946,
+    "dimethoxymethane": 9.817462497583152,
+    "ethanol": 17.146782672671183,
+    "ethyl acetate": 9.82934697591012,
+    "ethylene": 46.94863229393614,
+    "isobutene": 17.921498382849876,
+    "methyl acetate": 27.438671575517887,
+    "methyl formate": 26.23125035615836,
+    "methyl propionate": 57.43792532770465,
+    "n-butyl acetate": 11.099546301037483,
+    "n-heptane": 10.36698327559675,
+    "n-propyl acetate": 10.681839600643718,
+    "propane": 22.408594262098703,
+    "propene": 16.557838955088364,
+    "toluene": 12.076879647071873
+   },
+   "physics": {
+    "1,2-dimethoxyethane": 17.18617952628875,
+    "1,3-butadiene": 22.326237637915575,
+    "1-butene": 11.773889347617686,
+    "acetaldehyde": 28.919490242841306,
+    "acetone": 8.842621419529763,
+    "di-n-propyl ether": 16.764006752585537,
+    "diisopropyl ether": 15.734699687381175,
+    "dimethoxymethane": 8.91794492968965,
+    "ethanol": 29.64653002557239,
+    "ethyl acetate": 8.804883660328638,
+    "ethylene": 63.617627110569416,
+    "isobutene": 29.924296471359252,
+    "methyl acetate": 35.52295377574358,
+    "methyl formate": 55.00093545915008,
+    "methyl propionate": 19.46818527805571,
+    "n-butyl acetate": 15.969639339178118,
+    "n-heptane": 11.371363078118842,
+    "n-propyl acetate": 15.951993280988928,
+    "propane": 26.091129255138167,
+    "propene": 22.83219186594396,
+    "toluene": 8.93620996913235
+   },
+   "unchanged": {
+    "1,2-dimethoxyethane": 40.82683068015798,
+    "1,3-butadiene": 25.383647157321313,
+    "1-butene": 28.16617170621902,
+    "acetaldehyde": 44.30030776568006,
+    "acetone": 44.46727663965421,
+    "di-n-propyl ether": 56.41198313518865,
+    "diisopropyl ether": 36.92643304593298,
+    "dimethoxymethane": 36.324446796173476,
+    "ethanol": 33.11769040541686,
+    "ethyl acetate": 78.5888717179743,
+    "ethylene": 64.56486077861886,
+    "isobutene": 48.35664321847622,
+    "methyl acetate": 45.56886231556742,
+    "methyl formate": 58.491051757765376,
+    "methyl propionate": 17.47731960905363,
+    "n-butyl acetate": 63.14899438201339,
+    "n-heptane": 24.588309161569796,
+    "n-propyl acetate": 80.45383987174829,
+    "propane": 40.156671991213976,
+    "propene": 25.208311413003205,
+    "toluene": 12.717773668509155
+   }
+  },
+  "family": {
+   "alcohols": {
+    "model": 17.146782672671183,
+    "physics": 29.64653002557239,
+    "unchanged": 33.11769040541686
+   },
+   "aldehydes and ketones": {
+    "model": 14.640681268084073,
+    "physics": 18.881055831185535,
+    "unchanged": 44.38379220266714
+   },
+   "alkanes": {
+    "model": 16.387788768847727,
+    "physics": 18.731246166628505,
+    "unchanged": 32.37249057639188
+   },
+   "alkenes": {
+    "model": 21.60702325917793,
+    "physics": 30.09484848668118,
+    "unchanged": 38.33592685472773
+   },
+   "aromatics": {
+    "model": 12.076879647071873,
+    "physics": 8.93620996913235,
+    "unchanged": 12.717773668509155
+   },
+   "esters": {
+    "model": 23.7864300228287,
+    "physics": 25.119765132240843,
+    "unchanged": 57.288156609020405
+   },
+   "ethers and acetals": {
+    "model": 14.971188892702067,
+    "physics": 14.650707723986276,
+    "unchanged": 42.622423414363276
+   }
+  }
+ },
+ "random_splits": [
+  {
+   "test_molecules": [
+    "1,3-butadiene",
+    "acetaldehyde",
+    "di-n-propyl ether",
+    "diisopropyl ether",
+    "ethanol",
+    "isobutene"
+   ],
+   "model": 16.500425821581683,
+   "physics": 23.885876802942537,
+   "unchanged": 40.74945078800268
+  },
+  {
+   "test_molecules": [
+    "1,3-butadiene",
+    "ethanol",
+    "methyl acetate",
+    "methyl formate",
+    "n-heptane",
+    "n-propyl acetate"
+   ],
+   "model": 17.84664728615624,
+   "physics": 28.303335542914894,
+   "unchanged": 44.60056677823152
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "1-butene",
+    "diisopropyl ether",
+    "ethylene",
+    "isobutene",
+    "propane"
+   ],
+   "model": 22.363025372215827,
+   "physics": 27.387970233059068,
+   "unchanged": 43.16626857010317
+  },
+  {
+   "test_molecules": [
+    "1,3-butadiene",
+    "acetaldehyde",
+    "ethylene",
+    "isobutene",
+    "methyl propionate",
+    "toluene"
+   ],
+   "model": 25.11041152447247,
+   "physics": 28.865341118312262,
+   "unchanged": 35.466758699609876
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "acetaldehyde",
+    "di-n-propyl ether",
+    "ethylene",
+    "n-propyl acetate",
+    "propane"
+   ],
+   "model": 23.88921352956055,
+   "physics": 28.088404361402013,
+   "unchanged": 54.45241570376797
+  },
+  {
+   "test_molecules": [
+    "1,3-butadiene",
+    "acetone",
+    "ethanol",
+    "ethyl acetate",
+    "methyl propionate",
+    "n-butyl acetate"
+   ],
+   "model": 19.884136068331603,
+   "physics": 17.509682893430032,
+   "unchanged": 43.69729998523895
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "1-butene",
+    "isobutene",
+    "methyl acetate",
+    "n-butyl acetate",
+    "n-heptane"
+   ],
+   "model": 16.506418602096968,
+   "physics": 20.29138692305104,
+   "unchanged": 41.77596857733397
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "di-n-propyl ether",
+    "dimethoxymethane",
+    "isobutene",
+    "methyl acetate",
+    "propane"
+   ],
+   "model": 16.95369589439429,
+   "physics": 22.40108511846749,
+   "unchanged": 44.60757302279629
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "1-butene",
+    "acetone",
+    "ethyl acetate",
+    "methyl formate",
+    "toluene"
+   ],
+   "model": 17.160991822332406,
+   "physics": 18.424119897007877,
+   "unchanged": 43.87632936171334
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "methyl acetate",
+    "methyl formate",
+    "methyl propionate",
+    "n-heptane",
+    "toluene"
+   ],
+   "model": 24.90930029801733,
+   "physics": 24.580971181081555,
+   "unchanged": 33.27835786543722
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "acetone",
+    "dimethoxymethane",
+    "methyl propionate",
+    "n-heptane",
+    "propene"
+   ],
+   "model": 19.61127254308922,
+   "physics": 14.769747682937782,
+   "unchanged": 31.482082383268718
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "acetone",
+    "ethyl acetate",
+    "isobutene",
+    "methyl formate",
+    "propane"
+   ],
+   "model": 19.175155262795318,
+   "physics": 24.308340965299106,
+   "unchanged": 51.814557667540335
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "1-butene",
+    "acetone",
+    "diisopropyl ether",
+    "n-propyl acetate",
+    "propane"
+   ],
+   "model": 17.24202115807071,
+   "physics": 15.930085419490744,
+   "unchanged": 45.166203989154404
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "di-n-propyl ether",
+    "isobutene",
+    "methyl formate",
+    "n-propyl acetate",
+    "propene"
+   ],
+   "model": 16.8422797199981,
+   "physics": 26.276600559386083,
+   "unchanged": 51.62477667938996
+  },
+  {
+   "test_molecules": [
+    "acetaldehyde",
+    "di-n-propyl ether",
+    "ethanol",
+    "methyl acetate",
+    "n-heptane",
+    "toluene"
+   ],
+   "model": 16.59799510306722,
+   "physics": 21.860092307332337,
+   "unchanged": 36.11748774198866
+  },
+  {
+   "test_molecules": [
+    "1-butene",
+    "acetaldehyde",
+    "isobutene",
+    "methyl propionate",
+    "n-butyl acetate",
+    "propane"
+   ],
+   "model": 15.799568457211103,
+   "physics": 22.02443832236504,
+   "unchanged": 40.26768477877605
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "di-n-propyl ether",
+    "methyl acetate",
+    "n-heptane",
+    "n-propyl acetate",
+    "toluene"
+   ],
+   "model": 15.433118869686531,
+   "physics": 17.62211773047633,
+   "unchanged": 43.427933138790216
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "1,3-butadiene",
+    "di-n-propyl ether",
+    "methyl acetate",
+    "n-heptane",
+    "n-propyl acetate"
+   ],
+   "model": 15.610168622505645,
+   "physics": 19.85378900860687,
+   "unchanged": 45.53891205359224
+  },
+  {
+   "test_molecules": [
+    "1,3-butadiene",
+    "1-butene",
+    "ethyl acetate",
+    "methyl acetate",
+    "methyl formate",
+    "toluene"
+   ],
+   "model": 17.059315438717295,
+   "physics": 23.727518308314654,
+   "unchanged": 41.48606305389277
+  },
+  {
+   "test_molecules": [
+    "acetaldehyde",
+    "diisopropyl ether",
+    "ethanol",
+    "methyl propionate",
+    "n-butyl acetate",
+    "n-propyl acetate"
+   ],
+   "model": 21.865182773930186,
+   "physics": 20.948422975669605,
+   "unchanged": 45.90409751330753
+  },
+  {
+   "test_molecules": [
+    "1-butene",
+    "acetaldehyde",
+    "dimethoxymethane",
+    "ethylene",
+    "methyl acetate",
+    "methyl propionate"
+   ],
+   "model": 26.053594099071848,
+   "physics": 28.03668178075289,
+   "unchanged": 39.40032816188542
+  },
+  {
+   "test_molecules": [
+    "di-n-propyl ether",
+    "n-butyl acetate",
+    "n-heptane",
+    "n-propyl acetate",
+    "propane",
+    "propene"
+   ],
+   "model": 15.01241356097863,
+   "physics": 18.16338726199226,
+   "unchanged": 48.32801832578955
+  },
+  {
+   "test_molecules": [
+    "acetone",
+    "diisopropyl ether",
+    "dimethoxymethane",
+    "isobutene",
+    "propane",
+    "propene"
+   ],
+   "model": 17.208523703230536,
+   "physics": 18.723813938173663,
+   "unchanged": 38.57329718407568
+  },
+  {
+   "test_molecules": [
+    "1-butene",
+    "diisopropyl ether",
+    "dimethoxymethane",
+    "isobutene",
+    "n-heptane",
+    "propene"
+   ],
+   "model": 15.695844858828897,
+   "physics": 16.759064230018428,
+   "unchanged": 33.26171922356245
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "1,3-butadiene",
+    "acetaldehyde",
+    "diisopropyl ether",
+    "propene",
+    "toluene"
+   ],
+   "model": 15.527058796267518,
+   "physics": 19.32250148825052,
+   "unchanged": 30.89388395510078
+  },
+  {
+   "test_molecules": [
+    "acetaldehyde",
+    "diisopropyl ether",
+    "ethanol",
+    "isobutene",
+    "methyl propionate",
+    "n-propyl acetate"
+   ],
+   "model": 22.958413506870926,
+   "physics": 23.27419916436646,
+   "unchanged": 43.438705652718006
+  },
+  {
+   "test_molecules": [
+    "ethanol",
+    "ethyl acetate",
+    "isobutene",
+    "methyl acetate",
+    "propane",
+    "toluene"
+   ],
+   "model": 17.019512657037485,
+   "physics": 23.154333859545726,
+   "unchanged": 43.08441888619299
+  },
+  {
+   "test_molecules": [
+    "di-n-propyl ether",
+    "ethanol",
+    "isobutene",
+    "n-butyl acetate",
+    "propane",
+    "toluene"
+   ],
+   "model": 15.486265474035955,
+   "physics": 21.221968635494303,
+   "unchanged": 42.318292800136376
+  },
+  {
+   "test_molecules": [
+    "1,3-butadiene",
+    "di-n-propyl ether",
+    "dimethoxymethane",
+    "methyl acetate",
+    "n-butyl acetate",
+    "n-propyl acetate"
+   ],
+   "model": 14.506947068376187,
+   "physics": 19.242129286016898,
+   "unchanged": 51.215295609668765
+  },
+  {
+   "test_molecules": [
+    "1,2-dimethoxyethane",
+    "ethyl acetate",
+    "methyl formate",
+    "n-heptane",
+    "propane",
+    "propene"
+   ],
+   "model": 17.19128815699977,
+   "physics": 23.54778047416141,
+   "unchanged": 44.64334112028077
+  }
+ ]
+}

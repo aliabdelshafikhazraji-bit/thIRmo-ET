@@ -1,0 +1,801 @@
+{
+ "three_input": {
+  "rows": [
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 340.0,
+    "wakatsuki_three_input": 19.550661069565518,
+    "wakatsuki_three_input_bounded": 19.350795874558365,
+    "exponent_at_bound_fraction": 0.703125,
+    "thirmo": 16.077517610543623,
+    "condition_number": 1071.9750696755746
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 431.0,
+    "wakatsuki_three_input": 28.241953822572558,
+    "wakatsuki_three_input_bounded": 24.30504624576787,
+    "exponent_at_bound_fraction": 0.703125,
+    "thirmo": 14.326648737792718,
+    "condition_number": 1071.9750696755746
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 512.0,
+    "wakatsuki_three_input": 40.392408396893224,
+    "wakatsuki_three_input_bounded": 32.03333603886041,
+    "exponent_at_bound_fraction": 0.703125,
+    "thirmo": 15.8271987305724,
+    "condition_number": 1071.9750696755746
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 537.0,
+    "wakatsuki_three_input": 42.9661321421474,
+    "wakatsuki_three_input_bounded": 34.882351190062586,
+    "exponent_at_bound_fraction": 0.703125,
+    "thirmo": 14.118125162730102,
+    "condition_number": 1071.9750696755746
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 579.0,
+    "wakatsuki_three_input": 54.63077681037457,
+    "wakatsuki_three_input_bounded": 41.648461293819494,
+    "exponent_at_bound_fraction": 0.703125,
+    "thirmo": 17.09990623365266,
+    "condition_number": 1071.9750696755746
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 613.0,
+    "wakatsuki_three_input": 63.841964164804295,
+    "wakatsuki_three_input_bounded": 48.402661586559134,
+    "exponent_at_bound_fraction": 0.703125,
+    "thirmo": 18.94016107060962,
+    "condition_number": 1071.9750696755746
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 690.0,
+    "wakatsuki_three_input": 79.93056430881236,
+    "wakatsuki_three_input_bounded": 56.76019220551491,
+    "exponent_at_bound_fraction": 0.703125,
+    "thirmo": 14.935489837001233,
+    "condition_number": 1071.9750696755746
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 800.0,
+    "wakatsuki_three_input": 108.00455221021488,
+    "wakatsuki_three_input_bounded": 74.0781388067242,
+    "exponent_at_bound_fraction": 0.703125,
+    "thirmo": 22.68282345136354,
+    "condition_number": 1071.9750696755746
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 816.0,
+    "wakatsuki_three_input": 115.22880529285347,
+    "wakatsuki_three_input_bounded": 78.95519605097088,
+    "exponent_at_bound_fraction": 0.703125,
+    "thirmo": 26.437585807897477,
+    "condition_number": 1071.9750696755746
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 604.81,
+    "wakatsuki_three_input": 7.838970174197206,
+    "wakatsuki_three_input_bounded": 6.962625221586912,
+    "exponent_at_bound_fraction": 0.576171875,
+    "thirmo": 10.231076244692623,
+    "condition_number": 1078.6795419454968
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 782.23,
+    "wakatsuki_three_input": 15.949277619932046,
+    "wakatsuki_three_input_bounded": 13.055622488624937,
+    "exponent_at_bound_fraction": 0.576171875,
+    "thirmo": 12.160474104228642,
+    "condition_number": 1078.6795419454968
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 974.22,
+    "wakatsuki_three_input": 28.224023249553454,
+    "wakatsuki_three_input_bounded": 21.99979644589461,
+    "exponent_at_bound_fraction": 0.576171875,
+    "thirmo": 16.214602758194033,
+    "condition_number": 1078.6795419454968
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 604.0,
+    "wakatsuki_three_input": 72.58909625172166,
+    "wakatsuki_three_input_bounded": 30.35551548400309,
+    "exponent_at_bound_fraction": 0.80859375,
+    "thirmo": 14.85841165449309,
+    "condition_number": 1068.580096153732
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 690.0,
+    "wakatsuki_three_input": 119.53345848662921,
+    "wakatsuki_three_input_bounded": 47.159038840126065,
+    "exponent_at_bound_fraction": 0.80859375,
+    "thirmo": 15.355905612343898,
+    "condition_number": 1068.580096153732
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 758.0,
+    "wakatsuki_three_input": 167.8564079664451,
+    "wakatsuki_three_input_bounded": 61.1089779588489,
+    "exponent_at_bound_fraction": 0.80859375,
+    "thirmo": 15.39180070091859,
+    "condition_number": 1068.580096153732
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 838.0,
+    "wakatsuki_three_input": 218.96698748514666,
+    "wakatsuki_three_input_bounded": 71.33752685436316,
+    "exponent_at_bound_fraction": 0.80859375,
+    "thirmo": 16.949317838103525,
+    "condition_number": 1068.580096153732
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 559.0,
+    "wakatsuki_three_input": 21.39709077785225,
+    "wakatsuki_three_input_bounded": 18.907255587411342,
+    "exponent_at_bound_fraction": 0.68359375,
+    "thirmo": 12.156168179087286,
+    "condition_number": 1080.5383410547422
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 595.0,
+    "wakatsuki_three_input": 25.10206336566025,
+    "wakatsuki_three_input_bounded": 22.72300249264529,
+    "exponent_at_bound_fraction": 0.68359375,
+    "thirmo": 12.586400861893901,
+    "condition_number": 1080.5383410547422
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 690.0,
+    "wakatsuki_three_input": 32.41423720032095,
+    "wakatsuki_three_input_bounded": 28.51630553025381,
+    "exponent_at_bound_fraction": 0.68359375,
+    "thirmo": 15.840223313919427,
+    "condition_number": 1080.5383410547422
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 764.0,
+    "wakatsuki_three_input": 38.762000856929774,
+    "wakatsuki_three_input_bounded": 33.69744234072704,
+    "exponent_at_bound_fraction": 0.68359375,
+    "thirmo": 17.125685382303075,
+    "condition_number": 1080.5383410547422
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 853.0,
+    "wakatsuki_three_input": 43.11681900956658,
+    "wakatsuki_three_input_bounded": 39.0194300689242,
+    "exponent_at_bound_fraction": 0.68359375,
+    "thirmo": 19.258642642807168,
+    "condition_number": 1080.5383410547422
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 671.0,
+    "wakatsuki_three_input": 2003.533340817241,
+    "wakatsuki_three_input_bounded": 62.13496469788199,
+    "exponent_at_bound_fraction": 0.939453125,
+    "thirmo": 6.247604261266847,
+    "condition_number": 1079.4896261134652
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 754.0,
+    "wakatsuki_three_input": 14144.948779351327,
+    "wakatsuki_three_input_bounded": 82.55193473936258,
+    "exponent_at_bound_fraction": 0.939453125,
+    "thirmo": 9.201124204284007,
+    "condition_number": 1079.4896261134652
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 806.0,
+    "wakatsuki_three_input": 55464.10956059137,
+    "wakatsuki_three_input_bounded": 96.23898071181914,
+    "exponent_at_bound_fraction": 0.939453125,
+    "thirmo": 11.144021346012888,
+    "condition_number": 1079.4896261134652
+   },
+   {
+    "species": "n-propyl acetate",
+    "window": "n-propyl acetate",
+    "temperature_K": 862.0,
+    "wakatsuki_three_input": 233963.21115895017,
+    "wakatsuki_three_input_bounded": 111.77811440938206,
+    "exponent_at_bound_fraction": 0.939453125,
+    "thirmo": 17.742190372701224,
+    "condition_number": 1079.4896261134652
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 350.0,
+    "wakatsuki_three_input": 5.433810827987987,
+    "wakatsuki_three_input_bounded": 4.490842997612074,
+    "exponent_at_bound_fraction": 0.76171875,
+    "thirmo": 10.797186913883067,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 400.0,
+    "wakatsuki_three_input": 18794567.131586008,
+    "wakatsuki_three_input_bounded": 8.969475524870587,
+    "exponent_at_bound_fraction": 0.76171875,
+    "thirmo": 16.021427479790468,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 450.0,
+    "wakatsuki_three_input": 3.3049408957627744e+16,
+    "wakatsuki_three_input_bounded": 18.258604747370256,
+    "exponent_at_bound_fraction": 0.76171875,
+    "thirmo": 20.184211010102203,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_640.094_1000.000",
+    "temperature_K": 500.0,
+    "wakatsuki_three_input": 4.3837451259812696e+26,
+    "wakatsuki_three_input_bounded": 45.806043115588984,
+    "exponent_at_bound_fraction": 0.76171875,
+    "thirmo": 23.373116541294046,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 350.0,
+    "wakatsuki_three_input": 1.6177755735308788,
+    "wakatsuki_three_input_bounded": 6.619245805557389,
+    "exponent_at_bound_fraction": 0.9765625,
+    "thirmo": 8.216325163377315,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 400.0,
+    "wakatsuki_three_input": 22.686033167278595,
+    "wakatsuki_three_input_bounded": 10.733184750751152,
+    "exponent_at_bound_fraction": 0.9765625,
+    "thirmo": 12.51572149900121,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 450.0,
+    "wakatsuki_three_input": 112.54336714220426,
+    "wakatsuki_three_input_bounded": 13.686772979493234,
+    "exponent_at_bound_fraction": 0.9765625,
+    "thirmo": 15.92390501212635,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_1000.000_1400.000",
+    "temperature_K": 500.0,
+    "wakatsuki_three_input": 665.9410603574354,
+    "wakatsuki_three_input_bounded": 16.977539447735786,
+    "exponent_at_bound_fraction": 0.9765625,
+    "thirmo": 17.336754965814315,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 350.0,
+    "wakatsuki_three_input": 0.830233362104162,
+    "wakatsuki_three_input_bounded": 1.1378173845071577,
+    "exponent_at_bound_fraction": 0.85546875,
+    "thirmo": 5.2344992275199855,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 400.0,
+    "wakatsuki_three_input": 5.858884260994971,
+    "wakatsuki_three_input_bounded": 2.096681561707274,
+    "exponent_at_bound_fraction": 0.85546875,
+    "thirmo": 7.400881305555396,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 450.0,
+    "wakatsuki_three_input": 12.91941374194884,
+    "wakatsuki_three_input_bounded": 5.841460437539247,
+    "exponent_at_bound_fraction": 0.85546875,
+    "thirmo": 9.432846253095272,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 500.0,
+    "wakatsuki_three_input": 20.500937101582338,
+    "wakatsuki_three_input_bounded": 10.405513361273174,
+    "exponent_at_bound_fraction": 0.85546875,
+    "thirmo": 10.892854934017238,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 524.15,
+    "wakatsuki_three_input": 22.79230710777397,
+    "wakatsuki_three_input_bounded": 11.750049219689327,
+    "exponent_at_bound_fraction": 0.85546875,
+    "thirmo": 8.762406164584291,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 774.15,
+    "wakatsuki_three_input": 46.95780234614191,
+    "wakatsuki_three_input_bounded": 25.28382586522354,
+    "exponent_at_bound_fraction": 0.85546875,
+    "thirmo": 17.33649917899915,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 350.0,
+    "wakatsuki_three_input": 0.7551210798868024,
+    "wakatsuki_three_input_bounded": 1.1875153123650692,
+    "exponent_at_bound_fraction": 0.974609375,
+    "thirmo": 6.372020975578893,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 400.0,
+    "wakatsuki_three_input": 5.84513501931406,
+    "wakatsuki_three_input_bounded": 2.323931577395693,
+    "exponent_at_bound_fraction": 0.974609375,
+    "thirmo": 8.572678043947127,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 450.0,
+    "wakatsuki_three_input": 13.169737298622636,
+    "wakatsuki_three_input_bounded": 5.955134092152114,
+    "exponent_at_bound_fraction": 0.974609375,
+    "thirmo": 10.364770846536555,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 500.0,
+    "wakatsuki_three_input": 20.99413224399497,
+    "wakatsuki_three_input_bounded": 10.55089721949467,
+    "exponent_at_bound_fraction": 0.974609375,
+    "thirmo": 12.239297593676575,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 524.15,
+    "wakatsuki_three_input": 18.809416363652016,
+    "wakatsuki_three_input_bounded": 9.053886107514222,
+    "exponent_at_bound_fraction": 0.974609375,
+    "thirmo": 8.816752729490773,
+    "condition_number": 1072.2436188846614
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 774.15,
+    "wakatsuki_three_input": 43.599892540867884,
+    "wakatsuki_three_input_bounded": 19.681832558888416,
+    "exponent_at_bound_fraction": 0.974609375,
+    "thirmo": 10.548415709814392,
+    "condition_number": 1072.2436188846614
+   }
+  ],
+  "molecule": {
+   "wakatsuki_three_input": {
+    "1,2-dimethoxyethane": 61.42086869091536,
+    "acetone": 17.337423681227566,
+    "di-n-propyl ether": 144.73648754748564,
+    "diisopropyl ether": 32.15844224206596,
+    "n-propyl acetate": 76393.95070992754,
+    "toluene": 2.739840703944852e+25
+   },
+   "wakatsuki_three_input_bounded": {
+    "1,2-dimethoxyethane": 45.601797699204205,
+    "acetone": 14.006014718702152,
+    "di-n-propyl ether": 52.490264784335295,
+    "diisopropyl ether": 28.572687203992338,
+    "n-propyl acetate": 88.17599863961144,
+    "toluene": 12.232546197967462
+   },
+   "thirmo": {
+    "1,2-dimethoxyethane": 17.827272960240375,
+    "acetone": 12.868717702371766,
+    "di-n-propyl ether": 15.638858951464776,
+    "diisopropyl ether": 15.393424076002173,
+    "n-propyl acetate": 11.083735046066241,
+    "toluene": 12.60528732670413
+   }
+  }
+ },
+ "wide_input": {
+  "rows": [
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 690.0,
+    "n_inputs": 9,
+    "fit_Tmax": 613.0,
+    "wakatsuki_wide_input": 4.092724002892361,
+    "wakatsuki_wide_input_unbounded": 3.4342844996625987,
+    "thirmo": 13.887689833650713,
+    "physics": 13.118628015932662,
+    "unchanged": 52.00736287938239,
+    "hottest_input_unchanged": 8.891225649645099,
+    "common_points": 357
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 800.0,
+    "n_inputs": 9,
+    "fit_Tmax": 613.0,
+    "wakatsuki_wide_input": 11.038100667632142,
+    "wakatsuki_wide_input_unbounded": 13.409520214754906,
+    "thirmo": 20.587847826060983,
+    "physics": 18.70369158995914,
+    "unchanged": 63.39087738340141,
+    "hottest_input_unchanged": 19.703240903183264,
+    "common_points": 405
+   },
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "temperature_K": 816.0,
+    "n_inputs": 9,
+    "fit_Tmax": 613.0,
+    "wakatsuki_wide_input": 13.149216774851672,
+    "wakatsuki_wide_input_unbounded": 16.195032777467862,
+    "thirmo": 23.608324054014545,
+    "physics": 21.59104511128989,
+    "unchanged": 66.92222899067437,
+    "hottest_input_unchanged": 22.320555853905873,
+    "common_points": 405
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 782.23,
+    "n_inputs": 4,
+    "fit_Tmax": 604.81,
+    "wakatsuki_wide_input": 6.091714501372074,
+    "wakatsuki_wide_input_unbounded": 8.426896054855192,
+    "thirmo": 11.77268148940473,
+    "physics": 8.771823291692751,
+    "unchanged": 44.68334787844604,
+    "hottest_input_unchanged": 15.842267960373412,
+    "common_points": 445
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "temperature_K": 974.22,
+    "n_inputs": 4,
+    "fit_Tmax": 604.81,
+    "wakatsuki_wide_input": 11.150119220801399,
+    "wakatsuki_wide_input_unbounded": 19.869291958088347,
+    "thirmo": 16.09375081264049,
+    "physics": 8.234717260003357,
+    "unchanged": 59.97617637186967,
+    "hottest_input_unchanged": 30.704138336792276,
+    "common_points": 445
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 690.0,
+    "n_inputs": 4,
+    "fit_Tmax": 604.0,
+    "wakatsuki_wide_input": 8.389053626989888,
+    "wakatsuki_wide_input_unbounded": 7.041141492160754,
+    "thirmo": 15.26365488020391,
+    "physics": 15.679426898612528,
+    "unchanged": 53.87218933882233,
+    "hottest_input_unchanged": 13.938237467788191,
+    "common_points": 478
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 758.0,
+    "n_inputs": 4,
+    "fit_Tmax": 604.0,
+    "wakatsuki_wide_input": 14.740801348529073,
+    "wakatsuki_wide_input_unbounded": 13.745333015219163,
+    "thirmo": 15.082245814350056,
+    "physics": 16.710499316491394,
+    "unchanged": 62.04933861424936,
+    "hottest_input_unchanged": 23.661099967105947,
+    "common_points": 478
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "temperature_K": 838.0,
+    "n_inputs": 4,
+    "fit_Tmax": 604.0,
+    "wakatsuki_wide_input": 19.512653946209657,
+    "wakatsuki_wide_input_unbounded": 17.88278025956156,
+    "thirmo": 16.534774166509866,
+    "physics": 19.40583228546842,
+    "unchanged": 67.61483261325854,
+    "hottest_input_unchanged": 32.17354881969609,
+    "common_points": 478
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 690.0,
+    "n_inputs": 5,
+    "fit_Tmax": 595.0,
+    "wakatsuki_wide_input": 7.615139421967906,
+    "wakatsuki_wide_input_unbounded": 8.380847980505285,
+    "thirmo": 15.840223313919427,
+    "physics": 17.082478405986066,
+    "unchanged": 38.39082330484288,
+    "hottest_input_unchanged": 10.348696094459257,
+    "common_points": 427
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 764.0,
+    "n_inputs": 5,
+    "fit_Tmax": 595.0,
+    "wakatsuki_wide_input": 10.9330593226159,
+    "wakatsuki_wide_input_unbounded": 13.283492593712106,
+    "thirmo": 17.125685382303075,
+    "physics": 18.09908698532941,
+    "unchanged": 42.37106214962039,
+    "hottest_input_unchanged": 15.258364442135333,
+    "common_points": 390
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "temperature_K": 853.0,
+    "n_inputs": 5,
+    "fit_Tmax": 595.0,
+    "wakatsuki_wide_input": 15.224676794015082,
+    "wakatsuki_wide_input_unbounded": 16.567802858962256,
+    "thirmo": 19.258642642807168,
+    "physics": 16.516313045128378,
+    "unchanged": 42.639738245487464,
+    "hottest_input_unchanged": 18.83304572018509,
+    "common_points": 335
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "temperature_K": 774.15,
+    "n_inputs": 8,
+    "fit_Tmax": 524.15,
+    "wakatsuki_wide_input": 10.473946803401086,
+    "wakatsuki_wide_input_unbounded": 17.751217717203886,
+    "thirmo": 15.053675712614481,
+    "physics": 13.385427898004654,
+    "unchanged": 33.71253828396118,
+    "hottest_input_unchanged": 17.91032897167304,
+    "common_points": 175
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "temperature_K": 774.15,
+    "n_inputs": 8,
+    "fit_Tmax": 524.15,
+    "wakatsuki_wide_input": 11.29209139063308,
+    "wakatsuki_wide_input_unbounded": 12.555819219721398,
+    "thirmo": 8.044609172805787,
+    "physics": 6.4925706397474565,
+    "unchanged": 24.661802528225564,
+    "hottest_input_unchanged": 13.065524878685716,
+    "common_points": 244
+   }
+  ],
+  "molecule": {
+   "wakatsuki_wide_input": {
+    "1,2-dimethoxyethane": 9.426680481792058,
+    "acetone": 8.620916861086737,
+    "di-n-propyl ether": 14.214169640576207,
+    "diisopropyl ether": 11.257625179532964,
+    "toluene": 10.883019097017083
+   },
+   "wakatsuki_wide_input_unbounded": {
+    "1,2-dimethoxyethane": 11.012945830628455,
+    "acetone": 14.14809400647177,
+    "di-n-propyl ether": 12.889751588980493,
+    "diisopropyl ether": 12.74404781105988,
+    "toluene": 15.153518468462643
+   },
+   "thirmo": {
+    "1,2-dimethoxyethane": 19.361287237908748,
+    "acetone": 13.93321615102261,
+    "di-n-propyl ether": 15.626891620354613,
+    "diisopropyl ether": 17.408183779676556,
+    "toluene": 11.549142442710135
+   },
+   "physics": {
+    "1,2-dimethoxyethane": 17.80445490572723,
+    "acetone": 8.503270275848054,
+    "di-n-propyl ether": 17.265252833524112,
+    "diisopropyl ether": 17.232626145481284,
+    "toluene": 9.938999268876055
+   },
+   "unchanged": {
+    "1,2-dimethoxyethane": 60.77348975115272,
+    "acetone": 52.329762125157856,
+    "di-n-propyl ether": 61.17878685544341,
+    "diisopropyl ether": 41.13387456665025,
+    "toluene": 29.187170406093372
+   },
+   "hottest_input_unchanged": {
+    "1,2-dimethoxyethane": 16.97167413557808,
+    "acetone": 23.273203148582844,
+    "di-n-propyl ether": 23.257628751530074,
+    "diisopropyl ether": 14.813368752259892,
+    "toluene": 15.487926925179377
+   }
+  },
+  "fits": [
+   {
+    "species": "1,2-dimethoxyethane",
+    "window": "1,2-dimethoxyethane",
+    "fit_temperatures": [
+     278.14,
+     298.15999999999997,
+     323.12,
+     340.0,
+     431.0,
+     512.0,
+     537.0,
+     579.0,
+     613.0
+    ],
+    "n_inputs": 9,
+    "condition_number": 73.05049533759893
+   },
+   {
+    "species": "acetone",
+    "window": "acetone",
+    "fit_temperatures": [
+     278.25,
+     298.15,
+     323.10999999999996,
+     604.81
+    ],
+    "n_inputs": 4,
+    "condition_number": 87.41624233491841
+   },
+   {
+    "species": "di-n-propyl ether",
+    "window": "di-n-propyl ether",
+    "fit_temperatures": [
+     278.09999999999997,
+     298.15,
+     323.15,
+     604.0
+    ],
+    "n_inputs": 4,
+    "condition_number": 87.14424007710977
+   },
+   {
+    "species": "diisopropyl ether",
+    "window": "diisopropyl ether",
+    "fit_temperatures": [
+     278.28999999999996,
+     298.21,
+     323.10999999999996,
+     559.0,
+     595.0
+    ],
+    "n_inputs": 5,
+    "condition_number": 100.72472623653995
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_2600.000_3000.000",
+    "fit_temperatures": [
+     278.16999999999996,
+     298.19,
+     323.15,
+     350.0,
+     400.0,
+     450.0,
+     500.0,
+     524.15
+    ],
+    "n_inputs": 8,
+    "condition_number": 91.79215105021483
+   },
+   {
+    "species": "toluene",
+    "window": "toluene__added_3000.000_3196.958",
+    "fit_temperatures": [
+     278.16999999999996,
+     298.19,
+     323.15,
+     350.0,
+     400.0,
+     450.0,
+     500.0,
+     524.15
+    ],
+    "n_inputs": 8,
+    "condition_number": 91.79215105021483
+   }
+  ],
+  "T_split": 615.0
+ }
+}

@@ -1,0 +1,357 @@
+{
+ "original_submission": {
+  "with_hitran": {
+   "1,2-dimethoxyethane": 26.153161128422646,
+   "CH4": 29.810080608881986,
+   "NO": 23.134765695075863,
+   "acetone": 11.98238133752335,
+   "di-n-propyl ether": 32.77270264689322,
+   "diisopropyl ether": 24.942536188162443,
+   "n-propyl acetate": 23.274866162929385,
+   "toluene": 16.11395286392596
+  },
+  "without_hitran": {
+   "1,2-dimethoxyethane": 26.041194182552417,
+   "CH4": 42.39344455267773,
+   "NO": 22.15498931494298,
+   "acetone": 11.779929988036024,
+   "di-n-propyl ether": 35.22127005061617,
+   "diisopropyl ether": 24.515892335434017,
+   "n-propyl acetate": 16.99545768694425,
+   "toluene": 13.537280092238966
+  },
+  "difference": {
+   "1,2-dimethoxyethane": 0.11196694587022904,
+   "di-n-propyl ether": -2.4485674037229472,
+   "diisopropyl ether": 0.4266438527284251,
+   "n-propyl acetate": 6.279408475985136,
+   "toluene": 2.5766727716869937,
+   "acetone": 0.20245134948732613,
+   "NO": 0.9797763801328827,
+   "CH4": -12.583363943795742
+  },
+  "mean_difference": -0.5568764464534621,
+  "ci95": [
+   -4.478650920531166,
+   2.503426746377868
+  ],
+  "n_increase": 6,
+  "n_decrease": 2,
+  "exact_sign_flip_p": 0.875
+ },
+ "broad_weight_scan": {
+  "0.0": {
+   "molecule": {
+    "1,2-dimethoxyethane": 17.827272960240375,
+    "CH4": 34.910950497036445,
+    "NO": 24.306485319900904,
+    "acetone": 12.868717702371766,
+    "di-n-propyl ether": 15.638858951464776,
+    "diisopropyl ether": 15.393424076002173,
+    "n-propyl acetate": 11.083735046066241,
+    "toluene": 12.60528732670413
+   },
+   "experiment6": 14.23621601047491
+  },
+  "0.25": {
+   "molecule": {
+    "1,2-dimethoxyethane": 18.192870830356917,
+    "CH4": 30.20324378595053,
+    "NO": 26.835983463439085,
+    "acetone": 12.92496178446604,
+    "di-n-propyl ether": 15.603578421383343,
+    "diisopropyl ether": 14.841948010243565,
+    "n-propyl acetate": 8.363869577004234,
+    "toluene": 13.74955235369874
+   },
+   "experiment6": 13.946130162858802
+  },
+  "0.5": {
+   "molecule": {
+    "1,2-dimethoxyethane": 18.60675218971702,
+    "CH4": 29.88729351290019,
+    "NO": 26.43331744414997,
+    "acetone": 11.386894468610093,
+    "di-n-propyl ether": 15.266210418567699,
+    "diisopropyl ether": 14.406512884964702,
+    "n-propyl acetate": 7.93124757734858,
+    "toluene": 14.04201661692719
+   },
+   "experiment6": 13.606605692689214
+  },
+  "1.0": {
+   "molecule": {
+    "1,2-dimethoxyethane": 17.564171146272617,
+    "CH4": 30.850956186239035,
+    "NO": 27.173145760675443,
+    "acetone": 9.305226417164212,
+    "di-n-propyl ether": 16.270091419139433,
+    "diisopropyl ether": 15.748283253111996,
+    "n-propyl acetate": 8.44262332059111,
+    "toluene": 14.081941607127654
+   },
+   "experiment6": 13.568722860567833
+  }
+ },
+ "broad_paired_0.5_vs_0": {
+  "difference": {
+   "1,2-dimethoxyethane": 0.7794792294766459,
+   "di-n-propyl ether": -0.37264853289707744,
+   "diisopropyl ether": -0.9869111910374713,
+   "n-propyl acetate": -3.152487468717661,
+   "toluene": 1.4367292902230613,
+   "acetone": -1.4818232337616735
+  },
+  "mean": -0.629610317785696,
+  "ci95": [
+   -1.8577862669125802,
+   0.5193074530118146
+  ]
+ },
+ "line_weight_scan": {
+  "0.0": {
+   "molecule": {
+    "1,2-dimethoxyethane": 26.041194182552424,
+    "CH4": 42.86138440701401,
+    "NO": 22.17208782755344,
+    "acetone": 11.779929988036026,
+    "di-n-propyl ether": 35.22127005061618,
+    "diisopropyl ether": 24.515892335434017,
+    "n-propyl acetate": 16.995457686944256,
+    "toluene": 13.537280092299088
+   },
+   "hitemp2": 32.51673611728373,
+   "experiment6": 21.34850405598033
+  },
+  "0.25": {
+   "molecule": {
+    "1,2-dimethoxyethane": 27.863827228427358,
+    "CH4": 30.50056552892903,
+    "NO": 23.45870905357105,
+    "acetone": 12.241061457415249,
+    "di-n-propyl ether": 35.741740271968425,
+    "diisopropyl ether": 24.385972437732075,
+    "n-propyl acetate": 22.885460524805698,
+    "toluene": 15.637670179401354
+   },
+   "hitemp2": 26.97963729125004,
+   "experiment6": 23.12595534995836
+  },
+  "0.5": {
+   "molecule": {
+    "1,2-dimethoxyethane": 26.153161128422656,
+    "CH4": 30.18028856455813,
+    "NO": 23.10374999349235,
+    "acetone": 11.982381337523348,
+    "di-n-propyl ether": 32.77270264689322,
+    "diisopropyl ether": 24.942536188162443,
+    "n-propyl acetate": 23.274866162929392,
+    "toluene": 16.11395286396812
+   },
+   "hitemp2": 26.64201927902524,
+   "experiment6": 22.539933387983194
+  },
+  "1.0": {
+   "molecule": {
+    "1,2-dimethoxyethane": 25.773661683671246,
+    "CH4": 29.85900075973557,
+    "NO": 24.02710241902887,
+    "acetone": 13.004442623767153,
+    "di-n-propyl ether": 32.63335010988097,
+    "diisopropyl ether": 24.86774538007426,
+    "n-propyl acetate": 22.743701256075706,
+    "toluene": 16.002226686314696
+   },
+   "hitemp2": 26.943051589382222,
+   "experiment6": 22.504187956630673
+  }
+ },
+ "line_frozen_on_dataset_inputs": {
+  "final": {
+   "1,2-dimethoxyethane": 26.15316112842266,
+   "CH4": 30.18028856455813,
+   "NO": 23.10374999349235,
+   "acetone": 11.982381337523348,
+   "di-n-propyl ether": 32.77270264689322,
+   "diisopropyl ether": 24.942536188162443,
+   "n-propyl acetate": 23.274866162929392,
+   "toluene": 16.11395286396812
+  },
+  "without": {
+   "1,2-dimethoxyethane": 26.041194182552424,
+   "CH4": 42.86138440701401,
+   "NO": 22.17208782755344,
+   "acetone": 11.779929988036024,
+   "di-n-propyl ether": 35.22127005061618,
+   "diisopropyl ether": 24.515892335434014,
+   "n-propyl acetate": 16.99545768694426,
+   "toluene": 13.537280092299088
+  }
+ },
+ "line_training_only_holdout": {
+  "CO": {
+   "0.0": 49.84060450085278,
+   "0.5": 35.05808129083729,
+   "unchanged": 57.16709468662677
+  },
+  "CO2": {
+   "0.0": 70.07245472709786,
+   "0.5": 35.40249454862209,
+   "unchanged": 69.72088627588109
+  }
+ },
+ "broad_lomo_with_hitran": {
+  "per_molecule": {
+   "1,3-butadiene": 17.344724024519326,
+   "1-butene": 14.125162235661445,
+   "acetaldehyde": 15.245150579490529,
+   "dimethoxymethane": 11.876965976061385,
+   "ethanol": 12.810435330192444,
+   "ethyl acetate": 17.109162338331554,
+   "ethylene": 35.83192652322302,
+   "isobutene": 21.260800156192076,
+   "methyl acetate": 17.39552827145675,
+   "methyl formate": 27.72650733942366,
+   "methyl propionate": 40.13822743098438,
+   "n-butyl acetate": 28.705024489132494,
+   "n-heptane": 10.366015633236398,
+   "propane": 32.03489676361855,
+   "propene": 16.03670396294486
+  },
+  "mean": 21.200482070297923,
+  "mean_without": 20.274543427941346,
+  "paired_mean": 0.9259386423565795,
+  "ci95": [
+   -2.2447492833415477,
+   4.508420655585972
+  ]
+ },
+ "seed_variability": {
+  "runs": [
+   {
+    "seed": 0,
+    "molecule": {
+     "1,2-dimethoxyethane": 18.39366586104466,
+     "acetone": 12.790113233105716,
+     "di-n-propyl ether": 15.366112643795379,
+     "diisopropyl ether": 14.854904650928464,
+     "n-propyl acetate": 10.391982924664571,
+     "toluene": 12.46803088993312
+    },
+    "experiment6": 14.044135033911985
+   },
+   {
+    "seed": 1,
+    "molecule": {
+     "1,2-dimethoxyethane": 17.881353953750995,
+     "acetone": 12.200081282884321,
+     "di-n-propyl ether": 15.071825336974774,
+     "diisopropyl ether": 15.89500705816801,
+     "n-propyl acetate": 12.597185205775567,
+     "toluene": 12.289862401141715
+    },
+    "experiment6": 14.322552539782565
+   },
+   {
+    "seed": 2,
+    "molecule": {
+     "1,2-dimethoxyethane": 18.42377049765403,
+     "acetone": 14.13219730232934,
+     "di-n-propyl ether": 14.884401857484125,
+     "diisopropyl ether": 14.972213455231568,
+     "n-propyl acetate": 12.057051047342227,
+     "toluene": 12.606789537359726
+    },
+    "experiment6": 14.51273728290017
+   },
+   {
+    "seed": 3,
+    "molecule": {
+     "1,2-dimethoxyethane": 17.598872056514704,
+     "acetone": 11.888514583269739,
+     "di-n-propyl ether": 15.370268089891603,
+     "diisopropyl ether": 15.23517575696846,
+     "n-propyl acetate": 13.888308009547336,
+     "toluene": 12.576007767331102
+    },
+    "experiment6": 14.42619104392049
+   },
+   {
+    "seed": 4,
+    "molecule": {
+     "1,2-dimethoxyethane": 17.99707367393811,
+     "acetone": 12.183688769298357,
+     "di-n-propyl ether": 14.964256881054911,
+     "diisopropyl ether": 15.048287023382846,
+     "n-propyl acetate": 12.979088886727444,
+     "toluene": 12.867512869152408
+    },
+    "experiment6": 14.33998468392568
+   },
+   {
+    "seed": 5,
+    "molecule": {
+     "1,2-dimethoxyethane": 18.38162183736301,
+     "acetone": 12.650716775531684,
+     "di-n-propyl ether": 15.095037789414889,
+     "diisopropyl ether": 15.137104719540153,
+     "n-propyl acetate": 13.376520289706926,
+     "toluene": 12.391354034538153
+    },
+    "experiment6": 14.505392574349136
+   },
+   {
+    "seed": 6,
+    "molecule": {
+     "1,2-dimethoxyethane": 16.995609992373968,
+     "acetone": 12.012818398081594,
+     "di-n-propyl ether": 15.771331939099113,
+     "diisopropyl ether": 14.803024739083522,
+     "n-propyl acetate": 11.940662440082722,
+     "toluene": 12.542980529282971
+    },
+    "experiment6": 14.011071339667316
+   },
+   {
+    "seed": 7,
+    "molecule": {
+     "1,2-dimethoxyethane": 17.35917896471906,
+     "acetone": 13.202559227837527,
+     "di-n-propyl ether": 16.048693222789137,
+     "diisopropyl ether": 15.395858720606828,
+     "n-propyl acetate": 12.45020662270387,
+     "toluene": 12.50030338719154
+    },
+    "experiment6": 14.492800024307995
+   },
+   {
+    "seed": 8,
+    "molecule": {
+     "1,2-dimethoxyethane": 17.44131796942641,
+     "acetone": 11.122229312577248,
+     "di-n-propyl ether": 15.269988394480693,
+     "diisopropyl ether": 15.373831099268543,
+     "n-propyl acetate": 11.664300521401406,
+     "toluene": 12.324764464090958
+    },
+    "experiment6": 13.866071960207544
+   },
+   {
+    "seed": 9,
+    "molecule": {
+     "1,2-dimethoxyethane": 18.14874349362541,
+     "acetone": 12.676880390888025,
+     "di-n-propyl ether": 16.118083674376017,
+     "diisopropyl ether": 15.31139619958886,
+     "n-propyl acetate": 12.572939762561997,
+     "toluene": 12.168449521870208
+    },
+    "experiment6": 14.499415507151754
+   }
+  ],
+  "mean": 14.302035199012462,
+  "sd": 0.24028039212670585,
+  "min": 13.866071960207544,
+  "max": 14.51273728290017
+ }
+}

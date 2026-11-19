@@ -1,0 +1,128 @@
+{
+ "same_window": [
+  {
+   "species": "toluene",
+   "split": "testing",
+   "window": [
+    2600.0,
+    3000.0
+   ],
+   "T_a": 500.0,
+   "T_b": 524.15,
+   "source_a": "Farouki et al. (2025)",
+   "source_b": "Klingbeil et al. (2007)",
+   "origin_a": "numerical",
+   "origin_b": "digitized",
+   "bath_a": "nitrogen",
+   "bath_b": "N2",
+   "P_a": 1.0,
+   "P_b": 1.0,
+   "difference_percent": 5.106383584061948,
+   "area_ratio": 1.0130658347347568,
+   "common_points": 175
+  },
+  {
+   "species": "toluene",
+   "split": "testing",
+   "window": [
+    3000.0,
+    3196.958174904943
+   ],
+   "T_a": 500.0,
+   "T_b": 524.15,
+   "source_a": "Farouki et al. (2025)",
+   "source_b": "Klingbeil et al. (2007)",
+   "origin_a": "numerical",
+   "origin_b": "digitized",
+   "bath_a": "nitrogen",
+   "bath_b": "N2",
+   "P_a": 1.0,
+   "P_b": 1.0,
+   "difference_percent": 4.3172258544258835,
+   "area_ratio": 1.0430907321709189,
+   "common_points": 244
+  }
+ ],
+ "cross_window": [
+  {
+   "species": "1,3-butadiene",
+   "range": [
+    960.0,
+    1000.0
+   ],
+   "T_a": 637.0,
+   "T_b": 650.0,
+   "source_a": "10.1016/j.jqsrt.2020.107240",
+   "source_b": "Farouki et al. (2025)",
+   "bath_a": "Ar",
+   "bath_b": "nitrogen",
+   "P_a": 1.55,
+   "P_b": 1.0,
+   "origin_a": "numerical",
+   "origin_b": "numerical",
+   "difference_percent": 11.716917184041852,
+   "area_ratio": 0.888979187182796,
+   "peak_ratio": 0.9378515434909479
+  },
+  {
+   "species": "1,3-butadiene",
+   "range": [
+    866.0,
+    961.5
+   ],
+   "T_a": 640.0,
+   "T_b": 650.0,
+   "source_a": "10.1016/j.jqsrt.2020.107240",
+   "source_b": "Farouki et al. (2025)",
+   "bath_a": "Ar",
+   "bath_b": "nitrogen",
+   "P_a": 1.58,
+   "P_b": 1.0,
+   "origin_a": "numerical",
+   "origin_b": "numerical",
+   "difference_percent": 6.600923605849338,
+   "area_ratio": 0.9538682334118544,
+   "peak_ratio": 1.0713914170897194
+  },
+  {
+   "species": "1,3-butadiene",
+   "range": [
+    1000.0,
+    1146.0
+   ],
+   "T_a": 637.0,
+   "T_b": 650.0,
+   "source_a": "10.1016/j.jqsrt.2020.107240",
+   "source_b": "Farouki et al. (2025)",
+   "bath_a": "Ar",
+   "bath_b": "nitrogen",
+   "P_a": 1.55,
+   "P_b": 1.0,
+   "origin_a": "numerical",
+   "origin_b": "numerical",
+   "difference_percent": 8.388845241938183,
+   "area_ratio": 0.9203806170376225,
+   "peak_ratio": 0.9561898338058217
+  },
+  {
+   "species": "propene",
+   "range": [
+    867.5,
+    960.0
+   ],
+   "T_a": 649.0,
+   "T_b": 650.0,
+   "source_a": "10.1016/j.jqsrt.2020.107240",
+   "source_b": "Farouki et al. (2025)",
+   "bath_a": "Ar",
+   "bath_b": "nitrogen",
+   "P_a": 1.6,
+   "P_b": 1.0,
+   "origin_a": "numerical",
+   "origin_b": "numerical",
+   "difference_percent": 5.6184944806559525,
+   "area_ratio": 0.9538430921516323,
+   "peak_ratio": 1.0413433624249642
+  }
+ ]
+}

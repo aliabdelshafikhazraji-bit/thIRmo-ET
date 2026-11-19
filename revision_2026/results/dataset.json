@@ -1,0 +1,2167 @@
+{
+ "table1": [
+  {
+   "row": "Training / Experiment",
+   "molecules": 15,
+   "windows": 27,
+   "records": 118,
+   "Tmin": 336.0,
+   "Tmax": 1621.87,
+   "Pmin": 0.896,
+   "Pmax": 1.98,
+   "bath": {
+    "Ar": 32,
+    "nitrogen": 70,
+    "argon": 3,
+    "N2": 5,
+    "not verified from accessible workbook": 8
+   },
+   "origin": {
+    "numerical": 113,
+    "digitized": 5
+   }
+  },
+  {
+   "row": "Training / HITEMP",
+   "molecules": 2,
+   "windows": 4,
+   "records": 40,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": {
+    "air": 40
+   },
+   "origin": {
+    "numerical": 40
+   }
+  },
+  {
+   "row": "Testing / Experiment",
+   "molecules": 6,
+   "windows": 9,
+   "records": 45,
+   "Tmin": 340.0,
+   "Tmax": 974.22,
+   "Pmin": 0.927707870713052,
+   "Pmax": 1.4803849000740192,
+   "bath": {
+    "not verified from accessible workbook": 9,
+    "Ar": 16,
+    "nitrogen": 16,
+    "N2": 4
+   },
+   "origin": {
+    "numerical": 41,
+    "digitized": 4
+   }
+  },
+  {
+   "row": "Testing / HITEMP",
+   "molecules": 2,
+   "windows": 4,
+   "records": 39,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": {
+    "air": 39
+   },
+   "origin": {
+    "numerical": 39
+   }
+  },
+  {
+   "row": "Training / HITRAN",
+   "molecules": 17,
+   "windows": 25,
+   "records": 250,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": {
+    "air": 250
+   },
+   "origin": {
+    "numerical": 250
+   }
+  }
+ ],
+ "identities": {
+  "training": 33,
+  "testing": 8,
+  "overlap": [],
+  "original_training": 17,
+  "hitran": 17,
+  "hitran_new": 16,
+  "in_both_collections": [
+   "ethylene"
+  ]
+ },
+ "audit": [
+  {
+   "species": "1,2-dimethoxyethane",
+   "role": "Testing",
+   "reference": "Experiment",
+   "window": [
+    910.0,
+    1190.0
+   ],
+   "records": 9,
+   "Tmin": 340.0,
+   "Tmax": 816.0,
+   "Pmin": 0.927707870713052,
+   "Pmax": 0.9967924993831729,
+   "bath": [
+    "not stated in data file"
+   ],
+   "origin": {
+    "numerical": 9
+   },
+   "doi": [
+    "10.1016/j.fuel.2025.134998"
+   ],
+   "mask_fraction": 0.8747829861111112,
+   "input_T": [
+    278.14,
+    298.15999999999997,
+    323.12
+   ]
+  },
+  {
+   "species": "acetone",
+   "role": "Testing",
+   "reference": "Experiment",
+   "window": [
+    1661.0,
+    1876.0
+   ],
+   "records": 3,
+   "Tmin": 604.81,
+   "Tmax": 974.22,
+   "Pmin": 1.1,
+   "Pmax": 1.25,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 3
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2020.106981"
+   ],
+   "mask_fraction": 0.9036458333333334,
+   "input_T": [
+    278.25,
+    298.15,
+    323.10999999999996
+   ]
+  },
+  {
+   "species": "di-n-propyl ether",
+   "role": "Testing",
+   "reference": "Experiment",
+   "window": [
+    910.0,
+    1190.0
+   ],
+   "records": 4,
+   "Tmin": 604.0,
+   "Tmax": 838.0,
+   "Pmin": 0.9474463360473723,
+   "Pmax": 1.1053540587219346,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 4
+   },
+   "doi": [
+    "10.1021/acs.jpca.3c04446"
+   ],
+   "mask_fraction": 0.94091796875,
+   "input_T": [
+    278.09999999999997,
+    298.15,
+    323.15
+   ]
+  },
+  {
+   "species": "diisopropyl ether",
+   "role": "Testing",
+   "reference": "Experiment",
+   "window": [
+    910.0,
+    1190.0
+   ],
+   "records": 5,
+   "Tmin": 559.0,
+   "Tmax": 853.0,
+   "Pmin": 0.9375771033802122,
+   "Pmax": 1.0560078953861338,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 5
+   },
+   "doi": [
+    "10.1021/acs.jpca.3c04446"
+   ],
+   "mask_fraction": 0.83828125,
+   "input_T": [
+    278.28999999999996,
+    298.21,
+    323.10999999999996
+   ]
+  },
+  {
+   "species": "n-propyl acetate",
+   "role": "Testing",
+   "reference": "Experiment",
+   "window": [
+    1163.0,
+    1328.0
+   ],
+   "records": 4,
+   "Tmin": 671.0,
+   "Tmax": 862.0,
+   "Pmin": 1.1744386873920551,
+   "Pmax": 1.4803849000740192,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 4
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2023.108522"
+   ],
+   "mask_fraction": 0.96142578125,
+   "input_T": [
+    278.28,
+    298.21999999999997,
+    323.12
+   ]
+  },
+  {
+   "species": "toluene",
+   "role": "Testing",
+   "reference": "Experiment",
+   "window": [
+    640.0936,
+    1000.0
+   ],
+   "records": 4,
+   "Tmin": 350.0,
+   "Tmax": 500.0,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 4
+   },
+   "doi": [
+    "Farouki et al. (2025)"
+   ],
+   "mask_fraction": 0.37109375,
+   "input_T": [
+    278.16999999999996,
+    298.19,
+    323.15
+   ]
+  },
+  {
+   "species": "toluene",
+   "role": "Testing",
+   "reference": "Experiment",
+   "window": [
+    1000.0,
+    1400.0
+   ],
+   "records": 4,
+   "Tmin": 350.0,
+   "Tmax": 500.0,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 4
+   },
+   "doi": [
+    "Farouki et al. (2025)"
+   ],
+   "mask_fraction": 0.3359375,
+   "input_T": [
+    278.16999999999996,
+    298.19,
+    323.15
+   ]
+  },
+  {
+   "species": "toluene",
+   "role": "Testing",
+   "reference": "Experiment",
+   "window": [
+    2600.0,
+    3000.0
+   ],
+   "records": 6,
+   "Tmin": 350.0,
+   "Tmax": 774.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 4,
+    "digitized": 2
+   },
+   "doi": [
+    "Farouki et al. (2025)",
+    "Klingbeil et al. (2007)"
+   ],
+   "mask_fraction": 0.4658203125,
+   "input_T": [
+    278.16999999999996,
+    298.19,
+    323.15
+   ]
+  },
+  {
+   "species": "toluene",
+   "role": "Testing",
+   "reference": "Experiment",
+   "window": [
+    3000.0,
+    3196.958174904943
+   ],
+   "records": 6,
+   "Tmin": 350.0,
+   "Tmax": 774.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 4,
+    "digitized": 2
+   },
+   "doi": [
+    "Farouki et al. (2025)",
+    "Klingbeil et al. (2007)"
+   ],
+   "mask_fraction": 0.7408854166666666,
+   "input_T": [
+    278.16999999999996,
+    298.19,
+    323.15
+   ]
+  },
+  {
+   "species": "CH4",
+   "role": "Testing",
+   "reference": "HITEMP",
+   "window": [
+    1280.0,
+    1340.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.3847/1538-4365/ab7a1a"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.23999999999995,
+    298.15999999999997,
+    323.19
+   ]
+  },
+  {
+   "species": "CH4",
+   "role": "Testing",
+   "reference": "HITEMP",
+   "window": [
+    2980.0,
+    3040.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.3847/1538-4365/ab7a1a"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.23999999999995,
+    298.15999999999997,
+    323.19
+   ]
+  },
+  {
+   "species": "CH4",
+   "role": "Testing",
+   "reference": "HITEMP",
+   "window": [
+    4000.0,
+    4700.0
+   ],
+   "records": 9,
+   "Tmin": 373.15,
+   "Tmax": 773.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 9
+   },
+   "doi": [
+    "10.3847/1538-4365/ab7a1a"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.23999999999995,
+    298.15999999999997,
+    323.19
+   ]
+  },
+  {
+   "species": "NO",
+   "role": "Testing",
+   "reference": "HITEMP",
+   "window": [
+    1600.0,
+    2050.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2019.04.040"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.13,
+    298.15,
+    323.13
+   ]
+  },
+  {
+   "species": "1,3-butadiene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    750.2315,
+    1000.0
+   ],
+   "records": 5,
+   "Tmin": 450.0,
+   "Tmax": 850.0,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 5
+   },
+   "doi": [
+    "Farouki et al. (2025)"
+   ],
+   "mask_fraction": 0.986328125,
+   "input_T": [
+    278.09999999999997,
+    298.15,
+    323.14
+   ]
+  },
+  {
+   "species": "1,3-butadiene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    865.0,
+    1190.0
+   ],
+   "records": 2,
+   "Tmin": 637.0,
+   "Tmax": 640.0,
+   "Pmin": 1.55,
+   "Pmax": 1.58,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 2
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2020.107240"
+   ],
+   "mask_fraction": 0.5029296875,
+   "input_T": [
+    278.09999999999997,
+    298.15,
+    323.14
+   ]
+  },
+  {
+   "species": "1,3-butadiene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    1000.0,
+    1400.0
+   ],
+   "records": 5,
+   "Tmin": 450.0,
+   "Tmax": 850.0,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 5
+   },
+   "doi": [
+    "Farouki et al. (2025)"
+   ],
+   "mask_fraction": 0.3671875,
+   "input_T": [
+    278.09999999999997,
+    298.15,
+    323.14
+   ]
+  },
+  {
+   "species": "1,3-butadiene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    2600.0,
+    3000.0
+   ],
+   "records": 5,
+   "Tmin": 450.0,
+   "Tmax": 850.0,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 5
+   },
+   "doi": [
+    "Farouki et al. (2025)"
+   ],
+   "mask_fraction": 0.4921875,
+   "input_T": [
+    278.09999999999997,
+    298.15,
+    323.14
+   ]
+  },
+  {
+   "species": "1,3-butadiene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    3000.0,
+    3199.9858
+   ],
+   "records": 5,
+   "Tmin": 450.0,
+   "Tmax": 850.0,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 5
+   },
+   "doi": [
+    "Farouki et al. (2025)"
+   ],
+   "mask_fraction": 0.984375,
+   "input_T": [
+    278.09999999999997,
+    298.15,
+    323.14
+   ]
+  },
+  {
+   "species": "1-butene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    865.0,
+    1190.0
+   ],
+   "records": 2,
+   "Tmin": 634.0,
+   "Tmax": 637.0,
+   "Pmin": 1.57,
+   "Pmax": 1.58,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 2
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2020.107240"
+   ],
+   "mask_fraction": 0.4951171875,
+   "input_T": [
+    278.21999999999997,
+    298.21,
+    323.15999999999997
+   ]
+  },
+  {
+   "species": "acetaldehyde",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    1661.0,
+    1876.0
+   ],
+   "records": 3,
+   "Tmin": 627.86,
+   "Tmax": 962.29,
+   "Pmin": 1.23,
+   "Pmax": 1.37,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 3
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2020.106981"
+   ],
+   "mask_fraction": 0.916015625,
+   "input_T": [
+    278.26,
+    298.21,
+    323.10999999999996
+   ]
+  },
+  {
+   "species": "dimethoxymethane",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    910.0,
+    1190.0
+   ],
+   "records": 8,
+   "Tmin": 336.0,
+   "Tmax": 822.0,
+   "Pmin": 0.9474463360473723,
+   "Pmax": 1.0362694300518136,
+   "bath": [
+    "not stated in data file"
+   ],
+   "origin": {
+    "numerical": 8
+   },
+   "doi": [
+    "10.1016/j.fuel.2025.134998"
+   ],
+   "mask_fraction": 0.841552734375,
+   "input_T": [
+    278.17999999999995,
+    298.16999999999996,
+    323.13
+   ]
+  },
+  {
+   "species": "ethanol",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    930.0,
+    1170.0
+   ],
+   "records": 4,
+   "Tmin": 345.0,
+   "Tmax": 1018.0,
+   "Pmin": 0.896,
+   "Pmax": 1.98,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 4
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2018.11.034"
+   ],
+   "mask_fraction": 0.91455078125,
+   "input_T": [
+    278.08,
+    298.15999999999997,
+    323.10999999999996
+   ]
+  },
+  {
+   "species": "ethyl acetate",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    1163.0,
+    1328.0
+   ],
+   "records": 5,
+   "Tmin": 633.0,
+   "Tmax": 927.0,
+   "Pmin": 1.2435233160621761,
+   "Pmax": 1.3619541080680977,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 5
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2023.108522"
+   ],
+   "mask_fraction": 0.93828125,
+   "input_T": [
+    278.09999999999997,
+    298.17999999999995,
+    323.15
+   ]
+  },
+  {
+   "species": "ethylene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    865.0,
+    1178.0
+   ],
+   "records": 4,
+   "Tmin": 811.11,
+   "Tmax": 1621.87,
+   "Pmin": 1.01,
+   "Pmax": 1.91,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 4
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2018.10.030"
+   ],
+   "mask_fraction": 0.3955078125,
+   "input_T": [
+    278.17999999999995,
+    298.21,
+    323.21
+   ]
+  },
+  {
+   "species": "isobutene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    865.0,
+    960.0
+   ],
+   "records": 1,
+   "Tmin": 614.0,
+   "Tmax": 614.0,
+   "Pmin": 1.57,
+   "Pmax": 1.57,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 1
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2020.107240"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.21,
+    298.15999999999997,
+    323.13
+   ]
+  },
+  {
+   "species": "methyl acetate",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    1163.0,
+    1328.0
+   ],
+   "records": 4,
+   "Tmin": 722.0,
+   "Tmax": 978.0,
+   "Pmin": 1.3619541080680977,
+   "Pmax": 1.5692079940784605,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 4
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2023.108522"
+   ],
+   "mask_fraction": 0.8837890625,
+   "input_T": [
+    278.19,
+    298.16999999999996,
+    323.15
+   ]
+  },
+  {
+   "species": "methyl acetate",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    2600.0,
+    3000.0
+   ],
+   "records": 7,
+   "Tmin": 373.15,
+   "Tmax": 673.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 7
+   },
+   "doi": [
+    "Campbell et al. (2014)"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.19,
+    298.16999999999996,
+    323.15
+   ]
+  },
+  {
+   "species": "methyl acetate",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    3000.0,
+    3400.0
+   ],
+   "records": 7,
+   "Tmin": 373.15,
+   "Tmax": 673.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 7
+   },
+   "doi": [
+    "Campbell et al. (2014)"
+   ],
+   "mask_fraction": 0.9921875,
+   "input_T": [
+    278.19,
+    298.16999999999996,
+    323.15
+   ]
+  },
+  {
+   "species": "methyl formate",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    1655.83,
+    1873.97
+   ],
+   "records": 3,
+   "Tmin": 627.0,
+   "Tmax": 982.0,
+   "Pmin": 1.007,
+   "Pmax": 1.967,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 3
+   },
+   "doi": [
+    "ShockGas-IR published numerical spectra"
+   ],
+   "mask_fraction": 0.9498697916666666,
+   "input_T": [
+    278.10999999999996,
+    298.2,
+    323.15
+   ]
+  },
+  {
+   "species": "methyl propionate",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    2600.0,
+    3000.0
+   ],
+   "records": 7,
+   "Tmin": 373.15,
+   "Tmax": 673.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 7
+   },
+   "doi": [
+    "Campbell et al. (2014)"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.09999999999997,
+    298.15,
+    323.12
+   ]
+  },
+  {
+   "species": "methyl propionate",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    3000.0,
+    3400.0
+   ],
+   "records": 7,
+   "Tmin": 373.15,
+   "Tmax": 673.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 7
+   },
+   "doi": [
+    "Campbell et al. (2014)"
+   ],
+   "mask_fraction": 0.9921875,
+   "input_T": [
+    278.09999999999997,
+    298.15,
+    323.12
+   ]
+  },
+  {
+   "species": "n-butyl acetate",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    1163.0,
+    1328.0
+   ],
+   "records": 6,
+   "Tmin": 586.0,
+   "Tmax": 810.0,
+   "Pmin": 0.8981001727115717,
+   "Pmax": 1.154700222057735,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 6
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2023.108522"
+   ],
+   "mask_fraction": 0.9599609375,
+   "input_T": [
+    278.21,
+    298.16999999999996,
+    323.12
+   ]
+  },
+  {
+   "species": "n-heptane",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    2802.197802197802,
+    3097.802197802198
+   ],
+   "records": 2,
+   "Tmin": 524.15,
+   "Tmax": 774.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "digitized": 2
+   },
+   "doi": [
+    "Klingbeil et al. (2007)"
+   ],
+   "mask_fraction": 0.9375,
+   "input_T": [
+    278.28,
+    298.28,
+    323.15
+   ]
+  },
+  {
+   "species": "propane",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    2600.0,
+    3000.0
+   ],
+   "records": 2,
+   "Tmin": 800.0,
+   "Tmax": 1000.0,
+   "Pmin": 0.999753269183321,
+   "Pmax": 0.999753269183321,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "digitized": 2
+   },
+   "doi": [
+    "Wakatsuki et al. (2005)"
+   ],
+   "mask_fraction": 0.3203125,
+   "input_T": [
+    278.12,
+    298.14,
+    323.22999999999996
+   ]
+  },
+  {
+   "species": "propane",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    3000.0,
+    3400.0
+   ],
+   "records": 1,
+   "Tmin": 1000.0,
+   "Tmax": 1000.0,
+   "Pmin": 0.999753269183321,
+   "Pmax": 0.999753269183321,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "digitized": 1
+   },
+   "doi": [
+    "Wakatsuki et al. (2005)"
+   ],
+   "mask_fraction": 0.154296875,
+   "input_T": [
+    278.12,
+    298.14,
+    323.22999999999996
+   ]
+  },
+  {
+   "species": "propene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    600.0,
+    1000.0
+   ],
+   "records": 6,
+   "Tmin": 450.0,
+   "Tmax": 950.0,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 6
+   },
+   "doi": [
+    "Farouki et al. (2025)"
+   ],
+   "mask_fraction": 0.591796875,
+   "input_T": [
+    278.23999999999995,
+    298.2,
+    323.16999999999996
+   ]
+  },
+  {
+   "species": "propene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    865.0,
+    960.0
+   ],
+   "records": 1,
+   "Tmin": 649.0,
+   "Tmax": 649.0,
+   "Pmin": 1.6,
+   "Pmax": 1.6,
+   "bath": [
+    "Ar"
+   ],
+   "origin": {
+    "numerical": 1
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2020.107240"
+   ],
+   "mask_fraction": 0.974609375,
+   "input_T": [
+    278.23999999999995,
+    298.2,
+    323.16999999999996
+   ]
+  },
+  {
+   "species": "propene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    1000.0,
+    1400.0
+   ],
+   "records": 6,
+   "Tmin": 450.0,
+   "Tmax": 950.0,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 6
+   },
+   "doi": [
+    "Farouki et al. (2025)"
+   ],
+   "mask_fraction": 0.2421875,
+   "input_T": [
+    278.23999999999995,
+    298.2,
+    323.16999999999996
+   ]
+  },
+  {
+   "species": "propene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    2600.0,
+    3000.0
+   ],
+   "records": 5,
+   "Tmin": 450.0,
+   "Tmax": 850.0,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 5
+   },
+   "doi": [
+    "Farouki et al. (2025)"
+   ],
+   "mask_fraction": 0.7421875,
+   "input_T": [
+    278.23999999999995,
+    298.2,
+    323.16999999999996
+   ]
+  },
+  {
+   "species": "propene",
+   "role": "Training",
+   "reference": "Experiment",
+   "window": [
+    3000.0,
+    3400.0
+   ],
+   "records": 5,
+   "Tmin": 450.0,
+   "Tmax": 850.0,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "N2"
+   ],
+   "origin": {
+    "numerical": 5
+   },
+   "doi": [
+    "Farouki et al. (2025)"
+   ],
+   "mask_fraction": 0.4921875,
+   "input_T": [
+    278.23999999999995,
+    298.2,
+    323.16999999999996
+   ]
+  },
+  {
+   "species": "C2H2",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    650.0,
+    815.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.21999999999997,
+    298.21999999999997,
+    323.12
+   ]
+  },
+  {
+   "species": "C2H2",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    3190.0,
+    3385.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.21999999999997,
+    298.21999999999997,
+    323.12
+   ]
+  },
+  {
+   "species": "CF4",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    1220.0,
+    1340.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.09,
+    298.16999999999996,
+    323.09999999999997
+   ]
+  },
+  {
+   "species": "CH3Br",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    850.0,
+    1075.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.17999999999995,
+    298.17999999999995,
+    323.13
+   ]
+  },
+  {
+   "species": "CH3Br",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    1230.0,
+    1565.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.17999999999995,
+    298.17999999999995,
+    323.13
+   ]
+  },
+  {
+   "species": "CH3Cl",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    650.0,
+    805.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.15,
+    298.16999999999996,
+    323.12
+   ]
+  },
+  {
+   "species": "CH3Cl",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    2820.0,
+    3145.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.15,
+    298.16999999999996,
+    323.12
+   ]
+  },
+  {
+   "species": "CH3F",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    955.0,
+    1135.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.2,
+    298.21999999999997,
+    323.15
+   ]
+  },
+  {
+   "species": "CO",
+   "role": "Training",
+   "reference": "HITEMP",
+   "window": [
+    1800.0,
+    2300.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1088/0067-0049/216/1/15"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.19,
+    298.15,
+    323.17999999999995
+   ]
+  },
+  {
+   "species": "CO",
+   "role": "Training",
+   "reference": "HITEMP",
+   "window": [
+    4000.0,
+    4400.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1088/0067-0049/216/1/15"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.19,
+    298.15,
+    323.17999999999995
+   ]
+  },
+  {
+   "species": "CO2",
+   "role": "Training",
+   "reference": "HITEMP",
+   "window": [
+    650.0,
+    700.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2010.05.001"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.21,
+    298.17999999999995,
+    323.12
+   ]
+  },
+  {
+   "species": "CO2",
+   "role": "Training",
+   "reference": "HITEMP",
+   "window": [
+    2320.0,
+    2370.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2010.05.001"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.21,
+    298.17999999999995,
+    323.12
+   ]
+  },
+  {
+   "species": "CS2",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    1465.0,
+    1595.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.19,
+    298.19,
+    323.12
+   ]
+  },
+  {
+   "species": "ethylene",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    865.0,
+    1178.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.17999999999995,
+    298.21,
+    323.21
+   ]
+  },
+  {
+   "species": "formaldehyde",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    1662.0,
+    1845.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.15,
+    298.16999999999996,
+    323.14
+   ]
+  },
+  {
+   "species": "GeH4",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    740.0,
+    900.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.14,
+    298.14,
+    323.04999999999995
+   ]
+  },
+  {
+   "species": "GeH4",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    1980.0,
+    2235.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.14,
+    298.14,
+    323.04999999999995
+   ]
+  },
+  {
+   "species": "H2S",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    1055.0,
+    1450.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.28999999999996,
+    298.23999999999995,
+    323.2
+   ]
+  },
+  {
+   "species": "H2S",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    3615.0,
+    3980.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.28999999999996,
+    298.23999999999995,
+    323.2
+   ]
+  },
+  {
+   "species": "HBr",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    2365.0,
+    2725.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.21999999999997,
+    298.21,
+    323.12
+   ]
+  },
+  {
+   "species": "HCl",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    2400.0,
+    3150.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.19,
+    298.16999999999996,
+    323.13
+   ]
+  },
+  {
+   "species": "HF",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    3945.0,
+    4215.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.10999999999996,
+    298.21,
+    323.21999999999997
+   ]
+  },
+  {
+   "species": "NH3",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    650.0,
+    1250.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.17999999999995,
+    298.19,
+    323.16999999999996
+   ]
+  },
+  {
+   "species": "NH3",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    1350.0,
+    1900.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.17999999999995,
+    298.19,
+    323.16999999999996
+   ]
+  },
+  {
+   "species": "OCS",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    1990.0,
+    2125.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.19,
+    298.17999999999995,
+    323.09999999999997
+   ]
+  },
+  {
+   "species": "PH3",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    880.0,
+    1280.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.26,
+    298.14,
+    323.17999999999995
+   ]
+  },
+  {
+   "species": "PH3",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    2180.0,
+    2470.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.26,
+    298.14,
+    323.17999999999995
+   ]
+  },
+  {
+   "species": "SO2",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    950.0,
+    1220.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.14,
+    298.15999999999997,
+    323.12
+   ]
+  },
+  {
+   "species": "SO2",
+   "role": "Training",
+   "reference": "HITRAN",
+   "window": [
+    1220.0,
+    1450.0
+   ],
+   "records": 10,
+   "Tmin": 373.15,
+   "Tmax": 1573.15,
+   "Pmin": 1.0,
+   "Pmax": 1.0,
+   "bath": [
+    "air"
+   ],
+   "origin": {
+    "numerical": 10
+   },
+   "doi": [
+    "10.1016/j.jqsrt.2026.109807"
+   ],
+   "mask_fraction": 1.0,
+   "input_T": [
+    278.14,
+    298.15999999999997,
+    323.12
+   ]
+  }
+ ],
+ "digitized_records": [
+  [
+   "n-heptane",
+   "klingbeil_n_heptane_524.15K",
+   524.15,
+   "Klingbeil et al. (2007)"
+  ],
+  [
+   "n-heptane",
+   "klingbeil_n_heptane_774.15K",
+   774.15,
+   "Klingbeil et al. (2007)"
+  ],
+  [
+   "propane",
+   "wakatsuki_propane_800K",
+   800.0,
+   "Wakatsuki et al. (2005)"
+  ],
+  [
+   "propane",
+   "wakatsuki_propane_1000K",
+   1000.0,
+   "Wakatsuki et al. (2005)"
+  ],
+  [
+   "propane",
+   "wakatsuki_propane_1000K",
+   1000.0,
+   "Wakatsuki et al. (2005)"
+  ],
+  [
+   "toluene",
+   "klingbeil_toluene_524.15K",
+   524.15,
+   "Klingbeil et al. (2007)"
+  ],
+  [
+   "toluene",
+   "klingbeil_toluene_774.15K",
+   774.15,
+   "Klingbeil et al. (2007)"
+  ],
+  [
+   "toluene",
+   "klingbeil_toluene_524.15K",
+   524.15,
+   "Klingbeil et al. (2007)"
+  ],
+  [
+   "toluene",
+   "klingbeil_toluene_774.15K",
+   774.15,
+   "Klingbeil et al. (2007)"
+  ]
+ ]
+}

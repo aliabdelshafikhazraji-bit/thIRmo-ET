@@ -1,0 +1,198 @@
+{
+ "learned_coefficient": 6.13592e-08,
+ "doppler_constant": 3.041591231191454e-07,
+ "species": {
+  "CO": {
+   "mass": 28.01,
+   "doppler_coefficient": 5.747040968331807e-08,
+   "learned_over_doppler": 1.0676659578052516,
+   "percent": 6.766595780525164
+  },
+  "HCl": {
+   "mass": 36.461,
+   "doppler_coefficient": 5.03716943706917e-08,
+   "learned_over_doppler": 1.2181285693598045,
+   "percent": 21.812856935980452
+  },
+  "HF": {
+   "mass": 20.006,
+   "doppler_coefficient": 6.800184801481752e-08,
+   "learned_over_doppler": 0.902316654491947,
+   "percent": -9.768334550805303
+  },
+  "NO": {
+   "mass": 30.006,
+   "doppler_coefficient": 5.552605194019082e-08,
+   "learned_over_doppler": 1.1050524547664993,
+   "percent": 10.505245476649927
+  },
+  "CH4": {
+   "mass": 16.043,
+   "doppler_coefficient": 7.593780781764485e-08,
+   "learned_over_doppler": 0.8080191114727258,
+   "percent": -19.198088852727423
+  }
+ },
+ "line_centre_effect": [
+  {
+   "species": "NO",
+   "nu": 1812.64,
+   "T": 700.0,
+   "P": 1.0,
+   "lorentz_hwhm": 0.030109133634408865,
+   "doppler_sd": 0.002662915431906489,
+   "model_sd": 0.0029426612348638585,
+   "peak_change_percent": -0.16577370859318652
+  },
+  {
+   "species": "NO",
+   "nu": 1812.64,
+   "T": 700.0,
+   "P": 1.5,
+   "lorentz_hwhm": 0.0451637004516133,
+   "doppler_sd": 0.002662915431906489,
+   "model_sd": 0.0029426612348638585,
+   "peak_change_percent": -0.07540699672108353
+  },
+  {
+   "species": "NO",
+   "nu": 1812.64,
+   "T": 1000.0,
+   "P": 1.0,
+   "lorentz_hwhm": 0.023456698583270916,
+   "doppler_sd": 0.003182792708452689,
+   "model_sd": 0.003517152895488559,
+   "peak_change_percent": -0.3701474135752725
+  },
+  {
+   "species": "NO",
+   "nu": 1812.64,
+   "T": 1000.0,
+   "P": 1.5,
+   "lorentz_hwhm": 0.035185047874906374,
+   "doppler_sd": 0.003182792708452689,
+   "model_sd": 0.003517152895488559,
+   "peak_change_percent": -0.17309333388626502
+  },
+  {
+   "species": "NO",
+   "nu": 1812.64,
+   "T": 1500.0,
+   "P": 1.0,
+   "lorentz_hwhm": 0.01766050044063478,
+   "doppler_sd": 0.003898109046379976,
+   "model_sd": 0.00430761497064969,
+   "peak_change_percent": -0.8610678294876162
+  },
+  {
+   "species": "NO",
+   "nu": 1812.64,
+   "T": 1500.0,
+   "P": 1.5,
+   "lorentz_hwhm": 0.026490750660952172,
+   "doppler_sd": 0.003898109046379976,
+   "model_sd": 0.00430761497064969,
+   "peak_change_percent": -0.428753334784826
+  },
+  {
+   "species": "NO",
+   "nu": 1812.64,
+   "T": 1800.0,
+   "P": 1.0,
+   "lorentz_hwhm": 0.015544477681690646,
+   "doppler_sd": 0.004270164512634529,
+   "model_sd": 0.004718755776943579,
+   "peak_change_percent": -1.212990311933404
+  },
+  {
+   "species": "NO",
+   "nu": 1812.64,
+   "T": 1800.0,
+   "P": 1.5,
+   "lorentz_hwhm": 0.02331671652253597,
+   "doppler_sd": 0.004270164512634529,
+   "model_sd": 0.004718755776943579,
+   "peak_change_percent": -0.6300989289326986
+  },
+  {
+   "species": "CH4",
+   "nu": 4300.0,
+   "T": 700.0,
+   "P": 1.0,
+   "lorentz_hwhm": 0.03284632760117331,
+   "doppler_sd": 0.008639239847494906,
+   "model_sd": 0.0069806709053726,
+   "peak_change_percent": 1.927086073624018
+  },
+  {
+   "species": "CH4",
+   "nu": 4300.0,
+   "T": 700.0,
+   "P": 1.5,
+   "lorentz_hwhm": 0.049269491401759964,
+   "doppler_sd": 0.008639239847494906,
+   "model_sd": 0.0069806709053726,
+   "peak_change_percent": 0.9570663304288018
+  },
+  {
+   "species": "CH4",
+   "nu": 4300.0,
+   "T": 1000.0,
+   "P": 1.0,
+   "lorentz_hwhm": 0.025589125727204634,
+   "doppler_sd": 0.010325866628627615,
+   "model_sd": 0.008343497578449556,
+   "peak_change_percent": 3.688679327793709
+  },
+  {
+   "species": "CH4",
+   "nu": 4300.0,
+   "T": 1000.0,
+   "P": 1.5,
+   "lorentz_hwhm": 0.03838368859080695,
+   "doppler_sd": 0.010325866628627615,
+   "model_sd": 0.008343497578449556,
+   "peak_change_percent": 1.9992617186930017
+  },
+  {
+   "species": "CH4",
+   "nu": 4300.0,
+   "T": 1500.0,
+   "P": 1.0,
+   "lorentz_hwhm": 0.019266000480692488,
+   "doppler_sd": 0.01264655219608523,
+   "model_sd": 0.010218655868674235,
+   "peak_change_percent": 6.684741472865752
+  },
+  {
+   "species": "CH4",
+   "nu": 4300.0,
+   "T": 1500.0,
+   "P": 1.5,
+   "lorentz_hwhm": 0.028899000721038733,
+   "doppler_sd": 0.01264655219608523,
+   "model_sd": 0.010218655868674235,
+   "peak_change_percent": 4.118681032074822
+  },
+  {
+   "species": "CH4",
+   "nu": 4300.0,
+   "T": 1800.0,
+   "P": 1.0,
+   "lorentz_hwhm": 0.016957612016389793,
+   "doppler_sd": 0.013853603824924756,
+   "model_sd": 0.011193976653310855,
+   "peak_change_percent": 8.28613170430943
+  },
+  {
+   "species": "CH4",
+   "nu": 4300.0,
+   "T": 1800.0,
+   "P": 1.5,
+   "lorentz_hwhm": 0.02543641802458469,
+   "doppler_sd": 0.013853603824924756,
+   "model_sd": 0.011193976653310855,
+   "peak_change_percent": 5.424313020630955
+  }
+ ]
+}
