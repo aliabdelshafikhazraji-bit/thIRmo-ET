@@ -1,0 +1,23 @@
+{
+ "610-740": {
+  "route": "broad",
+  "detected_peaks": [
+   10,
+   16,
+   21
+  ],
+  "qualified_per_input": [
+   0,
+   0,
+   0
+  ],
+  "retained_lines": 0,
+  "rejected": 0,
+  "max_gap": [
+   0.06026500000007218,
+   0.06026500000007218,
+   0.06026500000007218
+  ]
+ },
+ "600-6500": "ValueError('Every cold spectrum must cover the full context band.')"
+}
