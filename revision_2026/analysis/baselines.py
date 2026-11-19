@@ -20,7 +20,7 @@ def wakatsuki_fit(x, spectra, temperatures, floor=1e-5, bound_exponent=True):
     """Temperature equation of Wakatsuki et al. (2005) at each wavenumber:
     kappa(nu,T) = nu [1 - exp(-c2 nu/T)] exp[a0 + a1 (Tref/T - 1) + a2 ln(T/Tref)], kappa = sigma/(kB T),
     i.e. kappa = S0 T^(-n) exp(-c2 eps/T) [1 - exp(-c2 nu/T)] with n = -a2. Three coefficients per wavenumber are fitted by
-    least squares on ln(kappa). bound_exponent=True applies the constraint 0 <= n <= 2 stated by Wakatsuki;
+    least squares on ln(kappa). bound_exponent=True applies the constraint 0 <= n <= 2, which is imposed here (Wakatsuki et al. state no bound);
     False reproduces the unconstrained fit of the original submission."""
     T = np.asarray(temperatures, float); S = np.maximum(np.asarray(spectra, float), floor * np.max(spectra))
     A = np.column_stack([np.ones(len(T)), TREF / T - 1, np.log(T / TREF)])
