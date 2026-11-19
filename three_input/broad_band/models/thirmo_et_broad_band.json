@@ -1,0 +1,66 @@
+{
+  "description": "thIRmo-ET broad-band envelope: learned correction to the physical reference of Eq. (3c)",
+  "predictors": [
+    "warm_input",
+    "cold_to_warm_slope_per_100K",
+    "relative_wavenumber_rms",
+    "window_position",
+    "first_derivative_scaled",
+    "second_derivative_scaled",
+    "local_contrast_4cm",
+    "target_T_per_1000K",
+    "delta_T_per_500K",
+    "inverse_T_difference",
+    "physical_reference",
+    "reference_minus_warm",
+    "rms_width_cm1",
+    "cold_shift_rate_per_100K",
+    "cold_broadening_rate",
+    "window_width_per_1000cm"
+  ],
+  "temperature_cap_K": 1000.0,
+  "random_state": 20261029,
+  "physics": {
+    "nu_e_max_cm1": 300.0,
+    "k_shift": 1.0,
+    "k_w": 2.5
+  },
+  "training_identities": [
+    "1,3-butadiene",
+    "1-butene",
+    "CO",
+    "CO2",
+    "acetaldehyde",
+    "dimethoxymethane",
+    "ethanol",
+    "ethyl acetate",
+    "ethylene",
+    "isobutene",
+    "methyl acetate",
+    "methyl formate",
+    "methyl propionate",
+    "n-butyl acetate",
+    "n-heptane",
+    "propane",
+    "propene"
+  ],
+  "testing_identities": [
+    "1,2-dimethoxyethane",
+    "CH4",
+    "NO",
+    "acetone",
+    "di-n-propyl ether",
+    "diisopropyl ether",
+    "n-propyl acetate",
+    "toluene"
+  ],
+  "weights_sha256": "dfd54cf1b061153b407e699de4ff41fd8fc0800e086168ae0a885e247cde6997",
+  "parameters": {
+    "n_estimators": 128,
+    "max_depth": 16,
+    "min_samples_leaf": 16,
+    "max_features": 0.8,
+    "random_state": 20261029,
+    "n_jobs": 3
+  }
+}
