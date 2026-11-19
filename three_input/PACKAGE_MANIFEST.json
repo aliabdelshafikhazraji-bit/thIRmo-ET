@@ -1,7 +1,13 @@
 {
-  "version": "4.0.1-experimental",
+  "version": "5.0.0",
   "files": {
     "benchmark_summary.json": "6dbd1c9e4a9732127db8feb792be02d4121eb847f8404257a01c6e69de4290ef",
+    "broad_band/__init__.py": "d1df820175b2b2e10bcd1e636292f096e190a43b841fb9ba82942aed5b12a97c",
+    "broad_band/broad_band.py": "c85354b52118d9923840ed5065016e0043dfaa4a834aa66537d5eb99738a0ecb",
+    "broad_band/models/thirmo_et_broad_band.json": "825e8846b4aa19e5df16d7bc484e425ce84746db0e9ebbef858a49edbdde7197",
+    "broad_band/models/thirmo_et_broad_band.npz": "dfd54cf1b061153b407e699de4ff41fd8fc0800e086168ae0a885e247cde6997",
+    "broad_band/physics.py": "b2848adaace8a892160dc4718e0531e32f1e5b379081682de51bfd51f0a18026",
+    "broad_band/verify_release.py": "211c6da64820e1cc957869a327c770b8dc9b48dbadd005375328dfce840debea",
     "broad_model/__init__.py": "4dbfc2c579d2f79f03a4c6086d8928241399fc6ffb8644e6c50ea7a856a3c3c8",
     "broad_model/frozen_core.py": "25dd376e4124fcb87ecaa5b34dd71c75bf9a50189a9e8f6f23af99324d5f22e8",
     "broad_model/models/thirmo_et_final.json": "29a5acae0012117da15141df2226bebb5910ca9b8715fabbf76c37b01451fc1a",
@@ -16,12 +22,13 @@
     "line_model/model_frozen/narrow_residual_forest.npz": "39d9e0b3d93e2dc7db052cf452caafcda66984fcb7187c84ff690580254e2a5c",
     "line_model/spectra_only_line.py": "2e32447a437e7c083d8a58f3975432dab2487d766ec5d8ab0d4a5950e533b040",
     "organic_benchmark_summary.json": "eccdcd5308c5206ed7259c6ff2e60a027c5baf437aefa8e549dc4f53a19f523c",
-    "README.md": "302e35afc6526aff5d1e6a8e4d1411637f7e0bd6a20058672e0c012fb9dcff15",
+    "README.md": "bfdbf844bfcd5df3cba3f3b0e82f288e4ddef908c7934178a750f07c91b055ea",
     "requirements.txt": "247cac82bee90f66c969c1966d2ed2e953e746037593bba521fe878b0c84aa40",
     "RESOLUTION_HANDLING.md": "14536e2f651eacb44c64d8f94ecc7854fa248a6da2264d927f1ebf5092199308",
     "spectral_model.py": "45fddac90a895cc70ebacc23164c66f93e5b24a37af4dfcaa0f9445363fe5f19",
+    "tests/test_broad_band.py": "2a15149bd6d2d32529915f972fc7afbb8fe64366b8ebcd15da2983070f803a38",
     "tests/test_three_input.py": "a6c9c05a7c03f3a0736d52575d1ffbc74fec48008264b0e0aca1bd3958d19fc1",
-    "thirmo_three.py": "5d96eb0656989fa4ae5f28a8c96d57b3b32a6ae2be697422522c402bb4772292",
+    "thirmo_three.py": "21eb5ea91111db5b486b433b0d72290679f890f65c3088be974a024d09c5aae0",
     "verification.json": "013d6f6e81c55f6128f023a9eddbf920bc4049893eac1e5493fe0586e6f77371"
   }
 }
