@@ -1,0 +1,22 @@
+{
+ "DiPE": {
+  "source": "Adil and Farooq, J. Phys. Chem. A 127 (2023) 7764-7771, Fig. 4 and its correlation for diisopropyl ether",
+  "wavenumber_cm1": 1121.82,
+  "T_range_K": [
+   500,
+   1500
+  ],
+  "P_range_bar": [
+   0.3,
+   1.4
+  ],
+  "bath": "Ar",
+  "form": "sigma (m2/mol) = -1.26e-5 T^2 + 0.0132 T + 24.28",
+  "coeffs": [
+   24.28,
+   0.0132,
+   -1.26e-05
+  ],
+  "units": "m2/mol"
+ }
+}
