@@ -31,6 +31,7 @@ This folder contains the scripts, result files, and digitized published data beh
 | `a15_hot_growth.py` | Growth of absorption outside the near-ambient band (NO, CH₄) with temperature. |
 | `a16_benzene_fig8.py` | Benzene history of Shakfa et al. (961 K, 1.36 bar) recalculated with thIRmo-ET, and the sensitivity at the predicted maximum. |
 | `a17_dipe_probe.py` | Diisopropyl ether at 1121.82 cm⁻¹: published shock-tube correlation and scanned test spectra versus the prediction. |
+| `a18_no_native.py` | Retained NO lines at native resolution against HITEMP2019 calculations at 0.7–1.9 atm: error within ±1 cm⁻¹ of each line and the cross section at the line centers. Needs the three PNNL NO spectra (`THIRMO_PNNL`) and the HITEMP NO line list (`THIRMO_HITEMP`), which are not redistributed. |
 | `benzene_inputs.py` | Prepares the benzene ν4 window (610–740 cm⁻¹) from the three PNNL benzene spectra, which are not redistributed (their folder is given as argument or in `THIRMO_PNNL`); run it before `benzene.py`, `a14_seed_probe.py` and `a16_benzene_fig8.py`. |
 | `benzene.py`, `ethers.py` | Benzene laser wavenumber and ether probe wavenumbers: published correlations versus thIRmo-ET, and recalculated histories. |
 | `export_model.py` | Exports the broad-band forest in the portable weight format of `three_input/broad_band/models/` and checks it against the fitted forest. |
@@ -41,9 +42,10 @@ This folder contains the scripts, result files, and digitized published data beh
 ```sh
 python -m pip install -r revision_2026/requirements.txt
 export THIRMO_DATASET=/path/to/prepared/dataset     # 69 group_*.npz files and dataset_manifest.json
-export THIRMO_PNNL=/path/to/PNNL/benzene            # BENZENE_5T.TXT, BENZENE_25T.TXT, BENZENE_50T.TXT (benzene analyses only)
+export THIRMO_PNNL=/path/to/PNNL                    # BENZENE_5T/25T/50T.TXT (benzene analyses) and NO_5T/25T/50T.TXT (a18)
+export THIRMO_HITEMP=/path/to/08_HITEMP2019.par.bz2  # HITEMP NO line list (a18 only)
 cd revision_2026/analysis
-python a01_dataset.py   # then a02 ... a17, and the figure scripts; benzene_inputs.py before the benzene analyses
+python a01_dataset.py   # then a02 ... a18, and the figure scripts; benzene_inputs.py before the benzene analyses
 ```
 
 The prepared data set is built with [`reproduction/pipeline.py`](../reproduction/) from the licensed source spectra, which this repository does not redistribute ([PNNL](https://nwir.pnl.gov/), [HITRAN](https://hitran.org/), [HITEMP](https://hitran.org/hitemp/), and the published measurements listed in `study/source_records.json`). Results are written to `revision_2026/out/`; the files in `results/` are those of the manuscript. The broad-band forest is fitted with scikit-learn on first use and cached; the distributed weights in `three_input/broad_band/models/` were exported from it with `export_model.py` (SHA-256 `dfd54cf1…6997`).
